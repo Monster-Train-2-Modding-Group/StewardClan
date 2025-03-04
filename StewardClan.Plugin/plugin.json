@@ -1,123 +1,439 @@
 {
-    "cards": [
+  "cards": [
+    {
+      "id": "DealDamageAndPyre",
+      "names": {
+        "english": "Mechanical Outrage"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage. Pyre takes [effect1.power] damage."
+      },
+      "cost": 1,
+      "type": "spell",
+      "rarity": "starter",
+      "class": "@ClassSteward",
+      "card_art_reference": "@MechanicalOutrage",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
         {
-            "id": "StarterFireStarter",
-            "override": true,
-            "cost": 0,
-            "names": {
-                "english": "Gas Cannister",
-                "french": "Le Starter of Fire"
-            },
-            "descriptions": {
-                "english": "Deal [effect0.power] damage",
-                "french": "Inflige <nobr>[effect0.power] DGT</nobr>"
-            },
-            "card_art_reference": "@Gasoline",
-            "effects": [
-                {
-                    "id": "@DealSevenDamage"
-                }
-            ],
-            "traits": [
-                {
-                    "id": "@Exhaust"
-                }
-            ]
-        }
-    ],
-    "traits": [
+          "id": "@DealDamageToSelected"
+        },
         {
-            "id": "Exhaust",
-            "name": "CardTraitExhaustState",
-            "track_type": "subtype_in_deck",
-            "card_type_target": "any",
-            "entry_duration": "this_turn",
-            "param_str": "",
-            "param_description": "",
-            "param_int": 0,
-            "param_int_2": 0,
-            "param_int_3": 0,
-            "param_float": 0.0,
-            "param_subtype": "SubtypesData_None",
-            "param_use_scaling_params": false,
-            "param_bool": true,
-            "trait_is_removable": false,
-            "tooltip_suppressed": false,
-            "effect_text_suppressed": false,
-            "status_effect_tooltips_suppressed": false,
-            "param_status_effects": [],
-            "param_team": "None",
-            "stack_mode": "None",
-            "draw_in_deployment_phase": false
+          "id": "@DealDamageToPyre"
         }
-    ],
-    "sprites": [
+      ]
+    },
+    {
+      "id": "Gravitas",
+      "names": {
+        "english": "A Butler's Gravitas"
+      },
+      "descriptions": {
+        "english": "Reduce [cooldown] to [effect0.power]"
+      },
+      "cost": 0,
+      "type": "spell",
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art_reference": "@MechanicalOutrage",
+      "pools": [ "MegaPool" ],
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
         {
-            "id": "Gasoline",
-            "path": "textures/gas.png"
+          "id": "@ResetCooldown"
         }
-    ],
-    "game_objects": [
+      ]
+    },
+    {
+      "id": "PyreRefactor",
+      "names": {
+        "english": "Pyre Refactor"
+      },
+      "descriptions": {
+        "english": "Your Pyre gets +[effect0.pyreattackpower][attack] and +[effect1.pyrehealthpower][pyrehealth]."
+      },
+      "cost": 2,
+      "type": "spell",
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "card_art_reference": "@MechanicalOutrage",
+      "pools": [ "MegaPool" ],
+      "traits": ["@Consume"],
+      "effects": [
         {
-            "id": "Gasoline",
-            "type": "card_art",
-            "sprite": "@Gasoline"
-        }
-    ],
-    "effects": [
+          "id": "@BuffPyreAttack"
+        },
         {
-            "id": "DealSevenDamage",
-            "name": "CardEffectDamage",
-            "target_mode": "drop_target_character",
-            "supress_pyre_room_focus": false,
-            "status_effect_filters": [],
-            "target_mode_health_filter": "both",
-            "target_ignore_bosses": false,
-            "filter_on_main_subclass": false,
-            "copy_modifiers": false,
-            "ignore_temporary_modifiers": false,
-            "target_team": "both",
-            "target_subtype": "SubtypesData_None",
-            "target_card_type": "spell",
-            "target_selection_mode": "choose_to_hand",
-            "anim_to_play": "none",
-            "show_pyre_notification": false,
-            "should_test": true,
-            "cancel_subsequent_effects_on_failure": false,
-            "fail_to_cast_on_failure": false,
-            "skip_subsequent_previews": false,
-            "use_int_range": false,
-            "param_int": 5,
-            "param_int_2": 0,
-            "param_int_3": 0,
-            "param_str": "",
-            "param_bool": false,
-            "param_bool_2": false,
-            "param_subtype": "SubtypesData_None",
-            "param_min_int": 0,
-            "param_max_int": 0,
-            "param_multiplier": 1,
-            "use_status_effect_multiplier": false,
-            "status_effect_multipler": "",
-            "use_health_missing_multipler": false,
-            "use_magic_power_multipler": false,
-            "param_character_data": "",
-            "param_character_data_2": "",
-            "param_character_data_pool": [],
-            "param_room_data": "",
-            "param_card_pool": "",
-            "param_card_filer": "",
-            "param_trigger": "on_death",
-            "param_status_effects": [],
-            "param_upgrade_data": "",
-            "param_timing_delays": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "param_card_data": "",
-            "hide_tooltip": false,
-            "additional_tooltips": []
+          "id": "@HealPyre"
         }
-    ]
+      ]
+    },
+    {
+      "id": "BreakingPoint",
+      "names": {
+        "english": "Breaking Point"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to all enemies. Pyre takes [effect1.power] damage."
+      },
+      "cost": 3,
+      "type": "spell",
+      "rarity": "rare",
+      "class": "@ClassSteward",
+      "card_art_reference": "@MechanicalOutrage",
+      "pools": [ "MegaPool" ],
+      "effects": [
+        {
+          "id": "@DealDamageToAll"
+        },
+        {
+          "id": "@DealDamageToPyre7"
+        }
+      ]
+    },
+    {
+      "id": "SpawnAlbert",
+      "names": {
+        "group": "CardData_Albert",
+        "english": "Mad Albert",
+        "french": "Dragon Blanc Aux Yeux Bleux"
+      },
+      "descriptions": {
+        "group": "CardData_Albert",
+        "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]"
+      },
+      "card_art_reference": "@Albert",
+      "cost": 0,
+      "type": "monster",
+      "cost_type": "x",
+      "rarity": "champion",
+      "class": "@ClassSteward",
+      "unlock_level": 0,
+      "targets_room": true,
+      "targetless": false,
+      "traits": [
+        {
+          "id": "@BuffAttackByCost"
+        },
+        {
+          "id": "@BuffHealthByCost"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@SpawnAlbert"
+        }
+      ],
+      "lore_tooltips": [
+        {
+          "id": "",
+          "english": "A Train Steward gone mad, luckily he is on our side."
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": "ClassSteward",
+      "titles": {
+        "english": "Steward Guild"
+      },
+      "descriptions": {
+        "english": "Direct the faithful train stewards towards keeping the train together, even against their growing madness."
+      },
+      "subclass_descriptions": {
+        "english": "Direct the faithful train stewards towards keeping the train together, even against their growing madness."
+      },
+      "icons": {
+        "small": "@StewardIconSmall",
+        "medium": "@StewardIconRegular",
+        "large": "@StewardIconLarge",
+        "silhouette": "@StewardSilhouette"
+      },
+      "card_style": "pyreborne",
+      "ui_color": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "ui_color_dark": {
+        "r": 0.4,
+        "g": 0.4,
+        "b": 0.4
+      },
+      "ui_gradient": [
+        {
+          "time": 0.0,
+          "color": {
+            "r": 1.0
+          }
+        },
+        {
+          "time": 1.0,
+          "color": {
+            "r": 0.5,
+            "g": 0.5,
+            "b": 0.5
+          }
+        }
+      ],
+      "champions": [
+        {
+          "id": "StewardChampion",
+          "card_data": "@SpawnAlbert",
+          "starter_card": "@DealDamageAndPyre",
+          "upgrade_tree": [
+            [ "@AlbertXReductionBuffer" ],
+            [ "@AlbertStewardBuff" ],
+            [ "@AlbertXReductionBuffer" ]
+          ],
+          "icon": "@ClanIcon",
+          "locked_icon": "@ClanLockedIcon",
+          "portrait": "@Portrait",
+          "selected_cue": ""
+        }
+      ],
+      "sfx_cue": "",
+      "is_crew": false,
+      "unlock_data": {
+        "descriptions": {
+          "english": "Have 10 Train Stewards Die"
+        },
+        "track_value": "none",
+        "param_int": 0
+      },
+      "class_preview_texts": []
+    }
+  ],
+  "characters": [
+    {
+      "id": "SpawnAlbert",
+      "names": {
+        "group": "CharacterData_Albert",
+        "english": "Albert"
+      },
+      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+      "size": 3,
+      "health": 5,
+      "can_be_healed": true,
+      "death_type": "large",
+      "can_attack": true,
+      "attack_damage": 10,
+      "attack_teleports_to_defender": true,
+      "death_slides_backwards": true,
+      "chosen_variant": false,
+      "titan_affinity": "none",
+      "triggers": [
+        {
+          "id": "@SummonAlbert"
+        }
+      ],
+      "subtypes": [ "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34", "SubtypesData_TrainSteward" ],
+      "equip_limit": 1,
+      "endless_stats": {
+        "health": 5,
+        "attack": 10
+      }
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SummonAlbert",
+      "trigger": "on_spawn",
+      "effects": [
+        {
+          "id": "@UpgradeAlbert"
+        }
+      ]
+    },
+    {
+      "id": "BuffStewards",
+      "trigger": "after_spawn_enchant",
+      "descriptions": {
+        "english": "Friendly Stewards get [titanskin] [effect0.status0.power]."
+      },
+      "effects": [
+        {
+          "id": "@EnchantTitanSkin3"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnAlbert",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character_data": "@SpawnAlbert"
+    },
+    {
+      "id": "UpgradeAlbert",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1
+    },
+    {
+      "id": "DealDamageToSelected",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "param_int": 5,
+      "target_team": "both",
+      "target_subtype": "SubtypesData_None",
+      "use_magic_power_multipler": true
+    },
+    {
+      "id": "DealDamageToAll",
+      "name": "CardEffectDamage",
+      "target_mode": "tower",
+      "target_team": "heroes",
+      "param_int": 100,
+      "use_magic_power_multipler": true
+    },
+    {
+      "id": "DealDamageToPyre",
+      "name": "CardEffectDamage",
+      "target_mode": "pyre",
+      "param_int": 1,
+      "use_magic_power_multipler": false,
+      "use_status_effect_multiplier": false
+    },
+    {
+      "id": "DealDamageToPyre7",
+      "name": "CardEffectDamage",
+      "target_mode": "pyre",
+      "param_int": 7,
+      "use_magic_power_multipler": false,
+      "use_status_effect_multiplier": false
+    },
+    {
+      "id": "EnchantTitanSkin3",
+      "name": "CardEffectEnchant",
+      "target_mode": "room",
+      "param_status_effects":[
+        {
+          "status": "titanskin",
+          "count": 3
+        }
+      ],
+      "target_subtype": "SubtypesData_TrainSteward"
+    },
+    {
+      "id": "ResetCooldown",
+      "name": "CardEffectAdjustAbilityCooldown",
+      "target_mode": "drop_target_character",
+      "param_bool": true,
+      "param_int": 0,
+      "target_team": "both",
+      "target_subtype": "SubtypesData_None"
+    },
+    {
+      "id": "BuffPyreAttack",
+      "name": "CardEffectBuffDamage",
+      "target_mode": "pyre",
+      "param_int": 10,
+      "use_magic_power_multipler": false
+    },
+    {
+      "id": "HealPyre",
+      "name": "CardEffectHealTrain",
+      "target_mode": "pyre",
+      "param_int": 2,
+      "use_magic_power_multipler": false,
+      "use_status_effect_multiplier": false
+    }
+  ],
+  "sprites": [
+    {
+      "id": "StewardIconSmall",
+      "path": "textures/StewardIconSmall.png"
+    },
+    {
+      "id": "StewardIconRegular",
+      "path": "textures/StewardIconRegular.png"
+    },
+    {
+      "id": "StewardIconLarge",
+      "path": "textures/StewardIconLarge.png"
+    },
+    {
+      "id": "StewardSilhouette",
+      "path": "textures/StewardSilhouette.png"
+    },
+    {
+      "id": "MechanicalOutrage",
+      "path": "textures/MechanicalOutrage.png"
+    },
+    {
+      "id": "Albert",
+      "path": "textures/MechanicalOutrage.png"
+    },
+    {
+      "id": "ClanIcon",
+      "path": "textures/StewardClanIcon.png"
+    },
+    {
+      "id": "ClanLockedIcon",
+      "path": "textures/StewardClanLockedIcon.png"
+    },
+    {
+      "id": "Portrait",
+      "path": "textures/StewardPortrait.png"
+    }
+  ],
+  "traits": [
+    {
+      "id": "BuffAttackByCost",
+      "name": "CardTraitScalingUpgradeUnitAttack",
+      "track_type": "played_cost",
+      "param_int": 2
+    },
+    {
+      "id": "BuffHealthByCost",
+      "name": "CardTraitScalingUpgradeUnitHealth",
+      "track_type": "played_cost",
+      "param_int": 4
+    },
+    {
+      "id": "Consume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "MechanicalOutrage",
+      "type": "card_art",
+      "sprite": "@MechanicalOutrage"
+    },
+    {
+      "id": "Albert",
+      "type": "card_art",
+      "sprite": "@Albert"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AlbertStewardBuff",
+      "titles": {
+        "english": "Stewardly 1"
+      },
+      "bonus_damage": 7,
+      "bonus_hp": 0,
+      "bonus_size": -1,
+      "trigger_upgrades": [
+        {
+          "id": "@BuffStewards"
+        }
+      ]
+    },
+    {
+      "id": "AlbertXReductionBuffer",
+      "titles": {
+        "english": "Utility 1"
+      },
+      "x_cost_reduction": 3
+    }
+  ]
 }
