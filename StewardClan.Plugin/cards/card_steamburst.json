@@ -7,7 +7,7 @@
         "english": "Steam Burst"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to all units. Gain [effect1.power][ember]"
+        "english": "Deal [effect0.power] damage to all units and Gain [effect1.power][ember]."
       },
       "rarity": "common",
       "class": "@ClassSteward",

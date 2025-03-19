@@ -7,7 +7,7 @@
                 "english": "Process Data"
             },
             "descriptions": {
-                "english": "[advance]. +[effect1.power][health]"
+                "english": "[advance]. Apply +[effect1.power][health]"
             },
             "rarity": "common",
             "class": "@ClassSteward",

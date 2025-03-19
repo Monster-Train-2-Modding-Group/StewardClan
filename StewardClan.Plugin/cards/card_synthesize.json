@@ -7,7 +7,7 @@
                 "english": "Sythesize"
             },
             "descriptions": {
-                "english": "Apply +[effect0.status0.count][rage] and +[effect0.status1.count][regen]"
+                "english": "Apply [rage] [effect0.status0.power] and [regen] [effect0.status1.power]"
             },
             "rarity": "common",
             "class": "@ClassSteward",

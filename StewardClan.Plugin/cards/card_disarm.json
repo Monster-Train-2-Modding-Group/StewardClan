@@ -7,7 +7,7 @@
                 "english": "Disarm"
             },
             "descriptions": {
-                "english": "Remove equipment from a unit. +[effect1.power][health]"
+                "english": "Remove equipment from a unit and Apply +[effect1.power][health]"
             },
             "rarity": "uncommon",
             "class": "@ClassSteward",

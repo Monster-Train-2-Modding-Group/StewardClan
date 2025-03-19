@@ -7,7 +7,7 @@
                 "english": "Decompile"
             },
             "descriptions": {
-                "english": "Draw +[effect0.power] next turn."
+                "english": "Deal +[effect0.power] damage."
             },
             "rarity": "common",
             "class": "@ClassSteward",
@@ -34,6 +34,9 @@
         {
             "id": "DecompileSlay",
             "trigger": "on_kill",
+            "descriptions": {
+                "english": "Discard a random card."
+            },
             "effects": [
                 {
                     "id": "@DecompileDiscard"

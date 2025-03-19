@@ -113,20 +113,9 @@
       "param_int": 9
     }
   ],
-  "room_modifiers": [
-    {
-      "id": "AlbertEngineeringStation",
-      "param_card_upgrade": "@AlbertEngineeringStationUpgrade"
-    }
-  ],
   "upgrades": [
     {
       "id": "AlbertEngineeringStation",
-      "room_modifier_upgrades": [
-          {
-              "id": "@AlbertEngineeringStation"
-          }
-      ],
       "titles": {
         "english": "Engineering Station"
       },
@@ -134,17 +123,16 @@
       "hide_icon_on_card": true,
       "descriptions": {
         "english": "Train Stewards get +10/+10 and [titanskin] 2."
-      }
-    },
-    {
-      "id": "AlbertEngineeringStationUpgrade",
-      "bonus_hp": 10,
+      },
       "bonus_damage": 10,
+      "bonus_hp": 10,
+      "icon": "@AlbertStewardRoomArt",
+      "filters": [],
       "status_effect_upgrades": [
         {
           "id": "none",
           "status": "titanskin",
-          "count": 3
+          "count": 2
         }
       ]
     },
@@ -250,7 +238,7 @@
       "id": "BuffStewards1",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Attach a room that gives Train Stewards +10[attack], +10[health], and +2 [titanskin]"
+        "english": "Attach a room that gives Train Stewards +10[attack]/+10[health] and +2 [titanskin]."
       },
       "effects": [
         {
@@ -305,7 +293,7 @@
       "param_upgrade": "@AlbertEngineeringStation",
       "param_bool": false,
       "param_bool_2": false,
-      "target_team": "both",
+      "target_team": "monsters",
       "target_subtype": "SubtypesData_TrainSteward"
     }
   ],
@@ -313,6 +301,10 @@
     {
       "id": "AlbertArt",
       "path": "textures/MechanicalOutrage.png"
+    },
+    {
+      "id": "AlbertStewardRoomArt",
+      "path": "textures/AlbertStewardRoom.png"
     }
   ],
   "game_objects": [

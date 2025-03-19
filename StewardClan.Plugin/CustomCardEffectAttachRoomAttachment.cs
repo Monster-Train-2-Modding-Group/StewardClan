@@ -94,6 +94,7 @@ namespace Steward_Clan.Plugin
                 );
 
                 // Call AddTrainRoomAttachment and yield control
+                Console.WriteLine("Adding Train Room");
                 this.current = room.AddTrainRoomAttachment(
                     Guid.NewGuid().ToString(),
                     this.cardEffectState.GetParentCardState(),

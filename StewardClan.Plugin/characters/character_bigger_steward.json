@@ -1,4 +1,5 @@
 {
+  "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
   "cards": [
     {
       "id": "SpawnBiggerSteward",
@@ -35,17 +36,13 @@
       },
       "can_attack": true,
       "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-      "subtypes": [ "SubtypesData_TrainSteward", "SubtypesData_Monstrosity" ],
+      "subtypes": [ "SubtypesData_TrainSteward", "SubtypesData_Monstrosity", "SubtypesData_BannerUnit" ],
       "starting_status_effects": [
         {
           "status": "titanskin",
           "count": 2
         }
-      ],
-      "endless_stats": {
-        "attack": 14,
-        "health": 15
-      }
+      ]
     }
   ],
   "effects": [

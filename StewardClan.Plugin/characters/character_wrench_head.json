@@ -36,10 +36,7 @@
         "attack_damage": 15,
         "health": 30,
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-        "endless_stats": {
-          "attack": 15,
-          "health": 30
-        },
+        "subtypes": ["SubtypesData_BannerUnit"],
         "triggers": 
         [
             {
