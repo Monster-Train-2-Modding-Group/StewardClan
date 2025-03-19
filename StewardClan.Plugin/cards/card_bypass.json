@@ -1,0 +1,73 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "Bypass",
+            "names": {
+                "english": "Bypass"
+            },
+            "descriptions": {
+                "english": "Draw +[effect0.power] next turn."
+            },
+            "rarity": "common",
+            "class": "@ClassSteward",
+            "card_art_reference": "@BypassArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 1,
+            "traits": [
+                {
+                    "id": "@BypassPiercing"
+                },
+                {
+                    "id": "@BypassOverflow"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@BypassDamage"
+                }
+            ]
+        }
+    ],
+    "traits": [
+        {
+            "id": "BypassPiercing",
+            "name": "CardTraitIgnoreArmor"
+        },
+        {
+            "id": "BypassOverflow",
+            "name": "CardTraitDamageOverflow"
+        }
+    ],
+    "effects": [
+        {
+          "id": "BypassDamage",
+          "name": "CardEffectDamage",
+          "target_mode": "drop_target_character",
+          "target_team": "both",
+          "param_int": 12,
+          "use_magic_power_multipler": true
+        }
+    ],
+    "sprites": [
+        {
+            "id": "BypassArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "BypassArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@BypassArt"
+                }
+            }
+        }
+    ]
+}

@@ -5,50 +5,106 @@ This is a basic design document to help outline the design of a new clan for Mon
 ## Themes
 
 ### Visual
-- Describe the aesthetic style of the clan (e.g., dark and shadowy, fiery and destructive, nature-infused, mechanical and artificial).
 The Visuals are to be based on the Train Stewards, Mechanical, Tech Priest, etc... There should be some pseudo-britishness.
-- Identify key visual motifs (e.g., colors, shapes, effects).
 Colors should be orange-brown, furnace-like.
-Shapes should be pipe-like, built out of cutlery
+Shapes should be pipe-like, built out of cutlery and piping.
 Effects should be fiery, but mostly contained to mechanical
-- Mention any influences or inspirations for the visual design.
-inspirations  include: 'Brazil', 'Warhammer 40k', 'Steampunk', 'Anything Kubrick made' and 'Batman'
+inspirations  include: 'Brazil', 'Warhammer 40k', 'Steampunk', 'Stanley Kubrick' and 'Batman'
 
 ### Mechanical
-- Define the core mechanical identity of the clam.
-Spell-wise the clan will use powerful spells that use pyre-health, room-ticks, rooms, and equipment as resources to accomplish great affect; You should feel like you are constantly salvaging one thing for another, like a busy butler unmaking the house to make a cup of tea.
-Creature-wise the clan should lean into resource-generating abilities on longer-cooldowns, 
-- How does the clan play differently from existing clans?
-- Synergies with existing game mechanics.
+The Steward Clan focuses in on Generalized Abilities, focusing on direct damage and spell
 
 ## Clan
 
 ### Champions
-- Outline the clan's Champion(s) and their role in battle.
-Two Champions:
-Albert, the Mad Butler
-Grug the debugger
 
-Albert, the Mad Butler provides a strong power-basis
-- Possible upgrade paths and how they change the playstyle.
-- Unique abilities that differentiate them from other champions.
+#### Albert, the Mad Butler
+Focuses in on X-Cost, Train Stewards, Extra-Deploy
+
+Base:
+Summon: Gain +2X/+4X (X/3/10/5)
+
+Upgrade Path 1 (Utility)
+
+- Reduce X by 3.
+- Reduce X by 3. Summon: Gain +4X/+6X
+- Reduce X by 4. Summon: Gain +6X/+9X
+
+Upgrade Path 2 (Stewardly)
+
+- Summon: Attach a Room that gives Stewards +10/+10 and Titanskin 2.
+- Summon: Attach a Room that gives Stewards +20/+20 and Titanskin 4.
+- Summon: Attach a Room that gives Stewards +40/+40 and Titanskin 6.
+
+Upgrade Path 3 (Overengineered)
+
+- Summon: Gain 2 Ember (+10/+3)
+- Summon: Gain 4 Ember (+10/+3)
+- Summon: Gain 6 Ember (+15/+9)
+
+
+#### Grug the Debugger
+Focuses in on Pyre-Healing, Titan Skin, and Discard Synergy 
+
 
 ### Starter Cards
 Mechanical Outrage: Piercing. Deal 5 damage and 1 to the Pyre.
 
-
 ## Cards
-- Unit cards: Types, roles, and key mechanics.
-Dependabot: Endless. Ability: Gain an Ember. cooldown 3. Low stats.
-Orphan Process: Reincarnate 2. On Reincarnate: Gain +10/+10 and Stealth 1. Low Stats. Train Steward
-Imptern: Summon: Heal the Pyre for 3. Ability: Repeat the last summon trigger. Cooldown 3.
-Winged Air Conditioner: Quick. Ability: Expand the Room by 1. Decent Stats
-- Spell cards: Effects, synergies, and how they interact with the clan's mechanics.
-Pyre Refactor: Consume. +10 Pyre Attack. Heal the Pyre for 3. 2 ember.
-Gravitas: Refresh an Ability cooldown. 0 ember.
-Breaking Point: Deal 100 damage to enemies and lose 7 pyre health. 3 ember.
-Galvanize: Consume. Make a room 2 ticks smaller. Increase Magic Power by 5 for the run. 1 ember.
-- How do these cards complement the clan's strategy?
+
+### Spells
+
+#### Common
+Overclock - Gain 2 Ember. Pyre takes 1 Damage. Costs 1. (Utility)
+Cache - Permafrost. Draw +2 Next Turn. Costs 1. (Utility)
+
+Process Data - Advance. Apply +5 Health. Costs 0. (Defense)
+Try, Catch - Offering. Apply 20 armor to the front friendly unit. Costs 3. (Defense)
+Sythesize - Consume. Apply Rage 3 and Regen 3. Costs 1.
+
+Decompile - Deal 25 Damage. Slay: Discard a card at random. Cost 1. (Offense)
+Steam Burst - Deal 2 Damage to Everything, gain an Ember. Costs 1. (Offense)
+Bypass - Explosive. Piercing. Deal 12 Damage to the front enemy unit. Costs 1. (Offense)
+Console.Writeline - Consume. Apply Melee Weakness 3. Costs 2. (Offense)
+
+#### Uncommon
+Back to Basics - Consume. Remove all Buff Effects. Apply Multistrike 1. Costs 2.
+Galvanize - Consume. -2 Capacity and +5 Magic Power in this room.
+Gravitas - Reduce a Cooldown to 0. Costs 0.
+Scrap - Sacrifice. Deal 50 damage twice to the front enemy unit. Costs 1.
+Disarm - Remove equipment from a unit. Apply +30 Health.
+Automate - Add a Random Steward with two random upgrades to Hand. Costs 1.
+Pyre Refactor - Your Pyre gets +10 attack and +2 Health
+
+#### Rare
+Memory Leak - Consume. Discard your Hand, then Draw 3 random spells from your consume pile that isn't memory leak. Costs 1.
+Breaking Point - Deal 100 Damage to all enemy units in the tower. Pyre takes 7 Damage. Costs 3.
+Steward Tome - Consume. Apply Dualism to a friendly unit. 2
+Spike of the Stewards - Consume. Apply Titanskin X. Pyre lose X. Costs X.
+Sanity - Discard your Hand. Restore 10 Pyre Health. Costs 3. 
+Ctrl-V - Consume. Add a Copy of your Champion to your Hand. Costs 2.
+
+### Units
+
+#### Common
+Rusted Steward: Summon: Gain Damage Shield 1 and Multistrike 1. Train Steward (1/1/5/8) (ember/size/attack/health)
+
+#### Uncommon
+Dependabot: Endless. Ability: Gain an Ember. cooldown 3. (1/1/0/2)
+Imptern: Summon: Heal the Pyre for 1. Ability: Repeat the last summon trigger. Cooldown 3.(1/1/1/1)
+Winged Air Conditioner: Quick. Ability: Expand the Room by 1. Cooldown 4. (1/2/18/8)
+Overheating Computer: Extinguish: Deal Damage equal to this Units Attack to Enemy Units Twice (1/2/20/3)
+Wrench-Head: Strike: Heal the Pyre by 1 (1/2/15/30)
+Fabricator: Ability: Add a Copy of the Equipment to your Hand. Cooldown 4. (1/3/10/20)
+
+#### Rare
+Ludo-Developer: +1 Attack for Every Pyre Attack. (2/2/0/30)
+Mod Forger: Artificer: Heal the Pyre by 2. (1/3/40/20) 
+Unit Tester: Artificer: Apply Melee Weakness 1 to enemy units. (2/2/35/20)
+
+### Rooms
+
+### Equipment
 
 ## Relics
 - Unique artifacts that enhance the clan's abilities.

@@ -1,0 +1,338 @@
+{
+  "cards": [
+    {
+      "id": "SpawnAlbert",
+      "names": {
+        "group": "CardData_Albert",
+        "english": "Mad Albert",
+        "french": "Dragon Blanc Aux Yeux Bleux"
+      },
+      "descriptions": {
+        "group": "CardData_Albert",
+        "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]"
+      },
+      "card_art_reference": "@Albert",
+      "cost": 0,
+      "type": "monster",
+      "cost_type": "x",
+      "rarity": "champion",
+      "class": "@ClassSteward",
+      "unlock_level": 0,
+      "targets_room": true,
+      "targetless": false,
+      "traits": [
+        {
+          "id": "@BuffAttackByCost1"
+        },
+        {
+          "id": "@BuffHealthByCost1"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@SpawnAlbert"
+        }
+      ],
+      "lore_tooltips": [
+        {
+          "id": "",
+          "english": "A Train Steward gone mad, luckily he is on our side."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "SpawnAlbert",
+      "names": {
+        "group": "CharacterData_Albert",
+        "english": "Albert"
+      },
+      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+      "size": 3,
+      "health": 5,
+      "can_be_healed": true,
+      "death_type": "large",
+      "can_attack": true,
+      "attack_damage": 10,
+      "attack_teleports_to_defender": true,
+      "death_slides_backwards": true,
+      "chosen_variant": false,
+      "titan_affinity": "none",
+      "triggers": [
+        {
+          "id": "@SummonAlbert"
+        }
+      ],
+      "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
+        "SubtypesData_TrainSteward"
+      ],
+      "equip_limit": 1,
+      "endless_stats": {
+        "health": 5,
+        "attack": 10
+      }
+    }
+  ],
+  "traits": [
+    {
+      "id": "BuffAttackByCost1",
+      "name": "CardTraitScalingUpgradeUnitAttack",
+      "track_type": "played_cost",
+      "param_int": 2
+    },
+    {
+      "id": "BuffHealthByCost1",
+      "name": "CardTraitScalingUpgradeUnitHealth",
+      "track_type": "played_cost",
+      "param_int": 4
+    },
+    {
+      "id": "BuffAttackByCost2",
+      "name": "CardTraitScalingUpgradeUnitAttack",
+      "track_type": "played_cost",
+      "param_int": 4
+    },
+    {
+      "id": "BuffHealthByCost2",
+      "name": "CardTraitScalingUpgradeUnitHealth",
+      "track_type": "played_cost",
+      "param_int": 6
+    },
+    {
+      "id": "BuffAttackByCost3",
+      "name": "CardTraitScalingUpgradeUnitAttack",
+      "track_type": "played_cost",
+      "param_int": 6
+    },
+    {
+      "id": "BuffHealthByCost3",
+      "name": "CardTraitScalingUpgradeUnitHealth",
+      "track_type": "played_cost",
+      "param_int": 9
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "StewardsTitanskin3",
+      "titles": {
+        "english": "Engineering Station"
+      },
+      "allow_secondary_tooltip_placement": true,
+      "hide_icon_on_card": true,
+      "descriptions": {
+        "english": "Stewards get [titanskin] 3 on summon."
+      },
+      "bonus_hp": 10,
+      "bonus_damage": 10,
+      "status_effect_upgrades": [
+        {
+          "id": "none",
+          "status": "titanskin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "AlbertStewardBuff1",
+      "titles": {
+        "english": "Stewardly 1"
+      },
+      "bonus_damage": 7,
+      "bonus_hp": 0,
+      "bonus_size": -1,
+      "trigger_upgrades": [
+        {
+          "id": "@BuffStewards1"
+        }
+      ]
+    },
+    {
+      "id": "AlbertStewardBuff2",
+      "titles": {
+        "english": "Stewardly 1"
+      },
+      "bonus_damage": 9,
+      "bonus_hp": 5,
+      "bonus_size": -1,
+      "trigger_upgrades": [
+        {
+          "id": "@BuffStewards2"
+        }
+      ]
+    },
+    {
+      "id": "AlbertStewardBuff3",
+      "titles": {
+        "english": "Stewardly 1"
+      },
+      "bonus_damage": 9,
+      "bonus_hp": 5,
+      "bonus_size": -1,
+      "trigger_upgrades": [
+        {
+          "id": "@BuffStewards3"
+        }
+      ]
+    },
+    {
+      "id": "AlbertXReductionBuffer1",
+      "titles": {
+        "english": "Utility 1"
+      },
+      "x_cost_reduction": 3
+    },
+    {
+      "id": "AlbertXReductionBuffer2",
+      "titles": {
+        "english": "Utility 2"
+      },
+      "x_cost_reduction": 3,
+      "remove_trait_upgrades": [
+        "@BuffAttackByCost1",
+        "@BuffHealthByCost1"
+      ],
+      "trait_upgrades": [
+        {
+          "id": "@BuffAttackByCost2"
+        },
+        {
+          "id": "@BuffHealthByCost2"
+        }
+      ]
+    },
+    {
+      "id": "AlbertXReductionBuffer3",
+      "titles": {
+        "english": "Utility 3"
+      },
+      "x_cost_reduction": 3,
+      "remove_trait_upgrades": [
+        "@BuffAttackByCost2",
+        "@BuffHealthByCost2"
+      ],
+      "trait_upgrades": [
+        {
+          "id": "@BuffAttackByCost3"
+        },
+        {
+          "id": "@BuffHealthByCost3"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SummonAlbert",
+      "trigger": "on_spawn",
+      "effects": [
+        {
+          "id": "@UpgradeAlbert"
+        }
+      ]
+    },
+    {
+      "id": "TitanSkin3OnEnter",
+      "trigger": "on_spawn",
+      "hide_tooltip": true,
+      "effects": [
+        {
+          "id": "@GainTitanSkin3Steward"
+        }
+      ]
+    },
+    {
+      "id": "BuffStewards1",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Attach a room that gives Train Stewards +10[attack] and +10[health]"
+      },
+      "effects": [
+        {
+          "id": "@AttachStewardsTitanskin3"
+        }
+      ]
+    },
+    {
+      "id": "BuffStewards2",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Train Stewards get [titanskin] 6 in this room."
+      },
+      "effects": [
+        {
+          "id": "@AttachStewardsTitanskin3"
+        }
+      ]
+    },
+    {
+      "id": "BuffStewards3",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Train Stewards get [titanskin] 10 in this room."
+      },
+      "effects": [
+        {
+          "id": "@AttachStewardsTitanskin3"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnAlbert",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character_data": "@SpawnAlbert"
+    },
+    {
+      "id": "UpgradeAlbert",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1
+    },
+    {
+      "id": "AttachStewardsTitanskin3",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+      "name": "CustomCardEffectAttachRoomAttachment",
+      "param_upgrade": "StewardsTitanskin3",
+      "param_bool": false,
+      "param_bool_2": false,
+      "target_team": "both",
+      "target_subtype": "SubtypesData_TrainSteward"
+    },
+    {
+      "id": "GainTitanSkin3Steward",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "param_status_effects": [
+        {
+          "count": 3,
+          "status": "titanskin"
+        }
+      ],
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_TrainSteward"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Albert",
+      "path": "textures/MechanicalOutrage.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Albert",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Albert"
+        }
+      }
+    }
+  ]
+}

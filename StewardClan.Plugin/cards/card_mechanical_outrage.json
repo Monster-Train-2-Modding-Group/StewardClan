@@ -1,0 +1,76 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "MechanicalOutrage",
+            "names": {
+                "english": "Mechanical Outrage"
+            },
+            "descriptions": {
+                "english": "Deal [effect0.power] damage. Pyre takes [effect1.power] damage."
+            },
+            "cost": 1,
+            "type": "spell",
+            "rarity": "starter",
+            "class": "@ClassSteward",
+            "card_art_reference": "@MechanicalOutrageArt",
+            "targets_room": true,
+            "targetless": false,
+            "traits": [
+                {
+                    "id": "@MechanicalOutragePiercing"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@MechanicalOutrageDealDamage"
+                },
+                {
+                    "id": "@MechanicalOutrageDealDamageToPyre"
+                }
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "MechanicalOutrageDealDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "drop_target_character",
+            "param_int": 5,
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None",
+            "use_magic_power_multipler": true
+        },
+        {
+            "id": "MechanicalOutrageDealDamageToPyre",
+            "name": "CardEffectDamage",
+            "target_mode": "pyre",
+            "param_int": 1,
+            "use_magic_power_multipler": false,
+            "use_status_effect_multiplier": false
+        }
+    ],
+    "traits": [
+        {
+            "id": "MechanicalOutragePiercing",
+            "name": "CardTraitIgnoreArmor"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "MechanicalOutrageArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "MechanicalOutrageArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@MechanicalOutrageArt"
+                }
+            }
+        }
+    ]
+}

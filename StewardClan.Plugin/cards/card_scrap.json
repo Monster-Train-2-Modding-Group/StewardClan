@@ -1,0 +1,75 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "Scrap",
+            "names": {
+                "english": "Scrap"
+            },
+            "descriptions": {
+                "english": "Draw +[effect0.power] next turn."
+            },
+            "rarity": "common",
+            "class": "@ClassSteward",
+            "card_art_reference": "@ScrapArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 1,
+            "traits": [
+                "@ScrapApplications"
+            ],
+            "effects": [
+                {
+                    "id": "@ScrapSacrifice"
+                },
+                {
+                    "id": "@ScrapDamage"
+                }
+            ]
+        }
+    ],
+    "traits": [
+        {
+            "id": "ScrapApplications",
+            "name": "CardTraitScalingAddEffectApplications",
+            "param_int": 2
+        }
+    ],
+    "effects": [
+        {
+            "id": "ScrapSacrifice",
+            "name": "CardEffectSacrifice",
+            "target_mode": "drop_target_character",
+            "param_int": 1
+        },
+        {
+            "id": "ScrapDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "front_in_room",
+            "target_team": "both",
+            "param_int": 50,
+            "target_subtype": "SubtypesData_None",
+            "use_magic_power_multipler": true
+        }
+    ],
+    "sprites": [
+        {
+            "id": "ScrapArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "ScrapArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@ScrapArt"
+                }
+            }
+        }
+    ]
+}

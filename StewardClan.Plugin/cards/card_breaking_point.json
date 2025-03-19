@@ -1,0 +1,65 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "BreakingPoint",
+            "names": {
+                "english": "Breaking Point"
+            },
+            "descriptions": {
+                "english": "Deal [effect0.power] damage to all enemies. Pyre takes [effect1.power] damage."
+            },
+            "cost": 3,
+            "type": "spell",
+            "rarity": "rare",
+            "class": "@ClassSteward",
+            "card_art_reference": "@BreakingPointArt",
+            "pools": [
+                "MegaPool"
+            ],
+            "effects": [
+                {
+                    "id": "@BreakingPointDealDamageToAll"
+                },
+                {
+                    "id": "@BreakingPointDealDamageToPyre"
+                }
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "BreakingPointDealDamageToAll",
+            "name": "CardEffectDamage",
+            "target_mode": "tower",
+            "target_team": "heroes",
+            "param_int": 100,
+            "use_magic_power_multipler": true
+        },
+        {
+            "id": "BreakingPointDealDamageToPyre",
+            "name": "CardEffectDamage",
+            "target_mode": "pyre",
+            "param_int": 7,
+            "use_magic_power_multipler": false,
+            "use_status_effect_multiplier": false
+        }
+    ],
+    "sprites": [
+        {
+            "id": "BreakingPointArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "BreakingPointArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@BreakingPointArt"
+                }
+            }
+        }
+    ]
+}

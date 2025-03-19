@@ -1,0 +1,71 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "TryCatch",
+            "names": {
+                "english": "Try-Catch"
+            },
+            "descriptions": {
+                "english": "Apply +[effect0.power][armor] to the front friendly unit."
+            },
+            "rarity": "common",
+            "class": "@ClassSteward",
+            "card_art_reference": "@TryCatchArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 3,
+            "traits": [
+                {
+                    "id": "@TryCatchOffering"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@TryCatchArmor"
+                }
+            ]
+        }
+    ],
+    "traits": [
+      {
+        "id": "TryCatchOffering",
+        "name": "CardTraitTreasure"
+      }
+    ],
+    "effects": [
+        {
+            "id": "TryCatchArmor",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "front_in_room",
+            "target_team": "monsters",
+            "target_subtype": "SubtypesData_None",
+            "param_status_effects": [
+                {
+                    "status": "armor",
+                    "count": 20
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "TryCatchArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "TryCatchArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@TryCatchArt"
+                }
+            }
+        }
+    ]
+}

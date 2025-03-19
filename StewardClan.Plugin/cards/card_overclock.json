@@ -1,0 +1,62 @@
+{
+  "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+  "cards": [
+    {
+      "id": "Overclock",
+      "names": {
+        "english": "Overclock"
+      },
+      "descriptions": {
+        "english": "Gain [effect0.power][ember]. Pyre takes [effect1.power] damage."
+      },
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art_reference": "@OverclockArt",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [ "MegaPool" ],
+      "cost": 1,
+      "effects": [
+        {
+          "id": "@OverclockEmber"
+        },
+        {
+          "id": "@OverclockPyreDamage"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "OverclockEmber",
+      "name": "CardEffectGainEnergy",
+      "target_mode": "room",
+      "param_int": 2
+    },
+    {
+      "id": "OverclockPyreDamage",
+      "name": "CardEffectDamage",
+      "target_mode": "pyre",
+      "param_int": 1,
+      "use_magic_power_multipler": false,
+      "use_status_effect_multiplier": false
+    }
+  ],
+  "sprites": [
+    {
+      "id": "OverclockArt",
+      "path": "textures/MechanicalOutrage.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "OverclockArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@OverclockArt"
+        }
+      }
+    }
+  ]
+}

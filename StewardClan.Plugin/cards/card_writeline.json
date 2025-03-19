@@ -1,0 +1,71 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "Writeline",
+            "names": {
+                "english": "Console.Writeline"
+            },
+            "descriptions": {
+                "english": "Apply +[effect0.status0][meleeweakness]"
+            },
+            "rarity": "common",
+            "class": "@ClassSteward",
+            "card_art_reference": "@WritelineArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 2,
+            "traits": [
+                {
+                    "id": "@WritelineConsume"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@WritelineStatusEffect"
+                }
+            ]
+        }
+    ],
+    "traits": [
+        {
+            "id": "WritelineConsume",
+            "name": "CardTraitExhaustState"
+        }
+    ],
+    "effects": [
+        {
+            "id": "WritelineStatusEffect",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None",
+            "param_status_effects": [
+                {
+                    "status": "meleeweakness",
+                    "count": 3
+                }
+            ]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "WritelineArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "WritelineArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@WritelineArt"
+                }
+            }
+        }
+    ]
+}

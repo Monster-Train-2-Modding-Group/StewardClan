@@ -1,0 +1,77 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "Decompile",
+            "names": {
+                "english": "Decompile"
+            },
+            "descriptions": {
+                "english": "Draw +[effect0.power] next turn."
+            },
+            "rarity": "common",
+            "class": "@ClassSteward",
+            "card_art_reference": "@DecompileArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 1,
+            "triggers": [
+                {
+                    "id": "@DecompileSlay"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@DecompileDamage"
+                }
+            ]
+        }
+    ],
+    "card_triggers": [
+        {
+            "id": "DecompileSlay",
+            "trigger": "on_kill",
+            "effects": [
+                {
+                    "id": "@DecompileDiscard"
+                }
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "DecompileDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_int": 25,
+            "use_magic_power_multipler": true
+        },
+        {
+            "id": "DecompileDiscard",
+            "name": "CardEffectRandomDiscard",
+            "param_int": 1,
+            "target_mode": "discard"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "DecompileArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "DecompileArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@DecompileArt"
+                }
+            }
+        }
+    ]
+}

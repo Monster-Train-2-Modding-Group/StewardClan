@@ -1,0 +1,57 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "Gravitas",
+            "names": {
+                "english": "Gravitas"
+            },
+            "descriptions": {
+                "english": "Reduce [cooldown] to [effect0.power]"
+            },
+            "cost": 0,
+            "type": "spell",
+            "rarity": "uncommon",
+            "class": "@ClassSteward",
+            "card_art_reference": "@GravitasArt",
+            "pools": [
+                "MegaPool"
+            ],
+            "targets_room": true,
+            "targetless": false,
+            "effects": [
+                {
+                    "id": "@GravitasResetCooldown"
+                }
+            ]
+        }
+    ],
+    "effects": [
+        {
+            "id": "GravitasResetCooldown",
+            "name": "CardEffectAdjustAbilityCooldown",
+            "target_mode": "drop_target_character",
+            "param_bool": true,
+            "param_int": 0,
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "GravitasArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "GravitasArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@GravitasArt"
+                }
+            }
+        }
+    ]
+}

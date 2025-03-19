@@ -1,139 +1,4 @@
 {
-  "cards": [
-    {
-      "id": "DealDamageAndPyre",
-      "names": {
-        "english": "Mechanical Outrage"
-      },
-      "descriptions": {
-        "english": "Deal [effect0.power] damage. Pyre takes [effect1.power] damage."
-      },
-      "cost": 1,
-      "type": "spell",
-      "rarity": "starter",
-      "class": "@ClassSteward",
-      "card_art_reference": "@MechanicalOutrage",
-      "targets_room": true,
-      "targetless": false,
-      "effects": [
-        {
-          "id": "@DealDamageToSelected"
-        },
-        {
-          "id": "@DealDamageToPyre"
-        }
-      ]
-    },
-    {
-      "id": "Gravitas",
-      "names": {
-        "english": "A Butler's Gravitas"
-      },
-      "descriptions": {
-        "english": "Reduce [cooldown] to [effect0.power]"
-      },
-      "cost": 0,
-      "type": "spell",
-      "rarity": "common",
-      "class": "@ClassSteward",
-      "card_art_reference": "@MechanicalOutrage",
-      "pools": [ "MegaPool" ],
-      "targets_room": true,
-      "targetless": false,
-      "effects": [
-        {
-          "id": "@ResetCooldown"
-        }
-      ]
-    },
-    {
-      "id": "PyreRefactor",
-      "names": {
-        "english": "Pyre Refactor"
-      },
-      "descriptions": {
-        "english": "Your Pyre gets +[effect0.pyreattackpower][attack] and +[effect1.pyrehealthpower][pyrehealth]."
-      },
-      "cost": 2,
-      "type": "spell",
-      "rarity": "uncommon",
-      "class": "@ClassSteward",
-      "card_art_reference": "@MechanicalOutrage",
-      "pools": [ "MegaPool" ],
-      "traits": ["@Consume"],
-      "effects": [
-        {
-          "id": "@BuffPyreAttack"
-        },
-        {
-          "id": "@HealPyre"
-        }
-      ]
-    },
-    {
-      "id": "BreakingPoint",
-      "names": {
-        "english": "Breaking Point"
-      },
-      "descriptions": {
-        "english": "Deal [effect0.power] damage to all enemies. Pyre takes [effect1.power] damage."
-      },
-      "cost": 3,
-      "type": "spell",
-      "rarity": "rare",
-      "class": "@ClassSteward",
-      "card_art_reference": "@MechanicalOutrage",
-      "pools": [ "MegaPool" ],
-      "effects": [
-        {
-          "id": "@DealDamageToAll"
-        },
-        {
-          "id": "@DealDamageToPyre7"
-        }
-      ]
-    },
-    {
-      "id": "SpawnAlbert",
-      "names": {
-        "group": "CardData_Albert",
-        "english": "Mad Albert",
-        "french": "Dragon Blanc Aux Yeux Bleux"
-      },
-      "descriptions": {
-        "group": "CardData_Albert",
-        "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]"
-      },
-      "card_art_reference": "@Albert",
-      "cost": 0,
-      "type": "monster",
-      "cost_type": "x",
-      "rarity": "champion",
-      "class": "@ClassSteward",
-      "unlock_level": 0,
-      "targets_room": true,
-      "targetless": false,
-      "traits": [
-        {
-          "id": "@BuffAttackByCost"
-        },
-        {
-          "id": "@BuffHealthByCost"
-        }
-      ],
-      "effects": [
-        {
-          "id": "@SpawnAlbert"
-        }
-      ],
-      "lore_tooltips": [
-        {
-          "id": "",
-          "english": "A Train Steward gone mad, luckily he is on our side."
-        }
-      ]
-    }
-  ],
   "classes": [
     {
       "id": "ClassSteward",
@@ -185,9 +50,8 @@
           "card_data": "@SpawnAlbert",
           "starter_card": "@DealDamageAndPyre",
           "upgrade_tree": [
-            [ "@AlbertXReductionBuffer" ],
-            [ "@AlbertStewardBuff" ],
-            [ "@AlbertXReductionBuffer" ]
+            [ "@AlbertXReductionBuffer1", "@AlbertXReductionBuffer2", "@AlbertXReductionBuffer3" ],
+            [ "@AlbertStewardBuff1", "AlbertStewardBuff2", "AlbertStewardBuff3" ]
           ],
           "icon": "@ClanIcon",
           "locked_icon": "@ClanLockedIcon",
@@ -207,145 +71,77 @@
       "class_preview_texts": []
     }
   ],
-  "characters": [
+  "map_nodes": [
     {
-      "id": "SpawnAlbert",
-      "names": {
-        "group": "CharacterData_Albert",
-        "english": "Albert"
+      "id": "RewardNodeUnitPackSteward",
+      "type": "reward",
+      "map_icon": "@StewardIconSmall",
+      "minimap_icon": "@StewardIconSmall",
+      "prefab": "@StewardMapIcon",
+      "titles": {
+        "english": "Steward Banner"
       },
-      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-      "size": 3,
-      "health": 5,
-      "can_be_healed": true,
-      "death_type": "large",
-      "can_attack": true,
-      "attack_damage": 10,
-      "attack_teleports_to_defender": true,
-      "death_slides_backwards": true,
-      "chosen_variant": false,
-      "titan_affinity": "none",
-      "triggers": [
-        {
-          "id": "@SummonAlbert"
-        }
+      "descriptions": {
+        "english": "Gain a Steward Unit"
+      },
+      "map_pools": [
+        "RandomChosenMainClassUnit",
+        "RandomChosenSubClassUnit"
       ],
-      "subtypes": [ "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34", "SubtypesData_TrainSteward" ],
-      "equip_limit": 1,
-      "endless_stats": {
-        "health": 5,
-        "attack": 10
+      "is_banner": true,
+      "extensions": [
+        {
+          "reward": {
+            "required_class": "@ClassSteward",
+            "rewards": [
+              {
+                "id": "@StewardBannerReward"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "StewardBannerCardPool",
+      "cards": [ "@SpawnBiggerSteward" ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "StewardBannerReward",
+      "type": "cardpool",
+      "extensions": [
+        {
+          "cardpool": {
+            "cardpool": "@StewardBannerCardPool"
+          }
+        }
+      ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "StewardMapIcon",
+      "type": "map_node_icon",
+      "extensions": {
+        "map_node_icon": {
+          "disabled_sprite": "@StewardBanner",
+          "enabled_sprite": "@StewardBanner",
+          "frozen_sprite": "@StewardBanner",
+          "visited_sprite_disabled": "@StewardBanner",
+          "visited_sprite_enabled": "@StewardBanner"
+        }
       }
     }
   ],
-  "character_triggers": [
-    {
-      "id": "SummonAlbert",
-      "trigger": "on_spawn",
-      "effects": [
-        {
-          "id": "@UpgradeAlbert"
-        }
-      ]
-    },
-    {
-      "id": "BuffStewards",
-      "trigger": "after_spawn_enchant",
-      "descriptions": {
-        "english": "Friendly Stewards get [titanskin] [effect0.status0.power]."
-      },
-      "effects": [
-        {
-          "id": "@EnchantTitanSkin3"
-        }
-      ]
-    }
-  ],
-  "effects": [
-    {
-      "id": "SpawnAlbert",
-      "name": "CardEffectSpawnMonster",
-      "target_mode": "room",
-      "target_card_type": "spell",
-      "param_character_data": "@SpawnAlbert"
-    },
-    {
-      "id": "UpgradeAlbert",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_int": 1
-    },
-    {
-      "id": "DealDamageToSelected",
-      "name": "CardEffectDamage",
-      "target_mode": "drop_target_character",
-      "param_int": 5,
-      "target_team": "both",
-      "target_subtype": "SubtypesData_None",
-      "use_magic_power_multipler": true
-    },
-    {
-      "id": "DealDamageToAll",
-      "name": "CardEffectDamage",
-      "target_mode": "tower",
-      "target_team": "heroes",
-      "param_int": 100,
-      "use_magic_power_multipler": true
-    },
-    {
-      "id": "DealDamageToPyre",
-      "name": "CardEffectDamage",
-      "target_mode": "pyre",
-      "param_int": 1,
-      "use_magic_power_multipler": false,
-      "use_status_effect_multiplier": false
-    },
-    {
-      "id": "DealDamageToPyre7",
-      "name": "CardEffectDamage",
-      "target_mode": "pyre",
-      "param_int": 7,
-      "use_magic_power_multipler": false,
-      "use_status_effect_multiplier": false
-    },
-    {
-      "id": "EnchantTitanSkin3",
-      "name": "CardEffectEnchant",
-      "target_mode": "room",
-      "param_status_effects":[
-        {
-          "status": "titanskin",
-          "count": 3
-        }
-      ],
-      "target_subtype": "SubtypesData_TrainSteward"
-    },
-    {
-      "id": "ResetCooldown",
-      "name": "CardEffectAdjustAbilityCooldown",
-      "target_mode": "drop_target_character",
-      "param_bool": true,
-      "param_int": 0,
-      "target_team": "both",
-      "target_subtype": "SubtypesData_None"
-    },
-    {
-      "id": "BuffPyreAttack",
-      "name": "CardEffectBuffDamage",
-      "target_mode": "pyre",
-      "param_int": 10,
-      "use_magic_power_multipler": false
-    },
-    {
-      "id": "HealPyre",
-      "name": "CardEffectHealTrain",
-      "target_mode": "pyre",
-      "param_int": 2,
-      "use_magic_power_multipler": false,
-      "use_status_effect_multiplier": false
-    }
-  ],
   "sprites": [
+    {
+      "id": "StewardBanner",
+      "path": "textures/StewardBanner.png"
+    },
     {
       "id": "StewardIconSmall",
       "path": "textures/StewardIconSmall.png"
@@ -363,14 +159,6 @@
       "path": "textures/StewardSilhouette.png"
     },
     {
-      "id": "MechanicalOutrage",
-      "path": "textures/MechanicalOutrage.png"
-    },
-    {
-      "id": "Albert",
-      "path": "textures/MechanicalOutrage.png"
-    },
-    {
       "id": "ClanIcon",
       "path": "textures/StewardClanIcon.png"
     },
@@ -381,59 +169,6 @@
     {
       "id": "Portrait",
       "path": "textures/StewardPortrait.png"
-    }
-  ],
-  "traits": [
-    {
-      "id": "BuffAttackByCost",
-      "name": "CardTraitScalingUpgradeUnitAttack",
-      "track_type": "played_cost",
-      "param_int": 2
-    },
-    {
-      "id": "BuffHealthByCost",
-      "name": "CardTraitScalingUpgradeUnitHealth",
-      "track_type": "played_cost",
-      "param_int": 4
-    },
-    {
-      "id": "Consume",
-      "name": "CardTraitExhaustState"
-    }
-  ],
-  "game_objects": [
-    {
-      "id": "MechanicalOutrage",
-      "type": "card_art",
-      "sprite": "@MechanicalOutrage"
-    },
-    {
-      "id": "Albert",
-      "type": "card_art",
-      "sprite": "@Albert"
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "AlbertStewardBuff",
-      "titles": {
-        "english": "Stewardly 1"
-      },
-      "bonus_damage": 7,
-      "bonus_hp": 0,
-      "bonus_size": -1,
-      "trigger_upgrades": [
-        {
-          "id": "@BuffStewards"
-        }
-      ]
-    },
-    {
-      "id": "AlbertXReductionBuffer",
-      "titles": {
-        "english": "Utility 1"
-      },
-      "x_cost_reduction": 3
     }
   ]
 }

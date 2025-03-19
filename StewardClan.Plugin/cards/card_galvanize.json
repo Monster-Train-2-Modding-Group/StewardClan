@@ -1,0 +1,95 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "Galvanize",
+            "names": {
+                "english": "Galvanize"
+            },
+            "descriptions": {
+                "english": "-[effect0.powerabs][capacity] and +[effect1.power][magicpower] on this floor."
+            },
+            "rarity": "uncommon",
+            "class": "@ClassSteward",
+            "card_art_reference": "@GalvanizeArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 1,
+            "traits": [
+                {
+                    "id": "@GalvanizeConsume"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@GalvanizeReduceCapacity"
+                },
+                {
+                    "id": "@GalvanizeUpgradeRoomAdditionalMagicPower"
+                }
+            ]
+        }
+    ],
+    "traits": [
+      {
+        "id": "GalvanizeConsume",
+        "name": "CardTraitExhaustState"
+      }
+    ],
+    "effects": [
+      {
+        "id": "GalvanizeReduceCapacity",
+        "name": "CardEffectAdjustRoomCapacity",
+        "target_mode": "room",
+        "param_int": -2
+      },
+      {
+        "id": "GalvanizeUpgradeRoomAdditionalMagicPower",
+        "name": "CardEffectAttachTrainRoomAttachment",
+        "target_mode": "room",
+        "param_upgrade": "@GalvanizeMagicPowerRoom",
+        "param_bool": true
+      }
+    ],
+    "upgrades": [
+        {
+            "id": "GalvanizeMagicPowerRoom",
+            "room_modifier_upgrades": [
+                {
+                    "id": "@GalvanizeMagicPowerRoomModifier"
+                }
+            ]
+        },
+        {
+            "id": "GalvanizeMagicPower",
+            "bonus_damage": 5,
+            "bonus_heal": 5
+        }
+    ],
+    "room_modifiers": [
+        {
+            "id": "GalvanizeMagicPowerRoomModifier",
+            "param_card_upgrade": "@GalvanizeMagicPower"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "GalvanizeArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "GalvanizeArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@GalvanizeArt"
+                }
+            }
+        }
+    ]
+}

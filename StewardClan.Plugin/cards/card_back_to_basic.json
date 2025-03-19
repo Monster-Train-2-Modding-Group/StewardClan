@@ -1,0 +1,82 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "BackToBasics",
+            "names": {
+                "english": "Back to Basics"
+            },
+            "descriptions": {
+                "english": "Remove all [buff] effects. Gain [multistrike][effect1.status0.power]"
+            },
+            "rarity": "uncommon",
+            "class": "@ClassSteward",
+            "card_art_reference": "@BackToBasicsArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 2,
+            "traits": [
+                {
+                    "id": "@BackToBasicsConsume"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@BackToBasicsRemoveBuffs"
+                },
+                {
+                    "id": "@BackToBasicsGainMultiStrike"
+                }
+            ]
+        }
+    ],
+    "traits": [
+      {
+        "id": "BackToBasicsConsume",
+        "name": "CardTraitExhaustState"
+      }
+    ],
+    "effects": [
+        {
+            "id": "BackToBasicsRemoveBuffs",
+            "name": "CardEffectRemoveAllStatusEffects",
+            "param_int": 0,
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None"
+        },
+        {
+            "id": "BackToBasicsGainMultiStrike",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "param_status_effects": [
+                {
+                    "status": "multistrike",
+                    "count": 1
+                }
+            ],
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None"
+        }
+    ],
+    "sprites": [
+        {
+            "id": "BackToBasicsArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "BackToBasicsArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@BackToBasicsArt"
+                }
+            }
+        }
+    ]
+}

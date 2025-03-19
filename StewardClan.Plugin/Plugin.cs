@@ -2,6 +2,7 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using Microsoft.Extensions.Configuration;
+using Steward_Clan.Plugin.Extensions;
 using TrainworksReloaded.Core;
 
 namespace Steward_Clan.Plugin
@@ -20,11 +21,24 @@ namespace Steward_Clan.Plugin
                 MyPluginInfo.PLUGIN_GUID,
                 c =>
                 {
-                    c.AddJsonFile("plugin.json");
+                    c.AddMergedJsonFile(
+                        "plugin.json",
+                        "champion_albert.json",
+                        "character_bigger_steward.json",
+                        "card_breaking_point.json",
+                        "card_back_to_basic.json",
+                        "card_galvanize.json",
+                        "card_gravitas.json",
+                        "card_mechanical_outrage.json",
+                        "card_overclock.json",
+                        "card_pyre_refactor.json",
+                        "card_steamburst.json"
+                        );
                 }
             );
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+            Logger.LogInfo($"{typeof(CustomCardEffectAttachRoomAttachment).AssemblyQualifiedName}");
         }
     }
 }
