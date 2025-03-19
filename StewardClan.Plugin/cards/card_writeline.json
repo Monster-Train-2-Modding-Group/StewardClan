@@ -7,7 +7,7 @@
                 "english": "Console.Writeline"
             },
             "descriptions": {
-                "english": "Apply +[effect0.status0][meleeweakness]"
+                "english": "Apply [meleeweakness] [effect0.status0.count]"
             },
             "rarity": "common",
             "class": "@ClassSteward",
@@ -45,7 +45,7 @@
             "target_subtype": "SubtypesData_None",
             "param_status_effects": [
                 {
-                    "status": "meleeweakness",
+                    "status": "melee weakness",
                     "count": 3
                 }
             ]

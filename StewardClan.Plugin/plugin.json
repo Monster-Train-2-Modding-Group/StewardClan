@@ -46,9 +46,9 @@
       ],
       "champions": [
         {
-          "id": "StewardChampion",
-          "card_data": "@SpawnAlbert",
-          "starter_card": "@DealDamageAndPyre",
+          "id": "AlbertStewardChampion",
+          "card_data": "@Albert",
+          "starter_card": "@MechanicalOutrage",
           "upgrade_tree": [
             [ "@AlbertXReductionBuffer1", "@AlbertXReductionBuffer2", "@AlbertXReductionBuffer3" ],
             [ "@AlbertStewardBuff1", "AlbertStewardBuff2", "AlbertStewardBuff3" ]
@@ -106,7 +106,7 @@
   "card_pools": [
     {
       "id": "StewardBannerCardPool",
-      "cards": [ "@SpawnBiggerSteward" ]
+      "cards": [ "@SpawnBiggerSteward", "@WrenchHead" ]
     }
   ],
   "rewards": [

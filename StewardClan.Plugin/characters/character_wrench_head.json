@@ -1,0 +1,94 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+      {
+        "id": "WrenchHead",
+        "names": { "english": "Wrench-Head" },
+        "card_art_reference": "@WrenchHead",
+        "cost": 1,
+        "type": "monster",
+        "cost_type": "default",
+        "rarity": "uncommon",
+        "class": "@ClassSteward",
+        "unlock_level": 0,
+        "targets_room": true,
+        "effects": [
+          {
+            "id": "@SpawnWrenchHead"
+          }
+        ],
+        "lore_tooltips": [
+          {
+            "english": "heading into the wrench"
+          }
+        ],
+        "pools": [ "UnitsAllBanner" ]
+      }
+    ],
+    "characters": [
+      {
+        "id": "WrenchHead",
+        "names": {
+            "english": "Wrench-Head"
+        },
+        "can_attack": true,
+        "size": 2,
+        "attack_damage": 15,
+        "health": 30,
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "endless_stats": {
+          "attack": 15,
+          "health": 30
+        },
+        "triggers": 
+        [
+            {
+                "id": "@WrenchHeadStrike"
+            }
+        ]
+      }
+    ],
+    "character_triggers": [
+        {
+            "id": "WrenchHeadStrike",
+            "trigger": "on_attacking",
+            "effects": [
+                {
+                    "id": "@WrenchHeadHeal"
+                }
+            ]
+        }
+    ],
+    "effects": [
+      {
+        "id": "SpawnWrenchHead",
+        "name": "CardEffectSpawnMonster",
+        "target_mode": "room",
+        "target_card_type": "spell",
+        "param_character_data": "@WrenchHead"
+      },
+      {
+        "id": "WrenchHeadHeal",
+        "name": "CardEffectHealTrain",
+        "target_mode": "pyre",
+        "param_int": 1
+      }
+    ],
+    "sprites": [
+      {
+        "id": "WrenchHead",
+        "path": "textures/MechanicalOutrage.png"
+      }
+    ],
+    "game_objects": [
+      {
+        "id": "WrenchHead",
+        "type": "card_art",
+        "extensions": {
+          "card_art": {
+            "sprite": "@WrenchHead"
+          }
+        }
+      }
+    ]
+  }

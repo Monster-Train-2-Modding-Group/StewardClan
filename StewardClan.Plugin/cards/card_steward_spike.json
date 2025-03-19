@@ -1,0 +1,101 @@
+{
+    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "cards": [
+        {
+            "id": "StewardSpike",
+            "names": {
+                "english": "Spike of the Stewards"
+            },
+            "descriptions": {
+                "english": "Apply +[effect0.status0.count][titanskin]. Pyre takes [effect1.power] damage"
+            },
+            "rarity": "rare",
+            "class": "@ClassSteward",
+            "card_art_reference": "@StewardSpikeArt",
+            "targets_room": true,
+            "targetless": false,
+            "pools": [
+                "MegaPool"
+            ],
+            "cost": 0,
+            "cost_type": "x",
+            "traits": [
+                {
+                    "id": "@StewardSpikeConsume"
+                },
+                {
+                    "id": "@StewardSpikeScaling"
+                },
+                {
+                    "id": "@StewardSpikeScalingDamage"
+                }
+            ],
+            "effects": [
+                {
+                    "id": "@StewardSpikeStatusEffect"
+                },
+                {
+                    "id": "@StewardSpikeDamage"
+                }
+            ]
+        }
+    ],
+    "traits": [
+        {
+            "id": "StewardSpikeConsume",
+            "name": "CardTraitExhaustState"
+        },
+        {
+            "id": "StewardSpikeScaling",
+            "name": "CardTraitScalingAddStatusEffect",
+            "track_type": "played_cost",
+            "param_int": 1
+        },
+        {
+            "id": "StewardSpikeScalingDamage",
+            "name": "CardTraitScalingAddDamage",
+            "track_type": "played_cost",
+            "param_int": 1
+        }
+    ],
+    "effects": [
+        {
+            "id": "StewardSpikeEffect",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None",
+            "param_status_effects": [
+                {
+                    "status": "titanskin",
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "id": "StewardSpikeDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "pyre",
+            "param_int": 0,
+            "use_magic_power_multipler": false,
+            "use_status_effect_multiplier": false
+        }
+    ],
+    "sprites": [
+        {
+            "id": "StewardSpikeArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "StewardSpikeArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@StewardSpikeArt"
+                }
+            }
+        }
+    ]
+}

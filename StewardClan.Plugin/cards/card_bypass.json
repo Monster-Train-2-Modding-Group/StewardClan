@@ -7,7 +7,7 @@
                 "english": "Bypass"
             },
             "descriptions": {
-                "english": "Draw +[effect0.power] next turn."
+                "english": "Deal [effect0.power] damage."
             },
             "rarity": "common",
             "class": "@ClassSteward",

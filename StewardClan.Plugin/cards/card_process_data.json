@@ -7,7 +7,7 @@
                 "english": "Process Data"
             },
             "descriptions": {
-                "english": "[advance]. +[effect0.[power][health]"
+                "english": "[advance]. +[effect1.power][health]"
             },
             "rarity": "common",
             "class": "@ClassSteward",
@@ -20,7 +20,10 @@
             "cost": 1,
             "effects": [
                 {
-                    "id": "@CacheDrawNextTurn"
+                    "id": "@ProcessDataAdvance"
+                },
+                {
+                    "id": "@ProcessDataBuffMaxHealth"
                 }
             ]
         }

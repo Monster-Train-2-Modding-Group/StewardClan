@@ -2,72 +2,62 @@
     "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
     "cards": [
         {
-            "id": "Scrap",
+            "id": "Disarm",
             "names": {
-                "english": "Scrap"
+                "english": "Disarm"
             },
             "descriptions": {
-                "english": "[sacrifice]. Deal [effect1.power] twice to the front enemy unit."
+                "english": "Remove equipment from a unit. +[effect1.power][health]"
             },
             "rarity": "uncommon",
             "class": "@ClassSteward",
-            "card_art_reference": "@ScrapArt",
+            "card_art_reference": "@DisarmArt",
             "targets_room": true,
             "targetless": false,
             "pools": [
                 "MegaPool"
             ],
             "cost": 1,
-            "traits": [
-                "@ScrapApplications"
-            ],
             "effects": [
                 {
-                    "id": "@ScrapSacrifice"
+                    "id": "@DisarmRemoveEquipment"
                 },
                 {
-                    "id": "@ScrapDamage"
+                    "id": "@DisarmArtBuffMaxHealth"
                 }
             ]
         }
     ],
-    "traits": [
-        {
-            "id": "ScrapApplications",
-            "name": "CardTraitScalingAddEffectApplications",
-            "param_int": 2
-        }
-    ],
     "effects": [
         {
-            "id": "ScrapSacrifice",
-            "name": "CardEffectSacrifice",
+            "id": "DisarmRemoveEquipment",
+            "name": "CardEffectRemoveEquipment",
             "target_mode": "drop_target_character",
-            "param_int": 1
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None"
         },
         {
-            "id": "ScrapDamage",
-            "name": "CardEffectDamage",
-            "target_mode": "front_in_room",
+            "id": "DisarmArtBuffMaxHealth",
+            "name": "CardEffectBuffMaxHealth",
+            "param_int": 30,
+            "target_mode": "last_targeted_characters",
             "target_team": "both",
-            "param_int": 50,
-            "target_subtype": "SubtypesData_None",
-            "use_magic_power_multipler": true
+            "target_subtype": "SubtypesData_None"
         }
     ],
     "sprites": [
         {
-            "id": "ScrapArt",
+            "id": "DisarmArt",
             "path": "textures/MechanicalOutrage.png"
         }
     ],
     "game_objects": [
         {
-            "id": "ScrapArt",
+            "id": "DisarmArt",
             "type": "card_art",
             "extensions": {
                 "card_art": {
-                    "sprite": "@ScrapArt"
+                    "sprite": "@DisarmArt"
                 }
             }
         }

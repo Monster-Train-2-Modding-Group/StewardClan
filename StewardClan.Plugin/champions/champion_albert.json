@@ -1,7 +1,8 @@
 {
+  "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
   "cards": [
     {
-      "id": "SpawnAlbert",
+      "id": "Albert",
       "names": {
         "group": "CardData_Albert",
         "english": "Mad Albert",
@@ -11,7 +12,7 @@
         "group": "CardData_Albert",
         "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]"
       },
-      "card_art_reference": "@Albert",
+      "card_art_reference": "@AlbertArt",
       "cost": 0,
       "type": "monster",
       "cost_type": "x",
@@ -22,10 +23,10 @@
       "targetless": false,
       "traits": [
         {
-          "id": "@BuffAttackByCost1"
+          "id": "@AlbertBuffAttackByCost"
         },
         {
-          "id": "@BuffHealthByCost1"
+          "id": "@AlbertBuffHealthByCost"
         }
       ],
       "effects": [
@@ -35,7 +36,6 @@
       ],
       "lore_tooltips": [
         {
-          "id": "",
           "english": "A Train Steward gone mad, luckily he is on our side."
         }
       ]
@@ -43,7 +43,7 @@
   ],
   "characters": [
     {
-      "id": "SpawnAlbert",
+      "id": "Albert",
       "names": {
         "group": "CharacterData_Albert",
         "english": "Albert"
@@ -61,7 +61,7 @@
       "titan_affinity": "none",
       "triggers": [
         {
-          "id": "@SummonAlbert"
+          "id": "@AlbertStatsOnSummon"
         }
       ],
       "subtypes": [
@@ -77,13 +77,13 @@
   ],
   "traits": [
     {
-      "id": "BuffAttackByCost1",
+      "id": "AlbertBuffAttackByCost",
       "name": "CardTraitScalingUpgradeUnitAttack",
       "track_type": "played_cost",
       "param_int": 2
     },
     {
-      "id": "BuffHealthByCost1",
+      "id": "AlbertBuffHealthByCost",
       "name": "CardTraitScalingUpgradeUnitHealth",
       "track_type": "played_cost",
       "param_int": 4
@@ -113,17 +113,31 @@
       "param_int": 9
     }
   ],
+  "room_modifiers": [
+    {
+      "id": "AlbertEngineeringStation",
+      "param_card_upgrade": "@AlbertEngineeringStationUpgrade"
+    }
+  ],
   "upgrades": [
     {
-      "id": "StewardsTitanskin3",
+      "id": "AlbertEngineeringStation",
+      "room_modifier_upgrades": [
+          {
+              "id": "@AlbertEngineeringStation"
+          }
+      ],
       "titles": {
         "english": "Engineering Station"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": true,
       "descriptions": {
-        "english": "Stewards get [titanskin] 3 on summon."
-      },
+        "english": "Train Stewards get +10/+10 and [titanskin] 2."
+      }
+    },
+    {
+      "id": "AlbertEngineeringStationUpgrade",
       "bonus_hp": 10,
       "bonus_damage": 10,
       "status_effect_upgrades": [
@@ -224,21 +238,11 @@
   ],
   "character_triggers": [
     {
-      "id": "SummonAlbert",
+      "id": "AlbertStatsOnSummon",
       "trigger": "on_spawn",
       "effects": [
         {
-          "id": "@UpgradeAlbert"
-        }
-      ]
-    },
-    {
-      "id": "TitanSkin3OnEnter",
-      "trigger": "on_spawn",
-      "hide_tooltip": true,
-      "effects": [
-        {
-          "id": "@GainTitanSkin3Steward"
+          "id": "@AlbertAddTempCard"
         }
       ]
     },
@@ -246,11 +250,11 @@
       "id": "BuffStewards1",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Attach a room that gives Train Stewards +10[attack] and +10[health]"
+        "english": "Attach a room that gives Train Stewards +10[attack], +10[health], and +2 [titanskin]"
       },
       "effects": [
         {
-          "id": "@AttachStewardsTitanskin3"
+          "id": "@AlbertAttachRoom"
         }
       ]
     },
@@ -262,7 +266,7 @@
       },
       "effects": [
         {
-          "id": "@AttachStewardsTitanskin3"
+          "id": "@AlbertAttachRoom"
         }
       ]
     },
@@ -274,7 +278,7 @@
       },
       "effects": [
         {
-          "id": "@AttachStewardsTitanskin3"
+          "id": "@AlbertAttachRoom"
         }
       ]
     }
@@ -285,52 +289,39 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@SpawnAlbert"
+      "param_character_data": "@Albert"
     },
     {
-      "id": "UpgradeAlbert",
+      "id": "AlbertAddTempCard",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
       "param_int": 1
     },
     {
-      "id": "AttachStewardsTitanskin3",
+      "id": "AlbertAttachRoom",
       "target_mode": "room",
       "target_ignore_bosses": true,
       "name": "CustomCardEffectAttachRoomAttachment",
-      "param_upgrade": "StewardsTitanskin3",
+      "param_upgrade": "@AlbertEngineeringStation",
       "param_bool": false,
       "param_bool_2": false,
       "target_team": "both",
-      "target_subtype": "SubtypesData_TrainSteward"
-    },
-    {
-      "id": "GainTitanSkin3Steward",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
-      "param_status_effects": [
-        {
-          "count": 3,
-          "status": "titanskin"
-        }
-      ],
-      "target_team": "monsters",
       "target_subtype": "SubtypesData_TrainSteward"
     }
   ],
   "sprites": [
     {
-      "id": "Albert",
+      "id": "AlbertArt",
       "path": "textures/MechanicalOutrage.png"
     }
   ],
   "game_objects": [
     {
-      "id": "Albert",
+      "id": "AlbertArt",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@Albert"
+          "sprite": "@AlbertArt"
         }
       }
     }
