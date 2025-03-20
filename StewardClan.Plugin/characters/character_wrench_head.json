@@ -32,6 +32,7 @@
             "english": "Wrench-Head"
         },
         "can_attack": true,
+        "can_be_healed": true,
         "size": 2,
         "attack_damage": 15,
         "health": 30,

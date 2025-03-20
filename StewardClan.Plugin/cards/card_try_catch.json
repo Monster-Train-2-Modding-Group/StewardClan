@@ -6,9 +6,9 @@
             "names": {
                 "english": "Try-Catch"
             },
-            "descriptions": {
-                "english": "Apply +[effect0.power][armor] to the front friendly unit."
-            },
+          "descriptions": {
+            "english": "Apply [armor] [effect0.status0.power] to the front friendly unit."
+          },
             "rarity": "common",
             "class": "@ClassSteward",
             "card_art_reference": "@TryCatchArt",

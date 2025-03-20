@@ -45,7 +45,7 @@
             "target_subtype": "SubtypesData_None",
             "param_status_effects": [
                 {
-                    "status": "rage",
+                    "status": "buff",
                     "count": 3
                 },
                 {

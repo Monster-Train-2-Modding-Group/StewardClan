@@ -35,6 +35,7 @@
           "english": "Steward Amalgam"
       },
       "can_attack": true,
+      "can_be_healed": true,
       "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
       "subtypes": [ "SubtypesData_TrainSteward", "SubtypesData_Monstrosity", "SubtypesData_BannerUnit" ],
       "starting_status_effects": [
