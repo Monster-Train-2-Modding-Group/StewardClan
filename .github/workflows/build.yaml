@@ -47,11 +47,6 @@ jobs:
           path: ./dist
       - name: Zip Plugin
         run: zip -r Clan.zip ./dist
-      - name: Get Release ID
-        id: get_release
-        uses: bruceadams/get-release@v1.3.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
