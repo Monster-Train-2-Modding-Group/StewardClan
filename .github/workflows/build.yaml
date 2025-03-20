@@ -8,6 +8,7 @@ on:
       - v*
 
 permissions:
+  packages: write
   contents: write
 
 env:
@@ -42,13 +43,22 @@ jobs:
       - name: Upload Build
         uses: actions/upload-artifact@v4
         with:
-          name: thunderstore
+          name: clan
           path: ./dist
+      - name: Zip Plugin
+        run: zip -r Clan.zip ./dist
+      - name: Get Release ID
+        id: get_release
+        uses: bruceadams/get-release@v1.3.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: dist/*
+          files: Clan.zip
+          prerelease: true
+          generate_release_notes: true
       - name: Publish to Thunderstore
         run: tcli publish --file ${{ env.mod_namespace }}-${{ env.mod_name }}-*.zip --token ${{ secrets.THUNDERSTORE_TOKEN }}
         if: startsWith(github.ref, 'refs/tags/')
