@@ -50,9 +50,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Clan.zip
+          files: ${{ env.mod_namespace }}-${{ env.mod_name }}-${{ github.ref_name }}.zip
           prerelease: true
           generate_release_notes: true
       - name: Publish to Thunderstore
-        run: tcli publish --file "${{ env.mod_namespace }}-${{ env.mod_name }}-${{ github.ref_name }}.zip" --token ${{ secrets.THUNDERSTORE_TOKEN }}
+        run: tcli publish --file "${{ env.mod_namespace }}-${{ env.mod_name }}-${{ github.ref_name }}.zip" --token ${{ secrets.TCLI_AUTH_TOKEN }}
         if: startsWith(github.ref, 'refs/tags/')
