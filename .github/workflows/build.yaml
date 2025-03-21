@@ -14,7 +14,7 @@ permissions:
 env:
   base_version: '0.1.0'
   mod_namespace: 'MT2'
-  mod_name: 'Steward Clan'
+  mod_name: 'Steward_Clan'
 
 jobs:
   build:
