@@ -39,7 +39,9 @@ jobs:
       - name: Build Release
         run: dotnet build -c Release --no-restore --output ./dist
       - name: Build thunderstore package
-        run: tcli build
+        run: |
+          tcli build
+          mv ${{ env.mod_namespace }}-${{ env.mod_name }}-${{ github.ref_name }}.zip ./dist/
       - name: Upload Build
         uses: actions/upload-artifact@v4
         with:
