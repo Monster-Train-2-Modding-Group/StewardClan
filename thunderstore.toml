@@ -23,8 +23,8 @@ target = ""
 
 [publish]
 repository = "https://thunderstore.io"
-communities = [ "monstertrain2", ]
+communities = [ "monster-train-2", ]
 [publish.categories]
-monstertrain2 = [ "items", "skills", ]
+monster-train-2 = [ "Mods" ]
 
 
