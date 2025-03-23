@@ -51,7 +51,8 @@
           "starter_card": "@MechanicalOutrage",
           "upgrade_tree": [
             [ "@AlbertXReductionBuffer1", "@AlbertXReductionBuffer2", "@AlbertXReductionBuffer3" ],
-            [ "@AlbertStewardBuff1", "AlbertStewardBuff2", "AlbertStewardBuff3" ]
+            [ "@AlbertStewardBuff1", "@AlbertStewardBuff2", "@AlbertStewardBuff3" ],
+            [ "@AlbertEmberBuff1", "@AlbertEmberBuff2", "@AlbertEmberBuff3" ]
           ],
           "icon": "@ClanIcon",
           "locked_icon": "@ClanLockedIcon",
@@ -106,7 +107,7 @@
   "card_pools": [
     {
       "id": "StewardBannerCardPool",
-      "cards": [ "@SpawnBiggerSteward", "@WrenchHead" ]
+      "cards": [ "@SpawnBiggerSteward", "@SpawnWrenchHead" ]
     }
   ],
   "rewards": [

@@ -40,7 +40,7 @@
             "id": "BreakingPointDealDamageToPyre",
             "name": "CardEffectDamage",
             "target_mode": "pyre",
-            "param_int": 7,
+            "param_int": 10,
             "use_magic_power_multipler": false,
             "use_status_effect_multiplier": false
         }

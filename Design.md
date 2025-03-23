@@ -55,32 +55,32 @@ Mechanical Outrage: Piercing. Deal 5 damage and 1 to the Pyre.
 ### Spells
 
 #### Common
-Overclock - Gain 2 Ember. Pyre takes 1 Damage. Costs 1. (Utility)
-Cache - Permafrost. Draw +2 Next Turn. Costs 1. (Utility)
+Overclock - Gain 2 Ember. Pyre takes 1 Damage. Costs 1. (Utility) +
+Cache - Permafrost. Draw +2 Next Turn. Costs 1. (Utility) +
 
-Process Data - Advance. Apply +5 Health. Costs 0. (Defense)
-Try, Catch - Offering. Apply 20 armor to the front friendly unit. Costs 3. (Defense)
-Sythesize - Consume. Apply Rage 3 and Regen 3. Costs 1.
+Process Data - Advance. Apply +5 Health. Costs 0. (Defense) +
+Try, Catch - Offering. Apply 20 armor to the front friendly unit. Costs 3. (Defense) +
+Sythesize - Consume. Apply Rage 3 and Regen 3. Costs 1. +
 
-Decompile - Deal 25 Damage. Slay: Discard a card at random. Cost 1. (Offense)
-Steam Burst - Deal 2 Damage to Everything, gain an Ember. Costs 1. (Offense)
-Bypass - Explosive. Piercing. Deal 12 Damage to the front enemy unit. Costs 1. (Offense)
-Console.Writeline - Consume. Apply Melee Weakness 3. Costs 2. (Offense)
+Decompile - Deal 25 Damage. Slay: Discard a card at random. Cost 1. (Offense) +
+Steam Burst - Deal 2 Damage to Everything, gain an Ember. Costs 1. (Offense) +
+Bypass - Explosive. Piercing. Deal 12 Damage to the front enemy unit. Costs 1. (Offense) +
+Console.Writeline - Consume. Apply Melee Weakness 3. Costs 2. (Offense) +
 
 #### Uncommon
-Back to Basics - Consume. Remove all Buff Effects. Apply Multistrike 1. Costs 2.
-Galvanize - Consume. -2 Capacity and +5 Magic Power in this room.
-Gravitas - Reduce a Cooldown to 0. Costs 0.
-Scrap - Sacrifice. Deal 50 damage twice to the front enemy unit. Costs 1.
-Disarm - Remove equipment from a unit. Apply +30 Health.
+Back to Basics - Consume. Remove all Buff Effects. Apply Multistrike 1. Costs 2. +
+Galvanize - Consume. -2 Capacity and +5 Magic Power in this room. +
+Gravitas - Reduce a Cooldown to 0. Costs 0. +
+Scrap - Sacrifice. Deal 50 damage twice to the front enemy unit. Costs 1. +
+Disarm - Remove equipment from a unit. Apply +30 Health. +
 Automate - Add a Random Steward with two random upgrades to Hand. Costs 1.
-Pyre Refactor - Your Pyre gets +10 attack and +2 Health
+Pyre Refactor - Your Pyre gets +10 attack and +2 Health +
 
 #### Rare
 Memory Leak - Consume. Discard your Hand, then Draw 3 random spells from your consume pile that isn't memory leak. Costs 1.
-Breaking Point - Deal 100 Damage to all enemy units in the tower. Pyre takes 7 Damage. Costs 3.
+Breaking Point - Deal 100 Damage to all enemy units in the tower. Pyre takes 7 Damage. Costs 3. +
 Steward Tome - Consume. Apply Dualism to a friendly unit. 2
-Spike of the Stewards - Consume. Apply Titanskin X. Pyre lose X. Costs X.
+Spike of the Stewards - Consume. Apply Titanskin X. Pyre lose X. Costs X. +
 Sanity - Discard your Hand. Restore 10 Pyre Health. Costs 3. 
 Ctrl-V - Consume. Add a Copy of your Champion to your Hand. Costs 2.
 
@@ -94,8 +94,9 @@ Dependabot: Endless. Ability: Gain an Ember. cooldown 3. (1/1/0/2)
 Imptern: Summon: Heal the Pyre for 1. Ability: Repeat the last summon trigger. Cooldown 3.(1/1/1/1)
 Winged Air Conditioner: Quick. Ability: Expand the Room by 1. Cooldown 4. (1/2/18/8)
 Overheating Computer: Extinguish: Deal Damage equal to this Units Attack to Enemy Units Twice (1/2/20/3)
-Wrench-Head: Strike: Heal the Pyre by 1 (1/2/15/30)
+Wrench-Head: Strike: Heal the Pyre by 1 (1/2/15/30) +
 Fabricator: Ability: Add a Copy of the Equipment to your Hand. Cooldown 4. (1/3/10/20)
+Steward Amalgamm: Titanskin 2 (1/3/14/25) +
 
 #### Rare
 Ludo-Developer: +1 Attack for Every Pyre Attack. (2/2/0/30)

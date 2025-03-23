@@ -2,7 +2,7 @@
     "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
     "cards": [
       {
-        "id": "WrenchHead",
+        "id": "SpawnWrenchHead",
         "names": { "english": "Wrench-Head" },
         "card_art_reference": "@WrenchHead",
         "cost": 1,

@@ -115,7 +115,7 @@
   ],
   "upgrades": [
     {
-      "id": "AlbertEngineeringStation",
+      "id": "AlbertEngineeringStation1",
       "titles": {
         "english": "Engineering Station"
       },
@@ -137,6 +137,50 @@
       ]
     },
     {
+      "id": "AlbertEngineeringStation2",
+      "titles": {
+        "english": "Engineering Station"
+      },
+      "allow_secondary_tooltip_placement": true,
+      "hide_icon_on_card": true,
+      "descriptions": {
+        "english": "Train Stewards get +20/+20 and [titanskin] 4."
+      },
+      "bonus_damage": 20,
+      "bonus_hp": 20,
+      "icon": "@AlbertStewardRoomArt",
+      "filters": [],
+      "status_effect_upgrades": [
+        {
+          "id": "none",
+          "status": "titanskin",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "AlbertEngineeringStation3",
+      "titles": {
+        "english": "Engineering Station"
+      },
+      "allow_secondary_tooltip_placement": true,
+      "hide_icon_on_card": true,
+      "descriptions": {
+        "english": "Train Stewards get +40/+40 and [titanskin] 6."
+      },
+      "bonus_damage": 40,
+      "bonus_hp": 40,
+      "icon": "@AlbertStewardRoomArt",
+      "filters": [],
+      "status_effect_upgrades": [
+        {
+          "id": "none",
+          "status": "titanskin",
+          "count": 6
+        }
+      ]
+    },
+    {
       "id": "AlbertStewardBuff1",
       "titles": {
         "english": "Stewardly 1"
@@ -146,7 +190,7 @@
       "bonus_size": -1,
       "trigger_upgrades": [
         {
-          "id": "@BuffStewards1"
+          "id": "@AlbertBuffStewards1"
         }
       ]
     },
@@ -160,7 +204,7 @@
       "bonus_size": -1,
       "trigger_upgrades": [
         {
-          "id": "@BuffStewards2"
+          "id": "@AlbertBuffStewards2"
         }
       ]
     },
@@ -174,7 +218,46 @@
       "bonus_size": -1,
       "trigger_upgrades": [
         {
-          "id": "@BuffStewards3"
+          "id": "@AlbertBuffStewards3"
+        }
+      ]
+    },
+    {
+      "id": "AlbertEmberBuff1",
+      "titles": {
+        "english": "Overengineered 1"
+      },
+      "bonus_damage": 10,
+      "bonus_hp": 3,
+      "trigger_upgrades": [
+        {
+          "id": "@AlbertAddEmber1"
+        }
+      ]
+    },
+    {
+      "id": "AlbertEmberBuff2",
+      "titles": {
+        "english": "Overengineered 2"
+      },
+      "bonus_damage": 10,
+      "bonus_hp": 3,
+      "trigger_upgrades": [
+        {
+          "id": "@AlbertAddEmber2"
+        }
+      ]
+    },
+    {
+      "id": "AlbertEmberBuff3",
+      "titles": {
+        "english": "Overengineered 3"
+      },
+      "bonus_damage": 15,
+      "bonus_hp": 9,
+      "trigger_upgrades": [
+        {
+          "id": "@AlbertAddEmber3"
         }
       ]
     },
@@ -235,38 +318,74 @@
       ]
     },
     {
-      "id": "BuffStewards1",
+      "id": "AlbertAddEmber1",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Attach a room that gives Train Stewards +10[attack]/+10[health] and +2 [titanskin]."
+        "english": "Gain [effect0.power][ember]"
       },
       "effects": [
         {
-          "id": "@AlbertAttachRoom"
+          "id": "@AlbertAddEmber1"
         }
       ]
     },
     {
-      "id": "BuffStewards2",
+      "id": "AlbertAddEmber2",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Train Stewards get [titanskin] 6 in this room."
+        "english": "Gain [effect0.power][ember]"
       },
       "effects": [
         {
-          "id": "@AlbertAttachRoom"
+          "id": "@AlbertAddEmber2"
         }
       ]
     },
     {
-      "id": "BuffStewards3",
+      "id": "AlbertAddEmber3",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Train Stewards get [titanskin] 10 in this room."
+        "english": "Gain [effect0.power][ember]"
       },
       "effects": [
         {
-          "id": "@AlbertAttachRoom"
+          "id": "@AlbertAddEmber3"
+        }
+      ]
+    },
+    {
+      "id": "AlbertBuffStewards1",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Attach a room that gives Train Stewards +10[attack]/+10[health] and [titanskin] 2."
+      },
+      "effects": [
+        {
+          "id": "@AlbertAttachRoom1"
+        }
+      ]
+    },
+    {
+      "id": "AlbertBuffStewards2",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Attach a room that gives Train Stewards +20[attack]/+20[health] and [titanskin] 4."
+      },
+      "effects": [
+        {
+          "id": "@AlbertAttachRoom2"
+        }
+      ]
+    },
+    {
+      "id": "AlbertBuffStewards3",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Attach a room that gives Train Stewards +40[attack]/+40[health] and [titanskin] 6."
+      },
+      "effects": [
+        {
+          "id": "@AlbertAttachRoom3"
         }
       ]
     }
@@ -280,17 +399,57 @@
       "param_character_data": "@Albert"
     },
     {
+      "id": "AlbertAddEmber1",
+      "name": "CardEffectGainEnergy",
+      "target_mode": "room",
+      "param_int": 2
+    },
+    {
+      "id": "AlbertAddEmber2",
+      "name": "CardEffectGainEnergy",
+      "target_mode": "room",
+      "param_int": 4
+    },
+    {
+      "id": "AlbertAddEmber3",
+      "name": "CardEffectGainEnergy",
+      "target_mode": "room",
+      "param_int": 6
+    },
+    {
       "id": "AlbertAddTempCard",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
       "param_int": 1
     },
     {
-      "id": "AlbertAttachRoom",
+      "id": "AlbertAttachRoom1",
       "target_mode": "room",
       "target_ignore_bosses": true,
       "name": "CustomCardEffectAttachRoomAttachment",
-      "param_upgrade": "@AlbertEngineeringStation",
+      "param_upgrade": "@AlbertEngineeringStation1",
+      "param_bool": false,
+      "param_bool_2": false,
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_TrainSteward"
+    },
+    {
+      "id": "AlbertAttachRoom2",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+      "name": "CustomCardEffectAttachRoomAttachment",
+      "param_upgrade": "@AlbertEngineeringStation2",
+      "param_bool": false,
+      "param_bool_2": false,
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_TrainSteward"
+    },
+    {
+      "id": "AlbertAttachRoom3",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+      "name": "CustomCardEffectAttachRoomAttachment",
+      "param_upgrade": "@AlbertEngineeringStation3",
       "param_bool": false,
       "param_bool_2": false,
       "target_team": "monsters",

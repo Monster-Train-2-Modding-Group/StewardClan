@@ -16,7 +16,7 @@
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="TrainworksReloaded.Base" Version="0.0.1" />
+    <PackageReference Include="TrainworksReloaded.Base" Version="0.1.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,5 +43,5 @@
     </Content>
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties card_3steamburst_1json__JsonSchema="..\..\Trainworks-Reloaded\json-schema.json" champion_3albert_1json__JsonSchema="..\..\..\..\.nuget\packages\trainworksreloaded.base\0.0.1\contentFiles\any\any\schema\json-schema.json" plugin_1json__JsonSchema="..\..\Trainworks-Reloaded\json-schema.json" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties plugin_1json__JsonSchema="..\..\Trainworks-Reloaded\json-schema.json" /></VisualStudio></ProjectExtensions>
 </Project>

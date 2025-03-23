@@ -7,7 +7,7 @@
                 "english": "Galvanize"
             },
             "descriptions": {
-                "english": "-[effect0.powerabs][capacity] and +[effect1.power][magicpower] on this floor."
+                "english": "-[effect0.powerabs][capacity] and +5 [magicpower] on this floor."
             },
             "rarity": "uncommon",
             "class": "@ClassSteward",
