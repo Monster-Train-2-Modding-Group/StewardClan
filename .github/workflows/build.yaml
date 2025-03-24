@@ -35,9 +35,9 @@ jobs:
       - name: Restore Dependencies
         run: dotnet restore
       - name: Setup Directory
-        run: mkdir dist
+        run: mkdir -p dist/plugins
       - name: Build Release
-        run: dotnet build -c Release --no-restore --output ./dist
+        run: dotnet build -c Release --no-restore --output ./dist/plugins
       - name: Build thunderstore package
         run: |
           tcli build
