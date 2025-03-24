@@ -4,10 +4,12 @@
         {
             "id": "Cache",
             "names": {
-                "english": "Cache"
+                "english": "Cache",
+                "chinese": "缓存"
             },
             "descriptions": {
-                "english": "Draw +[effect0.power] next turn."
+                "english": "Draw +[effect0.power] next turn.",
+                "chinese": "下个回合抽 +[effect0.power] 张牌。"
             },
             "rarity": "common",
             "class": "@ClassSteward",

@@ -4,10 +4,12 @@
         {
             "id": "Scrap",
             "names": {
-                "english": "Scrap"
+                "english": "Scrap",
+                "chinese": "废品"
             },
             "descriptions": {
-                "english": "[sacrifice]. Deal [effect1.power] twice to the front enemy unit."
+                "english": "Deal [effect1.power] twice to the front enemy unit.",
+                "chinese": "对前排敌方单位造成 [effect1.power] 点伤害，重复两次。"
             },
             "rarity": "uncommon",
             "class": "@ClassSteward",

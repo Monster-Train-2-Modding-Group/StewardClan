@@ -4,10 +4,12 @@
         {
             "id": "Disarm",
             "names": {
-                "english": "Disarm"
+                "english": "Disarm",
+                "chinese": "解除武装"
             },
             "descriptions": {
-                "english": "Remove equipment from a unit and Apply +[effect1.power][health]"
+                "english": "Remove equipment from a unit and Apply +[effect1.power][health]",
+                "chinese": "移除一个单位身上的装备，并使其获得 +[effect1.power][health]。"
             },
             "rarity": "uncommon",
             "class": "@ClassSteward",

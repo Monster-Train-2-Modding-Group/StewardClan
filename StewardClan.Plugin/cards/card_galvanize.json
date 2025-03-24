@@ -4,10 +4,12 @@
         {
             "id": "Galvanize",
             "names": {
-                "english": "Galvanize"
+                "english": "Galvanize",
+                "chinese": "刺激"
             },
             "descriptions": {
-                "english": "-[effect0.powerabs][capacity] and +5 [magicpower] on this floor."
+                "english": "-[effect0.powerabs][capacity] and +5 [magicpower] on this floor.",
+                "chinese": "本层获得 -[effect0.powerabs][capacity]，+5 [magicpower]。"
             },
             "rarity": "uncommon",
             "class": "@ClassSteward",

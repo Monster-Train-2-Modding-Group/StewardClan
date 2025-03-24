@@ -4,10 +4,12 @@
         {
             "id": "Gravitas",
             "names": {
-                "english": "Gravitas"
+                "english": "Gravitas",
+                "chinese": "庄严"
             },
             "descriptions": {
-                "english": "Reduce [cooldown] to [effect0.power]"
+                "english": "Reduce [cooldown] to [effect0.power]",
+                "chinese": "[cooldown] 降低至 [effect0.power]。"
             },
             "cost": 0,
             "type": "spell",

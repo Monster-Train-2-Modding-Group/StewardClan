@@ -6,11 +6,13 @@
       "names": {
         "group": "CardData_Albert",
         "english": "Mad Albert",
+        "chinese": "疯狂的阿尔伯特",
         "french": "Dragon Blanc Aux Yeux Bleux"
       },
       "descriptions": {
         "group": "CardData_Albert",
-        "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]"
+        "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]",
+        "chinese": "<b>召唤:</b> 获得 +[trait0.power][x][attack]，+[trait1.power][x][health]。"
       },
       "card_art_reference": "@AlbertArt",
       "cost": 0,
@@ -36,7 +38,8 @@
       ],
       "lore_tooltips": [
         {
-          "english": "A Train Steward gone mad, luckily he is on our side."
+          "english": "A Train Steward gone mad, luckily he is on our side.",
+          "chinese": "一名乘务员疯了，幸运的是他站在我们这边。"
         }
       ]
     }
@@ -46,7 +49,8 @@
       "id": "Albert",
       "names": {
         "group": "CharacterData_Albert",
-        "english": "Albert"
+        "english": "Albert",
+        "chinese": "阿尔伯特"
       },
       "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
       "size": 3,
@@ -117,12 +121,14 @@
     {
       "id": "AlbertEngineeringStation1",
       "titles": {
-        "english": "Engineering Station"
+        "english": "Engineering Station",
+        "chinese": "制造站"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": true,
       "descriptions": {
-        "english": "Train Stewards get +10/+10 and [titanskin] 2."
+        "english": "Train Stewards get +10/+10 and [titanskin] 2.",
+        "chinese": "乘务员单位获得 +10[attack]，+10[health]，和 [titanskin] 2。"
       },
       "bonus_damage": 10,
       "bonus_hp": 10,
@@ -139,12 +145,14 @@
     {
       "id": "AlbertEngineeringStation2",
       "titles": {
-        "english": "Engineering Station"
+        "english": "Engineering Station",
+        "chinese": "制造站"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": true,
       "descriptions": {
-        "english": "Train Stewards get +20/+20 and [titanskin] 4."
+        "english": "Train Stewards get +20/+20 and [titanskin] 4.",
+        "chinese": "乘务员单位获得 +20[attack]，+20[health]，和 [titanskin] 4。"
       },
       "bonus_damage": 20,
       "bonus_hp": 20,
@@ -161,12 +169,14 @@
     {
       "id": "AlbertEngineeringStation3",
       "titles": {
-        "english": "Engineering Station"
+        "english": "Engineering Station",
+        "chinese": "制造站"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": true,
       "descriptions": {
-        "english": "Train Stewards get +40/+40 and [titanskin] 6."
+        "english": "Train Stewards get +40/+40 and [titanskin] 6.",
+        "chinese": "乘务员单位获得 +40[attack]，+40[health]，和 [titanskin] 6。"
       },
       "bonus_damage": 40,
       "bonus_hp": 40,
@@ -183,7 +193,8 @@
     {
       "id": "AlbertStewardBuff1",
       "titles": {
-        "english": "Stewardly 1"
+        "english": "Stewardly 1",
+        "chinese": "乘务员升级 1"
       },
       "bonus_damage": 7,
       "bonus_hp": 0,
@@ -197,7 +208,8 @@
     {
       "id": "AlbertStewardBuff2",
       "titles": {
-        "english": "Stewardly 1"
+        "english": "Stewardly 2",
+        "chinese": "乘务员升级 2"
       },
       "bonus_damage": 9,
       "bonus_hp": 5,
@@ -211,7 +223,8 @@
     {
       "id": "AlbertStewardBuff3",
       "titles": {
-        "english": "Stewardly 1"
+        "english": "Stewardly 3",
+        "chinese": "乘务员升级 3"
       },
       "bonus_damage": 9,
       "bonus_hp": 5,
@@ -225,7 +238,8 @@
     {
       "id": "AlbertEmberBuff1",
       "titles": {
-        "english": "Overengineered 1"
+        "english": "Overengineered 1",
+        "chinese": "过度设计 1"
       },
       "bonus_damage": 10,
       "bonus_hp": 3,
@@ -238,7 +252,8 @@
     {
       "id": "AlbertEmberBuff2",
       "titles": {
-        "english": "Overengineered 2"
+        "english": "Overengineered 2",
+        "chinese": "过度设计 2"
       },
       "bonus_damage": 10,
       "bonus_hp": 3,
@@ -251,7 +266,8 @@
     {
       "id": "AlbertEmberBuff3",
       "titles": {
-        "english": "Overengineered 3"
+        "english": "Overengineered 3",
+        "chinese": "过度设计 3"
       },
       "bonus_damage": 15,
       "bonus_hp": 9,
@@ -264,14 +280,16 @@
     {
       "id": "AlbertXReductionBuffer1",
       "titles": {
-        "english": "Utility 1"
+        "english": "Utility 1",
+        "chinese": "实用强化 1"
       },
       "x_cost_reduction": 3
     },
     {
       "id": "AlbertXReductionBuffer2",
       "titles": {
-        "english": "Utility 2"
+        "english": "Utility 2",
+        "chinese": "实用强化 2"
       },
       "x_cost_reduction": 3,
       "remove_trait_upgrades": [
@@ -290,7 +308,8 @@
     {
       "id": "AlbertXReductionBuffer3",
       "titles": {
-        "english": "Utility 3"
+        "english": "Utility 3",
+        "chinese": "实用强化 3"
       },
       "x_cost_reduction": 3,
       "remove_trait_upgrades": [
@@ -321,7 +340,8 @@
       "id": "AlbertAddEmber1",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Gain [effect0.power][ember]"
+        "english": "Gain [effect0.power][ember]",
+        "chinese": "获得 [effect0.power][ember]。"
       },
       "effects": [
         {
@@ -333,7 +353,8 @@
       "id": "AlbertAddEmber2",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Gain [effect0.power][ember]"
+        "english": "Gain [effect0.power][ember]",
+        "chinese": "获得 [effect0.power][ember]。"
       },
       "effects": [
         {
@@ -345,7 +366,8 @@
       "id": "AlbertAddEmber3",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Gain [effect0.power][ember]"
+        "english": "Gain [effect0.power][ember]",
+        "chinese": "获得 [effect0.power][ember]。"
       },
       "effects": [
         {
@@ -357,7 +379,8 @@
       "id": "AlbertBuffStewards1",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Attach a room that gives Train Stewards +10[attack]/+10[health] and [titanskin] 2."
+        "english": "Attach a room that gives Train Stewards +10[attack]/+10[health] and [titanskin] 2.",
+        "chinese": "向房间附加“乘务员单位获得 +10[attack]，+10[health]，和 [titanskin] 2”的效果。"
       },
       "effects": [
         {
@@ -369,7 +392,8 @@
       "id": "AlbertBuffStewards2",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Attach a room that gives Train Stewards +20[attack]/+20[health] and [titanskin] 4."
+        "english": "Attach a room that gives Train Stewards +20[attack]/+20[health] and [titanskin] 4.",
+        "chinese": "向房间附加“乘务员单位获得 +20[attack]，+20[health]，和 [titanskin] 4”的效果。"
       },
       "effects": [
         {
@@ -381,7 +405,8 @@
       "id": "AlbertBuffStewards3",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Attach a room that gives Train Stewards +40[attack]/+40[health] and [titanskin] 6."
+        "english": "Attach a room that gives Train Stewards +40[attack]/+40[health] and [titanskin] 6.",
+        "chinese": "向房间附加“乘务员单位获得 +40[attack]，+40[health]，和 [titanskin] 6”的效果。"
       },
       "effects": [
         {

@@ -4,10 +4,12 @@
     {
       "id": "MechanicalOutrage",
       "names": {
-        "english": "Mechanical Outrage"
+        "english": "Mechanical Outrage",
+        "chinese": "机械愤怒"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage. Pyre takes [effect1.power] damage."
+        "english": "Deal [effect0.power] damage. Pyre takes [effect1.power] damage.",
+        "chinese": "造成 [effect0.power] 点伤害。薪火受到 [effect1.power] 点伤害。"
       },
       "cost": 1,
       "type": "spell",

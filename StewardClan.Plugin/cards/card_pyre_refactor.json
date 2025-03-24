@@ -4,10 +4,12 @@
         {
             "id": "PyreRefactor",
             "names": {
-                "english": "Pyre Refactor"
+                "english": "Pyre Refactor",
+                "chinese": "薪火重构"
             },
             "descriptions": {
-                "english": "Your Pyre gets +[effect0.power][attack] and +[effect1.power][pyrehealth]."
+                "english": "Your Pyre gets +[effect0.power][attack] and +[effect1.power][pyrehealth].",
+                "chinese": "你的薪火获得 +[effect0.power][attack]，+[effect1.power][pyrehealth]。"
             },
             "cost": 2,
             "type": "spell",

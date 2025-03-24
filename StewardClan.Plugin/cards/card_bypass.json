@@ -4,10 +4,12 @@
         {
             "id": "Bypass",
             "names": {
-                "english": "Bypass"
+                "english": "Bypass",
+                "chinese": "绕路"
             },
             "descriptions": {
-                "english": "Deal [effect0.power] damage."
+                "english": "Deal [effect0.power] damage.",
+                "chinese": "造成 [effect0.power] 点伤害。"
             },
             "rarity": "common",
             "class": "@ClassSteward",
