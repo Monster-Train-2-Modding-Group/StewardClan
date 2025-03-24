@@ -4,10 +4,12 @@
         {
             "id": "Sythesize",
             "names": {
-                "english": "Sythesize"
+                "english": "Sythesize",
+                "chinese": "合成"
             },
             "descriptions": {
-                "english": "Apply [rage] [effect0.status0.power] and [regen] [effect0.status1.power]"
+                "english": "Apply [rage] [effect0.status0.power] and [regen] [effect0.status1.power]",
+                "chinese": "获得 [rage] [effect0.status0.power]和[regen] [effect0.status1.power]。"
             },
             "rarity": "common",
             "class": "@ClassSteward",

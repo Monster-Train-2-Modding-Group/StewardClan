@@ -3,13 +3,16 @@
     {
       "id": "ClassSteward",
       "titles": {
-        "english": "Steward Guild"
+        "english": "Steward Guild",
+        "chinese": "乘务员公会"
       },
       "descriptions": {
-        "english": "Direct the faithful train stewards towards keeping the train together, even against their growing madness."
+        "english": "Direct the faithful train stewards towards keeping the train together, even against their growing madness.",
+        "chinese": "指挥忠诚的乘务员保护火车，即使他们变得更加疯狂。"
       },
       "subclass_descriptions": {
-        "english": "Direct the faithful train stewards towards keeping the train together, even against their growing madness."
+        "english": "Direct the faithful train stewards towards keeping the train together, even against their growing madness.",
+        "chinese": "指挥忠诚的乘务员保护火车，即使他们变得更加疯狂。"
       },
       "icons": {
         "small": "@StewardIconSmall",
@@ -64,7 +67,8 @@
       "is_crew": false,
       "unlock_data": {
         "descriptions": {
-          "english": "Have 10 Train Stewards Die"
+          "english": "Have 10 Train Stewards Die",
+          "chinese": "使 10 个乘务员单位死亡。"
         },
         "track_value": "none",
         "param_int": 0
@@ -80,10 +84,12 @@
       "minimap_icon": "@StewardIconSmall",
       "prefab": "@StewardMapIcon",
       "titles": {
-        "english": "Steward Banner"
+        "english": "Steward Banner",
+        "chinese": "乘务员战旗"
       },
       "descriptions": {
-        "english": "Gain a Steward Unit"
+        "english": "Gain a Steward Unit",
+        "chinese": "获得一个乘务员单位。"
       },
       "map_pools": [
         "RandomChosenMainClassUnit",

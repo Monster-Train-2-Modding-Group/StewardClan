@@ -4,11 +4,13 @@
         {
             "id": "TryCatch",
             "names": {
-                "english": "Try-Catch"
+                "english": "Try-Catch",
+                "chinese": "异常处理"
             },
-          "descriptions": {
-            "english": "Apply [armor] [effect0.status0.power] to the front friendly unit."
-          },
+            "descriptions": {
+                "english": "Apply [armor] [effect0.status0.power] to the front friendly unit.",
+                "chinese": "使前排友方单位获得 [armor] [effect0.status0.power]。"
+            },
             "rarity": "common",
             "class": "@ClassSteward",
             "card_art_reference": "@TryCatchArt",

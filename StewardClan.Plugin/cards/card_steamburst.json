@@ -4,10 +4,12 @@
     {
       "id": "SteamBurst",
       "names": {
-        "english": "Steam Burst"
+        "english": "Steam Burst",
+        "chinese": "蒸汽爆发"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to all units and Gain [effect1.power][ember]."
+        "english": "Deal [effect0.power] damage to all units and Gain [effect1.power][ember].",
+        "chinese": "对所有单位造成 [effect0.power] 点伤害。获得 [effect1.power][ember]。"
       },
       "rarity": "common",
       "class": "@ClassSteward",

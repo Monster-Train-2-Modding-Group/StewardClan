@@ -4,10 +4,12 @@
     {
       "id": "Overclock",
       "names": {
-        "english": "Overclock"
+        "english": "Overclock",
+        "chinese": "超频"
       },
       "descriptions": {
-        "english": "Gain [effect0.power][ember]. Pyre takes [effect1.power] damage."
+        "english": "Gain [effect0.power][ember]. Pyre takes [effect1.power] damage.",
+        "chinese": "获得 [effect0.power][ember]。薪火受到 [effect1.power] 点伤害。"
       },
       "rarity": "common",
       "class": "@ClassSteward",

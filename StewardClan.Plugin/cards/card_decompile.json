@@ -4,10 +4,12 @@
         {
             "id": "Decompile",
             "names": {
-                "english": "Decompile"
+                "english": "Decompile",
+                "chinese": "反编译"
             },
             "descriptions": {
-                "english": "Deal +[effect0.power] damage."
+                "english": "Deal [effect0.power] damage.",
+                "chinese": "造成 [effect0.power] 点伤害。"
             },
             "rarity": "common",
             "class": "@ClassSteward",
@@ -35,7 +37,8 @@
             "id": "DecompileSlay",
             "trigger": "on_kill",
             "descriptions": {
-                "english": "Discard a random card."
+                "english": "Discard a random card.",
+                "chinese": "随机舍弃 1 张牌。"
             },
             "effects": [
                 {

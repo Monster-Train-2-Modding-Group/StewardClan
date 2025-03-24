@@ -4,10 +4,12 @@
         {
             "id": "ProcessData",
             "names": {
-                "english": "Process Data"
+                "english": "Process Data",
+                "chinese": "处理数据"
             },
             "descriptions": {
-                "english": "[advance]. Apply +[effect1.power][health]"
+                "english": "[advance]. Apply +[effect1.power][health]",
+                "chinese": "[advance]。获得 +[effect1.power][health]。"
             },
             "rarity": "common",
             "class": "@ClassSteward",

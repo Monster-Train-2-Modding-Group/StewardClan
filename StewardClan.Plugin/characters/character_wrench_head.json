@@ -3,7 +3,10 @@
     "cards": [
       {
         "id": "SpawnWrenchHead",
-        "names": { "english": "Wrench-Head" },
+        "names": {
+          "english": "Wrench-Head",
+          "chinese": "扳手头"
+        },
         "card_art_reference": "@WrenchHead",
         "cost": 1,
         "type": "monster",
@@ -19,7 +22,8 @@
         ],
         "lore_tooltips": [
           {
-            "english": "heading into the wrench"
+            "english": "heading into the wrench",
+            "chinese": "头卡在扳手里了。"
           }
         ],
         "pools": [ "UnitsAllBanner" ]
@@ -29,7 +33,8 @@
       {
         "id": "WrenchHead",
         "names": {
-            "english": "Wrench-Head"
+            "english": "Wrench-Head",
+            "chinese": "扳手头"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -50,6 +55,10 @@
         {
             "id": "WrenchHeadStrike",
             "trigger": "on_attacking",
+            "descriptions": {
+                "english": "Restore [effect0.power] Pyre health",
+                "chinese": "恢复 [effect0.power] 点薪火生命值。"
+            },
             "effects": [
                 {
                     "id": "@WrenchHeadHeal"

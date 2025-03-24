@@ -4,10 +4,12 @@
         {
             "id": "Writeline",
             "names": {
-                "english": "Console.Writeline"
+                "english": "Console.Writeline",
+                "chinese": "你好，世界！"
             },
             "descriptions": {
-                "english": "Apply [meleeweakness] [effect0.status0.power]"
+                "english": "Apply [meleeweakness] [effect0.status0.power]",
+                "chinese": "施加 [meleeweakness] [effect0.status0.power]。"
             },
             "rarity": "common",
             "class": "@ClassSteward",

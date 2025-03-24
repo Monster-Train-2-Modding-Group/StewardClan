@@ -4,10 +4,12 @@
         {
             "id": "StewardSpike",
             "names": {
-                "english": "Spike of the Stewards"
+                "english": "Spike of the Stewards",
+                "chinese": "乘务员之尖刺"
             },
             "descriptions": {
-                "english": "Apply +[effect0.status0.count][titanskin]. Pyre takes [effect1.power] damage"
+                "english": "Apply [trait1.statusmultiplier][x] [titanskin]. Pyre takes [trait2.power][x] damage",
+                "chinese": "获得 [trait1.statusmultiplier][x] [titanskin]。薪火受到 [trait2.power][x] 点伤害。"
             },
             "rarity": "rare",
             "class": "@ClassSteward",
