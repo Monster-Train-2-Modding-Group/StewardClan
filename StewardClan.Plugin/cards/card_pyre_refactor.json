@@ -1,5 +1,5 @@
 {
-    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
     "cards": [
         {
             "id": "PyreRefactor",
@@ -15,7 +15,7 @@
             "type": "spell",
             "rarity": "uncommon",
             "class": "@ClassSteward",
-            "card_art_reference": "@MechanicalOutrage",
+            "card_art_reference": "@PyreRefactorArt",
             "pools": [
                 "MegaPool"
             ],
@@ -53,6 +53,23 @@
             "param_int": 2,
             "use_magic_power_multipler": false,
             "use_status_effect_multiplier": false
+        }
+    ],
+    "sprites": [
+        {
+            "id": "PyreRefactorArt",
+            "path": "textures/MechanicalOutrage.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "PyreRefactorArt",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@PyreRefactorArt"
+                }
+            }
         }
     ]
 }

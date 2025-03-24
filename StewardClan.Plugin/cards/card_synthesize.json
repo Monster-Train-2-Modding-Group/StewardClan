@@ -1,5 +1,5 @@
 {
-    "$schema": "file:///C:/Users/Jack/Desktop/projects/Trainworks-Reloaded/json-schema.json",
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
     "cards": [
         {
             "id": "Sythesize",
@@ -8,8 +8,8 @@
                 "chinese": "合成"
             },
             "descriptions": {
-                "english": "Apply [rage] [effect0.status0.power] and [regen] [effect0.status1.power]",
-                "chinese": "获得 [rage] [effect0.status0.power]和[regen] [effect0.status1.power]。"
+                "english": "Apply [rage] [effect0.status0.power] and [regen] [effect1.status0.power]",
+                "chinese": "获得 [rage] [effect0.status0.power]和[regen] [effect1.status0.power]。"
             },
             "rarity": "common",
             "class": "@ClassSteward",
@@ -27,7 +27,10 @@
             ],
             "effects": [
                 {
-                    "id": "@SythesizeStatusEffect"
+                    "id": "@SythesizeStatusEffectRage"
+                },
+                {
+                    "id": "@SythesizeStatusEffectRegen"
                 }
             ]
         }
@@ -40,7 +43,7 @@
     ],
     "effects": [
         {
-            "id": "SythesizeStatusEffect",
+            "id": "SythesizeStatusEffectRage",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "drop_target_character",
             "target_team": "both",
@@ -49,7 +52,16 @@
                 {
                     "status": "buff",
                     "count": 3
-                },
+                }
+            ]
+        },
+        {
+            "id": "SythesizeStatusEffectRegen",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "last_targeted_characters",
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None",
+            "param_status_effects": [
                 {
                     "status": "regen",
                     "count": 3
