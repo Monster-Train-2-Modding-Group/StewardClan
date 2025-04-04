@@ -1,0 +1,61 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "MemoryLeak",
+        "names": {
+            "english": "Memory Leak",
+            "chinese": "内存泄漏"
+        },
+        "descriptions": {
+            "english": "Consume. Discard your Hand, then Draw 3 random spells from your consume pile that isn't Memory Leak.",
+            "chinese": "消耗。丢弃你的手牌，然后从消耗堆中抽取3张不是内存泄漏的随机法术牌。"
+        },
+        "rarity": "rare",
+        "class": "@ClassSteward",
+        "card_art_reference": "@MemoryLeakArt",
+        "targets_room": false,
+        "targetless": true,
+        "pools": ["MegaPool"],
+        "cost": 1,
+        "traits": [{
+            "id": "@MemoryLeakConsume"
+        }],
+        "effects": [{
+                "id": "@MemoryLeakDiscard"
+            },
+            {
+                "id": "@MemoryLeakDraw"
+            }
+        ]
+    }],
+    "traits": [{
+        "id": "MemoryLeakConsume",
+        "name": "CardTraitConsume"
+    }],
+    "effects": [{
+            "id": "MemoryLeakDiscard",
+            "name": "CardEffectDiscardHand"
+        },
+        {
+            "id": "MemoryLeakDraw",
+            "name": "CardEffectRecursion",
+            "target_mode": "exhaust",
+            "target_selection_mode": "random_to_hand",
+            "param_int": 3,
+            "exclude_card_ids": ["MemoryLeak"]
+        }
+    ],
+    "sprites": [{
+        "id": "MemoryLeakArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "MemoryLeakArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@MemoryLeakArt"
+            }
+        }
+    }]
+}

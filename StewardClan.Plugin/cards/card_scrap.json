@@ -1,47 +1,41 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "Scrap",
-            "names": {
-                "english": "Scrap",
-                "chinese": "废品"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "Scrap",
+        "names": {
+            "english": "Scrap",
+            "chinese": "废品"
+        },
+        "descriptions": {
+            "english": "Deal [effect1.power] twice to the front enemy unit.",
+            "chinese": "对前排敌方单位造成 [effect1.power] 点伤害，重复两次。"
+        },
+        "rarity": "uncommon",
+        "class": "@ClassSteward",
+        "card_art_reference": "@ScrapArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 1,
+        "traits": [
+            "@ScrapApplications"
+        ],
+        "effects": [{
+                "id": "@ScrapSacrifice"
             },
-            "descriptions": {
-                "english": "Deal [effect1.power] twice to the front enemy unit.",
-                "chinese": "对前排敌方单位造成 [effect1.power] 点伤害，重复两次。"
-            },
-            "rarity": "uncommon",
-            "class": "@ClassSteward",
-            "card_art_reference": "@ScrapArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 1,
-            "traits": [
-                "@ScrapApplications"
-            ],
-            "effects": [
-                {
-                    "id": "@ScrapSacrifice"
-                },
-                {
-                    "id": "@ScrapDamage"
-                }
-            ]
-        }
-    ],
-    "traits": [
-        {
-            "id": "ScrapApplications",
-            "name": "CardTraitScalingAddEffectApplications",
-            "param_int": 2
-        }
-    ],
-    "effects": [
-        {
+            {
+                "id": "@ScrapDamage"
+            }
+        ]
+    }],
+    "traits": [{
+        "id": "ScrapApplications",
+        "name": "CardTraitScalingAddEffectApplications",
+        "param_int": 2
+    }],
+    "effects": [{
             "id": "ScrapSacrifice",
             "name": "CardEffectSacrifice",
             "target_mode": "drop_target_character",
@@ -58,21 +52,17 @@
             "use_magic_power_multipler": true
         }
     ],
-    "sprites": [
-        {
-            "id": "ScrapArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "ScrapArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@ScrapArt"
-                }
+    "sprites": [{
+        "id": "ScrapArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "ScrapArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@ScrapArt"
             }
         }
-    ]
+    }]
 }

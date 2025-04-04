@@ -1,0 +1,101 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+            "id": "SpawnImptern",
+            "names": {
+                "english": "Imptern",
+                "chinese": "小恶魔"
+            },
+            "card_art_reference": "@Imptern",
+            "cost": 1,
+            "type": "monster",
+            "cost_type": "default",
+            "rarity": "uncommon",
+            "class": "@ClassSteward",
+            "unlock_level": 0,
+            "targets_room": true,
+            "effects": [{
+                "id": "@SpawnImptern"
+            }],
+            "lore_tooltips": [{
+                "english": "The Stewards were worried at first about this mischievous runt, but as time went on, they found him to be quite useful.",
+                "chinese": "最初，斯蒂尔沃特们对这只顽皮的小家伙感到担忧，但时间一长，他们发现他非常有用。"
+            }],
+            "pools": [
+                "UnitsAllBanner"
+            ]
+        },
+        {
+            "id": "ImpternAbility",
+            "descriptions": {
+                "english": "Repeat the last summon trigger"
+            },
+            "ability": true,
+            "cooldown": 3,
+            "initial_cooldown": 0,
+            "targetless": true,
+            "targets_room": false,
+            "type": "spell",
+            "effects": [{
+                "id": "@ImpternRepeatTrigger"
+            }]
+        }
+    ],
+    "characters": [{
+        "id": "Imptern",
+        "size": 1,
+        "attack_damage": 1,
+        "health": 1,
+        "names": {
+            "english": "Imptern",
+            "chinese": "小恶魔"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "subtypes": [
+            "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
+            "SubtypesData_BannerUnit"
+        ],
+        "triggers": [{
+            "id": "@ImpternSummon",
+            "trigger_type": "OnSummon",
+            "effects": [{
+                "id": "@ImpternHealPyre"
+            }]
+        }],
+        "ability": "@ImpternAbility"
+    }],
+    "effects": [{
+            "id": "SpawnImptern",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "room",
+            "target_card_type": "spell",
+            "param_character_data": "@Imptern"
+        },
+        {
+            "id": "ImpternHealPyre",
+            "name": "CardEffectHeal",
+            "param_int": 1,
+            "target_mode": "pyre"
+        },
+        {
+            "id": "ImpternRepeatTrigger",
+            "name": "@CardEffectReplayLastTrigger",
+            "param_trigger": "on_spawn"
+        }
+    ],
+    "sprites": [{
+        "id": "Imptern",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "Imptern",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@Imptern"
+            }
+        }
+    }]
+}

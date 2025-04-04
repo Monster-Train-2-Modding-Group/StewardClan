@@ -1,48 +1,40 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "BackToBasics",
-            "names": {
-                "english": "Back to Basics",
-                "chinese": "回归本源"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "BackToBasics",
+        "names": {
+            "english": "Back to Basics",
+            "chinese": "回归本源"
+        },
+        "descriptions": {
+            "english": "Remove all [buff] effects. Gain [multistrike][effect1.status0.power]",
+            "chinese": "移除所有 [buff] 效果。获得 [multistrike][effect1.status0.power]。"
+        },
+        "rarity": "uncommon",
+        "class": "@ClassSteward",
+        "card_art_reference": "@BackToBasicsArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 2,
+        "traits": [{
+            "id": "@BackToBasicsConsume"
+        }],
+        "effects": [{
+                "id": "@BackToBasicsRemoveBuffs"
             },
-            "descriptions": {
-                "english": "Remove all [buff] effects. Gain [multistrike][effect1.status0.power]",
-                "chinese": "移除所有 [buff] 效果。获得 [multistrike][effect1.status0.power]。"
-            },
-            "rarity": "uncommon",
-            "class": "@ClassSteward",
-            "card_art_reference": "@BackToBasicsArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 2,
-            "traits": [
-                {
-                    "id": "@BackToBasicsConsume"
-                }
-            ],
-            "effects": [
-                {
-                    "id": "@BackToBasicsRemoveBuffs"
-                },
-                {
-                    "id": "@BackToBasicsGainMultiStrike"
-                }
-            ]
-        }
-    ],
-    "traits": [
-      {
+            {
+                "id": "@BackToBasicsGainMultiStrike"
+            }
+        ]
+    }],
+    "traits": [{
         "id": "BackToBasicsConsume",
         "name": "CardTraitExhaustState"
-      }
-    ],
-    "effects": [
-        {
+    }],
+    "effects": [{
             "id": "BackToBasicsRemoveBuffs",
             "name": "CardEffectRemoveAllStatusEffects",
             "param_int": 0,
@@ -54,31 +46,25 @@
             "id": "BackToBasicsGainMultiStrike",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "drop_target_character",
-            "param_status_effects": [
-                {
-                    "status": "multistrike",
-                    "count": 1
-                }
-            ],
+            "param_status_effects": [{
+                "status": "multistrike",
+                "count": 1
+            }],
             "target_team": "both",
             "target_subtype": "SubtypesData_None"
         }
     ],
-    "sprites": [
-        {
-            "id": "BackToBasicsArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "BackToBasicsArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@BackToBasicsArt"
-                }
+    "sprites": [{
+        "id": "BackToBasicsArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "BackToBasicsArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@BackToBasicsArt"
             }
         }
-    ]
+    }]
 }

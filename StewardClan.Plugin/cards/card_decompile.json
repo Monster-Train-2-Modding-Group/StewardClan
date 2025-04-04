@@ -1,54 +1,43 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "Decompile",
-            "names": {
-                "english": "Decompile",
-                "chinese": "反编译"
-            },
-            "descriptions": {
-                "english": "Deal [effect0.power] damage.",
-                "chinese": "造成 [effect0.power] 点伤害。"
-            },
-            "rarity": "common",
-            "class": "@ClassSteward",
-            "card_art_reference": "@DecompileArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 1,
-            "triggers": [
-                {
-                    "id": "@DecompileSlay"
-                }
-            ],
-            "effects": [
-                {
-                    "id": "@DecompileDamage"
-                }
-            ]
-        }
-    ],
-    "card_triggers": [
-        {
-            "id": "DecompileSlay",
-            "trigger": "on_kill",
-            "descriptions": {
-                "english": "Discard a random card.",
-                "chinese": "随机舍弃 1 张牌。"
-            },
-            "effects": [
-                {
-                    "id": "@DecompileDiscard"
-                }
-            ]
-        }
-    ],
-    "effects": [
-        {
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "Decompile",
+        "names": {
+            "english": "Decompile",
+            "chinese": "反编译"
+        },
+        "descriptions": {
+            "english": "Deal [effect0.power] damage.",
+            "chinese": "造成 [effect0.power] 点伤害。"
+        },
+        "rarity": "common",
+        "class": "@ClassSteward",
+        "card_art_reference": "@DecompileArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 1,
+        "triggers": [{
+            "id": "@DecompileSlay"
+        }],
+        "effects": [{
+            "id": "@DecompileDamage"
+        }]
+    }],
+    "card_triggers": [{
+        "id": "DecompileSlay",
+        "trigger": "on_kill",
+        "descriptions": {
+            "english": "Discard a random card.",
+            "chinese": "随机舍弃 1 张牌。"
+        },
+        "effects": [{
+            "id": "@DecompileDiscard"
+        }]
+    }],
+    "effects": [{
             "id": "DecompileDamage",
             "name": "CardEffectDamage",
             "target_mode": "drop_target_character",
@@ -63,21 +52,17 @@
             "target_mode": "discard"
         }
     ],
-    "sprites": [
-        {
-            "id": "DecompileArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "DecompileArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@DecompileArt"
-                }
+    "sprites": [{
+        "id": "DecompileArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "DecompileArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@DecompileArt"
             }
         }
-    ]
+    }]
 }

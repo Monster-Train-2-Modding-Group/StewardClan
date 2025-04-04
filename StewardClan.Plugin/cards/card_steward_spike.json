@@ -1,49 +1,44 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "StewardSpike",
-            "names": {
-                "english": "Spike of the Stewards",
-                "chinese": "乘务员之尖刺"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "StewardSpike",
+        "names": {
+            "english": "Spike of the Stewards",
+            "chinese": "乘务员之尖刺"
+        },
+        "descriptions": {
+            "english": "Apply [trait1.statusmultiplier][x] [titanskin]. Pyre takes [trait2.power][x] damage",
+            "chinese": "获得 [trait1.statusmultiplier][x] [titanskin]。薪火受到 [trait2.power][x] 点伤害。"
+        },
+        "rarity": "rare",
+        "class": "@ClassSteward",
+        "card_art_reference": "@StewardSpikeArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 0,
+        "cost_type": "x",
+        "traits": [{
+                "id": "@StewardSpikeConsume"
             },
-            "descriptions": {
-                "english": "Apply [trait1.statusmultiplier][x] [titanskin]. Pyre takes [trait2.power][x] damage",
-                "chinese": "获得 [trait1.statusmultiplier][x] [titanskin]。薪火受到 [trait2.power][x] 点伤害。"
+            {
+                "id": "@StewardSpikeScaling"
             },
-            "rarity": "rare",
-            "class": "@ClassSteward",
-            "card_art_reference": "@StewardSpikeArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 0,
-            "cost_type": "x",
-            "traits": [
-                {
-                    "id": "@StewardSpikeConsume"
-                },
-                {
-                    "id": "@StewardSpikeScaling"
-                },
-                {
-                    "id": "@StewardSpikeScalingDamage"
-                }
-            ],
-            "effects": [
-                {
-                    "id": "@StewardSpikeStatusEffect"
-                },
-                {
-                    "id": "@StewardSpikeDamage"
-                }
-            ]
-        }
-    ],
-    "traits": [
-        {
+            {
+                "id": "@StewardSpikeScalingDamage"
+            }
+        ],
+        "effects": [{
+                "id": "@StewardSpikeStatusEffect"
+            },
+            {
+                "id": "@StewardSpikeDamage"
+            }
+        ]
+    }],
+    "traits": [{
             "id": "StewardSpikeConsume",
             "name": "CardTraitExhaustState"
         },
@@ -60,19 +55,16 @@
             "param_int": 1
         }
     ],
-    "effects": [
-        {
+    "effects": [{
             "id": "StewardSpikeEffect",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "drop_target_character",
             "target_team": "both",
             "target_subtype": "SubtypesData_None",
-            "param_status_effects": [
-                {
-                    "status": "titanskin",
-                    "count": 0
-                }
-            ]
+            "param_status_effects": [{
+                "status": "titanskin",
+                "count": 0
+            }]
         },
         {
             "id": "StewardSpikeDamage",
@@ -83,21 +75,17 @@
             "use_status_effect_multiplier": false
         }
     ],
-    "sprites": [
-        {
-            "id": "StewardSpikeArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "StewardSpikeArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@StewardSpikeArt"
-                }
+    "sprites": [{
+        "id": "StewardSpikeArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "StewardSpikeArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@StewardSpikeArt"
             }
         }
-    ]
+    }]
 }

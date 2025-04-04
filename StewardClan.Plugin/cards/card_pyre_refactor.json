@@ -1,45 +1,39 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "PyreRefactor",
-            "names": {
-                "english": "Pyre Refactor",
-                "chinese": "薪火重构"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "PyreRefactor",
+        "names": {
+            "english": "Pyre Refactor",
+            "chinese": "薪火重构"
+        },
+        "descriptions": {
+            "english": "Your Pyre gets +[effect0.power][attack] and +[effect1.power][pyrehealth].",
+            "chinese": "你的薪火获得 +[effect0.power][attack]，+[effect1.power][pyrehealth]。"
+        },
+        "cost": 2,
+        "type": "spell",
+        "rarity": "uncommon",
+        "class": "@ClassSteward",
+        "card_art_reference": "@PyreRefactorArt",
+        "pools": [
+            "MegaPool"
+        ],
+        "traits": [
+            "@PyreRefactorConsume"
+        ],
+        "effects": [{
+                "id": "@PyreRefactorBuffPyreAttack"
             },
-            "descriptions": {
-                "english": "Your Pyre gets +[effect0.power][attack] and +[effect1.power][pyrehealth].",
-                "chinese": "你的薪火获得 +[effect0.power][attack]，+[effect1.power][pyrehealth]。"
-            },
-            "cost": 2,
-            "type": "spell",
-            "rarity": "uncommon",
-            "class": "@ClassSteward",
-            "card_art_reference": "@PyreRefactorArt",
-            "pools": [
-                "MegaPool"
-            ],
-            "traits": [
-                "@PyreRefactorConsume"
-            ],
-            "effects": [
-                {
-                    "id": "@PyreRefactorBuffPyreAttack"
-                },
-                {
-                    "id": "@PyreRefactorHealPyre"
-                }
-            ]
-        }
-    ],
-    "traits": [
-        {
-            "id": "PyreRefactorConsume",
-            "name": "CardTraitExhaustState"
-        }
-    ],
-    "effects": [
-        {
+            {
+                "id": "@PyreRefactorHealPyre"
+            }
+        ]
+    }],
+    "traits": [{
+        "id": "PyreRefactorConsume",
+        "name": "CardTraitExhaustState"
+    }],
+    "effects": [{
             "id": "PyreRefactorBuffPyreAttack",
             "name": "CardEffectBuffDamage",
             "target_mode": "pyre",
@@ -55,21 +49,17 @@
             "use_status_effect_multiplier": false
         }
     ],
-    "sprites": [
-        {
-            "id": "PyreRefactorArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "PyreRefactorArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@PyreRefactorArt"
-                }
+    "sprites": [{
+        "id": "PyreRefactorArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "PyreRefactorArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@PyreRefactorArt"
             }
         }
-    ]
+    }]
 }

@@ -1,0 +1,92 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+            "id": "SpawnDependabot",
+            "names": {
+                "english": "Dependabot",
+                "chinese": "依赖机器人"
+            },
+            "card_art_reference": "@Dependabot",
+            "cost": 1,
+            "type": "monster",
+            "cost_type": "default",
+            "rarity": "uncommon",
+            "class": "@ClassSteward",
+            "unlock_level": 0,
+            "targets_room": true,
+            "effects": [{
+                "id": "@SpawnDependabot"
+            }],
+            "lore_tooltips": [{
+                "english": "Always there to help, even when you don't need it.",
+                "chinese": "总是在那里提供帮助，即使你不需要。"
+            }],
+            "pools": [
+                "UnitsAllBanner"
+            ]
+        },
+        {
+            "id": "DependabotAbility",
+            "descriptions": {
+                "english": "Gain [effect0.power][ember]"
+            },
+            "ability": true,
+            "cooldown": 3,
+            "initial_cooldown": 0,
+            "targetless": true,
+            "targets_room": false,
+            "type": "spell",
+            "effects": [{
+                "id": "@DependabotGainEmber"
+            }]
+        }
+    ],
+    "characters": [{
+        "id": "Dependabot",
+        "size": 1,
+        "attack_damage": 0,
+        "health": 2,
+        "names": {
+            "english": "Dependabot",
+            "chinese": "依赖机器人"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "subtypes": [
+            "SubtypesData_None",
+            "SubtypesData_BannerUnit"
+        ],
+        "starting_status_effects": [{
+            "status": "endless",
+            "count": 1
+        }],
+        "ability": "@DependabotAbility"
+    }],
+    "effects": [{
+            "id": "SpawnDependabot",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "room",
+            "target_card_type": "spell",
+            "param_character_data": "@Dependabot"
+        },
+        {
+            "id": "DependabotGainEmber",
+            "name": "CardEffectGainEnergy",
+            "param_int": 1
+        }
+    ],
+    "sprites": [{
+        "id": "Dependabot",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "Dependabot",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@Dependabot"
+            }
+        }
+    }]
+}

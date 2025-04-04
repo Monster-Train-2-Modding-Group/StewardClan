@@ -4,6 +4,7 @@ using HarmonyLib;
 using Microsoft.Extensions.Configuration;
 using Steward_Clan.Plugin.Extensions;
 using TrainworksReloaded.Core;
+using TrainworksReloaded.Core.Extensions;
 
 namespace Steward_Clan.Plugin
 {

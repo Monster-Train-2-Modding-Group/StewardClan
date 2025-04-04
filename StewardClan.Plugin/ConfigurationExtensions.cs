@@ -1,9 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
-using Microsoft.Extensions.FileProviders;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.Extensions.Configuration;
+using TrainworksReloaded.Core.Configuration;
+using TrainworksReloaded.Core.Extensions;
 
 namespace Steward_Clan.Plugin.Extensions
 {

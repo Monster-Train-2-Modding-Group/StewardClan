@@ -1,38 +1,39 @@
 {
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [{
-        "id": "SpawnBiggerSteward",
+        "id": "SpawnRustedSteward",
         "names": {
-            "english": "Steward Amalgam",
-            "chinese": "乘务员造物"
+            "english": "Rusted Steward",
+            "chinese": "生锈的乘务员"
         },
-        "card_art_reference": "@BiggerSteward",
+        "card_art_reference": "@RustedSteward",
         "cost": 1,
         "type": "monster",
         "cost_type": "default",
-        "rarity": "uncommon",
+        "rarity": "common",
         "class": "@ClassSteward",
         "unlock_level": 0,
         "targets_room": true,
         "effects": [{
-            "id": "@SpawnBiggerSteward"
+            "id": "@SpawnRustedSteward"
         }],
         "lore_tooltips": [{
-            "english": "Two together is better than Two apart.",
-            "chinese": "永远的在一起了。"
+            "english": "Even a rusty steward is still a steward.",
+            "chinese": "即使生锈了的乘务员依然是乘务员。"
         }],
         "pools": [
-            "UnitsAllBanner"
+            "UnitsAllBanner",
+            "MegaPool"
         ]
     }],
     "characters": [{
-        "id": "BiggerSteward",
-        "size": 3,
-        "attack_damage": 14,
-        "health": 25,
+        "id": "RustedSteward",
+        "size": 1,
+        "attack_damage": 5,
+        "health": 8,
         "names": {
-            "english": "Steward Amalgam",
-            "chinese": "乘务员造物"
+            "english": "Rusted Steward",
+            "chinese": "生锈的乘务员"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -42,27 +43,32 @@
             "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [{
-            "status": "titanskin",
-            "count": 2
-        }]
+                "status": "damage_shield",
+                "count": 1
+            },
+            {
+                "status": "multistrike",
+                "count": 1
+            }
+        ]
     }],
     "effects": [{
-        "id": "SpawnBiggerSteward",
+        "id": "SpawnRustedSteward",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
         "target_card_type": "spell",
-        "param_character_data": "@BiggerSteward"
+        "param_character_data": "@RustedSteward"
     }],
     "sprites": [{
-        "id": "BiggerSteward",
+        "id": "RustedSteward",
         "path": "textures/MechanicalOutrage.png"
     }],
     "game_objects": [{
-        "id": "BiggerSteward",
+        "id": "RustedSteward",
         "type": "card_art",
         "extensions": {
             "card_art": {
-                "sprite": "@BiggerSteward"
+                "sprite": "@RustedSteward"
             }
         }
     }]

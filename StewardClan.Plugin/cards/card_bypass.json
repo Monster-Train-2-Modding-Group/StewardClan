@@ -1,42 +1,36 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "Bypass",
-            "names": {
-                "english": "Bypass",
-                "chinese": "绕路"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "Bypass",
+        "names": {
+            "english": "Bypass",
+            "chinese": "绕路"
+        },
+        "descriptions": {
+            "english": "Deal [effect0.power] damage.",
+            "chinese": "造成 [effect0.power] 点伤害。"
+        },
+        "rarity": "common",
+        "class": "@ClassSteward",
+        "card_art_reference": "@BypassArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 1,
+        "traits": [{
+                "id": "@BypassPiercing"
             },
-            "descriptions": {
-                "english": "Deal [effect0.power] damage.",
-                "chinese": "造成 [effect0.power] 点伤害。"
-            },
-            "rarity": "common",
-            "class": "@ClassSteward",
-            "card_art_reference": "@BypassArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 1,
-            "traits": [
-                {
-                    "id": "@BypassPiercing"
-                },
-                {
-                    "id": "@BypassOverflow"
-                }
-            ],
-            "effects": [
-                {
-                    "id": "@BypassDamage"
-                }
-            ]
-        }
-    ],
-    "traits": [
-        {
+            {
+                "id": "@BypassOverflow"
+            }
+        ],
+        "effects": [{
+            "id": "@BypassDamage"
+        }]
+    }],
+    "traits": [{
             "id": "BypassPiercing",
             "name": "CardTraitIgnoreArmor"
         },
@@ -45,31 +39,25 @@
             "name": "CardTraitDamageOverflow"
         }
     ],
-    "effects": [
-        {
-            "id": "BypassDamage",
-            "name": "CardEffectDamage",
-            "target_mode": "drop_target_character",
-            "target_team": "both",
-            "param_int": 12,
-            "use_magic_power_multipler": true
-        }
-    ],
-    "sprites": [
-        {
-            "id": "BypassArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "BypassArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@BypassArt"
-                }
+    "effects": [{
+        "id": "BypassDamage",
+        "name": "CardEffectDamage",
+        "target_mode": "drop_target_character",
+        "target_team": "both",
+        "param_int": 12,
+        "use_magic_power_multipler": true
+    }],
+    "sprites": [{
+        "id": "BypassArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "BypassArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@BypassArt"
             }
         }
-    ]
+    }]
 }

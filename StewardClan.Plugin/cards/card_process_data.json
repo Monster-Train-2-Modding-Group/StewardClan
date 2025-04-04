@@ -1,37 +1,33 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "ProcessData",
-            "names": {
-                "english": "Process Data",
-                "chinese": "处理数据"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "ProcessData",
+        "names": {
+            "english": "Process Data",
+            "chinese": "处理数据"
+        },
+        "descriptions": {
+            "english": "[advance]. Apply +[effect1.power][health]",
+            "chinese": "[advance]。获得 +[effect1.power][health]。"
+        },
+        "rarity": "common",
+        "class": "@ClassSteward",
+        "card_art_reference": "@ProcessDataArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 1,
+        "effects": [{
+                "id": "@ProcessDataAdvance"
             },
-            "descriptions": {
-                "english": "[advance]. Apply +[effect1.power][health]",
-                "chinese": "[advance]。获得 +[effect1.power][health]。"
-            },
-            "rarity": "common",
-            "class": "@ClassSteward",
-            "card_art_reference": "@ProcessDataArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 1,
-            "effects": [
-                {
-                    "id": "@ProcessDataAdvance"
-                },
-                {
-                    "id": "@ProcessDataBuffMaxHealth"
-                }
-            ]
-        }
-    ],
-    "effects": [
-        {
+            {
+                "id": "@ProcessDataBuffMaxHealth"
+            }
+        ]
+    }],
+    "effects": [{
             "id": "ProcessDataAdvance",
             "name": "CardEffectFloorRearrange",
             "param_int": 0,
@@ -48,21 +44,17 @@
             "target_subtype": "SubtypesData_None"
         }
     ],
-    "sprites": [
-        {
-            "id": "ProcessDataArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "ProcessDataArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@ProcessDataArt"
-                }
+    "sprites": [{
+        "id": "ProcessDataArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "ProcessDataArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@ProcessDataArt"
             }
         }
-    ]
+    }]
 }

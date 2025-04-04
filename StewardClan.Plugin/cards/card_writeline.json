@@ -1,73 +1,57 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "Writeline",
-            "names": {
-                "english": "Console.Writeline",
-                "chinese": "你好，世界！"
-            },
-            "descriptions": {
-                "english": "Apply [meleeweakness] [effect0.status0.power]",
-                "chinese": "施加 [meleeweakness] [effect0.status0.power]。"
-            },
-            "rarity": "common",
-            "class": "@ClassSteward",
-            "card_art_reference": "@WritelineArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 2,
-            "traits": [
-                {
-                    "id": "@WritelineConsume"
-                }
-            ],
-            "effects": [
-                {
-                    "id": "@WritelineStatusEffect"
-                }
-            ]
-        }
-    ],
-    "traits": [
-        {
-            "id": "WritelineConsume",
-            "name": "CardTraitExhaustState"
-        }
-    ],
-    "effects": [
-        {
-            "id": "WritelineStatusEffect",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "drop_target_character",
-            "target_team": "both",
-            "target_subtype": "SubtypesData_None",
-            "param_status_effects": [
-                {
-                    "status": "melee weakness",
-                    "count": 3
-                }
-            ]
-        }
-    ],
-    "sprites": [
-        {
-            "id": "WritelineArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "WritelineArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@WritelineArt"
-                }
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "Writeline",
+        "names": {
+            "english": "Console.Writeline",
+            "chinese": "你好，世界！"
+        },
+        "descriptions": {
+            "english": "Apply [meleeweakness] [effect0.status0.power]",
+            "chinese": "施加 [meleeweakness] [effect0.status0.power]。"
+        },
+        "rarity": "common",
+        "class": "@ClassSteward",
+        "card_art_reference": "@WritelineArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 2,
+        "traits": [{
+            "id": "@WritelineConsume"
+        }],
+        "effects": [{
+            "id": "@WritelineStatusEffect"
+        }]
+    }],
+    "traits": [{
+        "id": "WritelineConsume",
+        "name": "CardTraitExhaustState"
+    }],
+    "effects": [{
+        "id": "WritelineStatusEffect",
+        "name": "CardEffectAddStatusEffect",
+        "target_mode": "drop_target_character",
+        "target_team": "both",
+        "target_subtype": "SubtypesData_None",
+        "param_status_effects": [{
+            "status": "melee weakness",
+            "count": 3
+        }]
+    }],
+    "sprites": [{
+        "id": "WritelineArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "WritelineArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@WritelineArt"
             }
         }
-    ]
+    }]
 }

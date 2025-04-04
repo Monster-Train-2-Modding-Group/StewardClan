@@ -1,505 +1,453 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-  "cards": [
-    {
-      "id": "Albert",
-      "names": {
-        "group": "CardData_Albert",
-        "english": "Mad Albert",
-        "chinese": "疯狂的阿尔伯特",
-        "french": "Dragon Blanc Aux Yeux Bleux"
-      },
-      "descriptions": {
-        "group": "CardData_Albert",
-        "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]",
-        "chinese": "<b>召唤:</b> 获得 +[trait0.power][x][attack]，+[trait1.power][x][health]。"
-      },
-      "card_art_reference": "@AlbertArt",
-      "cost": 0,
-      "type": "monster",
-      "cost_type": "x",
-      "rarity": "champion",
-      "class": "@ClassSteward",
-      "unlock_level": 0,
-      "targets_room": true,
-      "targetless": false,
-      "traits": [
-        {
-          "id": "@AlbertBuffAttackByCost"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+    "cards": [{
+        "id": "Albert",
+        "names": {
+            "group": "CardData_Albert",
+            "english": "Mad Albert",
+            "chinese": "疯狂的阿尔伯特",
+            "french": "Dragon Blanc Aux Yeux Bleux"
         },
-        {
-          "id": "@AlbertBuffHealthByCost"
-        }
-      ],
-      "effects": [
-        {
-          "id": "@SpawnAlbert"
-        }
-      ],
-      "lore_tooltips": [
-        {
-          "english": "A Train Steward gone mad, luckily he is on our side.",
-          "chinese": "一名乘务员疯了，幸运的是他站在我们这边。"
-        }
-      ]
-    }
-  ],
-  "characters": [
-    {
-      "id": "Albert",
-      "names": {
-        "group": "CharacterData_Albert",
-        "english": "Albert",
-        "chinese": "阿尔伯特"
-      },
-      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-      "size": 3,
-      "health": 5,
-      "can_be_healed": true,
-      "death_type": "large",
-      "can_attack": true,
-      "attack_damage": 10,
-      "attack_teleports_to_defender": true,
-      "death_slides_backwards": true,
-      "chosen_variant": false,
-      "titan_affinity": "none",
-      "triggers": [
-        {
-          "id": "@AlbertStatsOnSummon"
-        }
-      ],
-      "subtypes": [
-        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
-        "SubtypesData_TrainSteward"
-      ],
-      "equip_limit": 1,
-      "endless_stats": {
+        "descriptions": {
+            "group": "CardData_Albert",
+            "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]",
+            "chinese": "<b>召唤:</b> 获得 +[trait0.power][x][attack]，+[trait1.power][x][health]。"
+        },
+        "card_art_reference": "@AlbertArt",
+        "cost": 0,
+        "type": "monster",
+        "cost_type": "x",
+        "rarity": "champion",
+        "class": "@ClassSteward",
+        "unlock_level": 0,
+        "targets_room": true,
+        "targetless": false,
+        "traits": [{
+                "id": "@AlbertBuffAttackByCost"
+            },
+            {
+                "id": "@AlbertBuffHealthByCost"
+            }
+        ],
+        "effects": [{
+            "id": "@SpawnAlbert"
+        }],
+        "lore_tooltips": [{
+            "english": "A Train Steward gone mad, luckily he is on our side.",
+            "chinese": "一名乘务员疯了，幸运的是他站在我们这边。"
+        }]
+    }],
+    "characters": [{
+        "id": "Albert",
+        "names": {
+            "group": "CharacterData_Albert",
+            "english": "Albert",
+            "chinese": "阿尔伯特"
+        },
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "size": 3,
         "health": 5,
-        "attack": 10
-      }
-    }
-  ],
-  "traits": [
-    {
-      "id": "AlbertBuffAttackByCost",
-      "name": "CardTraitScalingUpgradeUnitAttack",
-      "track_type": "played_cost",
-      "param_int": 2
-    },
-    {
-      "id": "AlbertBuffHealthByCost",
-      "name": "CardTraitScalingUpgradeUnitHealth",
-      "track_type": "played_cost",
-      "param_int": 4
-    },
-    {
-      "id": "BuffAttackByCost2",
-      "name": "CardTraitScalingUpgradeUnitAttack",
-      "track_type": "played_cost",
-      "param_int": 4
-    },
-    {
-      "id": "BuffHealthByCost2",
-      "name": "CardTraitScalingUpgradeUnitHealth",
-      "track_type": "played_cost",
-      "param_int": 6
-    },
-    {
-      "id": "BuffAttackByCost3",
-      "name": "CardTraitScalingUpgradeUnitAttack",
-      "track_type": "played_cost",
-      "param_int": 6
-    },
-    {
-      "id": "BuffHealthByCost3",
-      "name": "CardTraitScalingUpgradeUnitHealth",
-      "track_type": "played_cost",
-      "param_int": 9
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "AlbertEngineeringStation1",
-      "titles": {
-        "english": "Engineering Station",
-        "chinese": "制造站"
-      },
-      "allow_secondary_tooltip_placement": true,
-      "hide_icon_on_card": true,
-      "descriptions": {
-        "english": "Train Stewards get +10/+10 and [titanskin] 2.",
-        "chinese": "乘务员单位获得 +10[attack]，+10[health]，和 [titanskin] 2。"
-      },
-      "bonus_damage": 10,
-      "bonus_hp": 10,
-      "icon": "@AlbertStewardRoomArt",
-      "filters": [],
-      "status_effect_upgrades": [
-        {
-          "id": "none",
-          "status": "titanskin",
-          "count": 2
+        "can_be_healed": true,
+        "death_type": "large",
+        "can_attack": true,
+        "attack_damage": 10,
+        "attack_teleports_to_defender": true,
+        "death_slides_backwards": true,
+        "chosen_variant": false,
+        "titan_affinity": "none",
+        "triggers": [{
+            "id": "@AlbertStatsOnSummon"
+        }],
+        "subtypes": [
+            "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
+            "SubtypesData_TrainSteward"
+        ],
+        "equip_limit": 1,
+        "endless_stats": {
+            "health": 5,
+            "attack": 10
         }
-      ]
-    },
-    {
-      "id": "AlbertEngineeringStation2",
-      "titles": {
-        "english": "Engineering Station",
-        "chinese": "制造站"
-      },
-      "allow_secondary_tooltip_placement": true,
-      "hide_icon_on_card": true,
-      "descriptions": {
-        "english": "Train Stewards get +20/+20 and [titanskin] 4.",
-        "chinese": "乘务员单位获得 +20[attack]，+20[health]，和 [titanskin] 4。"
-      },
-      "bonus_damage": 20,
-      "bonus_hp": 20,
-      "icon": "@AlbertStewardRoomArt",
-      "filters": [],
-      "status_effect_upgrades": [
-        {
-          "id": "none",
-          "status": "titanskin",
-          "count": 4
-        }
-      ]
-    },
-    {
-      "id": "AlbertEngineeringStation3",
-      "titles": {
-        "english": "Engineering Station",
-        "chinese": "制造站"
-      },
-      "allow_secondary_tooltip_placement": true,
-      "hide_icon_on_card": true,
-      "descriptions": {
-        "english": "Train Stewards get +40/+40 and [titanskin] 6.",
-        "chinese": "乘务员单位获得 +40[attack]，+40[health]，和 [titanskin] 6。"
-      },
-      "bonus_damage": 40,
-      "bonus_hp": 40,
-      "icon": "@AlbertStewardRoomArt",
-      "filters": [],
-      "status_effect_upgrades": [
-        {
-          "id": "none",
-          "status": "titanskin",
-          "count": 6
-        }
-      ]
-    },
-    {
-      "id": "AlbertStewardBuff1",
-      "titles": {
-        "english": "Stewardly 1",
-        "chinese": "乘务员升级 1"
-      },
-      "bonus_damage": 7,
-      "bonus_hp": 0,
-      "bonus_size": -1,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertBuffStewards1"
-        }
-      ]
-    },
-    {
-      "id": "AlbertStewardBuff2",
-      "titles": {
-        "english": "Stewardly 2",
-        "chinese": "乘务员升级 2"
-      },
-      "bonus_damage": 9,
-      "bonus_hp": 5,
-      "bonus_size": -1,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertBuffStewards2"
-        }
-      ]
-    },
-    {
-      "id": "AlbertStewardBuff3",
-      "titles": {
-        "english": "Stewardly 3",
-        "chinese": "乘务员升级 3"
-      },
-      "bonus_damage": 9,
-      "bonus_hp": 5,
-      "bonus_size": -1,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertBuffStewards3"
-        }
-      ]
-    },
-    {
-      "id": "AlbertEmberBuff1",
-      "titles": {
-        "english": "Overengineered 1",
-        "chinese": "过度设计 1"
-      },
-      "bonus_damage": 10,
-      "bonus_hp": 3,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertAddEmber1"
-        }
-      ]
-    },
-    {
-      "id": "AlbertEmberBuff2",
-      "titles": {
-        "english": "Overengineered 2",
-        "chinese": "过度设计 2"
-      },
-      "bonus_damage": 10,
-      "bonus_hp": 3,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertAddEmber2"
-        }
-      ]
-    },
-    {
-      "id": "AlbertEmberBuff3",
-      "titles": {
-        "english": "Overengineered 3",
-        "chinese": "过度设计 3"
-      },
-      "bonus_damage": 15,
-      "bonus_hp": 9,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertAddEmber3"
-        }
-      ]
-    },
-    {
-      "id": "AlbertXReductionBuffer1",
-      "titles": {
-        "english": "Utility 1",
-        "chinese": "实用强化 1"
-      },
-      "x_cost_reduction": 3
-    },
-    {
-      "id": "AlbertXReductionBuffer2",
-      "titles": {
-        "english": "Utility 2",
-        "chinese": "实用强化 2"
-      },
-      "x_cost_reduction": 3,
-      "remove_trait_upgrades": [
-        "@BuffAttackByCost1",
-        "@BuffHealthByCost1"
-      ],
-      "trait_upgrades": [
-        {
-          "id": "@BuffAttackByCost2"
+    }],
+    "traits": [{
+            "id": "AlbertBuffAttackByCost",
+            "name": "CardTraitScalingUpgradeUnitAttack",
+            "track_type": "played_cost",
+            "param_int": 2
         },
         {
-          "id": "@BuffHealthByCost2"
-        }
-      ]
-    },
-    {
-      "id": "AlbertXReductionBuffer3",
-      "titles": {
-        "english": "Utility 3",
-        "chinese": "实用强化 3"
-      },
-      "x_cost_reduction": 3,
-      "remove_trait_upgrades": [
-        "@BuffAttackByCost2",
-        "@BuffHealthByCost2"
-      ],
-      "trait_upgrades": [
-        {
-          "id": "@BuffAttackByCost3"
+            "id": "AlbertBuffHealthByCost",
+            "name": "CardTraitScalingUpgradeUnitHealth",
+            "track_type": "played_cost",
+            "param_int": 4
         },
         {
-          "id": "@BuffHealthByCost3"
-        }
-      ]
-    }
-  ],
-  "character_triggers": [
-    {
-      "id": "AlbertStatsOnSummon",
-      "trigger": "on_spawn",
-      "effects": [
+            "id": "BuffAttackByCost2",
+            "name": "CardTraitScalingUpgradeUnitAttack",
+            "track_type": "played_cost",
+            "param_int": 4
+        },
         {
-          "id": "@AlbertAddTempCard"
-        }
-      ]
-    },
-    {
-      "id": "AlbertAddEmber1",
-      "trigger": "on_spawn",
-      "descriptions": {
-        "english": "Gain [effect0.power][ember]",
-        "chinese": "获得 [effect0.power][ember]。"
-      },
-      "effects": [
+            "id": "BuffHealthByCost2",
+            "name": "CardTraitScalingUpgradeUnitHealth",
+            "track_type": "played_cost",
+            "param_int": 6
+        },
         {
-          "id": "@AlbertAddEmber1"
-        }
-      ]
-    },
-    {
-      "id": "AlbertAddEmber2",
-      "trigger": "on_spawn",
-      "descriptions": {
-        "english": "Gain [effect0.power][ember]",
-        "chinese": "获得 [effect0.power][ember]。"
-      },
-      "effects": [
+            "id": "BuffAttackByCost3",
+            "name": "CardTraitScalingUpgradeUnitAttack",
+            "track_type": "played_cost",
+            "param_int": 6
+        },
         {
-          "id": "@AlbertAddEmber2"
+            "id": "BuffHealthByCost3",
+            "name": "CardTraitScalingUpgradeUnitHealth",
+            "track_type": "played_cost",
+            "param_int": 9
         }
-      ]
-    },
-    {
-      "id": "AlbertAddEmber3",
-      "trigger": "on_spawn",
-      "descriptions": {
-        "english": "Gain [effect0.power][ember]",
-        "chinese": "获得 [effect0.power][ember]。"
-      },
-      "effects": [
+    ],
+    "upgrades": [{
+            "id": "AlbertEngineeringStation1",
+            "titles": {
+                "english": "Engineering Station",
+                "chinese": "制造站"
+            },
+            "allow_secondary_tooltip_placement": true,
+            "hide_icon_on_card": true,
+            "descriptions": {
+                "english": "Train Stewards get +10/+10 and [titanskin] 2.",
+                "chinese": "乘务员单位获得 +10[attack]，+10[health]，和 [titanskin] 2。"
+            },
+            "bonus_damage": 10,
+            "bonus_hp": 10,
+            "icon": "@AlbertStewardRoomArt",
+            "filters": [],
+            "status_effect_upgrades": [{
+                "id": "none",
+                "status": "titanskin",
+                "count": 2
+            }]
+        },
         {
-          "id": "@AlbertAddEmber3"
-        }
-      ]
-    },
-    {
-      "id": "AlbertBuffStewards1",
-      "trigger": "on_spawn",
-      "descriptions": {
-        "english": "Attach a room that gives Train Stewards +10[attack]/+10[health] and [titanskin] 2.",
-        "chinese": "向房间附加“乘务员单位获得 +10[attack]，+10[health]，和 [titanskin] 2”的效果。"
-      },
-      "effects": [
+            "id": "AlbertEngineeringStation2",
+            "titles": {
+                "english": "Engineering Station",
+                "chinese": "制造站"
+            },
+            "allow_secondary_tooltip_placement": true,
+            "hide_icon_on_card": true,
+            "descriptions": {
+                "english": "Train Stewards get +20/+20 and [titanskin] 4.",
+                "chinese": "乘务员单位获得 +20[attack]，+20[health]，和 [titanskin] 4。"
+            },
+            "bonus_damage": 20,
+            "bonus_hp": 20,
+            "icon": "@AlbertStewardRoomArt",
+            "filters": [],
+            "status_effect_upgrades": [{
+                "id": "none",
+                "status": "titanskin",
+                "count": 4
+            }]
+        },
         {
-          "id": "@AlbertAttachRoom1"
-        }
-      ]
-    },
-    {
-      "id": "AlbertBuffStewards2",
-      "trigger": "on_spawn",
-      "descriptions": {
-        "english": "Attach a room that gives Train Stewards +20[attack]/+20[health] and [titanskin] 4.",
-        "chinese": "向房间附加“乘务员单位获得 +20[attack]，+20[health]，和 [titanskin] 4”的效果。"
-      },
-      "effects": [
+            "id": "AlbertEngineeringStation3",
+            "titles": {
+                "english": "Engineering Station",
+                "chinese": "制造站"
+            },
+            "allow_secondary_tooltip_placement": true,
+            "hide_icon_on_card": true,
+            "descriptions": {
+                "english": "Train Stewards get +40/+40 and [titanskin] 6.",
+                "chinese": "乘务员单位获得 +40[attack]，+40[health]，和 [titanskin] 6。"
+            },
+            "bonus_damage": 40,
+            "bonus_hp": 40,
+            "icon": "@AlbertStewardRoomArt",
+            "filters": [],
+            "status_effect_upgrades": [{
+                "id": "none",
+                "status": "titanskin",
+                "count": 6
+            }]
+        },
         {
-          "id": "@AlbertAttachRoom2"
-        }
-      ]
-    },
-    {
-      "id": "AlbertBuffStewards3",
-      "trigger": "on_spawn",
-      "descriptions": {
-        "english": "Attach a room that gives Train Stewards +40[attack]/+40[health] and [titanskin] 6.",
-        "chinese": "向房间附加“乘务员单位获得 +40[attack]，+40[health]，和 [titanskin] 6”的效果。"
-      },
-      "effects": [
+            "id": "AlbertStewardBuff1",
+            "titles": {
+                "english": "Stewardly 1",
+                "chinese": "乘务员升级 1"
+            },
+            "bonus_damage": 7,
+            "bonus_hp": 0,
+            "bonus_size": -1,
+            "trigger_upgrades": [{
+                "id": "@AlbertBuffStewards1"
+            }]
+        },
         {
-          "id": "@AlbertAttachRoom3"
+            "id": "AlbertStewardBuff2",
+            "titles": {
+                "english": "Stewardly 2",
+                "chinese": "乘务员升级 2"
+            },
+            "bonus_damage": 9,
+            "bonus_hp": 5,
+            "bonus_size": -1,
+            "trigger_upgrades": [{
+                "id": "@AlbertBuffStewards2"
+            }]
+        },
+        {
+            "id": "AlbertStewardBuff3",
+            "titles": {
+                "english": "Stewardly 3",
+                "chinese": "乘务员升级 3"
+            },
+            "bonus_damage": 9,
+            "bonus_hp": 5,
+            "bonus_size": -1,
+            "trigger_upgrades": [{
+                "id": "@AlbertBuffStewards3"
+            }]
+        },
+        {
+            "id": "AlbertEmberBuff1",
+            "titles": {
+                "english": "Overengineered 1",
+                "chinese": "过度设计 1"
+            },
+            "bonus_damage": 10,
+            "bonus_hp": 3,
+            "trigger_upgrades": [{
+                "id": "@AlbertAddEmber1"
+            }]
+        },
+        {
+            "id": "AlbertEmberBuff2",
+            "titles": {
+                "english": "Overengineered 2",
+                "chinese": "过度设计 2"
+            },
+            "bonus_damage": 10,
+            "bonus_hp": 3,
+            "trigger_upgrades": [{
+                "id": "@AlbertAddEmber2"
+            }]
+        },
+        {
+            "id": "AlbertEmberBuff3",
+            "titles": {
+                "english": "Overengineered 3",
+                "chinese": "过度设计 3"
+            },
+            "bonus_damage": 15,
+            "bonus_hp": 9,
+            "trigger_upgrades": [{
+                "id": "@AlbertAddEmber3"
+            }]
+        },
+        {
+            "id": "AlbertXReductionBuffer1",
+            "titles": {
+                "english": "Utility 1",
+                "chinese": "实用强化 1"
+            },
+            "x_cost_reduction": 3
+        },
+        {
+            "id": "AlbertXReductionBuffer2",
+            "titles": {
+                "english": "Utility 2",
+                "chinese": "实用强化 2"
+            },
+            "x_cost_reduction": 3,
+            "remove_trait_upgrades": [
+                "@BuffAttackByCost1",
+                "@BuffHealthByCost1"
+            ],
+            "trait_upgrades": [{
+                    "id": "@BuffAttackByCost2"
+                },
+                {
+                    "id": "@BuffHealthByCost2"
+                }
+            ]
+        },
+        {
+            "id": "AlbertXReductionBuffer3",
+            "titles": {
+                "english": "Utility 3",
+                "chinese": "实用强化 3"
+            },
+            "x_cost_reduction": 3,
+            "remove_trait_upgrades": [
+                "@BuffAttackByCost2",
+                "@BuffHealthByCost2"
+            ],
+            "trait_upgrades": [{
+                    "id": "@BuffAttackByCost3"
+                },
+                {
+                    "id": "@BuffHealthByCost3"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "effects": [
-    {
-      "id": "SpawnAlbert",
-      "name": "CardEffectSpawnMonster",
-      "target_mode": "room",
-      "target_card_type": "spell",
-      "param_character_data": "@Albert"
-    },
-    {
-      "id": "AlbertAddEmber1",
-      "name": "CardEffectGainEnergy",
-      "target_mode": "room",
-      "param_int": 2
-    },
-    {
-      "id": "AlbertAddEmber2",
-      "name": "CardEffectGainEnergy",
-      "target_mode": "room",
-      "param_int": 4
-    },
-    {
-      "id": "AlbertAddEmber3",
-      "name": "CardEffectGainEnergy",
-      "target_mode": "room",
-      "param_int": 6
-    },
-    {
-      "id": "AlbertAddTempCard",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_int": 1
-    },
-    {
-      "id": "AlbertAttachRoom1",
-      "target_mode": "room",
-      "target_ignore_bosses": true,
-      "name": "CustomCardEffectAttachRoomAttachment",
-      "param_upgrade": "@AlbertEngineeringStation1",
-      "param_bool": false,
-      "param_bool_2": false,
-      "target_team": "monsters",
-      "target_subtype": "SubtypesData_TrainSteward"
-    },
-    {
-      "id": "AlbertAttachRoom2",
-      "target_mode": "room",
-      "target_ignore_bosses": true,
-      "name": "CustomCardEffectAttachRoomAttachment",
-      "param_upgrade": "@AlbertEngineeringStation2",
-      "param_bool": false,
-      "param_bool_2": false,
-      "target_team": "monsters",
-      "target_subtype": "SubtypesData_TrainSteward"
-    },
-    {
-      "id": "AlbertAttachRoom3",
-      "target_mode": "room",
-      "target_ignore_bosses": true,
-      "name": "CustomCardEffectAttachRoomAttachment",
-      "param_upgrade": "@AlbertEngineeringStation3",
-      "param_bool": false,
-      "param_bool_2": false,
-      "target_team": "monsters",
-      "target_subtype": "SubtypesData_TrainSteward"
-    }
-  ],
-  "sprites": [
-    {
-      "id": "AlbertArt",
-      "path": "textures/MechanicalOutrage.png"
-    },
-    {
-      "id": "AlbertStewardRoomArt",
-      "path": "textures/AlbertStewardRoom.png"
-    }
-  ],
-  "game_objects": [
-    {
-      "id": "AlbertArt",
-      "type": "card_art",
-      "extensions": {
-        "card_art": {
-          "sprite": "@AlbertArt"
+    ],
+    "character_triggers": [{
+            "id": "AlbertStatsOnSummon",
+            "trigger": "on_spawn",
+            "effects": [{
+                "id": "@AlbertAddTempCard"
+            }]
+        },
+        {
+            "id": "AlbertAddEmber1",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Gain [effect0.power][ember]",
+                "chinese": "获得 [effect0.power][ember]。"
+            },
+            "effects": [{
+                "id": "@AlbertAddEmber1"
+            }]
+        },
+        {
+            "id": "AlbertAddEmber2",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Gain [effect0.power][ember]",
+                "chinese": "获得 [effect0.power][ember]。"
+            },
+            "effects": [{
+                "id": "@AlbertAddEmber2"
+            }]
+        },
+        {
+            "id": "AlbertAddEmber3",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Gain [effect0.power][ember]",
+                "chinese": "获得 [effect0.power][ember]。"
+            },
+            "effects": [{
+                "id": "@AlbertAddEmber3"
+            }]
+        },
+        {
+            "id": "AlbertBuffStewards1",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Attach a room that gives Train Stewards +10[attack]/+10[health] and [titanskin] 2.",
+                "chinese": "向房间附加“乘务员单位获得 +10[attack]，+10[health]，和 [titanskin] 2”的效果。"
+            },
+            "effects": [{
+                "id": "@AlbertAttachRoom1"
+            }]
+        },
+        {
+            "id": "AlbertBuffStewards2",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Attach a room that gives Train Stewards +20[attack]/+20[health] and [titanskin] 4.",
+                "chinese": "向房间附加“乘务员单位获得 +20[attack]，+20[health]，和 [titanskin] 4”的效果。"
+            },
+            "effects": [{
+                "id": "@AlbertAttachRoom2"
+            }]
+        },
+        {
+            "id": "AlbertBuffStewards3",
+            "trigger": "on_spawn",
+            "descriptions": {
+                "english": "Attach a room that gives Train Stewards +40[attack]/+40[health] and [titanskin] 6.",
+                "chinese": "向房间附加“乘务员单位获得 +40[attack]，+40[health]，和 [titanskin] 6”的效果。"
+            },
+            "effects": [{
+                "id": "@AlbertAttachRoom3"
+            }]
         }
-      }
-    }
-  ]
+    ],
+    "effects": [{
+            "id": "SpawnAlbert",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "room",
+            "target_card_type": "spell",
+            "param_character_data": "@Albert"
+        },
+        {
+            "id": "AlbertAddEmber1",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "room",
+            "param_int": 2
+        },
+        {
+            "id": "AlbertAddEmber2",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "room",
+            "param_int": 4
+        },
+        {
+            "id": "AlbertAddEmber3",
+            "name": "CardEffectGainEnergy",
+            "target_mode": "room",
+            "param_int": 6
+        },
+        {
+            "id": "AlbertAddTempCard",
+            "name": "CardEffectAddTempCardUpgradeToUnits",
+            "target_mode": "self",
+            "param_int": 1
+        },
+        {
+            "id": "AlbertAttachRoom1",
+            "target_mode": "room",
+            "target_ignore_bosses": true,
+            "name": "CustomCardEffectAttachRoomAttachment",
+            "param_upgrade": "@AlbertEngineeringStation1",
+            "param_bool": false,
+            "param_bool_2": false,
+            "target_team": "monsters",
+            "target_subtype": "SubtypesData_TrainSteward"
+        },
+        {
+            "id": "AlbertAttachRoom2",
+            "target_mode": "room",
+            "target_ignore_bosses": true,
+            "name": "CustomCardEffectAttachRoomAttachment",
+            "param_upgrade": "@AlbertEngineeringStation2",
+            "param_bool": false,
+            "param_bool_2": false,
+            "target_team": "monsters",
+            "target_subtype": "SubtypesData_TrainSteward"
+        },
+        {
+            "id": "AlbertAttachRoom3",
+            "target_mode": "room",
+            "target_ignore_bosses": true,
+            "name": "CustomCardEffectAttachRoomAttachment",
+            "param_upgrade": "@AlbertEngineeringStation3",
+            "param_bool": false,
+            "param_bool_2": false,
+            "target_team": "monsters",
+            "target_subtype": "SubtypesData_TrainSteward"
+        }
+    ],
+    "sprites": [{
+            "id": "AlbertArt",
+            "path": "textures/MechanicalOutrage.png"
+        },
+        {
+            "id": "AlbertStewardRoomArt",
+            "path": "textures/AlbertStewardRoom.png"
+        }
+    ],
+    "game_objects": [{
+        "id": "AlbertArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@AlbertArt"
+            }
+        }
+    }]
 }

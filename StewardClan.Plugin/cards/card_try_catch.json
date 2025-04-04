@@ -1,73 +1,57 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
-    "cards": [
-        {
-            "id": "TryCatch",
-            "names": {
-                "english": "Try-Catch",
-                "chinese": "异常处理"
-            },
-            "descriptions": {
-                "english": "Apply [armor] [effect0.status0.power] to the front friendly unit.",
-                "chinese": "使前排友方单位获得 [armor] [effect0.status0.power]。"
-            },
-            "rarity": "common",
-            "class": "@ClassSteward",
-            "card_art_reference": "@TryCatchArt",
-            "targets_room": true,
-            "targetless": false,
-            "pools": [
-                "MegaPool"
-            ],
-            "cost": 3,
-            "traits": [
-                {
-                    "id": "@TryCatchOffering"
-                }
-            ],
-            "effects": [
-                {
-                    "id": "@TryCatchArmor"
-                }
-            ]
-        }
-    ],
-    "traits": [
-      {
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "TryCatch",
+        "names": {
+            "english": "Try-Catch",
+            "chinese": "异常处理"
+        },
+        "descriptions": {
+            "english": "Apply [armor] [effect0.status0.power] to the front friendly unit.",
+            "chinese": "使前排友方单位获得 [armor] [effect0.status0.power]。"
+        },
+        "rarity": "common",
+        "class": "@ClassSteward",
+        "card_art_reference": "@TryCatchArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 3,
+        "traits": [{
+            "id": "@TryCatchOffering"
+        }],
+        "effects": [{
+            "id": "@TryCatchArmor"
+        }]
+    }],
+    "traits": [{
         "id": "TryCatchOffering",
         "name": "CardTraitTreasure"
-      }
-    ],
-    "effects": [
-        {
-            "id": "TryCatchArmor",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "front_in_room",
-            "target_team": "monsters",
-            "target_subtype": "SubtypesData_None",
-            "param_status_effects": [
-                {
-                    "status": "armor",
-                    "count": 20
-                }
-            ]
-        }
-    ],
-    "sprites": [
-        {
-            "id": "TryCatchArt",
-            "path": "textures/MechanicalOutrage.png"
-        }
-    ],
-    "game_objects": [
-        {
-            "id": "TryCatchArt",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@TryCatchArt"
-                }
+    }],
+    "effects": [{
+        "id": "TryCatchArmor",
+        "name": "CardEffectAddStatusEffect",
+        "target_mode": "front_in_room",
+        "target_team": "monsters",
+        "target_subtype": "SubtypesData_None",
+        "param_status_effects": [{
+            "status": "armor",
+            "count": 20
+        }]
+    }],
+    "sprites": [{
+        "id": "TryCatchArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "TryCatchArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@TryCatchArt"
             }
         }
-    ]
+    }]
 }

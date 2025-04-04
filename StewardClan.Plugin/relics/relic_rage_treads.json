@@ -1,11 +1,13 @@
-{
+{ 
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relic_effects": [{
         "id": "RageTreadsEffectOnAscend",
         "name": "RelicEffectAddStatusEffectOnUnitMoved",
         "character_subtype": "SubtypesData_None",
         "target_mode": "front_in_room",
         "card_type": "monster",
-        "param_int": 1,
+        "param_int": 0,
+        "param_int_2": 0,
         "param_status_effects": [{
             "status": "buff",
             "count": 2
@@ -35,6 +37,8 @@
         "relic_effects": [{
             "id": "@RageTreadsEffectOnAscend"
         }],
+        "icon": "@RageTreadsIcon",
+        "icon_small": "@RageTreadsIconSmall",
         "extensions": [{
             "collectable": {
                 "class": "ClassPyreborne",
@@ -50,5 +54,16 @@
                 "force_update_count_label": false
             }
         }]
-    }]
+    }],
+    "sprites": [
+      {
+        "id": "RageTreadsIcon",
+        "path": "textures/RageTreadsIcon.png"
+      },
+      
+      {
+        "id": "RageTreadsIconSmall",
+        "path": "textures/RageTreadsIconSmall.png"
+      }
+    ]
 }
