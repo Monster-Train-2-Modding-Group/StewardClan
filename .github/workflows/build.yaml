@@ -46,7 +46,7 @@ jobs:
         run: mkdir -p plugin_build
 
       - name: Build Release
-        run: dotnet build -c Release --no-restore --output ./plugin_build --no-restore /p:Version=${VERSION}
+        run: dotnet build StewardClan.Plugin -c Release --no-restore --output ./plugin_build /p:Version=${VERSION}
 
       - name: Build thunderstore package
         run: |
