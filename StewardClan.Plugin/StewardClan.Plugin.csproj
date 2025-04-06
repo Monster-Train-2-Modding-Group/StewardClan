@@ -16,7 +16,7 @@
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="TrainworksReloaded.Base" Version="0.2.3" />
+    <PackageReference Include="TrainworksReloaded.Base" Version="0.2.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,12 +38,6 @@
     <None Update="relics/*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="$(UserProfile)\.nuget\packages\newtonsoft.json\13.0.3\lib\netstandard2.0\*.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties plugin_1json__JsonSchema="..\..\Trainworks-Reloaded\json-schema.json" /></VisualStudio></ProjectExtensions>

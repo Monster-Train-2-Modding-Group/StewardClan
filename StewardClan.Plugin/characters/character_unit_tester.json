@@ -1,0 +1,86 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "SpawnUnitTester",
+        "names": {
+            "english": "Unit Tester",
+            "chinese": "单位测试者"
+        },
+        "card_art_reference": "@UnitTester",
+        "cost": 2,
+        "type": "monster",
+        "cost_type": "default",
+        "rarity": "rare",
+        "class": "@ClassSteward",
+        "unlock_level": 0,
+        "targets_room": true,
+        "effects": [{
+            "id": "@SpawnUnitTester"
+        }],
+        "lore_tooltips": [{
+            "english": "Testing units to find their weaknesses.",
+            "chinese": "测试单位以找出它们的弱点。"
+        }],
+        "pools": [
+            "UnitsAllBanner"
+        ]
+    }],
+    "characters": [{
+        "id": "UnitTester",
+        "size": 2,
+        "attack_damage": 35,
+        "health": 20,
+        "names": {
+            "english": "Unit Tester",
+            "chinese": "单位测试者"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "subtypes": [
+            "SubtypesData_BannerUnit"
+        ],
+        "ability": "@UnitTesterAbility",
+        "triggers": [{
+            "id": "@UnitTesterTrigger"
+        }]
+    }],
+    "character_triggers": [{
+        "id": "UnitTesterTrigger",
+        "trigger": "on_equipment_added_to_ally",
+        "effects": [{
+            "id": "@UnitTesterApplyWeakness"
+        }]
+    }],
+    "effects": [{
+            "id": "SpawnUnitTester",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "room",
+            "target_card_type": "spell",
+            "param_character_data": "@UnitTester"
+        },
+        {
+            "id": "UnitTesterApplyWeakness",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "heroes",
+            "param_status_effects": [{
+                "status": "melee weakness",
+                "count": 1
+            }]
+        }
+    ],
+    "sprites": [{
+        "id": "UnitTester",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "UnitTester",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@UnitTester"
+            }
+        }
+    }]
+}

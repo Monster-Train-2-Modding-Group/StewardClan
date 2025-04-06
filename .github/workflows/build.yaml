@@ -12,7 +12,6 @@ permissions:
   contents: write
 
 env:
-  base_version: '0.1.0'
   mod_namespace: 'MT2'
   mod_name: 'Steward_Clan'
 
@@ -22,30 +21,43 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
+
       - name: Install Thunderstore
         run: |
-          dotnet tool install --global tcli
+          dotnet tool install --global 
+          
+      - name: Extract Version from Tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
       - name: Setup NuGet Credentials
         run: |
           dotnet nuget update source monster-train-packages -u USERNAME -p ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
+
       - name: Restore Dependencies
         run: dotnet restore
+
       - name: Setup Directory
-        run: mkdir -p dist/plugins
+        run: mkdir -p plugin_build
+
       - name: Build Release
-        run: dotnet build -c Release --no-restore --output ./dist/plugins
+        run: dotnet build -c Release --no-restore --output ./plugin_build --no-restore /p:Version=${VERSION}
+
       - name: Build thunderstore package
         run: |
           tcli build
+
       - name: Upload Build
         uses: actions/upload-artifact@v4
         with:
           name: build-bundle
           path: ${{ env.mod_namespace }}-${{ env.mod_name }}-${{ github.ref_name }}.zip
+
       - name: Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
@@ -53,6 +65,7 @@ jobs:
           files: ${{ env.mod_namespace }}-${{ env.mod_name }}-${{ github.ref_name }}.zip
           prerelease: true
           generate_release_notes: true
+
       - name: Publish to Thunderstore
         run: tcli publish --file "${{ env.mod_namespace }}-${{ env.mod_name }}-${{ github.ref_name }}.zip" --token ${{ secrets.TCLI_AUTH_TOKEN }}
         if: startsWith(github.ref, 'refs/tags/')

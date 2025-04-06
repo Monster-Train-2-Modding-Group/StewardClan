@@ -45,7 +45,7 @@
             "name": "CardEffectAttachTrainRoomAttachment",
             "target_mode": "room",
             "param_upgrade": "@GalvanizeMagicPowerRoom",
-            "param_bool": true
+            "param_bool": false
         }
     ],
     "upgrades": [{

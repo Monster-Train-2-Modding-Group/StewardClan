@@ -1,0 +1,70 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relic_effects": [{
+        "id": "StorageLockerEffectOnCombatStart",
+        "name": "RelicEffectSpawnUnitStartOfCombat",
+        "target_room_index": 1,
+        "param_character_data": "@RustedSteward",
+        "target_team": "monsters"
+    }],
+    "relics": [{
+        "id": "StorageLocker",
+        "type": "collectable",
+        "names": {
+            "english": "Storage Locker",
+            "chinese": "储物柜"
+        },
+        "descriptions": {
+            "english": "At the beginning of Combat, spawn three rusted stewards on the middle floor.",
+            "chinese": "战斗开始时，在中层生成三个生锈管家。"
+        },
+        "relic_activated": {
+            "english": "Storage Locker activated!",
+            "chinese": "储物柜已激活！"
+        },
+        "lore_tooltips": [{
+            "english": "A well-stocked storage locker containing spare Stewards ready for deployment.",
+            "chinese": "一个储备充足的储物柜，里面装着随时可以部署的备用管家。"
+        }],
+        "disallow_in_deployment": false,
+        "lore_style": "herzal",
+        "relic_effects": [{
+                "id": "@StorageLockerEffectOnCombatStart"
+            },
+            {
+
+                "id": "@StorageLockerEffectOnCombatStart"
+            },
+            {
+                "id": "@StorageLockerEffectOnCombatStart"
+            }
+        ],
+        "icon": "@StorageLockerIcon",
+        "icon_small": "@StorageLockerIconSmall",
+        "extensions": [{
+            "collectable": {
+                "class": "@ClassSteward",
+                "pool": "megapool",
+                "rarity": "common",
+                "unlock_level": 0,
+                "from_story_event": false,
+                "is_boss_given": false,
+                "is_dragons_hoard": false,
+                "ignore_for_no_relic_achievement": false,
+                "required_dlc": "none",
+                "deprioritize_in_ftue_drafts": true,
+                "force_update_count_label": false
+            }
+        }]
+    }],
+    "sprites": [{
+            "id": "StorageLockerIcon",
+            "path": "textures/StorageLockerIcon.png"
+        },
+
+        {
+            "id": "StorageLockerIconSmall",
+            "path": "textures/StorageLockerIconSmall.png"
+        }
+    ]
+}

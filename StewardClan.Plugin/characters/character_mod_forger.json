@@ -1,0 +1,86 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "SpawnModForger",
+        "names": {
+            "english": "Mod Forger",
+            "chinese": "模组锻造者"
+        },
+        "card_art_reference": "@ModForger",
+        "cost": 1,
+        "type": "monster",
+        "cost_type": "default",
+        "rarity": "rare",
+        "class": "@ClassSteward",
+        "unlock_level": 0,
+        "targets_room": true,
+        "effects": [{
+            "id": "@SpawnModForger"
+        }],
+        "lore_tooltips": [{
+            "english": "Forging mods to heal the Pyre, one artifact at a time.",
+            "chinese": "锻造模组来治愈圣火，一次一件神器。"
+        }],
+        "pools": [
+            "UnitsAllBanner"
+        ]
+    }],
+    "characters": [{
+        "id": "ModForger",
+        "size": 3,
+        "attack_damage": 40,
+        "health": 20,
+        "names": {
+            "english": "Mod Forger",
+            "chinese": "模组锻造者"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "subtypes": [
+            "SubtypesData_BannerUnit"
+        ],
+        "ability": "@ModForgerAbility",
+        "triggers": [{
+            "id": "@ModForgerTrigger"
+        }]
+    }],
+    "character_triggers": [{
+        "id": "ModForgerTrigger",
+        "descriptions": {
+            "english": "Heal the Pyre by [effect0.power][health]",
+            "chinese": "治疗圣火[effect0.power][health]点生命值"
+        },
+        "trigger": "on_equipment_added_to_ally",
+        "effects": [{
+            "id": "@ModForgerHealPyre"
+        }]
+    }],
+    "effects": [{
+            "id": "SpawnModForger",
+            "name": "CardEffectSpawnMonster",
+            "target_mode": "room",
+            "target_card_type": "spell",
+            "param_character_data": "@ModForger"
+        },
+        {
+            "id": "ModForgerHealPyre",
+            "name": "CardEffectHeal",
+            "target_mode": "pyre",
+            "param_int": 2
+        }
+    ],
+    "sprites": [{
+        "id": "ModForger",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "ModForger",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@ModForger"
+            }
+        }
+    }]
+}
