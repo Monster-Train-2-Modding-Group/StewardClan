@@ -14,6 +14,7 @@ permissions:
 env:
   mod_namespace: 'MT2'
   mod_name: 'Steward_Clan'
+  base_version: '0.1.0'
 
 jobs:
   build:
@@ -31,9 +32,14 @@ jobs:
         run: |
           dotnet tool install --global tcli
           
-      - name: Extract Version from Tag
-        id: get_version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+      - name: Set VERSION Variable
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            TAG_NAME=${GITHUB_REF#refs/tags/}
+            echo "VERSION=$TAG_NAME" >> $GITHUB_ENV
+          else
+            echo "VERSION=${{ env.base_version }}-preview.${{ github.run_number }}" >> $GITHUB_ENV
+          fi
 
       - name: Setup NuGet Credentials
         run: |

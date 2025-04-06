@@ -40,5 +40,4 @@
     </None>
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties plugin_1json__JsonSchema="..\..\Trainworks-Reloaded\json-schema.json" /></VisualStudio></ProjectExtensions>
 </Project>
