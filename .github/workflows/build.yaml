@@ -29,7 +29,7 @@ jobs:
 
       - name: Install Thunderstore
         run: |
-          dotnet tool install --global 
+          dotnet tool install --global tcli
           
       - name: Extract Version from Tag
         id: get_version
