@@ -19,7 +19,7 @@
         }],
         "lore_tooltips": [{
             "english": "Even a rusty steward is still a steward.",
-            "chinese": "即使生锈了的乘务员依然是乘务员。"
+            "chinese": "即使是生锈的乘务员，依然是乘务员。"
         }],
         "pools": [
             "UnitsAllBanner",

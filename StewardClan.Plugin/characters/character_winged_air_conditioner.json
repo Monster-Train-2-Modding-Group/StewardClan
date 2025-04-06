@@ -19,7 +19,7 @@
             }],
             "lore_tooltips": [{
                 "english": "Originally designed to keep technics cool, it has been repurposed to blow enemies away.",
-                "chinese": "最初设计用于保持机械冷却，现在被重新用于吹走敌人。"
+                "chinese": "最初被设计为保持机械冷却，现在被改用作吹走敌人。"
             }],
             "pools": [
                 "UnitsAllBanner"
@@ -28,7 +28,8 @@
         {
             "id": "WingedAirConditionerAbility",
             "descriptions": {
-                "english": "Expand the Room by 1"
+                "english": "Expand the Room by 1",
+                "chinese": "+1[capacity]。"
             },
             "ability": true,
             "cooldown": 4,

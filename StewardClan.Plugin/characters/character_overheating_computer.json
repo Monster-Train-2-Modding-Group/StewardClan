@@ -19,7 +19,7 @@
         }],
         "lore_tooltips": [{
             "english": "It crunched the numbers, now it immolates its foes.",
-            "chinese": "它计算了数字，现在它烧毁了它的敌人。"
+            "chinese": "以前它计算数字，现在它烧毁敌人。"
         }],
         "pools": [
             "UnitsAllBanner"

@@ -28,7 +28,8 @@
         {
             "id": "DependabotAbility",
             "descriptions": {
-                "english": "Gain [effect0.power][ember]"
+                "english": "Gain [effect0.power][ember]",
+                "chinese": "获得 [effect0.power][ember]。"
             },
             "ability": true,
             "cooldown": 3,
