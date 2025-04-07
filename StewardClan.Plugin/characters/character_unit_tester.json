@@ -19,7 +19,7 @@
         }],
         "lore_tooltips": [{
             "english": "Testing units to find their weaknesses.",
-            "chinese": "测试单位以找出它们的弱点。"
+            "chinese": "测试单位以找出他们的弱点。"
         }],
         "pools": [
             "UnitsAllBanner"

@@ -4,7 +4,7 @@
             "id": "SpawnFabricator",
             "names": {
                 "english": "Fabricator",
-                "chinese": "制造者"
+                "chinese": "伪造者"
             },
             "card_art_reference": "@Fabricator",
             "cost": 1,
@@ -29,11 +29,11 @@
             "id": "FabricatorAbility",
             "names": {
                 "english": "Fabricate",
-                "chinese": "制造"
+                "chinese": "仿造"
             },
             "descriptions": {
                 "english": "Add a Copy of the Equipment attached to this unit to your Hand",
-                "chinese": "将此单位所附带的装备复制一份加入你的手牌"
+                "chinese": "将一张此单位身上的装备的复制品加入你的手牌。"
             },
             "card_art_reference": "@Fabricator",
             "ability": true,
@@ -54,7 +54,7 @@
         "health": 20,
         "names": {
             "english": "Fabricator",
-            "chinese": "制造者"
+            "chinese": "伪造者"
         },
         "can_attack": true,
         "can_be_healed": true,
