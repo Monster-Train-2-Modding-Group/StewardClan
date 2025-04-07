@@ -27,10 +27,15 @@
         },
         {
             "id": "ImpternAbility",
+            "names": {
+                "english": "Monkey About",
+                "chinese": "猴子乱窜"
+            },
             "descriptions": {
                 "english": "Repeat the last summon trigger",
                 "chinese": "重复上一个已触发的<b>召唤</b>效果。"
             },
+            "card_art_reference": "@Imptern",
             "ability": true,
             "cooldown": 3,
             "initial_cooldown": 0,
@@ -55,12 +60,15 @@
         "can_be_healed": true,
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
-            "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
-            "SubtypesData_BannerUnit"
+            "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
         ],
         "triggers": [{
             "id": "@ImpternSummon",
-            "trigger_type": "OnSummon",
+            "trigger_type": "on_spawn",
+            "descriptions": {
+                "english": "Restore [effect0.power] Pyre health",
+                "chinese": "恢复 [effect0.power] 点薪火生命值。"
+            },
             "effects": [{
                 "id": "@ImpternHealPyre"
             }]

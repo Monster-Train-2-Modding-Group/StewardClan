@@ -51,9 +51,21 @@
             "card_data": "@Albert",
             "starter_card": "@MechanicalOutrage",
             "upgrade_tree": [
-                ["@AlbertXReductionBuffer1", "@AlbertXReductionBuffer2", "@AlbertXReductionBuffer3"],
-                ["@AlbertStewardBuff1", "@AlbertStewardBuff2", "@AlbertStewardBuff3"],
-                ["@AlbertEmberBuff1", "@AlbertEmberBuff2", "@AlbertEmberBuff3"]
+                [
+                    "@AlbertXReductionBuffer1",
+                    "@AlbertXReductionBuffer2",
+                    "@AlbertXReductionBuffer3"
+                ],
+                [
+                    "@AlbertStewardBuff1",
+                    "@AlbertStewardBuff2",
+                    "@AlbertStewardBuff3"
+                ],
+                [
+                    "@AlbertEmberBuff1",
+                    "@AlbertEmberBuff2",
+                    "@AlbertEmberBuff3"
+                ]
             ],
             "icon": "@ClanIcon",
             "locked_icon": "@ClanLockedIcon",
@@ -102,12 +114,24 @@
     }],
     "card_pools": [{
         "id": "StewardBannerCardPool",
-        "cards": ["@SpawnBiggerSteward", "@SpawnWrenchHead", "@SpawnDependabot", "@SpawnWingedAirConditioner", "@SpawnOverheatingComputer"]
+        "cards": [
+            "@SpawnBiggerSteward",
+            "@SpawnWrenchHead",
+            "@SpawnDependabot",
+            "@SpawnWingedAirConditioner",
+            "@SpawnOverheatingComputer",
+            "@SpawnFabricator",
+            "@SpawnImptern",
+            "@SpawnModForger",
+            "@SpawnUnitTester"
+        ]
     }],
     "rewards": [{
         "id": "StewardBannerReward",
         "type": "draft",
-        "costs": [100],
+        "costs": [
+            100
+        ],
         "extensions": [{
             "draft": {
                 "draft_pool": "@StewardBannerCardPool",

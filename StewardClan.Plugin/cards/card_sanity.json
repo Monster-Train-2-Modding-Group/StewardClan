@@ -1,0 +1,52 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "Sanity",
+        "names": {
+            "english": "Sanity",
+            "chinese": "理智"
+        },
+        "descriptions": {
+            "english": "Discard your Hand. Restore [effect1.power][health] to the Pyre.",
+            "chinese": "丢弃你的手牌。恢复圣火[effect1.power][health]点生命值。"
+        },
+        "rarity": "rare",
+        "class": "@ClassSteward",
+        "card_art_reference": "@SanityArt",
+        "targets_room": false,
+        "targetless": true,
+        "pools": ["MegaPool"],
+        "cost": 2,
+        "effects": [{
+                "id": "@SanityDiscard"
+            },
+            {
+                "id": "@SanityHealPyre"
+            }
+        ]
+    }],
+    "effects": [{
+            "id": "SanityDiscard",
+            "name": "CardEffectDiscardHand"
+        },
+        {
+            "id": "SanityHealPyre",
+            "name": "CardEffectHeal",
+            "target_mode": "pyre",
+            "param_int": 10
+        }
+    ],
+    "sprites": [{
+        "id": "SanityArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "SanityArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@SanityArt"
+            }
+        }
+    }]
+}

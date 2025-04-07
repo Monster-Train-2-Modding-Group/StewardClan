@@ -2,7 +2,6 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using Microsoft.Extensions.Configuration;
-using Steward_Clan.Plugin.Extensions;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 
@@ -28,16 +27,26 @@ namespace Steward_Clan.Plugin
                         "champions/champion_albert.json",
                         "relics/relic_rage_treads.json",
                         "characters/character_bigger_steward.json",
+                        "characters/character_dependabot.json",
+                        "characters/character_fabricator.json",
+                        "characters/character_imptern.json",
+                        "characters/character_mod_forger.json",
+                        "characters/character_overheating_computer.json",
+                        "characters/character_rusted_steward.json",
+                        "characters/character_unit_tester.json",
+                        "characters/character_winged_air_conditioner.json",
                         "characters/character_wrench_head.json",
                         "cards/card_back_to_basic.json",
                         "cards/card_breaking_point.json",
                         "cards/card_bypass.json",
                         "cards/card_cache.json",
+                        "cards/card_ctrl_v.json",
                         "cards/card_decompile.json",
                         "cards/card_disarm.json",
                         "cards/card_galvanize.json",
                         "cards/card_gravitas.json",
                         "cards/card_mechanical_outrage.json",
+                        "cards/card_memory_leak.json",
                         "cards/card_overclock.json",
                         "cards/card_process_data.json",
                         "cards/card_pyre_refactor.json",
@@ -46,7 +55,8 @@ namespace Steward_Clan.Plugin
                         "cards/card_steward_spike.json",
                         "cards/card_synthesize.json",
                         "cards/card_try_catch.json",
-                        "cards/card_writeline.json"
+                        "cards/card_writeline.json",
+                        "relics/relic_storage_locker.json"
                     );
                 }
             );

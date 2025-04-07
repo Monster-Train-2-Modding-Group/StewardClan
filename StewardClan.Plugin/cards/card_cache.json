@@ -13,7 +13,7 @@
         "rarity": "common",
         "class": "@ClassSteward",
         "card_art_reference": "@CacheArt",
-        "targets_room": true,
+        "targets_room": false,
         "targetless": false,
         "pools": [
             "MegaPool"

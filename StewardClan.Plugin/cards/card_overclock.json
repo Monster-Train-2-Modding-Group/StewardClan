@@ -33,7 +33,7 @@
         },
         {
             "id": "OverclockPyreDamage",
-            "name": "CardEffectDamage",
+            "name": "@CardEffectDamagePyre",
             "target_mode": "pyre",
             "param_int": 1,
             "use_magic_power_multipler": false,

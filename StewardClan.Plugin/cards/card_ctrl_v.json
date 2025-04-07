@@ -1,0 +1,49 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "CtrlV",
+        "names": {
+            "english": "Ctrl-V",
+            "chinese": "粘贴"
+        },
+        "descriptions": {
+            "english": "Consume. Add a Copy of your Champion to your Hand.",
+            "chinese": "消耗。将你的冠军复制一份加入你的手牌。"
+        },
+        "rarity": "rare",
+        "class": "@ClassSteward",
+        "card_art_reference": "@CtrlVArt",
+        "targets_room": false,
+        "targetless": true,
+        "pools": ["MegaPool"],
+        "cost": 3,
+        "traits": [{
+            "id": "@CtrlVConsume"
+        }],
+        "effects": [{
+            "id": "@CtrlVAddChampionCopy"
+        }]
+    }],
+    "traits": [{
+        "id": "CtrlVConsume",
+        "name": "CardTraitConsume"
+    }],
+    "effects": [{
+        "id": "CtrlVAddChampionCopy",
+        "name": "@CardEffectAddChampionCopy",
+        "target_mode": "self"
+    }],
+    "sprites": [{
+        "id": "CtrlVArt",
+        "path": "textures/MechanicalOutrage.png"
+    }],
+    "game_objects": [{
+        "id": "CtrlVArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@CtrlVArt"
+            }
+        }
+    }]
+}

@@ -1,12 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "cards": [{
-            "id": "SpawnWingedAirConditioner",
+            "id": "SpawnFabricator",
             "names": {
-                "english": "Winged Air Conditioner",
-                "chinese": "带翅膀的空调"
+                "english": "Fabricator",
+                "chinese": "制造者"
             },
-            "card_art_reference": "@WingedAirConditioner",
+            "card_art_reference": "@Fabricator",
             "cost": 1,
             "type": "monster",
             "cost_type": "default",
@@ -15,22 +15,27 @@
             "unlock_level": 0,
             "targets_room": true,
             "effects": [{
-                "id": "@SpawnWingedAirConditioner"
+                "id": "@SpawnFabricator"
             }],
             "lore_tooltips": [{
-                "english": "Originally designed to keep technics cool, it has been repurposed to blow enemies away.",
-                "chinese": "最初被设计为保持机械冷却，现在被改用作吹走敌人。"
+                "english": "Equipment so nice, I made it twice.",
+                "chinese": "装备如此美妙，我决定做两份。"
             }],
             "pools": [
                 "UnitsAllBanner"
             ]
         },
         {
-            "id": "WingedAirConditionerAbility",
-            "descriptions": {
-                "english": "Expand the Room by 1",
-                "chinese": "+1[capacity]。"
+            "id": "FabricatorAbility",
+            "names": {
+                "english": "Fabricate",
+                "chinese": "制造"
             },
+            "descriptions": {
+                "english": "Add a Copy of the Equipment attached to this unit to your Hand",
+                "chinese": "将此单位所附带的装备复制一份加入你的手牌"
+            },
+            "card_art_reference": "@Fabricator",
             "ability": true,
             "cooldown": 4,
             "initial_cooldown": 0,
@@ -38,18 +43,18 @@
             "targets_room": false,
             "type": "spell",
             "effects": [{
-                "id": "@WingedAirConditionerExpandRoom"
+                "id": "@FabricatorCopyEquipment"
             }]
         }
     ],
     "characters": [{
-        "id": "WingedAirConditioner",
-        "size": 2,
-        "attack_damage": 18,
-        "health": 8,
+        "id": "Fabricator",
+        "size": 3,
+        "attack_damage": 10,
+        "health": 20,
         "names": {
-            "english": "Winged Air Conditioner",
-            "chinese": "带翅膀的空调"
+            "english": "Fabricator",
+            "chinese": "制造者"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -57,35 +62,32 @@
         "subtypes": [
             "SubtypesData_BannerUnit"
         ],
-        "starting_status_effects": [{
-            "status": "ambush",
-            "count": 1
-        }],
-        "ability": "@WingedAirConditionerAbility"
+        "ability": "@FabricatorAbility"
     }],
     "effects": [{
-            "id": "SpawnWingedAirConditioner",
+            "id": "SpawnFabricator",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
             "target_card_type": "spell",
-            "param_character_data": "@WingedAirConditioner"
+            "param_character_data": "@Fabricator"
         },
         {
-            "id": "WingedAirConditionerExpandRoom",
-            "name": "CardEffectAdjustRoomCapacity",
-            "param_int": 1
+            "id": "FabricatorCopyEquipment",
+            "name": "@CardEffectCopyEquipment",
+            "target_mode": "self",
+            "target_team": "monsters"
         }
     ],
     "sprites": [{
-        "id": "WingedAirConditioner",
+        "id": "Fabricator",
         "path": "textures/MechanicalOutrage.png"
     }],
     "game_objects": [{
-        "id": "WingedAirConditioner",
+        "id": "Fabricator",
         "type": "card_art",
         "extensions": {
             "card_art": {
-                "sprite": "@WingedAirConditioner"
+                "sprite": "@Fabricator"
             }
         }
     }]
