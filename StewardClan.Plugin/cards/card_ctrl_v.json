@@ -35,7 +35,7 @@
     }],
     "sprites": [{
         "id": "CtrlVArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/CtrlV.png"
     }],
     "game_objects": [{
         "id": "CtrlVArt",

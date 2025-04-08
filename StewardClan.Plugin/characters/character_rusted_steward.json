@@ -43,7 +43,7 @@
             "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [{
-                "status": "damage_shield",
+                "status": "damage shield",
                 "count": 1
             },
             {

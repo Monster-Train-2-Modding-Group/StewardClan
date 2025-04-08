@@ -54,7 +54,7 @@
     ],
     "sprites": [{
         "id": "DecompileArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/Decompile.png"
     }],
     "game_objects": [{
         "id": "DecompileArt",

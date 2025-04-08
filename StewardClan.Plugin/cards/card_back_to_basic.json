@@ -56,7 +56,7 @@
     ],
     "sprites": [{
         "id": "BackToBasicsArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/BackToBasics.png"
     }],
     "game_objects": [{
         "id": "BackToBasicsArt",

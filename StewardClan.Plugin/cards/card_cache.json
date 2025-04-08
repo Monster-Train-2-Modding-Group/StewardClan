@@ -40,7 +40,7 @@
     }],
     "sprites": [{
         "id": "CacheArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/Cache.png"
     }],
     "game_objects": [{
         "id": "CacheArt",

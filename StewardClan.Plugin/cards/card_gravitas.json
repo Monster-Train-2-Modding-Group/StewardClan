@@ -35,7 +35,7 @@
     }],
     "sprites": [{
         "id": "GravitasArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/Gravitas.png"
     }],
     "game_objects": [{
         "id": "GravitasArt",
