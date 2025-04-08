@@ -67,7 +67,7 @@
     }],
     "sprites": [{
         "id": "GalvanizeArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/Galvanize.png"
     }],
     "game_objects": [{
         "id": "GalvanizeArt",

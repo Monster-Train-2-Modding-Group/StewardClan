@@ -45,7 +45,7 @@
     ],
     "sprites": [{
         "id": "DisarmArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/Disarm.png"
     }],
     "game_objects": [{
         "id": "DisarmArt",

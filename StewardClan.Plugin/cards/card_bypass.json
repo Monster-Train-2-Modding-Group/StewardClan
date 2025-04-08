@@ -49,7 +49,7 @@
     }],
     "sprites": [{
         "id": "BypassArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/Bypass.png"
     }],
     "game_objects": [{
         "id": "BypassArt",
