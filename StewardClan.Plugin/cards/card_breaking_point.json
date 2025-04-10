@@ -31,7 +31,7 @@
             "name": "CardEffectDamage",
             "target_mode": "tower",
             "target_team": "heroes",
-            "param_int": 100,
+            "param_int": 150,
             "use_magic_power_multipler": true
         },
         {

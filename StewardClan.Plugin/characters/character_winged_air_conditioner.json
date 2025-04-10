@@ -27,8 +27,13 @@
         },
         {
             "id": "WingedAirConditionerAbility",
+            "names": {
+                "english": "Freshen Up",
+                "chinese": "清新空气"
+            },
             "descriptions": {
-                "english": "Expand the Room by 1"
+                "english": "Expand the Room by 1",
+                "chinese": "扩展房间1"
             },
             "ability": true,
             "cooldown": 4,

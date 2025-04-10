@@ -27,9 +27,15 @@
         },
         {
             "id": "DependabotAbility",
-            "descriptions": {
-                "english": "Gain [effect0.power][ember]"
+            "names": {
+                "english": "Energize",
+                "chinese": "能量"
             },
+            "descriptions": {
+                "english": "Gain [effect0.power][ember]",
+                "chinese": "获得[effect0.power][ember]"
+            },
+            "card_art_reference": "@Dependabot",
             "ability": true,
             "cooldown": 3,
             "initial_cooldown": 0,

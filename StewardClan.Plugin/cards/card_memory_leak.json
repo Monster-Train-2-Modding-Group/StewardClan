@@ -47,7 +47,7 @@
     ],
     "sprites": [{
         "id": "MemoryLeakArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/MemoryLeak.png"
     }],
     "game_objects": [{
         "id": "MemoryLeakArt",

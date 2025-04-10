@@ -7,8 +7,8 @@
             "chinese": "刺激"
         },
         "descriptions": {
-            "english": "-[effect0.powerabs][capacity] and +5 [magicpower] on this floor.",
-            "chinese": "本层获得 -[effect0.powerabs][capacity]，+5 [magicpower]。"
+            "english": "Apply [construct][effect0.status0.power] to all friendly units and the pyre.",
+            "chinese": "对所有友方单位和焚炉应用 [construct][effect0.power]。"
         },
         "rarity": "uncommon",
         "class": "@ClassSteward",
@@ -35,35 +35,14 @@
         "name": "CardTraitExhaustState"
     }],
     "effects": [{
-            "id": "GalvanizeReduceCapacity",
-            "name": "CardEffectAdjustRoomCapacity",
-            "target_mode": "room",
-            "param_int": -2
-        },
-        {
-            "id": "GalvanizeUpgradeRoomAdditionalMagicPower",
-            "name": "CardEffectAttachTrainRoomAttachment",
-            "target_mode": "room",
-            "param_upgrade": "@GalvanizeMagicPowerRoom",
-            "param_bool": false
-        }
-    ],
-    "upgrades": [{
-            "id": "GalvanizeMagicPowerRoom",
-            "room_modifier_upgrades": [{
-                "id": "@GalvanizeMagicPowerRoomModifier"
-            }]
-        },
-        {
-            "id": "GalvanizeMagicPower",
-            "bonus_damage": 5,
-            "bonus_heal": 5
-        }
-    ],
-    "room_modifiers": [{
-        "id": "GalvanizeMagicPowerRoomModifier",
-        "name": "RoomStateMagicalPowerModifier",
-        "param_card_upgrade": "@GalvanizeMagicPower"
+        "id": "GalvanizeApplyConstruct",
+        "name": "CardEffectAddStatusEffect",
+        "target_mode": "room",
+        "param_status_effects": [{
+            "status": "@construct",
+            "count": 1
+        }],
+        "target_team": "monsters"
     }],
     "sprites": [{
         "id": "GalvanizeArt",

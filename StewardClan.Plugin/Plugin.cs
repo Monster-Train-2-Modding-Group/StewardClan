@@ -24,6 +24,7 @@ namespace Steward_Clan.Plugin
                 {
                     c.AddMergedJsonFile(
                         "plugin.json",
+                        "status.json",
                         "champions/champion_albert.json",
                         "relics/relic_rage_treads.json",
                         "characters/character_bigger_steward.json",

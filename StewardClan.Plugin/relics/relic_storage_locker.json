@@ -15,7 +15,7 @@
             "chinese": "储物柜"
         },
         "descriptions": {
-            "english": "At the beginning of Combat, spawn three rusted stewards on the middle floor.",
+            "english": "At the beginning of Combat spawn three Rusted Stewards on the middle floor.",
             "chinese": "战斗开始时，在中层生成三个生锈管家。"
         },
         "relic_activated": {
@@ -32,7 +32,6 @@
                 "id": "@StorageLockerEffectOnCombatStart"
             },
             {
-
                 "id": "@StorageLockerEffectOnCombatStart"
             },
             {
@@ -61,7 +60,6 @@
             "id": "StorageLockerIcon",
             "path": "textures/StorageLockerIcon.png"
         },
-
         {
             "id": "StorageLockerIconSmall",
             "path": "textures/StorageLockerIconSmall.png"

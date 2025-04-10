@@ -51,7 +51,7 @@
     ],
     "sprites": [{
         "id": "PyreRefactorArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/PyreRefactor.png"
     }],
     "game_objects": [{
         "id": "PyreRefactorArt",

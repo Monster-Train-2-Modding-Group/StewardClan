@@ -30,8 +30,8 @@
         "id": "DecompileSlay",
         "trigger": "on_kill",
         "descriptions": {
-            "english": "Discard a random card.",
-            "chinese": "随机舍弃 1 张牌。"
+            "english": "Discard [effect0.power] random cards.",
+            "chinese": "随机舍弃 [effect0.power] 张牌。"
         },
         "effects": [{
             "id": "@DecompileDiscard"
@@ -42,13 +42,13 @@
             "name": "CardEffectDamage",
             "target_mode": "drop_target_character",
             "target_team": "both",
-            "param_int": 25,
+            "param_int": 50,
             "use_magic_power_multipler": true
         },
         {
             "id": "DecompileDiscard",
             "name": "CardEffectRandomDiscard",
-            "param_int": 1,
+            "param_int": 2,
             "target_mode": "discard"
         }
     ],

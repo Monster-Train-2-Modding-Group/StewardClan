@@ -1,0 +1,40 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "status_effects": [{
+        "id": "construct",
+        "class_name": "@StatusEffectConstructState",
+        "names": {
+            "english": "Construct",
+            "chinese": "构造体"
+        },
+        "stackable_names": {
+            "english": "<nobr>Construct {0}</nobr>",
+            "chinese": "<nobr>构造体 {0}</nobr>"
+        },
+        "descriptions": {
+            "english": "Gives [codeint0] attack and health at the end of turn.",
+            "chinese": "在回合结束时给予 [codeint0] 攻击力和生命值。"
+        },
+        "card_tooltips": {
+            "english": "Gives [codeint0] attack and health at the end of turn.",
+            "chinese": "在回合结束时给予 [codeint0] 攻击力和生命值。"
+        },
+        "character_tooltips": {
+            "english": "Gives [codeint0] attack and health at the end of turn.",
+            "chinese": "在回合结束时给予 [codeint0] 攻击力和生命值。"
+        },
+        "notifications": {
+            "english": "Constructed",
+            "chinese": "构造完成"
+        },
+        "display_category": "positive",
+        "trigger_stage": "on_post_room_combat",
+        "is_stackable": true,
+        "is_propagatable": false,
+        "icon": "@ConstructIcon"
+    }],
+    "atlas_icons": [{
+        "id": "ConstructIcon",
+        "path": "textures/ConstructIcon.png"
+    }]
+}
