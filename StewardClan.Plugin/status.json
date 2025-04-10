@@ -31,9 +31,10 @@
         "trigger_stage": "on_post_room_combat",
         "is_stackable": true,
         "is_propagatable": false,
+        "param_int": 1,
         "icon": "@ConstructIcon"
     }],
-    "atlas_icons": [{
+    "sprites": [{
         "id": "ConstructIcon",
         "path": "textures/ConstructIcon.png"
     }]

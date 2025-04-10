@@ -32,9 +32,10 @@
                 "chinese": "清新空气"
             },
             "descriptions": {
-                "english": "Expand the Room by 1",
-                "chinese": "扩展房间1"
+                "english": "Add [construct][effect0.status0.power] to friendly units.",
+                "chinese": "在友方单位中添加 [construct][effect0.status0.power]"
             },
+            "card_art_reference": "@WingedAirConditioner",
             "ability": true,
             "cooldown": 4,
             "initial_cooldown": 0,
@@ -42,7 +43,7 @@
             "targets_room": false,
             "type": "spell",
             "effects": [{
-                "id": "@WingedAirConditionerExpandRoom"
+                "id": "@WingedAirConditionerCooldown"
             }]
         }
     ],
@@ -75,9 +76,15 @@
             "param_character_data": "@WingedAirConditioner"
         },
         {
-            "id": "WingedAirConditionerExpandRoom",
-            "name": "CardEffectAdjustRoomCapacity",
-            "param_int": 1
+            "id": "WingedAirConditionerCooldown",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "room",
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None",
+            "param_status_effects": [{
+                "status": "@construct",
+                "count": 2
+            }]
         }
     ],
     "sprites": [{

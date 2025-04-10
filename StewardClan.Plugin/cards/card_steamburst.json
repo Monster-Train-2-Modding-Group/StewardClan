@@ -42,7 +42,7 @@
     ],
     "sprites": [{
         "id": "SteamBurstArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/SteamburstArt.png"
     }],
     "game_objects": [{
         "id": "SteamBurstArt",

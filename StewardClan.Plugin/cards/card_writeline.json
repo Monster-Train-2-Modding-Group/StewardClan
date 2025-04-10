@@ -7,8 +7,8 @@
             "chinese": "你好，世界！"
         },
         "descriptions": {
-            "english": "Apply [meleeweakness] [effect0.status0.power]",
-            "chinese": "施加 [meleeweakness] [effect0.status0.power]。"
+            "english": "Apply [construct] [effect0.status0.power]",
+            "chinese": "施加 [construct] [effect0.status0.power]。"
         },
         "rarity": "common",
         "class": "@ClassSteward",
@@ -37,7 +37,7 @@
         "target_team": "both",
         "target_subtype": "SubtypesData_None",
         "param_status_effects": [{
-            "status": "melee weakness",
+            "status": "@construct",
             "count": 3
         }]
     }],

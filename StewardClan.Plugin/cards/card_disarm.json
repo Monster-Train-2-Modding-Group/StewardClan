@@ -7,8 +7,8 @@
             "chinese": "解除武装"
         },
         "descriptions": {
-            "english": "Remove equipment from a unit and Apply +[effect1.power][health]",
-            "chinese": "移除一个单位身上的装备，并使其获得 +[effect1.power][health]。"
+            "english": "Remove equipment from a unit and Apply [construct][effect1.status0.power].",
+            "chinese": "移除一个单位身上的装备，并使其获得 [construct][effect1.status0.power]。"
         },
         "rarity": "uncommon",
         "class": "@ClassSteward",
@@ -23,7 +23,7 @@
                 "id": "@DisarmRemoveEquipment"
             },
             {
-                "id": "@DisarmArtBuffMaxHealth"
+                "id": "@DisarmApplyConstruct"
             }
         ]
     }],
@@ -37,12 +37,15 @@
             "fail_to_cast_on_failure": true
         },
         {
-            "id": "DisarmArtBuffMaxHealth",
-            "name": "CardEffectBuffMaxHealth",
-            "param_int": 30,
+            "id": "DisarmApplyConstruct",
+            "name": "CardEffectAddStatusEffect",
             "target_mode": "last_targeted_characters",
             "target_team": "both",
-            "target_subtype": "SubtypesData_None"
+            "target_subtype": "SubtypesData_None",
+            "param_status_effects": [{
+                "status": "@construct",
+                "count": 5
+            }]
         }
     ],
     "sprites": [{

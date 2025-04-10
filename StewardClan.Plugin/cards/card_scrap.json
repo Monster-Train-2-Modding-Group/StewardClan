@@ -54,7 +54,7 @@
     ],
     "sprites": [{
         "id": "ScrapArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/ScrapArt.png"
     }],
     "game_objects": [{
         "id": "ScrapArt",

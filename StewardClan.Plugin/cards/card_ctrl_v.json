@@ -7,8 +7,8 @@
             "chinese": "粘贴"
         },
         "descriptions": {
-            "english": "Add a Copy of your Champion to your Hand.",
-            "chinese": "消耗。将你的冠军复制一份加入你的手牌。"
+            "english": "Add a copy of your Champion to your Hand.",
+            "chinese": "将你的冠军复制一份加入你的手牌。"
         },
         "rarity": "rare",
         "class": "@ClassSteward",
@@ -31,7 +31,7 @@
     "effects": [{
         "id": "CtrlVAddChampionCopy",
         "name": "@CardEffectAddChampionCopy",
-        "target_mode": "room"
+        "target_mode": "hand"
     }],
     "sprites": [{
         "id": "CtrlVArt",
