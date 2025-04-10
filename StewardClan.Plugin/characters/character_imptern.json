@@ -63,17 +63,20 @@
             "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
         ],
         "triggers": [{
-            "id": "@ImpternSummon",
-            "trigger_type": "on_spawn",
-            "descriptions": {
-                "english": "Restore [effect0.power] Pyre health",
-                "chinese": "恢复 [effect0.power] 点薪火生命值。"
-            },
-            "effects": [{
-                "id": "@ImpternHealPyre"
-            }]
+            "id": "@ImpternSummon"
         }],
         "ability": "@ImpternAbility"
+    }],
+    "character_triggers": [{
+        "id": "@ImpternSummon",
+        "trigger_type": "on_spawn",
+        "descriptions": {
+            "english": "Restore [effect0.power] Pyre health",
+            "chinese": "恢复 [effect0.power] 点薪火生命值。"
+        },
+        "effects": [{
+            "id": "@ImpternHealPyre"
+        }]
     }],
     "effects": [{
             "id": "SpawnImptern",

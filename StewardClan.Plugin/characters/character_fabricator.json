@@ -32,12 +32,12 @@
                 "chinese": "仿造"
             },
             "descriptions": {
-                "english": "Add a Copy of the Equipment attached to this unit to your Hand",
-                "chinese": "将一张此单位身上的装备的复制品加入你的手牌。"
+                "english": "Add a Copy of the Equipment attached to this unit to your Deck",
+                "chinese": "将一张此单位身上的装备的复制品加入你的卡组。"
             },
             "card_art_reference": "@Fabricator",
             "ability": true,
-            "cooldown": 4,
+            "cooldown": 3,
             "initial_cooldown": 0,
             "targetless": true,
             "targets_room": false,

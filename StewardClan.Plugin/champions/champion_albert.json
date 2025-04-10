@@ -23,10 +23,10 @@
         "targets_room": true,
         "targetless": false,
         "traits": [{
-                "id": "@AlbertBuffAttackByCost"
+                "id": "@AlbertBuffAttackByCost1"
             },
             {
-                "id": "@AlbertBuffHealthByCost"
+                "id": "@AlbertBuffHealthByCost1"
             }
         ],
         "effects": [{
@@ -69,37 +69,37 @@
         }
     }],
     "traits": [{
-            "id": "AlbertBuffAttackByCost",
+            "id": "AlbertBuffAttackByCost1",
             "name": "CardTraitScalingUpgradeUnitAttack",
             "track_type": "played_cost",
             "param_int": 2
         },
         {
-            "id": "AlbertBuffHealthByCost",
+            "id": "AlbertBuffHealthByCost1",
             "name": "CardTraitScalingUpgradeUnitHealth",
             "track_type": "played_cost",
             "param_int": 4
         },
         {
-            "id": "BuffAttackByCost2",
+            "id": "AlbertBuffAttackByCost2",
             "name": "CardTraitScalingUpgradeUnitAttack",
             "track_type": "played_cost",
             "param_int": 4
         },
         {
-            "id": "BuffHealthByCost2",
+            "id": "AlbertBuffHealthByCost2",
             "name": "CardTraitScalingUpgradeUnitHealth",
             "track_type": "played_cost",
             "param_int": 6
         },
         {
-            "id": "BuffAttackByCost3",
+            "id": "AlbertBuffAttackByCost3",
             "name": "CardTraitScalingUpgradeUnitAttack",
             "track_type": "played_cost",
             "param_int": 6
         },
         {
-            "id": "BuffHealthByCost3",
+            "id": "AlbertBuffHealthByCost3",
             "name": "CardTraitScalingUpgradeUnitHealth",
             "track_type": "played_cost",
             "param_int": 9
@@ -262,14 +262,14 @@
             },
             "x_cost_reduction": 4,
             "remove_trait_upgrades": [
-                "@BuffAttackByCost1",
-                "@BuffHealthByCost1"
+                "@AlbertBuffAttackByCost1",
+                "@AlbertBuffHealthByCost1"
             ],
             "trait_upgrades": [{
-                    "id": "@BuffAttackByCost2"
+                    "id": "@AlbertBuffAttackByCost2"
                 },
                 {
-                    "id": "@BuffHealthByCost2"
+                    "id": "@AlbertBuffHealthByCost2"
                 }
             ]
         },
@@ -281,14 +281,14 @@
             },
             "x_cost_reduction": 6,
             "remove_trait_upgrades": [
-                "@BuffAttackByCost2",
-                "@BuffHealthByCost2"
+                "@AlbertBuffAttackByCost2",
+                "@AlbertBuffHealthByCost2"
             ],
             "trait_upgrades": [{
-                    "id": "@BuffAttackByCost3"
+                    "id": "@AlbertBuffAttackByCost3"
                 },
                 {
-                    "id": "@BuffHealthByCost3"
+                    "id": "@AlbertBuffHealthByCost3"
                 }
             ]
         }
