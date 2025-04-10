@@ -79,7 +79,7 @@
             "id": "WingedAirConditionerCooldown",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "room",
-            "target_team": "both",
+            "target_team": "monsters",
             "target_subtype": "SubtypesData_None",
             "param_status_effects": [{
                 "status": "@construct",

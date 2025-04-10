@@ -7,8 +7,8 @@
             "chinese": "内存泄漏"
         },
         "descriptions": {
-            "english": "Consume. Discard your Hand, then Draw 3 random spells from your consume pile that isn't Memory Leak.",
-            "chinese": "消耗。丢弃你的手牌，然后从消耗堆中抽取3张不是内存泄漏的随机法术牌。"
+            "english": "Discard your Hand then Draw 3 random spells from your consume pile that isn't Memory Leak.",
+            "chinese": "丢弃你的手牌，然后从消耗堆中抽取3张不是内存泄漏的随机法术牌。"
         },
         "rarity": "rare",
         "class": "@ClassSteward",
