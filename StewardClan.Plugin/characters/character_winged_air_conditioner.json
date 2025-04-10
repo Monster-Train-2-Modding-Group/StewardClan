@@ -32,7 +32,7 @@
                 "chinese": "清新空气"
             },
             "descriptions": {
-                "english": "Expand the Room by 1",
+                "english": "+1[capacity]",
                 "chinese": "+1[capacity]。"
             },
             "ability": true,
