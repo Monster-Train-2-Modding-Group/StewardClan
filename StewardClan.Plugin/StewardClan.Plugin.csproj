@@ -23,6 +23,9 @@
     <None Update="plugin.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="status.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="champions/*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

@@ -32,7 +32,9 @@
             "name": "CardEffectRemoveEquipment",
             "target_mode": "drop_target_character",
             "target_team": "both",
-            "target_subtype": "SubtypesData_None"
+            "target_subtype": "SubtypesData_None",
+            "should_test": true,
+            "fail_to_cast_on_failure": true
         },
         {
             "id": "DisarmArtBuffMaxHealth",

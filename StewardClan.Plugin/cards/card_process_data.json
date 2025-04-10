@@ -46,7 +46,7 @@
     ],
     "sprites": [{
         "id": "ProcessDataArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/ProcessData.png"
     }],
     "game_objects": [{
         "id": "ProcessDataArt",

@@ -38,7 +38,7 @@
     ],
     "sprites": [{
         "id": "SanityArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/Sanity.png"
     }],
     "game_objects": [{
         "id": "SanityArt",
