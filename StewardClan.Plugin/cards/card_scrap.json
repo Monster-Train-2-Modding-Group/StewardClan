@@ -4,7 +4,7 @@
         "id": "Scrap",
         "names": {
             "english": "Scrap",
-            "chinese": "废品"
+            "chinese": "报废"
         },
         "descriptions": {
             "english": "Deal [effect1.power] twice to the front enemy unit.",

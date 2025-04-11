@@ -4,7 +4,7 @@
         "id": "StewardSpike",
         "names": {
             "english": "Spike of the Stewards",
-            "chinese": "乘务员之尖刺"
+            "chinese": "乘务员之尖钉"
         },
         "descriptions": {
             "english": "Apply [trait1.power][x] [construct]. Pyre takes [trait2.power][x] damage",
