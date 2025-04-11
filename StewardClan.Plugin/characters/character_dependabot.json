@@ -29,11 +29,11 @@
             "id": "DependabotAbility",
             "names": {
                 "english": "Energize",
-                "chinese": "能量"
+                "chinese": "激发"
             },
             "descriptions": {
                 "english": "Gain [effect0.power][ember]",
-                "chinese": "获得[effect0.power][ember]"
+                "chinese": "获得[effect0.power][ember]。"
             },
             "card_art_reference": "@Dependabot",
             "ability": true,

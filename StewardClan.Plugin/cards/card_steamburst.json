@@ -4,7 +4,7 @@
         "id": "SteamBurst",
         "names": {
             "english": "Steam Burst",
-            "chinese": "蒸汽爆发"
+            "chinese": "蒸汽喷射"
         },
         "descriptions": {
             "english": "Deal [effect0.power] damage to all units. Gain [effect1.power][ember].",

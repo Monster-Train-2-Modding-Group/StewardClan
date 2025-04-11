@@ -8,7 +8,7 @@
         },
         "descriptions": {
             "english": "Apply [construct][effect0.status0.power] to all friendly units and the pyre.",
-            "chinese": "对所有友方单位和焚炉应用 [construct][effect0.power]。"
+            "chinese": "所有友方单位和薪火获得 [construct][effect0.status0.power]。"
         },
         "rarity": "uncommon",
         "class": "@ClassSteward",

@@ -19,7 +19,7 @@
         }],
         "lore_tooltips": [{
             "english": "Forging mods to heal the Pyre, one artifact at a time.",
-            "chinese": "锻造模组来治愈圣火，一次一件神器。"
+            "chinese": "锻造模组来治愈薪火，一次一件神器。"
         }],
         "pools": [
             "UnitsAllBanner"
@@ -49,7 +49,7 @@
         "id": "ModForgerTrigger",
         "descriptions": {
             "english": "Heal the Pyre by [effect0.power][health]",
-            "chinese": "治疗圣火[effect0.power][health]点生命值"
+            "chinese": "恢复 [effect0.power] 点薪火生命值。"
         },
         "trigger": "on_equipment_added_to_ally",
         "effects": [{

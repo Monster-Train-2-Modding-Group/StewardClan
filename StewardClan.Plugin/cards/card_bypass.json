@@ -4,7 +4,7 @@
         "id": "Bypass",
         "names": {
             "english": "Bypass",
-            "chinese": "绕路"
+            "chinese": "避开"
         },
         "descriptions": {
             "english": "Deal [effect0.power] damage.",

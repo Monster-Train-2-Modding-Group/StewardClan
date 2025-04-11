@@ -13,15 +13,15 @@
         },
         "descriptions": {
             "english": "Gives [codeint0] attack and health at the end of turn.",
-            "chinese": "在回合结束时给予 [codeint0] 攻击力和生命值。"
+            "chinese": "回合结束时，获得 +[codeint0][attack]和[health]。"
         },
         "card_tooltips": {
             "english": "Gives [codeint0] attack and health at the end of turn.",
-            "chinese": "在回合结束时给予 [codeint0] 攻击力和生命值。"
+            "chinese": "回合结束时，获得 +[codeint0][attack]和[health]。"
         },
         "character_tooltips": {
             "english": "Gives [codeint0] attack and health at the end of turn.",
-            "chinese": "在回合结束时给予 [codeint0] 攻击力和生命值。"
+            "chinese": "回合结束时，获得 +[codeint0][attack]和[health]。"
         },
         "notifications": {
             "english": "Constructed",

@@ -8,7 +8,7 @@
         },
         "descriptions": {
             "english": "Add a copy of your Champion to your Hand.",
-            "chinese": "将你的冠军复制一份加入你的手牌。"
+            "chinese": "将一张你的勇者的复制品加入你的手牌。"
         },
         "rarity": "rare",
         "class": "@ClassSteward",
