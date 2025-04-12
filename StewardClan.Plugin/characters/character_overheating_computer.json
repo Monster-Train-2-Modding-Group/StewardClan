@@ -47,8 +47,8 @@
     "character_triggers": [{
         "id": "OverheatingComputerExtinguish",
         "descriptions": {
-            "english": "Deal [effect1.power][damage] to all enemies.",
-            "chinese": "对所有敌方单位造成 [effect1.power][damage] 点伤害。"
+            "english": "Deal [effect0.power] damage to all enemies.",
+            "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。"
         },
         "trigger": "on_death",
         "effects": [{
