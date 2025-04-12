@@ -16,7 +16,7 @@
         },
         "descriptions": {
             "english": "At the beginning of Combat spawn three Rusted Stewards on the middle floor.",
-            "chinese": "战斗开始时，在中层生成三个生锈管家。"
+            "chinese": "战斗开始时，召唤三个<b>生锈的乘务员</b>到火车的中间层。"
         },
         "relic_activated": {
             "english": "Storage Locker activated!",
@@ -24,7 +24,7 @@
         },
         "lore_tooltips": [{
             "english": "A well-stocked storage locker containing spare Stewards ready for deployment.",
-            "chinese": "一个储备充足的储物柜，里面装着随时可以部署的备用管家。"
+            "chinese": "一个储备充足的储物柜，里面装着随时可以部署的备用乘务员。"
         }],
         "disallow_in_deployment": false,
         "lore_style": "herzal",

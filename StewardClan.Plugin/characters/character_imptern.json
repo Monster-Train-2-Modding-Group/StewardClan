@@ -19,7 +19,7 @@
             }],
             "lore_tooltips": [{
                 "english": "The Stewards were worried at first about this mischievous runt, but as time went on, they found him to be quite useful.",
-                "chinese": "最初，斯蒂尔沃特们对这只顽皮的小家伙感到担忧，但时间一长，他们发现他非常有用。"
+                "chinese": "最初乘务员们很担忧这只顽皮的小家伙，但慢慢地，他们发现他是个得力的帮手。"
             }],
             "pools": [
                 "UnitsAllBanner"
@@ -29,11 +29,11 @@
             "id": "ImpternAbility",
             "names": {
                 "english": "Monkey About",
-                "chinese": "猴子乱窜"
+                "chinese": "猴子乱跳"
             },
             "descriptions": {
                 "english": "Repeat the last summon trigger",
-                "chinese": "重复上一次召唤触发"
+                "chinese": "重复上一个已触发的<b>召唤</b>效果。"
             },
             "card_art_reference": "@Imptern",
             "ability": true,

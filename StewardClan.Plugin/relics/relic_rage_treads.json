@@ -18,18 +18,22 @@
         "type": "collectable",
         "names": {
             "english": "Rage Treads",
+            "chinese": "狂怒之靴",
             "german": "Saugende Treppen"
         },
         "descriptions": {
             "english": "Apply [effect0.status0.power] rage whenever one of your units moves.",
+            "chinese": "当友方单位移动时，获得<b>狂怒</b> [effect0.status0.power]。",
             "german": "Wenn du eine Zahl eingibst, wird dir die Zahl um 1 verringert und dir 1 Energie hinzugefügt."
         },
         "relic_activated": {
             "english": "Rage Treads activated!",
+            "chinese": "狂怒之靴已激活！",
             "german": "Rage Treads aktiviert!"
         },
         "lore_tooltips": [{
             "english": "This relic was created as an example to demonstrate the capabilities of the modding system.",
+            "chinese": "该件神器被设计用来演示改造系统的功能。",
             "german": "Diese Reliquie wurde als Beispiel erstellt, um die Möglichkeiten des Modding-Systems zu demonstrieren."
         }],
         "disallow_in_deployment": false,

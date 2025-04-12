@@ -19,7 +19,7 @@
             }],
             "lore_tooltips": [{
                 "english": "Originally designed to keep technics cool, it has been repurposed to blow enemies away.",
-                "chinese": "最初设计用于保持机械冷却，现在被重新用于吹走敌人。"
+                "chinese": "最初被设计为保持机械冷却，现在被改用作吹走敌人。"
             }],
             "pools": [
                 "UnitsAllBanner"
@@ -33,7 +33,7 @@
             },
             "descriptions": {
                 "english": "Add [construct][effect0.status0.power] to friendly units.",
-                "chinese": "在友方单位中添加 [construct][effect0.status0.power]"
+                "chinese": "友方单位获得 [construct][effect0.status0.power]。"
             },
             "card_art_reference": "@WingedAirConditioner",
             "ability": true,
