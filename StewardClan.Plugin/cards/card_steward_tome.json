@@ -26,7 +26,7 @@
     }],
     "traits": [{
         "id": "StewardTomeConsume",
-        "name": "CardTraitConsume"
+        "name": "CardTraitExhaustState"
     }],
     "effects": [{
         "id": "StewardTomeApplySweep",

@@ -42,7 +42,7 @@
         },
         {
             "id": "PyreRefactorHealPyre",
-            "name": "CardEffectHealTrain",
+            "name": "CardEffectPermanentlyAdjustMaxPyreHealth",
             "target_mode": "pyre",
             "param_int": 2,
             "use_magic_power_multipler": false,

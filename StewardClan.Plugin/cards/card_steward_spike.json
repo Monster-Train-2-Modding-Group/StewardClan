@@ -40,7 +40,7 @@
     }],
     "traits": [{
             "id": "StewardSpikeConsume",
-            "name": "CardTraitConsume"
+            "name": "CardTraitExhaustState"
         },
         {
             "id": "StewardSpikeScaling",

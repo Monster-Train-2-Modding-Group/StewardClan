@@ -26,7 +26,7 @@
     }],
     "traits": [{
         "id": "CtrlVConsume",
-        "name": "CardTraitConsume"
+        "name": "CardTraitExhaustState"
     }],
     "effects": [{
         "id": "CtrlVAddChampionCopy",
