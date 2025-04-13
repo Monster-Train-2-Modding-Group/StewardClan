@@ -47,6 +47,10 @@
     }],
     "character_triggers": [{
         "id": "UnitTesterTrigger",
+        "descriptions": {
+            "english": "Apply [spellweakness] [effect0.status0.power] to enemy units.",
+            "chinese": "对所有敌方单位施加 [spellweakness] [effect0.status0.power]。"
+        },
         "trigger": "on_equipment_added_to_ally",
         "effects": [{
             "id": "@UnitTesterApplyWeakness"
