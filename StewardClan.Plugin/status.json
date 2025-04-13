@@ -12,16 +12,16 @@
             "chinese": "<nobr>构造体 {0}</nobr>"
         },
         "descriptions": {
-            "english": "Gives [codeint0] attack and health at the end of turn.",
-            "chinese": "回合结束时，获得 +[codeint0][attack]和[health]。"
+            "english": "Gives [codeint0] attack and health per stack at the end of turn.<br>Stacks remain across turns.",
+            "chinese": "回合结束时，每有一层构造体，获得 +[codeint0][attack]和[health]。<br>层数会跨回合保留。"
         },
         "card_tooltips": {
-            "english": "Gives [codeint0] attack and health at the end of turn.",
-            "chinese": "回合结束时，获得 +[codeint0][attack]和[health]。"
+            "english": "Gives [codeint0] attack and health per stack at the end of turn.<br>Stacks remain across turns.",
+            "chinese": "回合结束时，每有一层构造体，获得 +[codeint0][attack]和[health]。<br>层数会跨回合保留。"
         },
         "character_tooltips": {
-            "english": "Gives [codeint0] attack and health at the end of turn.",
-            "chinese": "回合结束时，获得 +[codeint0][attack]和[health]。"
+            "english": "Gives [codeint0] attack and health at the end of turn.<br>Stacks remain across turns.",
+            "chinese": "回合结束时，获得 +[codeint0][attack]和[health]。<br>层数会跨回合保留。"
         },
         "notifications": {
             "english": "Constructed",

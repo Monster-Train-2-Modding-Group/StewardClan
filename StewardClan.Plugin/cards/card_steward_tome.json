@@ -7,8 +7,8 @@
             "chinese": "乘务员之书"
         },
         "descriptions": {
-            "english": "Consume. Apply sweep to a friendly unit.",
-            "chinese": "消耗。使一个友方单位获得<b>横扫</b>。"
+            "english": "Apply sweep to a friendly unit.",
+            "chinese": "使一个友方单位获得<b>横扫</b>。"
         },
         "rarity": "rare",
         "class": "@ClassSteward",

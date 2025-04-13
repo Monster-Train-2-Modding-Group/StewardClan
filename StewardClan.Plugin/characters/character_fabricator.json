@@ -33,7 +33,7 @@
             },
             "descriptions": {
                 "english": "Add a Copy of the Equipment attached to this unit to your Deck",
-                "chinese": "将一张此单位身上的装备的复制品加入你的卡组。"
+                "chinese": "将一张此单位身上的装备的复制品加入你的抽牌堆。"
             },
             "card_art_reference": "@Fabricator",
             "ability": true,
