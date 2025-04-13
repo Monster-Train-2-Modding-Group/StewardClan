@@ -30,7 +30,7 @@
     }],
     "traits": [{
         "id": "MemoryLeakConsume",
-        "name": "CardTraitConsume"
+        "name": "CardTraitExhaustState"
     }],
     "effects": [{
             "id": "MemoryLeakDiscard",

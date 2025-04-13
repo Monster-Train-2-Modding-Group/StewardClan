@@ -60,6 +60,7 @@
         "can_be_healed": true,
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
+            "SubtypesData_None",
             "SubtypesData_BannerUnit"
         ],
         "ability": "@FabricatorAbility"

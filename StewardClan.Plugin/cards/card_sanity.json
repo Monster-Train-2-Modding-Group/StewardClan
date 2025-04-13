@@ -31,7 +31,7 @@
         },
         {
             "id": "SanityHealPyre",
-            "name": "CardEffectHeal",
+            "name": "CardEffectHealTrain",
             "target_mode": "pyre",
             "param_int": 10
         }

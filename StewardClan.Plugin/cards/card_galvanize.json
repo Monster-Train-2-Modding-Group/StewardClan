@@ -23,12 +23,8 @@
             "id": "@GalvanizeConsume"
         }],
         "effects": [{
-                "id": "@GalvanizeReduceCapacity"
-            },
-            {
-                "id": "@GalvanizeUpgradeRoomAdditionalMagicPower"
-            }
-        ]
+            "id": "@GalvanizeApplyConstruct"
+        }]
     }],
     "traits": [{
         "id": "GalvanizeConsume",
