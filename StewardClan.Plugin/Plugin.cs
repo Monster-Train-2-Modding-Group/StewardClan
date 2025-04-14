@@ -2,6 +2,7 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using Microsoft.Extensions.Configuration;
+using Steward_Clan.Plugin.Patches;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 
@@ -26,11 +27,17 @@ namespace Steward_Clan.Plugin
                         "plugin.json",
                         "status.json",
                         "champions/champion_albert.json",
+                        "relics/relic_backup_generator.json",
+                        "relics/relic_construct_core.json",
+                        "relics/relic_emergency_protocol.json",
+                        "relics/relic_maintenance_manual.json",
                         "relics/relic_rage_treads.json",
+                        "relics/relic_storage_locker.json",
                         "characters/character_bigger_steward.json",
                         "characters/character_dependabot.json",
                         "characters/character_fabricator.json",
                         "characters/character_imptern.json",
+                        "characters/character_ludo_developer.json",
                         "characters/character_mod_forger.json",
                         "characters/character_overheating_computer.json",
                         "characters/character_rusted_steward.json",
@@ -58,11 +65,12 @@ namespace Steward_Clan.Plugin
                         "cards/card_steward_tome.json",
                         "cards/card_synthesize.json",
                         "cards/card_try_catch.json",
-                        "cards/card_writeline.json",
-                        "relics/relic_storage_locker.json"
+                        "cards/card_writeline.json"
                     );
                 }
             );
+
+            Harmony.CreateAndPatchAll(typeof(CharacterStateApplyDamagePatch));
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
             Logger.LogInfo($"{typeof(CustomCardEffectAttachRoomAttachment).AssemblyQualifiedName}");

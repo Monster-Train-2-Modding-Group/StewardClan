@@ -1,7 +1,7 @@
-{ 
+{
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relic_effects": [{
-        "id": "RageTreadsEffectOnAscend",
+        "id": "ConstructTreadsEffectOnAscend",
         "name": "RelicEffectAddStatusEffectOnUnitMoved",
         "character_subtype": "SubtypesData_None",
         "target_mode": "front_in_room",
@@ -9,27 +9,27 @@
         "param_int": 0,
         "param_int_2": 0,
         "param_status_effects": [{
-            "status": "buff",
-            "count": 2
+            "status": "construct",
+            "count": 1
         }]
     }],
     "relics": [{
         "id": "RageTreads",
         "type": "collectable",
         "names": {
-            "english": "Rage Treads",
-            "chinese": "狂怒之靴",
+            "english": "Construct Treads",
+            "chinese": "构造之靴",
             "german": "Saugende Treppen"
         },
         "descriptions": {
-            "english": "Apply [effect0.status0.power] rage whenever one of your units moves.",
-            "chinese": "当友方单位移动时，获得<b>狂怒</b> [effect0.status0.power]。",
+            "english": "Apply [effect0.status0.power] construct whenever one of your units moves.",
+            "chinese": "当友方单位移动时，获得<b>构造</b> [effect0.status0.power]。",
             "german": "Wenn du eine Zahl eingibst, wird dir die Zahl um 1 verringert und dir 1 Energie hinzugefügt."
         },
         "relic_activated": {
-            "english": "Rage Treads activated!",
-            "chinese": "狂怒之靴已激活！",
-            "german": "Rage Treads aktiviert!"
+            "english": "Construct Treads activated!",
+            "chinese": "构造之靴已激活！",
+            "german": "Saugende Treppen aktiviert!"
         },
         "lore_tooltips": [{
             "english": "This relic was created as an example to demonstrate the capabilities of the modding system.",
@@ -39,13 +39,13 @@
         "disallow_in_deployment": false,
         "lore_style": "herzal",
         "relic_effects": [{
-            "id": "@RageTreadsEffectOnAscend"
+            "id": "@ConstructTreadsEffectOnAscend"
         }],
-        "icon": "@RageTreadsIcon",
-        "icon_small": "@RageTreadsIconSmall",
+        "icon": "@ConstructTreadsIcon",
+        "icon_small": "@ConstructTreadsIconSmall",
         "extensions": [{
             "collectable": {
-                "class": "ClassPyreborne",
+                "class": "@ClassSteward",
                 "pool": "megapool",
                 "rarity": "common",
                 "unlock_level": 0,
@@ -59,15 +59,14 @@
             }
         }]
     }],
-    "sprites": [
-      {
-        "id": "RageTreadsIcon",
-        "path": "textures/RageTreadsIcon.png"
-      },
-      
-      {
-        "id": "RageTreadsIconSmall",
-        "path": "textures/RageTreadsIconSmall.png"
-      }
+    "sprites": [{
+            "id": "ConstructTreadsIcon",
+            "path": "textures/ConstructTreadsIcon.png"
+        },
+
+        {
+            "id": "ConstructTreadsIconSmall",
+            "path": "textures/ConstructTreadsIconSmall.png"
+        }
     ]
 }

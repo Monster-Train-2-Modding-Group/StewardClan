@@ -89,16 +89,43 @@
         }
     ],
     "sprites": [{
-        "id": "WingedAirConditioner",
-        "path": "textures/MechanicalOutrage.png"
-    }],
+            "id": "WingedAirConditioner",
+            "path": "textures/MechanicalOutrage.png"
+        },
+        {
+            "id": "WingedAirConditionerCharacterArt",
+            "path": "textures/WingedAirConditioner.png"
+        }
+    ],
     "game_objects": [{
-        "id": "WingedAirConditioner",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@WingedAirConditioner"
+            "id": "WingedAirConditioner",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@WingedAirConditioner"
+                }
+            }
+        },
+        {
+            "id": "WingedAirConditionerCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@WingedAirConditionerCharacterArt"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0,
+                        "y": 3,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1.5,
+                        "y": 1.5,
+                        "z": 1.5
+                    }
+                }
             }
         }
-    }]
+    ]
 }

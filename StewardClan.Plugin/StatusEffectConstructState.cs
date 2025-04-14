@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using StewardClan.Plugin;
 using TrainworksReloaded.Core;
 
 namespace Steward_Clan.Plugin
 {
-    public sealed class StatusEffectConstructState : StatusEffectState{
-        
+    public sealed class StatusEffectConstructState : StatusEffectState
+    {
+
         public override int GetTriggerOrder()
         {
             return 1;
@@ -32,6 +34,14 @@ namespace Steward_Clan.Plugin
             }
             var construct = this.GetConstructAmount(statusEffectStacks);
             inputTriggerParams.associatedCharacter.BuffDamage(construct, null, true);
+            var effect = this.relicManager.GetRelicEffect<RelicEffectArmorOnCore>();
+            if (effect != null)
+            {
+                inputTriggerParams.associatedCharacter.AddStatusEffect("armor", construct, new CharacterState.AddStatusEffectParams
+                {
+                    sourceRelicState = effect.SourceRelicState
+                }, null, true, false);
+            }
             yield return inputTriggerParams.associatedCharacter.BuffMaxHP(construct, true, null);
             yield break;
         }
@@ -40,7 +50,7 @@ namespace Steward_Clan.Plugin
         {
             return this.GetConstructAmount(stacks);
         }
-        
+
         private int GetConstructAmount(int stacks)
         {
             return (base.GetParamInt() + this.relicManager.GetModifiedStatusMagnitudePerStack("construct", base.GetAssociatedCharacter().GetTeamType())) * stacks;

@@ -4,8 +4,10 @@
         "id": "StorageLockerEffectOnCombatStart",
         "name": "RelicEffectSpawnUnitStartOfCombat",
         "target_room_index": 1,
-        "param_character_data": "@RustedSteward",
-        "target_team": "monsters"
+        "target_team": "monsters",
+        "param_characters": [{
+            "id": "@RustedSteward"
+        }]
     }],
     "relics": [{
         "id": "StorageLocker",
@@ -15,7 +17,7 @@
             "chinese": "储物柜"
         },
         "descriptions": {
-            "english": "At the beginning of Combat spawn three Rusted Stewards on the middle floor.",
+            "english": "At the beginning of Combat, spawn three Rusted Stewards on the middle floor.",
             "chinese": "战斗开始时，召唤三个<b>生锈的乘务员</b>到火车的中间层。"
         },
         "relic_activated": {

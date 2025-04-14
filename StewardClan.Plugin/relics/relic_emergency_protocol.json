@@ -1,0 +1,69 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relic_effects": [{
+        "id": "EmergencyProtocolEffect",
+        "name": "@RelicEffectAddStatusEffectOnPyreDamage",
+        "target_mode": "tower",
+        "param_int": 0,
+        "param_int_2": 0,
+        "param_status_effects": [{
+            "status": "damage_shield",
+            "count": 1
+        }]
+    }],
+    "relics": [{
+        "id": "EmergencyProtocol",
+        "type": "collectable",
+        "names": {
+            "english": "Emergency Protocol",
+            "chinese": "紧急协议",
+            "german": "Notfallprotokoll"
+        },
+        "descriptions": {
+            "english": "When your Pyre takes damage, apply [effect0.status0.power] Damage Shield to all friendly units.",
+            "chinese": "当你的圣火受到伤害时，为所有友方单位施加[effect0.status0.power]层<b>伤害护盾</b>。",
+            "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [effect0.status0.power] Schadensschild."
+        },
+        "relic_activated": {
+            "english": "Emergency Protocol activated!",
+            "chinese": "紧急协议已激活！",
+            "german": "Notfallprotokoll aktiviert!"
+        },
+        "lore_tooltips": [{
+            "english": "A failsafe mechanism designed to protect the train's inhabitants when the Pyre is threatened.",
+            "chinese": "当圣火受到威胁时，保护列车居民的故障安全机制。",
+            "german": "Ein Sicherheitsmechanismus, der die Bewohner des Zuges schützt, wenn der Pyre bedroht ist."
+        }],
+        "disallow_in_deployment": false,
+        "lore_style": "herzal",
+        "relic_effects": [{
+            "id": "@EmergencyProtocolEffect"
+        }],
+        "icon": "@EmergencyProtocolIcon",
+        "icon_small": "@EmergencyProtocolIconSmall",
+        "extensions": [{
+            "collectable": {
+                "class": "@ClassSteward",
+                "pool": "megapool",
+                "rarity": "common",
+                "unlock_level": 0,
+                "from_story_event": false,
+                "is_boss_given": false,
+                "is_dragons_hoard": false,
+                "ignore_for_no_relic_achievement": false,
+                "required_dlc": "none",
+                "deprioritize_in_ftue_drafts": true,
+                "force_update_count_label": false
+            }
+        }]
+    }],
+    "sprites": [{
+            "id": "EmergencyProtocolIcon",
+            "path": "textures/EmergencyProtocolIcon.png"
+        },
+        {
+            "id": "EmergencyProtocolIconSmall",
+            "path": "textures/EmergencyProtocolIconSmall.png"
+        }
+    ]
+}

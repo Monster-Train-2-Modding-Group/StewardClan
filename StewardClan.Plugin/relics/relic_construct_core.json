@@ -1,0 +1,75 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relic_effects": [{
+        "id": "ConstructCoreEffect",
+        "name": "RelicEffectModifyStatusMagnitude",
+        "source_team": "monsters",
+        "param_int": 2,
+        "param_status_effects": [{
+            "status": "construct",
+            "count": 1
+        }]
+    }, {
+        "id": "ConstructCoreArmorEffect",
+        "name": "@RelicEffectArmorOnCore"
+    }],
+    "relics": [{
+        "id": "ConstructCore",
+        "type": "collectable",
+        "names": {
+            "english": "Construct Core",
+            "chinese": "构造核心",
+            "german": "Konstruktkern"
+        },
+        "descriptions": {
+            "english": "Double Construct and give Armor.",
+            "chinese": "使<b>构造</b>效果翻倍并给予<b>护甲</b>。",
+            "german": "Verdoppelt Konstrukt und gibt Rüstung."
+        },
+        "relic_activated": {
+            "english": "Construct Core activated!",
+            "chinese": "构造核心已激活！",
+            "german": "Konstruktkern aktiviert!"
+        },
+        "lore_tooltips": [{
+            "english": "A powerful core that enhances mechanical constructs and reinforces their structure.",
+            "chinese": "一个强大的核心，可以增强机械构造体并强化其结构。",
+            "german": "Ein mächtiger Kern, der mechanische Konstrukte verstärkt und ihre Struktur verstärkt."
+        }],
+        "disallow_in_deployment": false,
+        "lore_style": "herzal",
+        "relic_effects": [{
+                "id": "@ConstructCoreEffect"
+            },
+            {
+                "id": "@ConstructCoreArmorEffect"
+            }
+        ],
+        "icon": "@ConstructCoreIcon",
+        "icon_small": "@ConstructCoreIconSmall",
+        "extensions": [{
+            "collectable": {
+                "class": "@ClassSteward",
+                "pool": "megapool",
+                "rarity": "rare",
+                "unlock_level": 0,
+                "from_story_event": false,
+                "is_boss_given": false,
+                "is_dragons_hoard": false,
+                "ignore_for_no_relic_achievement": false,
+                "required_dlc": "none",
+                "deprioritize_in_ftue_drafts": true,
+                "force_update_count_label": false
+            }
+        }]
+    }],
+    "sprites": [{
+            "id": "ConstructCoreIcon",
+            "path": "textures/ConstructCoreIcon.png"
+        },
+        {
+            "id": "ConstructCoreIconSmall",
+            "path": "textures/ConstructCoreIconSmall.png"
+        }
+    ]
+}

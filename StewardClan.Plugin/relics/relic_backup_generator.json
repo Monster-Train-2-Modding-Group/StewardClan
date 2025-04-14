@@ -1,0 +1,64 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relic_effects": [{
+        "id": "BackupGeneratorEffect",
+        "name": "RelicEffectEnergyOnCardPlay",
+        "param_int": 2,
+        "card_type": "room"
+    }],
+    "relics": [{
+        "id": "BackupGenerator",
+        "type": "collectable",
+        "names": {
+            "english": "Backup Generator",
+            "chinese": "备用发电机",
+            "german": "Notstromgenerator"
+        },
+        "descriptions": {
+            "english": "Whenever you play a room, gain [effect0.param_int] energy.",
+            "chinese": "每当你打出房间时，获得[effect0.param_int]点能量。",
+            "german": "Wenn du einen Raum spielst, erhältst du [effect0.param_int] Energie."
+        },
+        "relic_activated": {
+            "english": "Backup Generator activated!",
+            "chinese": "备用发电机已激活！",
+            "german": "Notstromgenerator aktiviert!"
+        },
+        "lore_tooltips": [{
+            "english": "A secondary power source that activates whenever new systems come online.",
+            "chinese": "每当新系统上线时激活的备用电源。",
+            "german": "Eine sekundäre Energiequelle, die aktiviert wird, wenn neue Systeme online gehen."
+        }],
+        "disallow_in_deployment": false,
+        "lore_style": "herzal",
+        "relic_effects": [{
+            "id": "@BackupGeneratorEffect"
+        }],
+        "icon": "@BackupGeneratorIcon",
+        "icon_small": "@BackupGeneratorIconSmall",
+        "extensions": [{
+            "collectable": {
+                "class": "@ClassSteward",
+                "pool": "megapool",
+                "rarity": "common",
+                "unlock_level": 0,
+                "from_story_event": false,
+                "is_boss_given": false,
+                "is_dragons_hoard": false,
+                "ignore_for_no_relic_achievement": false,
+                "required_dlc": "none",
+                "deprioritize_in_ftue_drafts": true,
+                "force_update_count_label": false
+            }
+        }]
+    }],
+    "sprites": [{
+            "id": "BackupGeneratorIcon",
+            "path": "textures/BackupGeneratorIcon.png"
+        },
+        {
+            "id": "BackupGeneratorIconSmall",
+            "path": "textures/BackupGeneratorIconSmall.png"
+        }
+    ]
+}

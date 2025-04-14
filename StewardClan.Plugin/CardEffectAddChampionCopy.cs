@@ -5,12 +5,30 @@ namespace Steward_Clan.Plugin
 {
     public class CardEffectAddChampionCopy : CardEffectBase
     {
+        public override bool CanPlayAfterBossDead
+        {
+            get
+            {
+                return false;
+            }
+        }
+        public override bool CanApplyInPreviewMode
+        {
+            get
+            {
+                return false;
+            }
+        }
         public override PropDescriptions CreateEditorInspectorDescriptions()
         {
             PropDescriptions propDescriptions = [];
             return propDescriptions;
         }
 
+        public override bool TestEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers)
+        {
+            return base.TestEffect(cardEffectState, cardEffectParams, coreGameManagers);
+        }
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
             var saveManager = coreGameManagers.GetSaveManager();
@@ -38,6 +56,5 @@ namespace Steward_Clan.Plugin
             }
             yield break;
         }
-
     }
 }

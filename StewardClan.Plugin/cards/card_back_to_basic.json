@@ -7,8 +7,8 @@
             "chinese": "回归本源"
         },
         "descriptions": {
-            "english": "Remove all [buff] effects. Gain [multistrike][effect1.status0.power]",
-            "chinese": "移除所有 [buff] 效果。获得 [multistrike][effect1.status0.power]。"
+            "english": "Remove all [buff] effects. Gain [multistrike] [effect1.status0.power]",
+            "chinese": "移除所有 [buff] 效果。获得 [multistrike] [effect1.status0.power]。"
         },
         "rarity": "uncommon",
         "class": "@ClassSteward",
