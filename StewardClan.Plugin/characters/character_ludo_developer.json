@@ -75,11 +75,11 @@
     ],
     "sprites": [{
             "id": "LudoDeveloper",
-            "path": "textures/MechanicalOutrage.png"
+            "path": "textures/LudoDeveloperCardArt.png"
         },
         {
             "id": "LudoDeveloperCharacterArt",
-            "path": "textures/LudoDeveloper.png"
+            "path": "textures/LudoDeveloperCharacterArt.png"
         }
     ],
     "game_objects": [{

@@ -3,11 +3,18 @@
     "relic_effects": [{
         "id": "StorageLockerEffectOnCombatStart",
         "name": "RelicEffectSpawnUnitStartOfCombat",
-        "target_room_index": 1,
-        "target_team": "monsters",
+        "param_int": 1,
+        "source_team": "monsters",
         "param_characters": [{
-            "id": "@RustedSteward"
-        }]
+                "id": "@RustedSteward"
+            },
+            {
+                "id": "@RustedSteward"
+            },
+            {
+                "id": "@RustedSteward"
+            }
+        ]
     }],
     "relics": [{
         "id": "StorageLocker",
@@ -31,15 +38,8 @@
         "disallow_in_deployment": false,
         "lore_style": "herzal",
         "relic_effects": [{
-                "id": "@StorageLockerEffectOnCombatStart"
-            },
-            {
-                "id": "@StorageLockerEffectOnCombatStart"
-            },
-            {
-                "id": "@StorageLockerEffectOnCombatStart"
-            }
-        ],
+            "id": "@StorageLockerEffectOnCombatStart"
+        }],
         "icon": "@StorageLockerIcon",
         "icon_small": "@StorageLockerIconSmall",
         "extensions": [{

@@ -6,10 +6,11 @@
         "character_subtype": "SubtypesData_None",
         "target_mode": "front_in_room",
         "card_type": "monster",
+        "source_team": "monsters",
         "param_int": 0,
         "param_int_2": 0,
         "param_status_effects": [{
-            "status": "construct",
+            "status": "@construct",
             "count": 1
         }]
     }],
@@ -17,12 +18,12 @@
         "id": "RageTreads",
         "type": "collectable",
         "names": {
-            "english": "Construct Treads",
-            "chinese": "构造之靴",
-            "german": "Saugende Treppen"
+            "english": "Construct Treads (WIP)",
+            "chinese": "构造之靴 (WIP)",
+            "german": "Saugende Treppen (WIP)"
         },
         "descriptions": {
-            "english": "Apply [effect0.status0.power] construct whenever one of your units moves.",
+            "english": "Apply [construct] [effect0.status0.power] whenever one of your units moves.",
             "chinese": "当友方单位移动时，获得<b>构造</b> [effect0.status0.power]。",
             "german": "Wenn du eine Zahl eingibst, wird dir die Zahl um 1 verringert und dir 1 Energie hinzugefügt."
         },

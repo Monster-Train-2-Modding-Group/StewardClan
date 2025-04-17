@@ -31,7 +31,6 @@ namespace Steward_Clan.Plugin
                         "relics/relic_construct_core.json",
                         "relics/relic_emergency_protocol.json",
                         "relics/relic_maintenance_manual.json",
-                        "relics/relic_rage_treads.json",
                         "relics/relic_storage_locker.json",
                         "characters/character_bigger_steward.json",
                         "characters/character_dependabot.json",

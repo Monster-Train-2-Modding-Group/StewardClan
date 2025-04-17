@@ -3,13 +3,8 @@ using System.Runtime.CompilerServices;
 
 namespace StewardClan.Plugin
 {
-
-
-    // Token: 0x02000363 RID: 867
-    public sealed class RelicEffectCurrencyForPyreDamage : RelicEffectBase, IStatusEffectRelicEffect, ITowerDamageTakenModifiedRelicEffect, IRelicEffect
+    public sealed class RelicEffectAddStatusEffectOnPyreDamage : RelicEffectBase, IStatusEffectRelicEffect, ITowerDamageTakenModifiedRelicEffect, IRelicEffect
     {
-        // Token: 0x1700021B RID: 539
-        // (get) Token: 0x06001F57 RID: 8023 RVA: 0x0007D6F1 File Offset: 0x0007B8F1
         public override bool CanApplyInPreviewMode
         {
             get

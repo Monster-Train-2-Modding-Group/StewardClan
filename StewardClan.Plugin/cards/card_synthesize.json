@@ -59,7 +59,7 @@
     ],
     "sprites": [{
         "id": "SythesizeArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/SynthesizeArt.png"
     }],
     "game_objects": [{
         "id": "SythesizeArt",

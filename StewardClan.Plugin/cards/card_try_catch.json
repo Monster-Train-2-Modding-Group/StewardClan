@@ -43,7 +43,7 @@
     }],
     "sprites": [{
         "id": "TryCatchArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/TryCatchArt.png"
     }],
     "game_objects": [{
         "id": "TryCatchArt",

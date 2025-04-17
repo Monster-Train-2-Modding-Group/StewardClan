@@ -43,7 +43,7 @@
     }],
     "sprites": [{
         "id": "WritelineArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/ConsoleWritelineArt.png"
     }],
     "game_objects": [{
         "id": "WritelineArt",

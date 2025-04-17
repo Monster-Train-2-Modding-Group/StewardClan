@@ -6,7 +6,7 @@ using Steward_Clan.Plugin;
 
 namespace Steward_Clan.Plugin.Patches
 {
-    [HarmonyPatch(typeof(CharacterState), "ApplyDamage")]
+    [HarmonyPatch(typeof(CharacterState), "ApplyDamage", MethodType.Enumerator)]
     public static class CharacterStateApplyDamagePatch
     {
         private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
@@ -16,11 +16,18 @@ namespace Steward_Clan.Plugin.Patches
 
             for (int i = 0; i < codes.Count - 1; i++)
             {
-                if (codes[i].opcode == OpCodes.Callvirt &&
-                    codes[i].operand is MethodInfo method &&
+                var code = codes[i];
+                Plugin.Logger.LogInfo($"Instruction {i} is {code.opcode} {code.operand}");
+                if (code.opcode == OpCodes.Callvirt &&
+                    code.operand is MethodInfo method &&
                     method.Name == nameof(CharacterState.IsPyreHeart))
                 {
-                    // Found the IsPyreHeart() call
+                    if (!found)
+                    {
+                        found = true;
+                        continue;
+                    }
+                    // Found the second IsPyreHeart() call
                     var branch = codes[i + 1];
                     if (branch.opcode != OpCodes.Brfalse_S || branch.opcode != OpCodes.Brfalse)
                         continue;
@@ -43,15 +50,11 @@ namespace Steward_Clan.Plugin.Patches
                     codes.Insert(i + 1 + newInstructions.Count, branch);
 
                     found = true;
-                    break;
+                    return codes;
                 }
             }
 
-            if (!found)
-            {
-                Plugin.Logger.LogWarning("StewardClan: Failed to find IsPyreHeart() in CharacterState.ApplyDamage");
-            }
-
+            Plugin.Logger.LogWarning("StewardClan: Failed to find IsPyreHeart() in CharacterState.ApplyDamage");
             return codes;
         }
 

@@ -7,7 +7,7 @@
         "param_int": 0,
         "param_int_2": 0,
         "param_status_effects": [{
-            "status": "damage_shield",
+            "status": "damage shield",
             "count": 1
         }]
     }],
@@ -20,9 +20,9 @@
             "german": "Notfallprotokoll"
         },
         "descriptions": {
-            "english": "When your Pyre takes damage, apply [effect0.status0.power] Damage Shield to all friendly units.",
-            "chinese": "当你的圣火受到伤害时，为所有友方单位施加[effect0.status0.power]层<b>伤害护盾</b>。",
-            "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [effect0.status0.power] Schadensschild."
+            "english": "When your Pyre takes damage, apply [damageshield] [effect0.status0.power] to all friendly units.",
+            "chinese": "当你的圣火受到伤害时，为所有友方单位施加[damageshield] [effect0.status0.power]。",
+            "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [damageshield] [effect0.status0.power]."
         },
         "relic_activated": {
             "english": "Emergency Protocol activated!",

@@ -15,9 +15,9 @@
             "german": "Notstromgenerator"
         },
         "descriptions": {
-            "english": "Whenever you play a room, gain [effect0.param_int] energy.",
-            "chinese": "每当你打出房间时，获得[effect0.param_int]点能量。",
-            "german": "Wenn du einen Raum spielst, erhältst du [effect0.param_int] Energie."
+            "english": "Whenever you play a room, gain [effect0.power] [ember].",
+            "chinese": "每当你打出房间时，获得[effect0.power]点[ember]。",
+            "german": "Wenn du einen Raum spielst, erhältst du [effect0.power] [Ember]."
         },
         "relic_activated": {
             "english": "Backup Generator activated!",

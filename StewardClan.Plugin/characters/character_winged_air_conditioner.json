@@ -90,11 +90,11 @@
     ],
     "sprites": [{
             "id": "WingedAirConditioner",
-            "path": "textures/MechanicalOutrage.png"
+            "path": "textures/WingedAirConditionerCardArt.png"
         },
         {
             "id": "WingedAirConditionerCharacterArt",
-            "path": "textures/WingedAirConditioner.png"
+            "path": "textures/WingedAirConditionerCharacterArt.png"
         }
     ],
     "game_objects": [{

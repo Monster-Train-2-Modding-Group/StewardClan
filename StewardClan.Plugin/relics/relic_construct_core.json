@@ -1,15 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relic_effects": [{
-        "id": "ConstructCoreEffect",
-        "name": "RelicEffectModifyStatusMagnitude",
-        "source_team": "monsters",
-        "param_int": 2,
-        "param_status_effects": [{
-            "status": "construct",
-            "count": 1
-        }]
-    }, {
         "id": "ConstructCoreArmorEffect",
         "name": "@RelicEffectArmorOnCore"
     }],
@@ -22,9 +13,9 @@
             "german": "Konstruktkern"
         },
         "descriptions": {
-            "english": "Double Construct and give Armor.",
-            "chinese": "使<b>构造</b>效果翻倍并给予<b>护甲</b>。",
-            "german": "Verdoppelt Konstrukt und gibt Rüstung."
+            "english": "Construct gives Armor.",
+            "chinese": "构造给予<b>护甲</b>。",
+            "german": "Konstrukt gibt Rüstung."
         },
         "relic_activated": {
             "english": "Construct Core activated!",
@@ -39,12 +30,8 @@
         "disallow_in_deployment": false,
         "lore_style": "herzal",
         "relic_effects": [{
-                "id": "@ConstructCoreEffect"
-            },
-            {
-                "id": "@ConstructCoreArmorEffect"
-            }
-        ],
+            "id": "@ConstructCoreArmorEffect"
+        }],
         "icon": "@ConstructCoreIcon",
         "icon_small": "@ConstructCoreIconSmall",
         "extensions": [{

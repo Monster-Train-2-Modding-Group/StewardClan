@@ -7,7 +7,7 @@
         "source_team": "monsters",
         "param_bool": false,
         "param_status_effects": [{
-            "status": "construct",
+            "status": "@construct",
             "count": 3
         }]
     }],

@@ -55,7 +55,7 @@
     }],
     "sprites": [{
         "id": "BiggerSteward",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/StewardAmalgamCardArt.png"
     }, {
         "id": "BiggerStewardCharacterArt",
         "path": "textures/StewardAmalgam.png"
@@ -69,7 +69,6 @@
                 }
             }
         },
-
         {
             "id": "BiggerStewardCharacterArt",
             "type": "character_art",

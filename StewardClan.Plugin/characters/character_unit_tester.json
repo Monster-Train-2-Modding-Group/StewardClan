@@ -76,16 +76,43 @@
         }
     ],
     "sprites": [{
-        "id": "UnitTester",
-        "path": "textures/MechanicalOutrage.png"
-    }],
+            "id": "UnitTester",
+            "path": "textures/UnitTesterCardArt.png"
+        },
+        {
+            "id": "UnitTesterCharacterArt",
+            "path": "textures/UnitTesterCharacterArt.png"
+        }
+    ],
     "game_objects": [{
-        "id": "UnitTester",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@UnitTester"
+            "id": "UnitTester",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@UnitTester"
+                }
+            }
+        },
+        {
+            "id": "UnitTesterCharacterArt",
+            "type": "character_art",
+            "extensions": {
+                "character_art": {
+                    "sprite": "@UnitTesterCharacterArt"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0,
+                        "y": 3,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1.5,
+                        "y": 1.5,
+                        "z": 1.5
+                    }
+                }
             }
         }
-    }]
+    ]
 }

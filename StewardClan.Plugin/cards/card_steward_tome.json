@@ -40,7 +40,7 @@
     }],
     "sprites": [{
         "id": "StewardTomeArt",
-        "path": "textures/MechanicalOutrage.png"
+        "path": "textures/StewardTome.png"
     }],
     "game_objects": [{
         "id": "StewardTomeArt",

@@ -114,8 +114,8 @@
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
             "descriptions": {
-                "english": "Train Stewards get [construct] 4.",
-                "chinese": "乘务员单位获得 [construct] 4。"
+                "english": "Train Stewards get [construct] 3.",
+                "chinese": "乘务员单位获得 [construct] 3。"
             },
             "icon": "@AlbertStewardRoomArt",
             "filters": [{
@@ -124,11 +124,35 @@
             "status_effect_upgrades": [{
                 "id": "none",
                 "status": "@construct",
-                "count": 4
+                "count": 3
             }]
         },
         {
             "id": "AlbertEngineeringStation2",
+            "titles": {
+                "english": "Engineering Station",
+                "chinese": "制造站"
+            },
+            "allow_secondary_tooltip_placement": true,
+            "hide_icon_on_card": true,
+            "descriptions": {
+                "english": "Train Stewards get [construct] 5.",
+                "chinese": "乘务员单位获得 [construct] 5."
+            },
+            "icon": "@AlbertStewardRoomArt",
+            "filters": [{
+                "id": "@IsSteward"
+            }],
+            "bonus_damage": 2,
+            "bonus_hp": 9,
+            "status_effect_upgrades": [{
+                "id": "none",
+                "status": "@construct",
+                "count": 5
+            }]
+        },
+        {
+            "id": "AlbertEngineeringStation3",
             "titles": {
                 "english": "Engineering Station",
                 "chinese": "制造站"
@@ -143,32 +167,12 @@
             "filters": [{
                 "id": "@IsSteward"
             }],
+            "bonus_damage": 6,
+            "bonus_hp": 18,
             "status_effect_upgrades": [{
                 "id": "none",
                 "status": "@construct",
                 "count": 8
-            }]
-        },
-        {
-            "id": "AlbertEngineeringStation3",
-            "titles": {
-                "english": "Engineering Station",
-                "chinese": "制造站"
-            },
-            "allow_secondary_tooltip_placement": true,
-            "hide_icon_on_card": true,
-            "descriptions": {
-                "english": "Train Stewards get [construct] 15.",
-                "chinese": "乘务员单位获得 [construct] 15。"
-            },
-            "icon": "@AlbertStewardRoomArt",
-            "filters": [{
-                "id": "@IsSteward"
-            }],
-            "status_effect_upgrades": [{
-                "id": "none",
-                "status": "@construct",
-                "count": 15
             }]
         },
         {
@@ -440,7 +444,7 @@
     ],
     "sprites": [{
             "id": "AlbertArt",
-            "path": "textures/MechanicalOutrage.png"
+            "path": "textures/AlbertCardArt.png"
         },
         {
             "id": "AlbertStewardRoomArt",
