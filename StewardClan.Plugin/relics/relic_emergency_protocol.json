@@ -21,7 +21,7 @@
         },
         "descriptions": {
             "english": "When your Pyre takes damage, apply [damageshield] [effect0.status0.power] to all friendly units.",
-            "chinese": "当你的圣火受到伤害时，为所有友方单位施加[damageshield] [effect0.status0.power]。",
+            "chinese": "当你的薪火在战斗中受到伤害时，友方单位获得 [damageshield] [effect0.status0.power]。",
             "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [damageshield] [effect0.status0.power]."
         },
         "relic_activated": {
@@ -31,7 +31,7 @@
         },
         "lore_tooltips": [{
             "english": "A failsafe mechanism designed to protect the train's inhabitants when the Pyre is threatened.",
-            "chinese": "当圣火受到威胁时，保护列车居民的故障安全机制。",
+            "chinese": "一个在薪火受到威胁时，用于保护火车乘客的安全装置。",
             "german": "Ein Sicherheitsmechanismus, der die Bewohner des Zuges schützt, wenn der Pyre bedroht ist."
         }],
         "disallow_in_deployment": false,
