@@ -8,7 +8,7 @@
         },
         "descriptions": {
             "english": "Remove equipment from a unit and Apply [construct][effect1.status0.power].",
-            "chinese": "移除一个单位身上的装备，并使其获得 [construct][effect1.status0.power]。"
+            "chinese": "移除一个单位身上的装备，并使其获得 [construct] [effect1.status0.power]。"
         },
         "rarity": "uncommon",
         "class": "@ClassSteward",

@@ -14,7 +14,7 @@
         },
         "descriptions": {
             "english": "Construct gives Armor.",
-            "chinese": "构造给予<b>护甲</b>。",
+            "chinese": "每层 [construct] 额外提供 +1 <b>护甲</b>。",
             "german": "Konstrukt gibt Rüstung."
         },
         "relic_activated": {

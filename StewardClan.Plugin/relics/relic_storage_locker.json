@@ -24,8 +24,8 @@
             "chinese": "储物柜"
         },
         "descriptions": {
-            "english": "At the beginning of Combat, spawn three Rusted Stewards on the middle floor.",
-            "chinese": "战斗开始时，召唤三个<b>生锈的乘务员</b>到火车的中间层。"
+            "english": "On [deployphase], spawn three Rusted Stewards on the middle floor.",
+            "chinese": "在 [deployphase] 时，召唤三个<b>生锈的乘务员</b>到火车的中间层。"
         },
         "relic_activated": {
             "english": "Storage Locker activated!",
