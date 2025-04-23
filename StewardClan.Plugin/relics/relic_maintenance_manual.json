@@ -20,9 +20,9 @@
             "german": "Wartungshandbuch"
         },
         "descriptions": {
-            "english": "Train Stewards enter with [construct] [effect0.status0.power].",
-            "chinese": "列车管家入场时获得 [construct] [effect0.status0.power]。",
-            "german": "Zugstewards betreten mit [construct] [effect0.status0.power]."
+            "english": "Train Stewards enter with [StewardClan.Plugin_construct] [effect0.status0.power].",
+            "chinese": "列车管家入场时获得 [StewardClan.Plugin_construct] [effect0.status0.power]。",
+            "german": "Zugstewards betreten mit [StewardClan.Plugin_construct] [effect0.status0.power]."
         },
         "relic_activated": {
             "english": "Maintenance Manual activated!",

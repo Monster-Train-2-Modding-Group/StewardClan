@@ -7,8 +7,8 @@
             "chinese": "你好，世界！"
         },
         "descriptions": {
-            "english": "Apply [construct] [effect0.status0.power]",
-            "chinese": "获得 [construct] [effect0.status0.power]。"
+            "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power]",
+            "chinese": "获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
         },
         "rarity": "common",
         "class": "@ClassSteward",
