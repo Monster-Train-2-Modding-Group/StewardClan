@@ -7,8 +7,8 @@
             "chinese": "刺激"
         },
         "descriptions": {
-            "english": "Apply [construct][effect0.status0.power] to all friendly units and the pyre.",
-            "chinese": "所有友方单位和薪火获得 [construct] [effect0.status0.power]。"
+            "english": "Apply [StewardClan.Plugin_construct][effect0.status0.power] to all friendly units and the pyre.",
+            "chinese": "所有友方单位和薪火获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
         },
         "rarity": "uncommon",
         "class": "@ClassSteward",

@@ -114,8 +114,8 @@
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
             "descriptions": {
-                "english": "Train Stewards get [construct] 3.",
-                "chinese": "乘务员单位获得 [construct] 3。"
+                "english": "Train Stewards get [StewardClan.Plugin_construct] 3.",
+                "chinese": "乘务员单位获得 [StewardClan.Plugin_construct] 3。"
             },
             "icon": "@AlbertStewardRoomArt",
             "filters": [{
@@ -136,8 +136,8 @@
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
             "descriptions": {
-                "english": "Train Stewards get [construct] 5.",
-                "chinese": "乘务员单位获得 [construct] 5."
+                "english": "Train Stewards get [StewardClan.Plugin_construct] 5.",
+                "chinese": "乘务员单位获得 [StewardClan.Plugin_construct] 5."
             },
             "icon": "@AlbertStewardRoomArt",
             "filters": [{
@@ -160,8 +160,8 @@
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
             "descriptions": {
-                "english": "Train Stewards get [construct] 8.",
-                "chinese": "乘务员单位获得 [construct] 8."
+                "english": "Train Stewards get [StewardClan.Plugin_construct] 8.",
+                "chinese": "乘务员单位获得 [StewardClan.Plugin_construct] 8."
             },
             "icon": "@AlbertStewardRoomArt",
             "filters": [{
@@ -347,8 +347,8 @@
             "id": "AlbertBuffStewards1",
             "trigger": "on_spawn",
             "descriptions": {
-                "english": "Attach a room that gives Train Stewards [construct] 3.",
-                "chinese": "向房间附加“乘务员单位获得 [construct] 3”的效果。"
+                "english": "Attach a room that gives Train Stewards [StewardClan.Plugin_construct] 3.",
+                "chinese": "向房间附加“乘务员单位获得 [StewardClan.Plugin_construct] 3”的效果。"
             },
             "effects": [{
                 "id": "@AlbertAttachRoom1"
@@ -358,8 +358,8 @@
             "id": "AlbertBuffStewards2",
             "trigger": "on_spawn",
             "descriptions": {
-                "english": "Attach a room that gives Train Stewards[construct] 5.",
-                "chinese": "向房间附加“乘务员单位获得 [construct] 5”的效果。"
+                "english": "Attach a room that gives Train Stewards[StewardClan.Plugin_construct] 5.",
+                "chinese": "向房间附加“乘务员单位获得 [StewardClan.Plugin_construct] 5”的效果。"
             },
             "effects": [{
                 "id": "@AlbertAttachRoom2"
@@ -369,8 +369,8 @@
             "id": "AlbertBuffStewards3",
             "trigger": "on_spawn",
             "descriptions": {
-                "english": "Attach a room that gives Train Stewards [construct] 8.",
-                "chinese": "向房间附加“乘务员单位获得 [construct] 8”的效果。"
+                "english": "Attach a room that gives Train Stewards [StewardClan.Plugin_construct] 8.",
+                "chinese": "向房间附加“乘务员单位获得 [StewardClan.Plugin_construct] 8”的效果。"
             },
             "effects": [{
                 "id": "@AlbertAttachRoom3"
