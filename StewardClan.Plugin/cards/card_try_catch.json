@@ -4,7 +4,7 @@
         "id": "TryCatch",
         "names": {
             "english": "Try-Catch",
-            "chinese": "异常处理"
+            "chinese": "尝试抓取"
         },
         "descriptions": {
             "english": "Apply [armor] [effect0.status0.power] to the front friendly unit.",

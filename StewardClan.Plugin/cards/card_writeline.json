@@ -4,7 +4,7 @@
         "id": "Writeline",
         "names": {
             "english": "Console.Writeline",
-            "chinese": "你好，世界！"
+            "chinese": "打印机"
         },
         "descriptions": {
             "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power]",

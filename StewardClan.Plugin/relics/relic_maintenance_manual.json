@@ -21,7 +21,7 @@
         },
         "descriptions": {
             "english": "Train Stewards enter with [StewardClan.Plugin_construct] [effect0.status0.power].",
-            "chinese": "列车管家入场时获得 [StewardClan.Plugin_construct] [effect0.status0.power]。",
+            "chinese": "乘务员单位进入战斗时获得 [StewardClan.Plugin_construct] [effect0.status0.power]。",
             "german": "Zugstewards betreten mit [StewardClan.Plugin_construct] [effect0.status0.power]."
         },
         "relic_activated": {
@@ -31,7 +31,7 @@
         },
         "lore_tooltips": [{
             "english": "A well-worn manual detailing the proper maintenance and enhancement of Train Stewards.",
-            "chinese": "一本破旧的关于列车管家维护和强化的手册。",
+            "chinese": "一本破旧的关于火车乘务员维护和强化的手册。",
             "german": "Ein abgenutztes Handbuch mit Details zur ordnungsgemäßen Wartung und Verbesserung von Zugstewards."
         }],
         "disallow_in_deployment": false,
