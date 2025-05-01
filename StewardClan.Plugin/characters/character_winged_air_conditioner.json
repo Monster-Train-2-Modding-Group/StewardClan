@@ -58,7 +58,7 @@
         },
         "can_attack": true,
         "can_be_healed": true,
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "character_art": "@WingedAirConditionerCharacterArt",
         "subtypes": [
             "SubtypesData_None",
             "SubtypesData_BannerUnit"

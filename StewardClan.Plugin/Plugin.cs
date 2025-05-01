@@ -72,7 +72,6 @@ namespace Steward_Clan.Plugin
             Harmony.CreateAndPatchAll(typeof(CharacterStateApplyDamagePatch));
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-            Logger.LogInfo($"{typeof(CustomCardEffectAttachRoomAttachment).AssemblyQualifiedName}");
         }
     }
 }

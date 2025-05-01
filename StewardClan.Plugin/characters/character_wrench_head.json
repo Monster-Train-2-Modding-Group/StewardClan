@@ -36,7 +36,7 @@
         "size": 2,
         "attack_damage": 15,
         "health": 30,
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "character_art": "@WrenchHeadCharacterArt",
         "subtypes": [
             "SubtypesData_None",
             "SubtypesData_BannerUnit"

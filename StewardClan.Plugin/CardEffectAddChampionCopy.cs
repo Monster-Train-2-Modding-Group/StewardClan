@@ -34,7 +34,8 @@ namespace Steward_Clan.Plugin
             var saveManager = coreGameManagers.GetSaveManager();
             var cardManager = coreGameManagers.GetCardManager();
 
-            var allCards = cardManager.GetAllCards();
+            var allCards = new List<CardState>();
+            allCards = cardManager.GetAllCards(allCards);
             foreach (var card in allCards)
             {
                 if (card.GetCardDataID() == saveManager.GetMainChampionData().championCardData.GetID())

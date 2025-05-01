@@ -7,11 +7,24 @@ This Mod serves as an Example mod for New Clans. The Mechanics are kept relative
 Features:
 
 - A New Champion
-- 2 New Monsters
-- 18 New Cards
+- 11 New Monsters
+- 22 New Cards
+- 6 New Relics
 
 Some Example Cards to Discover:
 
 - Gravitas: Set a Unit's Cooldown to 0.
 - Disarm: Remove an Equipment. Give +30 Health.
 - Breaking Point: Deal 100 Damage to all Enemies. The Pyre loses 10 damage.
+
+## Bugs
+
+Report Bugs [Here](https://github.com/Monster-Train-2-Modding-Group/StewardClan/issues)
+
+I appreciate screenshots!
+
+## Credits
+
+Thanks to:
+- brandonandzeus
+- lostone-zc
