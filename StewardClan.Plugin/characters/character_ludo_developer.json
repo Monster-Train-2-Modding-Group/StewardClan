@@ -48,13 +48,13 @@
     "character_triggers": [{
         "id": "LudoDeveloperGainConstruct",
         "descriptions": {
-            "english": "Gain [StewardClan.Plugin_construct] [effect1.status0.power].",
-            "chinese": "获得 [StewardClan.Plugin_construct] [effect1.status0.power]。"
+            "english": "Gain [StewardClan.Plugin_construct] [effect0.status0.power].",
+            "chinese": "获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
         },
         "trigger": "post_combat",
-        "effect": {
+        "effects": [{
             "id": "@LudoDeveloperGainConstructEffect"
-        }
+        }]
     }],
     "effects": [{
             "id": "SpawnLudoDeveloper",
