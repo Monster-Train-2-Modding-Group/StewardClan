@@ -46,7 +46,13 @@
             "id": "StewardSpikeScaling",
             "name": "CardTraitScalingAddStatusEffect",
             "track_type": "played_cost",
-            "param_int": 1
+            "param_int": 1,
+            "param_status_effects": [
+              {
+                "status": "@construct",
+                "count": 0
+              }
+            ]
         },
         {
             "id": "StewardSpikeScalingDamage",
@@ -56,7 +62,7 @@
         }
     ],
     "effects": [{
-            "id": "StewardSpikeEffect",
+            "id": "StewardSpikeStatusEffect",
             "name": "CardEffectAddStatusEffect",
             "target_mode": "drop_target_character",
             "target_team": "both",
