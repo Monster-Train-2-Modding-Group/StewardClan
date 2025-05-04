@@ -52,9 +52,9 @@
             "chinese": "获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
         },
         "trigger": "post_combat",
-        "effect": {
+        "effects": [{
             "id": "@LudoDeveloperGainConstructEffect"
-        }
+        }]
     }],
     "effects": [{
             "id": "SpawnLudoDeveloper",
