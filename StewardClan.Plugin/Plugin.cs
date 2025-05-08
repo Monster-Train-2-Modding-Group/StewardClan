@@ -64,7 +64,8 @@ namespace Steward_Clan.Plugin
                         "cards/card_steward_tome.json",
                         "cards/card_synthesize.json",
                         "cards/card_try_catch.json",
-                        "cards/card_writeline.json"
+                        "cards/card_writeline.json",
+                        "enhancers/constructstone.json"
                     );
                 }
             );

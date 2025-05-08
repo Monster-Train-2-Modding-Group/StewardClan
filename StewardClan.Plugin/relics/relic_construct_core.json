@@ -37,7 +37,7 @@
         "extensions": [{
             "collectable": {
                 "class": "@ClassSteward",
-                "pool": "megapool",
+                "pools": ["megapool"],
                 "rarity": "rare",
                 "unlock_level": 0,
                 "from_story_event": false,
