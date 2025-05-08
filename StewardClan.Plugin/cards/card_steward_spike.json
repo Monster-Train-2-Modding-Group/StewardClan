@@ -1,109 +1,97 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-  "cards": [
-    {
-      "id": "StewardSpike",
-      "names": {
-        "english": "Spike of the Stewards",
-        "chinese": "乘务员之尖钉"
-      },
-      "descriptions": {
-        "english": "Apply [trait1.power][x] [StewardClan.Plugin_construct]. Pyre takes [trait2.power][x] damage",
-        "chinese": "获得 [trait1.power][x] [StewardClan.Plugin_construct]。薪火受到 [trait2.power][x] 点伤害。"
-      },
-      "rarity": "rare",
-      "class": "@ClassSteward",
-      "card_art_reference": "@StewardSpikeArt",
-      "targets_room": true,
-      "targetless": false,
-      "pools": [
-        "MegaPool"
-      ],
-      "cost": 0,
-      "cost_type": "x",
-      "traits": [
-        {
-          "id": "@StewardSpikeConsume"
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "cards": [{
+        "id": "StewardSpike",
+        "names": {
+            "english": "Spike of the Stewards",
+            "chinese": "乘务员之尖钉"
+        },
+        "descriptions": {
+            "english": "Apply [trait1.power][x] [StewardClan.Plugin_construct]. Pyre takes [trait2.power][x] damage",
+            "chinese": "获得 [trait1.power][x] [StewardClan.Plugin_construct]。薪火受到 [trait2.power][x] 点伤害。"
+        },
+        "rarity": "rare",
+        "class": "@ClassSteward",
+        "card_art_reference": "@StewardSpikeArt",
+        "targets_room": true,
+        "targetless": false,
+        "pools": [
+            "MegaPool"
+        ],
+        "cost": 0,
+        "cost_type": "x",
+        "traits": [{
+                "id": "@StewardSpikeConsume"
+            },
+            {
+                "id": "@StewardSpikeScaling"
+            },
+            {
+                "id": "@StewardSpikeScalingDamage"
+            }
+        ],
+        "effects": [{
+                "id": "@StewardSpikeStatusEffect"
+            },
+            {
+                "id": "@StewardSpikeDamage"
+            }
+        ]
+    }],
+    "traits": [{
+            "id": "StewardSpikeConsume",
+            "name": "CardTraitExhaustState"
         },
         {
-          "id": "@StewardSpikeScaling"
+            "id": "StewardSpikeScaling",
+            "name": "CardTraitScalingAddStatusEffect",
+            "track_type": "played_cost",
+            "param_int": 1,
+            "param_status_effects": [
+              {
+                "status": "@construct",
+                "count": 0
+              }
+            ]
         },
         {
-          "id": "@StewardSpikeScalingDamage"
+            "id": "StewardSpikeScalingDamage",
+            "name": "CardTraitScalingAddDamage",
+            "track_type": "played_cost",
+            "param_int": 1
         }
-      ],
-      "effects": [
-        {
-          "id": "@StewardSpikeStatusEffect"
+    ],
+    "effects": [{
+            "id": "StewardSpikeStatusEffect",
+            "name": "CardEffectAddStatusEffect",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "target_subtype": "SubtypesData_None",
+            "param_status_effects": [{
+                "status": "@construct",
+                "count": 0
+            }]
         },
         {
-          "id": "@StewardSpikeDamage"
+            "id": "StewardSpikeDamage",
+            "name": "@CardEffectDamagePyre",
+            "target_mode": "pyre",
+            "param_int": 0,
+            "use_magic_power_multipler": false,
+            "use_status_effect_multiplier": false
         }
-      ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "StewardSpikeConsume",
-      "name": "CardTraitExhaustState"
-    },
-    {
-      "id": "StewardSpikeScaling",
-      "name": "CardTraitScalingAddStatusEffect",
-      "track_type": "played_cost",
-      "param_int": 1,
-      "param_status_effects": [
-        {
-          "status": "@construct",
-          "count": 0
+    ],
+    "sprites": [{
+        "id": "StewardSpikeArt",
+        "path": "textures/StewardSpike.png"
+    }],
+    "game_objects": [{
+        "id": "StewardSpikeArt",
+        "type": "card_art",
+        "extensions": {
+            "card_art": {
+                "sprite": "@StewardSpikeArt"
+            }
         }
-      ]
-    },
-    {
-      "id": "StewardSpikeScalingDamage",
-      "name": "CardTraitScalingAddDamage",
-      "track_type": "played_cost",
-      "param_int": 1
-    }
-  ],
-  "effects": [
-    {
-      "id": "StewardSpikeStatusEffect",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "drop_target_character",
-      "target_team": "both",
-      "target_subtype": "SubtypesData_None",
-      "param_status_effects": [
-        {
-          "status": "@construct",
-          "count": 0
-        }
-      ]
-    },
-    {
-      "id": "StewardSpikeDamage",
-      "name": "@CardEffectDamagePyre",
-      "target_mode": "pyre",
-      "param_int": 0,
-      "use_magic_power_multipler": false,
-      "use_status_effect_multiplier": false
-    }
-  ],
-  "sprites": [
-    {
-      "id": "StewardSpikeArt",
-      "path": "textures/StewardSpike.png"
-    }
-  ],
-  "game_objects": [
-    {
-      "id": "StewardSpikeArt",
-      "type": "card_art",
-      "extensions": {
-        "card_art": {
-          "sprite": "@StewardSpikeArt"
-        }
-      }
-    }
-  ]
+    }]
 }
