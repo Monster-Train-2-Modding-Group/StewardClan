@@ -23,6 +23,11 @@ Report Bugs [Here](https://github.com/Monster-Train-2-Modding-Group/StewardClan/
 
 I appreciate screenshots!
 
+## Dependencies
+
+- [Trainworks Reloads](https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded): [Deep Wiki](https://deepwiki.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded)
+- [BepInEx](https://github.com/BepInEx/BepInEx): [Deep Wiki](https://deepwiki.com/BepInEx/BepInEx)
+
 ## Credits
 
 Thanks to:
