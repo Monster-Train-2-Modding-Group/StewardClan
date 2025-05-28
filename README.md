@@ -1,6 +1,6 @@
 # Steward Clan Mod
 
-Support language: English | 中文
+Support language: English | 简体中文
 
 A Mod for Monster Train 2 featuring a whole new clan: The Train Stewards. Having gone mad from rust and technical errors, the Stewards determine to take the train through Heaven to defeat the titans on their own.
 
