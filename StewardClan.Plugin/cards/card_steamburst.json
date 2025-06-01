@@ -30,8 +30,7 @@
             "name": "CardEffectDamage",
             "target_mode": "room",
             "target_team": "both",
-            "param_int": 2,
-            "use_magic_power_multipler": true
+            "param_int": 2
         },
         {
             "id": "SteamBurstEmber",

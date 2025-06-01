@@ -37,16 +37,13 @@
             "id": "PyreRefactorBuffPyreAttack",
             "name": "CardEffectBuffDamage",
             "target_mode": "pyre",
-            "param_int": 10,
-            "use_magic_power_multipler": false
+            "param_int": 10
         },
         {
             "id": "PyreRefactorHealPyre",
             "name": "CardEffectPermanentlyAdjustMaxPyreHealth",
             "target_mode": "pyre",
-            "param_int": 2,
-            "use_magic_power_multipler": false,
-            "use_status_effect_multiplier": false
+            "param_int": 2
         }
     ],
     "sprites": [{

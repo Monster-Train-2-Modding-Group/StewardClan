@@ -27,7 +27,6 @@
             "chinese": "一个强大的核心，可以增强机械构造体并强化其结构。",
             "german": "Ein mächtiger Kern, der mechanische Konstrukte verstärkt und ihre Struktur verstärkt."
         }],
-        "disallow_in_deployment": false,
         "lore_style": "herzal",
         "relic_effects": [{
             "id": "@ConstructCoreArmorEffect"
@@ -39,14 +38,7 @@
                 "class": "@ClassSteward",
                 "pools": ["megapool"],
                 "rarity": "rare",
-                "unlock_level": 0,
-                "from_story_event": false,
-                "is_boss_given": false,
-                "is_dragons_hoard": false,
-                "ignore_for_no_relic_achievement": false,
-                "required_dlc": "none",
-                "deprioritize_in_ftue_drafts": true,
-                "force_update_count_label": false
+                "deprioritize_in_ftue_drafts": true
             }
         }]
     }],

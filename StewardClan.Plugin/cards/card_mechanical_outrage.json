@@ -12,7 +12,7 @@
         },
         "cost": 1,
         "type": "spell",
-        "rarity": "starter",
+        "rarity": "common",
         "class": "@ClassSteward",
         "card_art_reference": "@MechanicalOutrageArt",
         "targets_room": true,
@@ -33,17 +33,13 @@
             "name": "CardEffectDamage",
             "target_mode": "drop_target_character",
             "param_int": 5,
-            "target_team": "both",
-            "target_subtype": "SubtypesData_None",
-            "use_magic_power_multipler": true
+            "target_team": "both"
         },
         {
             "id": "MechanicalOutrageDealDamageToPyre",
             "name": "@CardEffectDamagePyre",
             "target_mode": "pyre",
-            "param_int": 1,
-            "use_magic_power_multipler": false,
-            "use_status_effect_multiplier": false
+            "param_int": 1
         }
     ],
     "traits": [{

@@ -19,7 +19,6 @@
         "cost_type": "x",
         "rarity": "champion",
         "class": "@ClassSteward",
-        "unlock_level": 0,
         "targets_room": true,
         "targetless": false,
         "traits": [{
@@ -47,26 +46,17 @@
         "character_art": "@AlbertCharacterArt",
         "size": 3,
         "health": 5,
-        "can_be_healed": true,
         "death_type": "large",
-        "can_attack": true,
         "attack_damage": 10,
         "attack_teleports_to_defender": true,
         "death_slides_backwards": true,
-        "chosen_variant": false,
-        "titan_affinity": "none",
         "triggers": [{
             "id": "@AlbertStatsOnSummon"
         }],
         "subtypes": [
             "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
             "SubtypesData_TrainSteward"
-        ],
-        "equip_limit": 1,
-        "endless_stats": {
-            "health": 5,
-            "attack": 10
-        }
+        ]
     }],
     "traits": [{
             "id": "AlbertBuffAttackByCost1",

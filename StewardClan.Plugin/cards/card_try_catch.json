@@ -35,7 +35,6 @@
         "name": "CardEffectAddStatusEffect",
         "target_mode": "front_in_room",
         "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
         "param_status_effects": [{
             "status": "armor",
             "count": 20

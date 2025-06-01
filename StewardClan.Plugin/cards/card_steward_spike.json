@@ -66,7 +66,6 @@
             "name": "CardEffectAddStatusEffect",
             "target_mode": "drop_target_character",
             "target_team": "both",
-            "target_subtype": "SubtypesData_None",
             "param_status_effects": [{
                 "status": "@construct",
                 "count": 0
@@ -76,9 +75,7 @@
             "id": "StewardSpikeDamage",
             "name": "@CardEffectDamagePyre",
             "target_mode": "pyre",
-            "param_int": 0,
-            "use_magic_power_multipler": false,
-            "use_status_effect_multiplier": false
+            "param_int": 0
         }
     ],
     "sprites": [{

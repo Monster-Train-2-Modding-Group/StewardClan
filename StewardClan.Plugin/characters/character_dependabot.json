@@ -9,10 +9,8 @@
             "card_art_reference": "@Dependabot",
             "cost": 1,
             "type": "monster",
-            "cost_type": "default",
             "rarity": "uncommon",
             "class": "@ClassSteward",
-            "unlock_level": 0,
             "targets_room": true,
             "effects": [{
                 "id": "@SpawnDependabot"
@@ -38,7 +36,6 @@
             "card_art_reference": "@Dependabot",
             "ability": true,
             "cooldown": 3,
-            "initial_cooldown": 0,
             "targetless": true,
             "targets_room": false,
             "type": "spell",
@@ -56,11 +53,8 @@
             "english": "Dependabot",
             "chinese": "依赖机器人"
         },
-        "can_attack": true,
-        "can_be_healed": true,
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
-            "SubtypesData_None",
             "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [{
@@ -73,7 +67,6 @@
             "id": "SpawnDependabot",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "target_card_type": "spell",
             "param_character_data": "@Dependabot"
         },
         {

@@ -35,8 +35,7 @@
         "name": "CardEffectDrawAdditionalNextTurn",
         "param_int": 2,
         "target_mode": "room",
-        "target_team": "both",
-        "target_subtype": "SubtypesData_None"
+        "target_team": "both"
     }],
     "sprites": [{
         "id": "CacheArt",

@@ -39,7 +39,6 @@
             "name": "CardEffectAddStatusEffect",
             "target_mode": "drop_target_character",
             "target_team": "both",
-            "target_subtype": "SubtypesData_None",
             "param_status_effects": [{
                 "status": "buff",
                 "count": 3
@@ -50,7 +49,6 @@
             "name": "CardEffectAddStatusEffect",
             "target_mode": "last_targeted_characters",
             "target_team": "both",
-            "target_subtype": "SubtypesData_None",
             "param_status_effects": [{
                 "status": "regen",
                 "count": 3

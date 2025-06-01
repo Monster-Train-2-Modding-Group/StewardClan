@@ -9,10 +9,8 @@
             "card_art_reference": "@Imptern",
             "cost": 1,
             "type": "monster",
-            "cost_type": "default",
             "rarity": "uncommon",
             "class": "@ClassSteward",
-            "unlock_level": 0,
             "targets_room": true,
             "effects": [{
                 "id": "@SpawnImptern"
@@ -38,7 +36,6 @@
             "card_art_reference": "@Imptern",
             "ability": true,
             "cooldown": 3,
-            "initial_cooldown": 0,
             "targetless": true,
             "targets_room": false,
             "type": "spell",
@@ -56,8 +53,6 @@
             "english": "Imptern",
             "chinese": "小恶魔"
         },
-        "can_attack": true,
-        "can_be_healed": true,
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
             "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
@@ -82,7 +77,6 @@
             "id": "SpawnImptern",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "target_card_type": "spell",
             "param_character_data": "@Imptern"
         },
         {

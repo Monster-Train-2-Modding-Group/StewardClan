@@ -34,7 +34,6 @@
             "chinese": "一个在薪火受到威胁时，用于保护火车乘客的安全装置。",
             "german": "Ein Sicherheitsmechanismus, der die Bewohner des Zuges schützt, wenn der Pyre bedroht ist."
         }],
-        "disallow_in_deployment": false,
         "lore_style": "herzal",
         "relic_effects": [{
             "id": "@EmergencyProtocolEffect"
@@ -46,14 +45,7 @@
                 "class": "@ClassSteward",
                 "pools": ["megapool"],
                 "rarity": "common",
-                "unlock_level": 0,
-                "from_story_event": false,
-                "is_boss_given": false,
-                "is_dragons_hoard": false,
-                "ignore_for_no_relic_achievement": false,
-                "required_dlc": "none",
                 "deprioritize_in_ftue_drafts": true,
-                "force_update_count_label": false
             }
         }]
     }],

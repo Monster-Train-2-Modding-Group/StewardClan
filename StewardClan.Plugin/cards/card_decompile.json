@@ -42,8 +42,7 @@
             "name": "CardEffectDamage",
             "target_mode": "drop_target_character",
             "target_team": "both",
-            "param_int": 50,
-            "use_magic_power_multipler": true
+            "param_int": 50
         },
         {
             "id": "DecompileDiscard",
