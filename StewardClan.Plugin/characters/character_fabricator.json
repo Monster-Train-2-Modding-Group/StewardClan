@@ -9,10 +9,8 @@
             "card_art_reference": "@Fabricator",
             "cost": 1,
             "type": "monster",
-            "cost_type": "default",
             "rarity": "uncommon",
             "class": "@ClassSteward",
-            "unlock_level": 0,
             "targets_room": true,
             "effects": [{
                 "id": "@SpawnFabricator"
@@ -38,7 +36,6 @@
             "card_art_reference": "@Fabricator",
             "ability": true,
             "cooldown": 3,
-            "initial_cooldown": 0,
             "targetless": true,
             "targets_room": false,
             "type": "spell",
@@ -56,11 +53,8 @@
             "english": "Fabricator",
             "chinese": "伪造者"
         },
-        "can_attack": true,
-        "can_be_healed": true,
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
-            "SubtypesData_None",
             "SubtypesData_BannerUnit"
         ],
         "ability": "@FabricatorAbility"

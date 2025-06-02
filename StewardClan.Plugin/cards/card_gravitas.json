@@ -28,14 +28,11 @@
         "id": "GravitasResetCooldown",
         "name": "CardEffectRemoveStatusEffect",
         "target_mode": "drop_target_character",
-        "param_bool": true,
-        "param_int": 0,
         "param_status_effects": [{
             "status": "cooldown",
             "count": 10
         }],
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None"
+        "target_team": "monsters"
     }],
     "sprites": [{
         "id": "GravitasArt",

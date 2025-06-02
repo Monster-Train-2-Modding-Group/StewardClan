@@ -39,8 +39,7 @@
             "name": "CardEffectRemoveAllStatusEffects",
             "param_int": 0,
             "target_mode": "drop_target_character",
-            "target_team": "both",
-            "target_subtype": "SubtypesData_None"
+            "target_team": "both"
         },
         {
             "id": "BackToBasicsGainMultiStrike",
@@ -50,8 +49,7 @@
                 "status": "multistrike",
                 "count": 1
             }],
-            "target_team": "both",
-            "target_subtype": "SubtypesData_None"
+            "target_team": "both"
         }
     ],
     "sprites": [{

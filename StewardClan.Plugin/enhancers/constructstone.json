@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "Constructstone",
+      "type": "enhancer",
+      "names": {
+        "english": "Constructstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [StewardClan.Plugin_construct] <b>5</b>."
+      },
+      "relic_effects": [
+        {
+          "id": "@ConstructEnhancer"
+        }
+      ],
+      "icon": "@ConstructIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "@ClassSteward",
+            "pools": [
+              "unit_upgrade_common"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ConstructEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "card_type": "monster",
+      "param_upgrade": "@ConstructUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ConstructUpgrade",
+      "titles": {
+        "english": "Constructstone"
+      },
+      "descriptions": {
+        "english": "Gain [StewardClan.Plugin_construct] <b>5</b>."
+      },
+      "icon": "@ConstructIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "@construct",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

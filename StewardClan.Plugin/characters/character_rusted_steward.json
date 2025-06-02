@@ -9,10 +9,8 @@
         "card_art_reference": "@RustedSteward",
         "cost": 1,
         "type": "monster",
-        "cost_type": "default",
         "rarity": "common",
         "class": "@ClassSteward",
-        "unlock_level": 0,
         "targets_room": true,
         "effects": [{
             "id": "@SpawnRustedSteward"
@@ -35,8 +33,6 @@
             "english": "Rusted Steward",
             "chinese": "生锈的乘务员"
         },
-        "can_attack": true,
-        "can_be_healed": true,
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
             "SubtypesData_TrainSteward",
@@ -56,7 +52,6 @@
         "id": "SpawnRustedSteward",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
-        "target_card_type": "spell",
         "param_character_data": "@RustedSteward"
     }],
     "sprites": [{

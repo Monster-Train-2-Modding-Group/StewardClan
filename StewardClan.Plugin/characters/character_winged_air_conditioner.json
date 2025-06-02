@@ -9,10 +9,8 @@
             "card_art_reference": "@WingedAirConditioner",
             "cost": 1,
             "type": "monster",
-            "cost_type": "default",
             "rarity": "uncommon",
             "class": "@ClassSteward",
-            "unlock_level": 0,
             "targets_room": true,
             "effects": [{
                 "id": "@SpawnWingedAirConditioner"
@@ -38,7 +36,6 @@
             "card_art_reference": "@WingedAirConditioner",
             "ability": true,
             "cooldown": 4,
-            "initial_cooldown": 0,
             "targetless": true,
             "targets_room": false,
             "type": "spell",
@@ -56,11 +53,8 @@
             "english": "Winged Air Conditioner",
             "chinese": "带翅膀的空调"
         },
-        "can_attack": true,
-        "can_be_healed": true,
         "character_art": "@WingedAirConditionerCharacterArt",
         "subtypes": [
-            "SubtypesData_None",
             "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [{
@@ -73,7 +67,6 @@
             "id": "SpawnWingedAirConditioner",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "target_card_type": "spell",
             "param_character_data": "@WingedAirConditioner"
         },
         {
@@ -81,7 +74,6 @@
             "name": "CardEffectAddStatusEffect",
             "target_mode": "room",
             "target_team": "monsters",
-            "target_subtype": "SubtypesData_None",
             "param_status_effects": [{
                 "status": "@construct",
                 "count": 2

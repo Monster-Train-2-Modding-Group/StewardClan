@@ -47,9 +47,7 @@
             "name": "CardEffectDamage",
             "target_mode": "front_in_room",
             "target_team": "both",
-            "param_int": 50,
-            "target_subtype": "SubtypesData_None",
-            "use_magic_power_multipler": true
+            "param_int": 50
         }
     ],
     "sprites": [{

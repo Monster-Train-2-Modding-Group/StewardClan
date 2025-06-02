@@ -29,7 +29,6 @@
             "chinese": "一个备用电源，当新系统上线时会被激活。",
             "german": "Eine sekundäre Energiequelle, die aktiviert wird, wenn neue Systeme online gehen."
         }],
-        "disallow_in_deployment": false,
         "lore_style": "herzal",
         "relic_effects": [{
             "id": "@BackupGeneratorEffect"
@@ -39,16 +38,9 @@
         "extensions": [{
             "collectable": {
                 "class": "@ClassSteward",
-                "pool": "megapool",
+                "pools": ["megapool"],
                 "rarity": "common",
-                "unlock_level": 0,
-                "from_story_event": false,
-                "is_boss_given": false,
-                "is_dragons_hoard": false,
-                "ignore_for_no_relic_achievement": false,
-                "required_dlc": "none",
-                "deprioritize_in_ftue_drafts": true,
-                "force_update_count_label": false
+                "deprioritize_in_ftue_drafts": true
             }
         }]
     }],

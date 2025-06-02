@@ -17,7 +17,7 @@ namespace Steward_Clan.Plugin.Patches
             for (int i = 0; i < codes.Count - 1; i++)
             {
                 var code = codes[i];
-                Plugin.Logger.LogInfo($"Instruction {i} is {code.opcode} {code.operand}");
+                Plugin.Logger.LogDebug($"Instruction {i} is {code.opcode} {code.operand}");
                 if (code.opcode == OpCodes.Callvirt &&
                     code.operand is MethodInfo method &&
                     method.Name == nameof(CharacterState.IsPyreHeart))

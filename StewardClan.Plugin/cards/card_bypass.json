@@ -44,8 +44,7 @@
         "name": "CardEffectDamage",
         "target_mode": "drop_target_character",
         "target_team": "both",
-        "param_int": 16,
-        "use_magic_power_multipler": true
+        "param_int": 16
     }],
     "sprites": [{
         "id": "BypassArt",
