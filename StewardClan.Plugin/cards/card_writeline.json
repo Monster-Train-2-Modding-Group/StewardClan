@@ -12,7 +12,7 @@
         },
         "rarity": "common",
         "class": "@ClassSteward",
-        "card_art_reference": "@WritelineArt",
+        "card_art": "@WritelineArt",
         "targets_room": true,
         "targetless": false,
         "pools": [

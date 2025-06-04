@@ -6,9 +6,9 @@
             "english": "Ludo-Developer",
             "chinese": "游戏开发者"
         },
-        "card_art_reference": "@LudoDeveloper",
+        "card_art": "@LudoDeveloper",
         "cost": 2,
-        "type": "monster",
+        "card_type": "monster",
         "rarity": "rare",
         "class": "@ClassSteward",
         "targets_room": true,
@@ -56,7 +56,7 @@
             "id": "SpawnLudoDeveloper",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "param_character_data": "@LudoDeveloper"
+            "param_character": "@LudoDeveloper"
         },
         {
             "id": "LudoDeveloperGainConstructEffect",

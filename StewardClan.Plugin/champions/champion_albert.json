@@ -13,9 +13,9 @@
             "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]",
             "chinese": "<b>召唤:</b> 获得 +[trait0.power][x][attack]，+[trait1.power][x][health]。"
         },
-        "card_art_reference": "@AlbertArt",
+        "card_art": "@AlbertArt",
         "cost": 0,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "x",
         "rarity": "champion",
         "class": "@ClassSteward",
@@ -61,37 +61,37 @@
     "traits": [{
             "id": "AlbertBuffAttackByCost1",
             "name": "CardTraitScalingUpgradeUnitAttack",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 2
         },
         {
             "id": "AlbertBuffHealthByCost1",
             "name": "CardTraitScalingUpgradeUnitHealth",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 4
         },
         {
             "id": "AlbertBuffAttackByCost2",
             "name": "CardTraitScalingUpgradeUnitAttack",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 4
         },
         {
             "id": "AlbertBuffHealthByCost2",
             "name": "CardTraitScalingUpgradeUnitHealth",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 6
         },
         {
             "id": "AlbertBuffAttackByCost3",
             "name": "CardTraitScalingUpgradeUnitAttack",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 6
         },
         {
             "id": "AlbertBuffHealthByCost3",
             "name": "CardTraitScalingUpgradeUnitHealth",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 9
         }
     ],
@@ -302,7 +302,7 @@
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
             "target_card_type": "spell",
-            "param_character_data": "@Albert"
+            "param_character": "@Albert"
         },
         {
             "id": "AlbertAddEmber1",

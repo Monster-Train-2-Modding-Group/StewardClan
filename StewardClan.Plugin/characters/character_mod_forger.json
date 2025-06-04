@@ -6,9 +6,9 @@
             "english": "Mod Forger",
             "chinese": "模组锻造者"
         },
-        "card_art_reference": "@ModForger",
+        "card_art": "@ModForger",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "rarity": "rare",
         "class": "@ClassSteward",
         "targets_room": true,
@@ -56,7 +56,7 @@
             "id": "SpawnModForger",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "param_character_data": "@ModForger"
+            "param_character": "@ModForger"
         },
         {
             "id": "ModForgerHealPyre",

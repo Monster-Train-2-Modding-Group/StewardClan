@@ -6,9 +6,9 @@
             "english": "Overheating Computer",
             "chinese": "过热的电脑"
         },
-        "card_art_reference": "@OverheatingComputer",
+        "card_art": "@OverheatingComputer",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "rarity": "uncommon",
         "class": "@ClassSteward",
         "targets_room": true,
@@ -55,7 +55,7 @@
             "id": "SpawnOverheatingComputer",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "param_character_data": "@OverheatingComputer"
+            "param_character": "@OverheatingComputer"
         },
         {
             "id": "OverheatingComputerDamage",

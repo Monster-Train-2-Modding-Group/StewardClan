@@ -6,9 +6,9 @@
                 "english": "Dependabot",
                 "chinese": "依赖机器人"
             },
-            "card_art_reference": "@Dependabot",
+            "card_art": "@Dependabot",
             "cost": 1,
-            "type": "monster",
+            "card_type": "monster",
             "rarity": "uncommon",
             "class": "@ClassSteward",
             "targets_room": true,
@@ -33,12 +33,12 @@
                 "english": "Gain [effect0.power][ember]",
                 "chinese": "获得[effect0.power][ember]。"
             },
-            "card_art_reference": "@Dependabot",
-            "ability": true,
+            "card_art": "@Dependabot",
+            "is_an_ability": true,
             "cooldown": 3,
             "targetless": true,
             "targets_room": false,
-            "type": "spell",
+            "card_type": "spell",
             "effects": [{
                 "id": "@DependabotGainEmber"
             }]
@@ -67,7 +67,7 @@
             "id": "SpawnDependabot",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "param_character_data": "@Dependabot"
+            "param_character": "@Dependabot"
         },
         {
             "id": "DependabotGainEmber",

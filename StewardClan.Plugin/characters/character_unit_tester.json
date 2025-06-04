@@ -6,9 +6,9 @@
             "english": "Unit Tester",
             "chinese": "单位测试者"
         },
-        "card_art_reference": "@UnitTester",
+        "card_art": "@UnitTester",
         "cost": 2,
-        "type": "monster",
+        "card_type": "monster",
         "rarity": "rare",
         "class": "@ClassSteward",
         "targets_room": true,
@@ -56,7 +56,7 @@
             "id": "SpawnUnitTester",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "param_character_data": "@UnitTester"
+            "param_character": "@UnitTester"
         },
         {
             "id": "UnitTesterApplyWeakness",

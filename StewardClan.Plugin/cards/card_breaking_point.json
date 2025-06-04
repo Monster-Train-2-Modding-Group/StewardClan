@@ -11,10 +11,10 @@
             "chinese": "对所有层的所有敌方单位造成 [effect0.power] 点伤害。薪火受到 [effect1.power] 点伤害。"
         },
         "cost": 3,
-        "type": "spell",
+        "card_type": "spell",
         "rarity": "rare",
         "class": "@ClassSteward",
-        "card_art_reference": "@BreakingPointArt",
+        "card_art": "@BreakingPointArt",
         "pools": [
             "MegaPool"
         ],

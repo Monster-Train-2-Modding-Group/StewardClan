@@ -72,7 +72,7 @@
             "portrait": "@Portrait",
             "selected_cue": ""
         }],
-        "sfx_cue": "",
+        "clan_select_sfx_cue": "",
         "is_crew": false,
         "unlock_data": {
             "descriptions": {
@@ -82,7 +82,7 @@
             "track_value": "none",
             "param_int": 0
         },
-        "class_preview_texts": []
+        "class_unlock_preview_texts": []
     }],
     "map_nodes": [{
         "id": "RewardNodeUnitPackSteward",
@@ -102,7 +102,7 @@
             "RandomChosenMainClassUnit",
             "RandomChosenSubClassUnit"
         ],
-        "is_banner": true,
+        "is_banner_node": true,
         "extensions": [{
             "reward": {
                 "required_class": "@ClassSteward",

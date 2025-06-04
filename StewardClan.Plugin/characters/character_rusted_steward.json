@@ -6,9 +6,9 @@
             "english": "Rusted Steward",
             "chinese": "生锈的乘务员"
         },
-        "card_art_reference": "@RustedSteward",
+        "card_art": "@RustedSteward",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "rarity": "common",
         "class": "@ClassSteward",
         "targets_room": true,
@@ -52,7 +52,7 @@
         "id": "SpawnRustedSteward",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
-        "param_character_data": "@RustedSteward"
+        "param_character": "@RustedSteward"
     }],
     "sprites": [{
         "id": "RustedSteward",

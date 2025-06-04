@@ -6,9 +6,9 @@
                 "english": "Fabricator",
                 "chinese": "伪造者"
             },
-            "card_art_reference": "@Fabricator",
+            "card_art": "@Fabricator",
             "cost": 1,
-            "type": "monster",
+            "card_type": "monster",
             "rarity": "uncommon",
             "class": "@ClassSteward",
             "targets_room": true,
@@ -33,12 +33,12 @@
                 "english": "Add a Copy of the Equipment attached to this unit to your Deck",
                 "chinese": "将一张此单位身上的装备的复制品加入你的抽牌堆。"
             },
-            "card_art_reference": "@Fabricator",
-            "ability": true,
+            "card_art": "@Fabricator",
+            "is_an_ability": true,
             "cooldown": 3,
             "targetless": true,
             "targets_room": false,
-            "type": "spell",
+            "card_type": "spell",
             "effects": [{
                 "id": "@FabricatorCopyEquipment"
             }]
@@ -64,7 +64,7 @@
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
             "target_card_type": "spell",
-            "param_character_data": "@Fabricator"
+            "param_character": "@Fabricator"
         },
         {
             "id": "FabricatorCopyEquipment",

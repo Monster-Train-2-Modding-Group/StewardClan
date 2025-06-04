@@ -6,9 +6,9 @@
             "english": "Wrench-Head",
             "chinese": "扳手头"
         },
-        "card_art_reference": "@WrenchHead",
+        "card_art": "@WrenchHead",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "rarity": "uncommon",
         "class": "@ClassSteward",
         "targets_room": true,
@@ -55,7 +55,7 @@
             "id": "SpawnWrenchHead",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "param_character_data": "@WrenchHead"
+            "param_character": "@WrenchHead"
         },
         {
             "id": "WrenchHeadHeal",

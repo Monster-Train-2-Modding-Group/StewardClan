@@ -3,7 +3,7 @@
     "relic_effects": [{
         "id": "MaintenanceManualEffect",
         "name": "RelicEffectAddStatusEffectOnSpawn",
-        "character_subtype": "SubtypesData_TrainSteward",
+        "param_subtype": "SubtypesData_TrainSteward",
         "source_team": "monsters",
         "param_bool": false,
         "param_status_effects": [{
