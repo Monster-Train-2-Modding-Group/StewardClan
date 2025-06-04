@@ -4,7 +4,7 @@
         "id": "ConstructTreadsEffectOnAscend",
         "name": "RelicEffectAddStatusEffectOnUnitMoved",
         "target_mode": "front_in_room",
-        "card_type": "monster",
+        "param_card_type": "monster",
         "source_team": "monsters",
         "param_int": 0,
         "param_int_2": 0,

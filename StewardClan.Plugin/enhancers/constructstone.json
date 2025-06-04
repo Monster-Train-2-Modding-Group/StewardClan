@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "@ClassSteward",
             "pools": [
-              "unit_upgrade_common"
+              "UnitUpgradePoolCommon"
             ],
             "rarity": "common"
           }
@@ -33,7 +33,7 @@
     {
       "id": "ConstructEnhancer",
       "name": "RelicEffectCardUpgrade",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_upgrade": "@ConstructUpgrade"
     }
   ],

@@ -98,14 +98,14 @@
             "english": "Gain a Steward Unit",
             "chinese": "获得一个乘务员单位。"
         },
-        "map_pools": [
+        "pools": [
             "RandomChosenMainClassUnit",
             "RandomChosenSubClassUnit"
         ],
         "is_banner_node": true,
         "extensions": [{
             "reward": {
-                "required_class": "@ClassSteward",
+                "class": "@ClassSteward",
                 "rewards": [{
                     "id": "@StewardBannerReward"
                 }]
