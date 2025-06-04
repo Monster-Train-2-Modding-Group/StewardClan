@@ -8,6 +8,7 @@ namespace Steward_Clan.Plugin
 {
     public sealed class StatusEffectConstructState : StatusEffectState
     {
+        public const string StatusId = "stewardclan.plugin_construct";
 
         public override int GetTriggerOrder()
         {
@@ -55,7 +56,5 @@ namespace Steward_Clan.Plugin
         {
             return (base.GetParamInt() + this.relicManager.GetModifiedStatusMagnitudePerStack("construct", base.GetAssociatedCharacter().GetTeamType())) * stacks;
         }
-
-        public const string StatusId = "construct";
     }
 }
