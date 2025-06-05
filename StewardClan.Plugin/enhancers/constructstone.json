@@ -5,10 +5,12 @@
       "id": "Constructstone",
       "type": "enhancer",
       "names": {
-        "english": "Constructstone"
+        "english": "Constructstone",
+        "chinese": "构造石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [StewardClan.Plugin_construct] <b>5</b>."
+        "english": "Upgrade a unit with [StewardClan.Plugin_construct] <b>5</b>.",
+        "chinese": "升级一个单位，使其获得 [StewardClan.Plugin_construct] <b>5</b>。"
       },
       "relic_effects": [
         {
@@ -41,10 +43,12 @@
     {
       "id": "ConstructUpgrade",
       "titles": {
-        "english": "Constructstone"
+        "english": "Constructstone",
+        "chinese": "构造石"
       },
       "descriptions": {
-        "english": "Gain [StewardClan.Plugin_construct] <b>5</b>."
+        "english": "Gain [StewardClan.Plugin_construct] <b>5</b>.",
+        "chinese": "获得 [StewardClan.Plugin_construct] <b>5</b>。"
       },
       "icon": "@ConstructIcon",
       "status_effect_upgrades": [
