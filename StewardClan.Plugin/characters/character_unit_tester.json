@@ -36,7 +36,6 @@
         "subtypes": [
             "SubtypesData_BannerUnit"
         ],
-        "ability": "@UnitTesterAbility",
         "triggers": [{
             "id": "@UnitTesterTrigger"
         }]
