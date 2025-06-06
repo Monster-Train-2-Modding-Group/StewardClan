@@ -12,7 +12,7 @@
         },
         "rarity": "common",
         "class": "@ClassSteward",
-        "card_art_reference": "@SteamBurstArt",
+        "card_art": "@SteamBurstArt",
         "targets_room": true,
         "targetless": false,
         "pools": ["MegaPool"],

@@ -6,9 +6,9 @@
             "english": "Steward Amalgam",
             "chinese": "乘务员造物"
         },
-        "card_art_reference": "@BiggerSteward",
+        "card_art": "@BiggerSteward",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "rarity": "uncommon",
         "class": "@ClassSteward",
         "targets_room": true,
@@ -46,7 +46,7 @@
         "id": "SpawnBiggerSteward",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
-        "param_character_data": "@BiggerSteward"
+        "param_character": "@BiggerSteward"
     }],
     "sprites": [{
         "id": "BiggerSteward",

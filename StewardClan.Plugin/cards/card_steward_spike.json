@@ -12,7 +12,7 @@
         },
         "rarity": "rare",
         "class": "@ClassSteward",
-        "card_art_reference": "@StewardSpikeArt",
+        "card_art": "@StewardSpikeArt",
         "targets_room": true,
         "targetless": false,
         "pools": [
@@ -45,7 +45,7 @@
         {
             "id": "StewardSpikeScaling",
             "name": "CardTraitScalingAddStatusEffect",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 1,
             "param_status_effects": [
               {
@@ -57,7 +57,7 @@
         {
             "id": "StewardSpikeScalingDamage",
             "name": "CardTraitScalingAddDamage",
-            "track_type": "played_cost",
+            "param_tracked_value": "played_cost",
             "param_int": 1
         }
     ],

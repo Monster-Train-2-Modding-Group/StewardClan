@@ -6,9 +6,9 @@
                 "english": "Imptern",
                 "chinese": "小恶魔"
             },
-            "card_art_reference": "@Imptern",
+            "card_art": "@Imptern",
             "cost": 1,
-            "type": "monster",
+            "card_type": "monster",
             "rarity": "uncommon",
             "class": "@ClassSteward",
             "targets_room": true,
@@ -33,12 +33,12 @@
                 "english": "Repeat the last summon trigger",
                 "chinese": "重复上一个已触发的<b>召唤</b>效果。"
             },
-            "card_art_reference": "@Imptern",
-            "ability": true,
+            "card_art": "@Imptern",
+            "is_an_ability": true,
             "cooldown": 3,
             "targetless": true,
             "targets_room": false,
-            "type": "spell",
+            "card_type": "spell",
             "effects": [{
                 "id": "@ImpternRepeatTrigger"
             }]
@@ -77,7 +77,7 @@
             "id": "SpawnImptern",
             "name": "CardEffectSpawnMonster",
             "target_mode": "room",
-            "param_character_data": "@Imptern"
+            "param_character": "@Imptern"
         },
         {
             "id": "ImpternHealPyre",

@@ -11,10 +11,10 @@
             "chinese": "你的薪火获得 +[effect0.power][attack]，+[effect1.power][pyrehealth]。"
         },
         "cost": 2,
-        "type": "spell",
+        "card_type": "spell",
         "rarity": "uncommon",
         "class": "@ClassSteward",
-        "card_art_reference": "@PyreRefactorArt",
+        "card_art": "@PyreRefactorArt",
         "pools": [
             "MegaPool"
         ],
