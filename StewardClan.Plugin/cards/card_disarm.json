@@ -12,7 +12,7 @@
         },
         "rarity": "uncommon",
         "class": "@ClassSteward",
-        "card_art_reference": "@DisarmArt",
+        "card_art": "@DisarmArt",
         "targets_room": true,
         "targetless": false,
         "pools": [
@@ -32,7 +32,7 @@
             "name": "CardEffectRemoveEquipment",
             "target_mode": "drop_target_character",
             "target_team": "both",
-            "fail_to_cast_on_failure": true
+            "should_fail_to_cast_if_test_fails": true
         },
         {
             "id": "DisarmApplyConstruct",

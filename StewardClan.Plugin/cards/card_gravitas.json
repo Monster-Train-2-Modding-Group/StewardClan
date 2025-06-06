@@ -11,10 +11,10 @@
             "chinese": "[cooldown] 降低至 [effect0.power]。"
         },
         "cost": 0,
-        "type": "spell",
+        "card_type": "spell",
         "rarity": "uncommon",
         "class": "@ClassSteward",
-        "card_art_reference": "@GravitasArt",
+        "card_art": "@GravitasArt",
         "pools": [
             "MegaPool"
         ],

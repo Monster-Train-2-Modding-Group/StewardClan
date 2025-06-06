@@ -12,7 +12,7 @@
         },
         "rarity": "rare",
         "class": "@ClassSteward",
-        "card_art_reference": "@SanityArt",
+        "card_art": "@SanityArt",
         "targets_room": false,
         "targetless": true,
         "pools": ["MegaPool"],

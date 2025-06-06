@@ -11,10 +11,10 @@
             "chinese": "造成 [effect0.power] 点伤害。薪火受到 [effect1.power] 点伤害。"
         },
         "cost": 1,
-        "type": "spell",
+        "card_type": "spell",
         "rarity": "common",
         "class": "@ClassSteward",
-        "card_art_reference": "@MechanicalOutrageArt",
+        "card_art": "@MechanicalOutrageArt",
         "targets_room": true,
         "targetless": false,
         "traits": [{

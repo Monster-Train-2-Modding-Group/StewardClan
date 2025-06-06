@@ -12,7 +12,7 @@
         },
         "rarity": "common",
         "class": "@ClassSteward",
-        "card_art_reference": "@BypassArt",
+        "card_art": "@BypassArt",
         "targets_room": true,
         "targetless": false,
         "pools": [

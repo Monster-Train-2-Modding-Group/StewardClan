@@ -4,7 +4,7 @@
         "id": "BackupGeneratorEffect",
         "name": "RelicEffectEnergyOnCardPlay",
         "param_int": 2,
-        "card_type": "room"
+        "param_card_type": "room"
     }],
     "relics": [{
         "id": "BackupGenerator",
