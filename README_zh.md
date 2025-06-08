@@ -23,6 +23,8 @@
 
 点击[这里](https://github.com/Monster-Train-2-Modding-Group/StewardClan/issues)汇报bug。
 
+点击[这里](https://github.com/lostone-zc/StewardClan-Chinese/issues)汇报中文翻译的错误。
+
 最好附带截图!
 
 ## 前置
