@@ -1,6 +1,6 @@
 # Steward Clan Mod
 
-Support language: English | 简体中文
+Support language: English | [简体中文](https://github.com/Monster-Train-2-Modding-Group/StewardClan/blob/main/README_zh.md)
 
 A Mod for Monster Train 2 featuring a whole new clan: The Train Stewards. Having gone mad from rust and technical errors, the Stewards determine to take the train through Heaven to defeat the titans on their own.
 
@@ -16,8 +16,8 @@ Features:
 Some Example Cards to Discover:
 
 - Gravitas: Set a Unit's Cooldown to 0.
-- Disarm: Remove an Equipment. Give +30 Health.
-- Breaking Point: Deal 100 Damage to all Enemies. The Pyre loses 10 damage.
+- Disarm: Remove an Equipment. Give Construct (a custom status effect) 5.
+- Breaking Point: Deal 150 Damage to all Enemies on Train. The Pyre takes 10 damage.
 
 ## Bugs
 
