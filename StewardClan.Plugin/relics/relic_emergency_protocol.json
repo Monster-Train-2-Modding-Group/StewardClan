@@ -45,7 +45,7 @@
                 "class": "@ClassSteward",
                 "pools": ["megapool"],
                 "rarity": "common",
-                "deprioritize_in_ftue_drafts": true,
+                "deprioritize_in_ftue_drafts": true
             }
         }]
     }],
