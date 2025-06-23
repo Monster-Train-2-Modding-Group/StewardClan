@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - SweetkinBackOnTrack.Plugin/json/**
+      - StewardClan.Plugin/json/**
   pull_request:
     branches:
       - main
     paths:
-      - SweetkinBackOnTrack.Plugin/json/**
+      - StewardClan.Plugin/json/**
 
 jobs:
   validate:
