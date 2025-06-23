@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with [StewardClan.Plugin_construct] [effect0.upgrade.status0.power].",
-        "chinese": "升级一个单位，使其获得 [StewardClan.Plugin_construct] [effect0.upgrade.status0.power]。"
+        "chinese": "升级一个单位，使其获得[StewardClan.Plugin_construct] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@ConstructEnhancer"

@@ -10,8 +10,8 @@
         },
         "descriptions": {
             "group": "CardData_Albert",
-            "english": "<b>Summon:</b> Gain +[trait0.power][x][attack] and +[trait1.power][x][health]",
-            "chinese": "<b>召唤:</b> 获得 +[trait0.power][x][attack]，+[trait1.power][x][health]。"
+            "english": "[summon]: Gain +[trait0.power][x][attack] and +[trait1.power][x][health]",
+            "chinese": "[summon]: 获得 +[trait0.power][x][attack]，+[trait1.power][x][health]。"
         },
         "card_art": "@AlbertArt",
         "cost": 0,
@@ -268,7 +268,7 @@
             "trigger": "post_combat",
             "descriptions": {
                 "english": "Give Train Stewards [StewardClan.Plugin_construct] [effect0.status0.power].",
-                "chinese": "乘务员单位获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
+                "chinese": "乘务员单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
             },
             "effects": [{
                 "id": "@AlbertGiveConstruct1"
@@ -279,7 +279,7 @@
             "trigger": "post_combat",
             "descriptions": {
                 "english": "Give Train Stewards [StewardClan.Plugin_construct] [effect0.status0.power].",
-                "chinese": "乘务员单位获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
+                "chinese": "乘务员单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
             },
             "effects": [{
                 "id": "@AlbertGiveConstruct2"
@@ -290,7 +290,7 @@
             "trigger": "post_combat",
             "descriptions": {
                 "english": "Give Train Stewards [StewardClan.Plugin_construct] [effect0.status0.power].",
-                "chinese": "乘务员单位获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
+                "chinese": "乘务员单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
             },
             "effects": [{
                 "id": "@AlbertGiveConstruct3"
