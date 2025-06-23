@@ -21,7 +21,7 @@
         },
         "descriptions": {
             "english": "When your Pyre takes damage, apply [damageshield] [effect0.status0.power] to all friendly units.",
-            "chinese": "当你的薪火在战斗中受到伤害时，友方单位获得 [damageshield] [effect0.status0.power]。",
+            "chinese": "当你的薪火在战斗中受到伤害时，友方单位获得[damageshield] [effect0.status0.power]。",
             "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [damageshield] [effect0.status0.power]."
         },
         "relic_activated": {

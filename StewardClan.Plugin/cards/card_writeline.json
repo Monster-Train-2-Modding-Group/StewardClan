@@ -8,7 +8,7 @@
         },
         "descriptions": {
             "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power]",
-            "chinese": "获得 [StewardClan.Plugin_construct] [effect0.status0.power]。"
+            "chinese": "获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
         },
         "rarity": "common",
         "class": "@ClassSteward",

@@ -30,8 +30,8 @@
                 "chinese": "猴子乱跳"
             },
             "descriptions": {
-                "english": "Repeat the last summon trigger",
-                "chinese": "重复上一个已触发的<b>召唤</b>效果。"
+                "english": "Repeat the last [summon] trigger",
+                "chinese": "重复上一个已触发的[summon]效果。"
             },
             "card_art": "@Imptern",
             "is_an_ability": true,

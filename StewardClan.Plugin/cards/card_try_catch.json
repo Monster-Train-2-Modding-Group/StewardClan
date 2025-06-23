@@ -8,7 +8,7 @@
         },
         "descriptions": {
             "english": "Apply [armor] [effect0.status0.power] to the front friendly unit.",
-            "chinese": "使前排友方单位获得 [armor] [effect0.status0.power]。"
+            "chinese": "使前排友方单位获得[armor] [effect0.status0.power]。"
         },
         "rarity": "common",
         "class": "@ClassSteward",
