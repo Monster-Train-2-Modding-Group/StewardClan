@@ -19,21 +19,11 @@
             "MegaPool"
         ],
         "cost": 1,
-        "traits": [
-            "@ScrapApplications"
-        ],
-        "effects": [{
-                "id": "@ScrapSacrifice"
-            },
-            {
-                "id": "@ScrapDamage"
-            }
+         "effects": [
+                "@ScrapSacrifice",
+				"@ScrapDamage",
+				"@ScrapDamage"
         ]
-    }],
-    "traits": [{
-        "id": "ScrapApplications",
-        "name": "CardTraitScalingAddEffectApplications",
-        "param_int": 2
     }],
     "effects": [{
             "id": "ScrapSacrifice",
