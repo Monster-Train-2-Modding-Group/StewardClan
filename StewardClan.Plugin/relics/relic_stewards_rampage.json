@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "StewardsRampage",
+      "type": "collectable",
+      "names": {
+        "english": "Stewards Rampage"
+      },
+      "descriptions": {
+        "english": "When spawning your 4th Train Steward, deal [effect0.power] damage to all enemies."
+      },
+      "relic_activated": {
+        "english": "Stewards on the rampage!"
+      },
+      "disallow_in_deployment": true,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@StewardsRampageDamageAll"
+      ],
+      "icon": "@StorageLockerIcon",
+      "icon_small": "@StorageLockerIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSteward",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "StewardsRampageDamageAll",
+      "name": "RelicEffectDamageOnMonsterSummoned",
+      "param_int": 50,
+      "source_team": "heroes",
+      "target_mode": "tower",
+      "conditions": [ "@NumSummonedStewardsGreaterThan4" ]
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "NumSummonedStewardsGreaterThan4",
+      "param_tracked_value": "monster_subtype_played",
+      "param_card_type": "monster",
+      "param_subtype": "SubtypesData_TrainSteward",
+      "param_entry_duration": "this_battle",
+      "param_comparator": "equal",
+      "param_int": 4,
+      "allow_multiple_triggers_per_duration": false
+    }
+  ]
+}
