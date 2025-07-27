@@ -31,7 +31,8 @@
       "display_category": "positive",
       "trigger_stage": "on_post_room_combat",
       "is_stackable": true,
-      "is_propagatable": false,
+      "is_propagatable": true,
+      "exclude_hero_propagation": true,
       "param_int": 1,
       "icon": "@ConstructIcon"
     }
