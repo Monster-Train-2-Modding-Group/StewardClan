@@ -1,30 +1,33 @@
 {
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "SteamBurst",
-        "names": {
-            "english": "Steam Burst",
-            "chinese": "蒸汽喷射"
+  "cards": [
+    {
+      "id": "SteamBurst",
+      "names": {
+        "english": "Steam Burst",
+        "chinese": "蒸汽喷射"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to all units. Gain [effect1.power][ember].",
+        "chinese": "对所有单位造成 [effect0.power] 点伤害。获得 [effect1.power][ember]。"
+      },
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art": "@SteamBurstArt",
+      "targets_room": true,
+      "targetless": true,
+      "pools": [ "MegaPool" ],
+      "cost": 1,
+      "effects": [
+        {
+          "id": "@SteamBurstDamage"
         },
-        "descriptions": {
-            "english": "Deal [effect0.power] damage to all units. Gain [effect1.power][ember].",
-            "chinese": "对所有单位造成 [effect0.power] 点伤害。获得 [effect1.power][ember]。"
-        },
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "card_art": "@SteamBurstArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": ["MegaPool"],
-        "cost": 1,
-        "effects": [{
-                "id": "@SteamBurstDamage"
-            },
-            {
-                "id": "@SteamBurstEmber"
-            }
-        ]
-    }],
+        {
+          "id": "@SteamBurstEmber"
+        }
+      ]
+    }
+  ],
     "effects": [{
             "id": "SteamBurstDamage",
             "name": "CardEffectDamage",

@@ -1,62 +1,75 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "MechanicalOutrage",
-        "names": {
-            "english": "Mechanical Outrage",
-            "chinese": "机械愤怒"
-        },
-        "descriptions": {
-            "english": "Deal [effect0.power] damage. Pyre takes [effect1.power] damage.",
-            "chinese": "造成 [effect0.power] 点伤害。薪火受到 [effect1.power] 点伤害。"
-        },
-        "cost": 1,
-        "card_type": "spell",
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "card_art": "@MechanicalOutrageArt",
-        "targets_room": true,
-        "targetless": false,
-        "traits": [{
-            "id": "@MechanicalOutragePiercing"
-        }],
-        "effects": [{
-                "id": "@MechanicalOutrageDealDamage"
-            },
-            {
-                "id": "@MechanicalOutrageDealDamageToPyre"
-            }
-        ]
-    }],
-    "effects": [{
-            "id": "MechanicalOutrageDealDamage",
-            "name": "CardEffectDamage",
-            "target_mode": "drop_target_character",
-            "param_int": 5,
-            "target_team": "both"
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "MechanicalOutrage",
+      "names": {
+        "english": "Mechanical Outrage",
+        "chinese": "机械愤怒"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage. Pyre takes [effect1.power] damage.",
+        "chinese": "造成 [effect0.power] 点伤害。薪火受到 [effect1.power] 点伤害。"
+      },
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art": "@MechanicalOutrageArt",
+      "targets_room": true,
+      "targetless": false,
+      "traits": [
+        {
+          "id": "@MechanicalOutragePiercing"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@MechanicalOutrageDealDamage"
         },
         {
-            "id": "MechanicalOutrageDealDamageToPyre",
-            "name": "@CardEffectDamagePyre",
-            "target_mode": "pyre",
-            "param_int": 1
+          "id": "@MechanicalOutrageDealDamageToPyre"
         }
-    ],
-    "traits": [{
-        "id": "MechanicalOutragePiercing",
-        "name": "CardTraitIgnoreArmor"
-    }],
-    "sprites": [{
-        "id": "MechanicalOutrageArt",
-        "path": "textures/MechanicalOutrage.png"
-    }],
-    "game_objects": [{
-        "id": "MechanicalOutrageArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@MechanicalOutrageArt"
-            }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MechanicalOutrageDealDamage",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "param_int": 5,
+      "target_team": "both"
+    },
+    {
+      "id": "MechanicalOutrageDealDamageToPyre",
+      "name": "@CardEffectDamagePyre",
+      "target_mode": "pyre",
+      "param_int": 1,
+      "supress_pyre_room_focus": true
+    }
+  ],
+  "traits": [
+    {
+      "id": "MechanicalOutragePiercing",
+      "name": "CardTraitIgnoreArmor"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MechanicalOutrageArt",
+      "path": "textures/MechanicalOutrage.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "MechanicalOutrageArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@MechanicalOutrageArt"
         }
-    }]
+      }
+    }
+  ]
 }
