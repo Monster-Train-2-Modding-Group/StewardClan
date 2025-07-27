@@ -1,31 +1,37 @@
 {
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Galvanize",
-        "names": {
-            "english": "Galvanize",
-            "chinese": "刺激"
-        },
-        "descriptions": {
-            "english": "Apply [StewardClan.Plugin_construct][effect0.status0.power] to all friendly units and the pyre.",
-            "chinese": "所有友方单位和薪火获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
-        },
-        "rarity": "uncommon",
-        "class": "@ClassSteward",
-        "card_art": "@GalvanizeArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": [
-            "MegaPool"
-        ],
-        "cost": 1,
-        "traits": [{
-            "id": "@GalvanizeConsume"
-        }],
-        "effects": [{
-            "id": "@GalvanizeApplyConstruct"
-        }]
-    }],
+  "cards": [
+    {
+      "id": "Galvanize",
+      "names": {
+        "english": "Galvanize",
+        "chinese": "刺激"
+      },
+      "descriptions": {
+        "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power] to all friendly units.",
+        "chinese": "所有友方单位和薪火获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+      },
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "card_art": "@GalvanizeArt",
+      "targets_room": true,
+      "targetless": true,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 1,
+      "traits": [
+        {
+          "id": "@GalvanizeConsume"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@GalvanizeApplyConstruct"
+        }
+      ]
+    }
+  ],
     "traits": [{
         "id": "GalvanizeConsume",
         "name": "CardTraitExhaustState"
