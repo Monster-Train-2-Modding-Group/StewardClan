@@ -10,6 +10,7 @@ namespace Steward_Clan.Plugin
 {
     public sealed class CardEffectCopyEquipment : CardEffectBase
     {
+
         public override PropDescriptions CreateEditorInspectorDescriptions()
         {
             PropDescriptions propDescriptions = new PropDescriptions();
@@ -47,7 +48,7 @@ namespace Steward_Clan.Plugin
 
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
-            if (cardEffectParams.targets.Count == 0)
+            if (cardEffectParams.targets.Count == 0 || coreGameManagers.GetSaveManager().PreviewMode)
                 yield break;
 
             CharacterState targetCharacter = cardEffectParams.targets[0];
