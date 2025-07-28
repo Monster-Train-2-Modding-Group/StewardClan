@@ -1,52 +1,61 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Sanity",
-        "names": {
-            "english": "Sanity",
-            "chinese": "理智"
-        },
-        "descriptions": {
-            "english": "Discard your Hand. Restore [effect1.power][health] to the Pyre.",
-            "chinese": "舍弃全部手牌。恢复 [effect1.power] 点薪火生命值。"
-        },
-        "rarity": "rare",
-        "class": "@ClassSteward",
-        "card_art": "@SanityArt",
-        "targets_room": false,
-        "targetless": true,
-        "pools": ["MegaPool"],
-        "cost": 2,
-        "effects": [{
-                "id": "@SanityDiscard"
-            },
-            {
-                "id": "@SanityHealPyre"
-            }
-        ]
-    }],
-    "effects": [{
-            "id": "SanityDiscard",
-            "name": "CardEffectDiscardHand"
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sanity",
+      "names": {
+        "english": "Sanity",
+        "chinese": "理智"
+      },
+      "descriptions": {
+        "english": "Discard your Hand. Restore [effect1.power][health] to the Pyre.",
+        "chinese": "舍弃全部手牌。恢复 [effect1.power] 点薪火生命值。"
+      },
+      "rarity": "rare",
+      "class": "@ClassSteward",
+      "card_art": "@SanityArt",
+      "targets_room": false,
+      "targetless": true,
+      "pools": [ "MegaPool" ],
+      "cost": 2,
+      "effects": [
+        {
+          "id": "@SanityDiscard"
         },
         {
-            "id": "SanityHealPyre",
-            "name": "CardEffectHealTrain",
-            "target_mode": "pyre",
-            "param_int": 10
+          "id": "@SanityHealPyre"
         }
-    ],
-    "sprites": [{
-        "id": "SanityArt",
-        "path": "textures/Sanity.png"
-    }],
-    "game_objects": [{
-        "id": "SanityArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@SanityArt"
-            }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SanityDiscard",
+      "name": "CardEffectDiscardHand"
+    },
+    {
+      "id": "SanityHealPyre",
+      "name": "CardEffectHealTrain",
+      "target_mode": "pyre",
+      "param_int": 10,
+      "supress_pyre_room_focus": true
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SanityArt",
+      "path": "textures/Sanity.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "SanityArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@SanityArt"
         }
-    }]
+      }
+    }
+  ]
 }

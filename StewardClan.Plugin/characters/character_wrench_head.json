@@ -1,107 +1,125 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "SpawnWrenchHead",
-        "names": {
-            "english": "Wrench-Head",
-            "chinese": "扳手头"
-        },
-        "card_art": "@WrenchHead",
-        "cost": 1,
-        "card_type": "monster",
-        "rarity": "uncommon",
-        "class": "@ClassSteward",
-        "targets_room": true,
-        "effects": [{
-            "id": "@SpawnWrenchHead"
-        }],
-        "lore_tooltips": [{
-            "english": "heading into the wrench",
-            "chinese": "头卡在扳手里了。"
-        }],
-        "pools": [
-            "UnitsAllBanner"
-        ]
-    }],
-    "characters": [{
-        "id": "WrenchHead",
-        "names": {
-            "english": "Wrench-Head",
-            "chinese": "扳手头"
-        },
-        "size": 2,
-        "attack_damage": 15,
-        "health": 30,
-        "character_art": "@WrenchHeadCharacterArt",
-        "subtypes": [
-            "SubtypesData_BannerUnit"
-        ],
-        "triggers": [{
-            "id": "@WrenchHeadStrike"
-        }]
-    }],
-    "character_triggers": [{
-        "id": "WrenchHeadStrike",
-        "trigger": "on_attacking",
-        "descriptions": {
-            "english": "Restore [effect0.power] Pyre health",
-            "chinese": "恢复 [effect0.power] 点薪火生命值。"
-        },
-        "effects": [{
-            "id": "@WrenchHeadHeal"
-        }]
-    }],
-    "effects": [{
-            "id": "SpawnWrenchHead",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "param_character": "@WrenchHead"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnWrenchHead",
+      "names": {
+        "english": "Wrench-Head",
+        "chinese": "扳手头"
+      },
+      "card_art": "@WrenchHead",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [
         {
-            "id": "WrenchHeadHeal",
-            "name": "CardEffectHealTrain",
-            "target_mode": "pyre",
-            "param_int": 1
+          "id": "@SpawnWrenchHead"
         }
-    ],
-    "sprites": [{
-            "id": "WrenchHead",
-            "path": "textures/WrenchHeadCardArt.png"
-        },
+      ],
+      "lore_tooltips": [
         {
-            "id": "WrenchHeadCharacterArt",
-            "path": "textures/WrenchHeadCharacterArt.png"
+          "english": "heading into the wrench",
+          "chinese": "头卡在扳手里了。"
         }
-    ],
-    "game_objects": [{
-            "id": "WrenchHead",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@WrenchHead"
-                }
+      ],
+      "pools": [
+        "UnitsAllBanner"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "WrenchHead",
+      "names": {
+        "english": "Wrench-Head",
+        "chinese": "扳手头"
+      },
+      "size": 2,
+      "attack_damage": 15,
+      "health": 30,
+      "character_art": "@WrenchHeadCharacterArt",
+      "subtypes": [
+        "SubtypesData_BannerUnit"
+      ],
+      "triggers": [
+        {
+          "id": "@WrenchHeadStrike"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "WrenchHeadStrike",
+      "trigger": "on_attacking",
+      "descriptions": {
+        "english": "Restore [effect0.power] Pyre health",
+        "chinese": "恢复 [effect0.power] 点薪火生命值。"
+      },
+      "effects": [
+        {
+          "id": "@WrenchHeadHeal"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnWrenchHead",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@WrenchHead"
+    },
+    {
+      "id": "WrenchHeadHeal",
+      "name": "CardEffectHealTrain",
+      "target_mode": "pyre",
+      "param_int": 1,
+      "supress_pyre_room_focus": true
+    }
+  ],
+  "sprites": [
+    {
+      "id": "WrenchHead",
+      "path": "textures/WrenchHeadCardArt.png"
+    },
+    {
+      "id": "WrenchHeadCharacterArt",
+      "path": "textures/WrenchHeadCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "WrenchHead",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@WrenchHead"
+        }
+      }
+    },
+    {
+      "id": "WrenchHeadCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@WrenchHeadCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
             }
-        },
-        {
-            "id": "WrenchHeadCharacterArt",
-            "type": "character_art",
-            "extensions": {
-                "character_art": {
-                    "sprite": "@WrenchHeadCharacterArt",
-                    "transform": {
-                        "position": {
-                            "x": 0,
-                            "y": 1.3,
-                            "z": 0
-                        },
-                        "scale": {
-                            "x": 1.5,
-                            "y": 1.5,
-                            "z": 1.5
-                        }
-                    }
-                }
-            }
+          }
         }
-    ]
+      }
+    }
+  ]
 }

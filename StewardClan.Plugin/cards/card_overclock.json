@@ -1,54 +1,63 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Overclock",
-        "names": {
-            "english": "Overclock",
-            "chinese": "超频"
-        },
-        "descriptions": {
-            "english": "Gain [effect0.power][ember]. Pyre takes [effect1.power] damage.",
-            "chinese": "获得 [effect0.power][ember]。薪火受到 [effect1.power] 点伤害。"
-        },
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "card_art": "@OverclockArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": ["MegaPool"],
-        "cost": 1,
-        "effects": [{
-                "id": "@OverclockEmber"
-            },
-            {
-                "id": "@OverclockPyreDamage"
-            }
-        ]
-    }],
-    "effects": [{
-            "id": "OverclockEmber",
-            "name": "CardEffectGainEnergy",
-            "target_mode": "room",
-            "param_int": 2
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Overclock",
+      "names": {
+        "english": "Overclock",
+        "chinese": "超频"
+      },
+      "descriptions": {
+        "english": "Gain [effect0.power][ember]. Pyre takes [effect1.power] damage.",
+        "chinese": "获得 [effect0.power][ember]。薪火受到 [effect1.power] 点伤害。"
+      },
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art": "@OverclockArt",
+      "targets_room": true,
+      "targetless": true,
+      "pools": [ "MegaPool" ],
+      "cost": 1,
+      "effects": [
+        {
+          "id": "@OverclockEmber"
         },
         {
-            "id": "OverclockPyreDamage",
-            "name": "@CardEffectDamagePyre",
-            "target_mode": "pyre",
-            "param_int": 1
+          "id": "@OverclockPyreDamage"
         }
-    ],
-    "sprites": [{
-        "id": "OverclockArt",
-        "path": "textures/Overclock.png"
-    }],
-    "game_objects": [{
-        "id": "OverclockArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@OverclockArt"
-            }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "OverclockEmber",
+      "name": "CardEffectGainEnergy",
+      "target_mode": "room",
+      "param_int": 2
+    },
+    {
+      "id": "OverclockPyreDamage",
+      "name": "@CardEffectDamagePyre",
+      "target_mode": "pyre",
+      "param_int": 1,
+      "supress_pyre_room_focus": true
+    }
+  ],
+  "sprites": [
+    {
+      "id": "OverclockArt",
+      "path": "textures/Overclock.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "OverclockArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@OverclockArt"
         }
-    }]
+      }
+    }
+  ]
 }
