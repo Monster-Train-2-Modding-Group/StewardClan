@@ -9,7 +9,7 @@
       },
       "descriptions": {
         "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power] to all friendly units.",
-        "chinese": "所有友方单位和薪火获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+        "chinese": "所有友方单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
       },
       "rarity": "uncommon",
       "class": "@ClassSteward",
