@@ -1,193 +1,204 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "classes": [{
-        "id": "ClassSteward",
-        "titles": {
-            "english": "Steward Guild",
-            "chinese": "乘务员公会"
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "classes": [
+    {
+      "id": "ClassSteward",
+      "titles": {
+        "english": "Steward Guild",
+        "chinese": "乘务员公会"
+      },
+      "descriptions": {
+        "english": "Direct the faithful train stewards towards keeping the train together even against their growing madness.",
+        "chinese": "指挥忠诚的乘务员保护火车，即使他们变得更加疯狂。"
+      },
+      "subclass_descriptions": {
+        "english": "Direct the faithful train stewards towards keeping the train together even against their growing madness.",
+        "chinese": "指挥忠诚的乘务员保护火车，即使他们变得更加疯狂。"
+      },
+      "icons": {
+        "small": "@StewardIconSmall",
+        "medium": "@StewardIconRegular",
+        "large": "@StewardIconLarge",
+        "silhouette": "@StewardSilhouette"
+      },
+      "class_select_character_displays": [
+        "@AlbertClassDisplayCharacterArt"
+      ],
+      "card_style": "pyreborne",
+      "ui_color": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "ui_color_dark": {
+        "r": 0.4,
+        "g": 0.4,
+        "b": 0.4
+      },
+      "ui_gradient": [
+        {
+          "time": 0.0,
+          "color": {
+            "r": 1.0
+          }
         },
-        "descriptions": {
-            "english": "Direct the faithful train stewards towards keeping the train together even against their growing madness.",
-            "chinese": "指挥忠诚的乘务员保护火车，即使他们变得更加疯狂。"
-        },
-        "subclass_descriptions": {
-            "english": "Direct the faithful train stewards towards keeping the train together even against their growing madness.",
-            "chinese": "指挥忠诚的乘务员保护火车，即使他们变得更加疯狂。"
-        },
-        "icons": {
-            "small": "@StewardIconSmall",
-            "medium": "@StewardIconRegular",
-            "large": "@StewardIconLarge",
-            "silhouette": "@StewardSilhouette"
-        },
-        "card_style": "pyreborne",
-        "ui_color": {
+        {
+          "time": 1.0,
+          "color": {
             "r": 0.5,
             "g": 0.5,
             "b": 0.5
-        },
-        "ui_color_dark": {
-            "r": 0.4,
-            "g": 0.4,
-            "b": 0.4
-        },
-        "ui_gradient": [{
-                "time": 0.0,
-                "color": {
-                    "r": 1.0
-                }
-            },
-            {
-                "time": 1.0,
-                "color": {
-                    "r": 0.5,
-                    "g": 0.5,
-                    "b": 0.5
-                }
-            }
-        ],
-        "champions": [{
-            "id": "AlbertStewardChampion",
-            "card_data": "@Albert",
-            "starter_card": "@MechanicalOutrage",
-            "upgrade_tree": [
-                [
-                    "@AlbertXReductionBuffer1",
-                    "@AlbertXReductionBuffer2",
-                    "@AlbertXReductionBuffer3"
-                ],
-                [
-                    "@AlbertStewardBuff1",
-                    "@AlbertStewardBuff2",
-                    "@AlbertStewardBuff3"
-                ],
-                [
-                    "@AlbertEmberBuff1",
-                    "@AlbertEmberBuff2",
-                    "@AlbertEmberBuff3"
-                ]
+          }
+        }
+      ],
+      "champions": [
+        {
+          "id": "AlbertStewardChampion",
+          "card_data": "@Albert",
+          "starter_card": "@MechanicalOutrage",
+          "upgrade_tree": [
+            [
+              "@AlbertXReductionBuffer1",
+              "@AlbertXReductionBuffer2",
+              "@AlbertXReductionBuffer3"
             ],
-            "icon": "@ClanIcon",
-            "locked_icon": "@ClanLockedIcon",
-            "portrait": "@Portrait",
-            "selected_cue": ""
-        }],
-        "clan_select_sfx_cue": "",
-        "is_crew": false,
-        "unlock_data": {
-            "descriptions": {
-                "english": "Have 10 Train Stewards Die",
-                "chinese": "使 10 个乘务员单位死亡。"
-            },
-            "track_value": "none",
-            "param_int": 0
-        },
-        "class_unlock_preview_texts": []
-    }],
-    "map_nodes": [{
-        "id": "RewardNodeUnitPackSteward",
-        "type": "reward",
-        "map_icon": "@StewardIconSmall",
-        "minimap_icon": "@StewardIconSmall",
-        "prefab": "@StewardMapIcon",
-        "titles": {
-            "english": "Steward Banner",
-            "chinese": "乘务员战旗"
-        },
-        "descriptions": {
-            "english": "Gain a Steward Unit",
-            "chinese": "获得一个乘务员单位。"
-        },
-        "pools": [
-            "RandomChosenMainClassUnit",
-            "RandomChosenSubClassUnit"
-        ],
-        "is_banner_node": true,
-        "extensions": [{
-            "reward": {
-                "class": "@ClassSteward",
-                "rewards": [{
-                    "id": "@StewardBannerReward"
-                }]
-            }
-        }]
-    }],
-    "card_pools": [{
-        "id": "StewardBannerCardPool",
-        "cards": [
-            "@SpawnBiggerSteward",
-            "@SpawnWrenchHead",
-            "@SpawnDependabot",
-            "@SpawnWingedAirConditioner",
-            "@SpawnOverheatingComputer",
-            "@SpawnFabricator",
-            "@SpawnImptern",
-            "@SpawnModForger",
-            "@SpawnUnitTester",
-            "@SpawnLudoDeveloper"
-        ]
-    }],
-    "rewards": [{
-        "id": "StewardBannerReward",
-        "type": "draft",
-        "costs": [
-            100
-        ],
-        "extensions": [{
-            "draft": {
-                "draft_pool": "@StewardBannerCardPool",
-                "class_type": "main|subclass|nonclass",
-                "draft_options_count": 2,
-                "rarity_floor": "uncommon",
-                "ignore_relic_rarity_override": true,
-                "is_service_merchant_reward": true
-            }
-        }]
-    }],
-    "game_objects": [{
-        "id": "StewardMapIcon",
-        "type": "map_node_icon",
-        "extensions": {
-            "map_node_icon": {
-                "disabled_sprite": "@StewardBanner",
-                "enabled_sprite": "@StewardBanner",
-                "frozen_sprite": "@StewardBanner",
-                "visited_sprite_disabled": "@StewardBanner",
-                "visited_sprite_enabled": "@StewardBanner"
-            }
+            [
+              "@AlbertStewardBuff1",
+              "@AlbertStewardBuff2",
+              "@AlbertStewardBuff3"
+            ],
+            [
+              "@AlbertEmberBuff1",
+              "@AlbertEmberBuff2",
+              "@AlbertEmberBuff3"
+            ]
+          ],
+          "icon": "@ClanIcon",
+          "locked_icon": "@ClanLockedIcon",
+          "portrait": "@Portrait"
         }
-    }],
-    "sprites": [{
-            "id": "StewardBanner",
-            "path": "textures/StewardBanner.png"
-        },
+      ]
+    }
+  ],
+  "map_nodes": [
+    {
+      "id": "RewardNodeUnitPackSteward",
+      "type": "reward",
+      "map_icon": "@StewardIconSmall",
+      "minimap_icon": "@StewardIconSmall",
+      "prefab": "@StewardMapIcon",
+      "titles": {
+        "english": "Steward Banner",
+        "chinese": "乘务员战旗"
+      },
+      "descriptions": {
+        "english": "Gain a Steward Unit",
+        "chinese": "获得一个乘务员单位。"
+      },
+      "pools": [
+        "RandomChosenMainClassUnit",
+        "RandomChosenSubClassUnit"
+      ],
+      "is_banner_node": true,
+      "extensions": [
         {
-            "id": "StewardIconSmall",
-            "path": "textures/StewardIconSmall.png"
-        },
-        {
-            "id": "StewardIconRegular",
-            "path": "textures/StewardIconRegular.png"
-        },
-        {
-            "id": "StewardIconLarge",
-            "path": "textures/StewardIconLarge.png"
-        },
-        {
-            "id": "StewardSilhouette",
-            "path": "textures/StewardSilhouette.png"
-        },
-        {
-            "id": "ClanIcon",
-            "path": "textures/StewardClanIcon.png"
-        },
-        {
-            "id": "ClanLockedIcon",
-            "path": "textures/StewardClanLockedIcon.png"
-        },
-        {
-            "id": "Portrait",
-            "path": "textures/StewardPortrait.png"
+          "reward": {
+            "class": "@ClassSteward",
+            "rewards": [
+              {
+                "id": "@StewardBannerReward"
+              }
+            ]
+          }
         }
-    ]
+      ]
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "StewardBannerCardPool",
+      "cards": [
+        "@SpawnBiggerSteward",
+        "@SpawnWrenchHead",
+        "@SpawnDependabot",
+        "@SpawnWingedAirConditioner",
+        "@SpawnOverheatingComputer",
+        "@SpawnFabricator",
+        "@SpawnImptern",
+        "@SpawnModForger",
+        "@SpawnUnitTester",
+        "@SpawnLudoDeveloper"
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "StewardBannerReward",
+      "type": "draft",
+      "costs": [
+        100
+      ],
+      "extensions": [
+        {
+          "draft": {
+            "draft_pool": "@StewardBannerCardPool",
+            "class_type": "main|subclass|nonclass",
+            "draft_options_count": 2,
+            "rarity_floor": "uncommon",
+            "ignore_relic_rarity_override": true,
+            "is_service_merchant_reward": true
+          }
+        }
+      ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "StewardMapIcon",
+      "type": "map_node_icon",
+      "extensions": {
+        "map_node_icon": {
+          "disabled_sprite": "@StewardBanner",
+          "enabled_sprite": "@StewardBanner",
+          "frozen_sprite": "@StewardBanner",
+          "visited_sprite_disabled": "@StewardBanner",
+          "visited_sprite_enabled": "@StewardBanner"
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "StewardBanner",
+      "path": "textures/StewardBanner.png"
+    },
+    {
+      "id": "StewardIconSmall",
+      "path": "textures/StewardIconSmall.png"
+    },
+    {
+      "id": "StewardIconRegular",
+      "path": "textures/StewardIconRegular.png"
+    },
+    {
+      "id": "StewardIconLarge",
+      "path": "textures/StewardIconLarge.png"
+    },
+    {
+      "id": "StewardSilhouette",
+      "path": "textures/StewardSilhouette.png"
+    },
+    {
+      "id": "ClanIcon",
+      "path": "textures/StewardClanIcon.png"
+    },
+    {
+      "id": "ClanLockedIcon",
+      "path": "textures/StewardClanLockedIcon.png"
+    },
+    {
+      "id": "Portrait",
+      "path": "textures/StewardPortrait.png"
+    }
+  ]
 }
