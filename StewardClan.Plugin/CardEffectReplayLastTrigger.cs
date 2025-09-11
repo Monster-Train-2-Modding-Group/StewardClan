@@ -44,7 +44,7 @@ namespace Steward_Clan.Plugin
                     cardEffectParams.selfTarget,
                     cardEffectParams.dropLocation,
                     true, null, null, false, null, null, 1, null,
-                    false, CardTriggerType.OnDiscard, null, false);
+                    false, CardTriggerType.OnDiscard, null, cardEffectParams.selfTarget, false);
             }
             yield break;
         }

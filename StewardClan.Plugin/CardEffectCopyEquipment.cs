@@ -22,7 +22,7 @@ namespace Steward_Clan.Plugin
         }
 
         // Token: 0x060005B5 RID: 1461 RVA: 0x00018D91 File Offset: 0x00016F91
-        private bool CardFilterFunc(CardState checkCard, CardUpgradeMaskData mask, RelicManager relicManager)
+        private bool CardFilterFunc(CardState checkCard, CardUpgradeMaskData? mask, RelicManager relicManager)
         {
             if (mask != null)
             {

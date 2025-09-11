@@ -49,7 +49,8 @@ namespace Steward_Clan.Plugin
             int playedCost = FetchPlayedCostStat(coreGameManagers.GetCardStatistics(), GetAffectedCard(cardEffectParams), cardEffectState.GetParamSubtype());
             foreach (CharacterState target in cardEffectParams.targets)
             {
-                if (target.GetIsClone() && cardEffectState.GetParamCardUpgradeData() != null && cardEffectState.GetParamCardUpgradeData().GetExcludeFromClones())
+                var upgrade = cardEffectState.GetParamCardUpgradeData();
+                if (target.GetIsClone() && upgrade != null && upgrade.GetExcludeFromClones())
                 {
                     continue;
                 }
