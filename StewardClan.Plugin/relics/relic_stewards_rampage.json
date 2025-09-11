@@ -5,13 +5,16 @@
       "id": "StewardsRampage",
       "type": "collectable",
       "names": {
-        "english": "Stewards Rampage"
+        "english": "Stewards Rampage",
+        "chinese": "乘务员冲撞"
       },
       "descriptions": {
-        "english": "When spawning your 4th Train Steward, deal [effect0.power] damage to all enemies."
+        "english": "When spawning your 4th Train Steward, deal [effect0.power] damage to all enemies on all floors.",
+        "chinese": "当你在一场战斗中召唤第 4 个乘务员单位时，对所有层的所有敌方单位造成 [effect0.power] 点伤害。"
       },
       "relic_activated": {
-        "english": "Stewards on the rampage!"
+        "english": "Stewards on the rampage!",
+        "chinese": "乘务员狂暴！"
       },
       "disallow_in_deployment": true,
       "lore_style": "herzal",
