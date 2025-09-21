@@ -20,7 +20,6 @@
             "chinese": "即使是生锈的乘务员，依然是乘务员。"
         }],
         "pools": [
-            "UnitsAllBanner",
             "MegaPool"
         ]
     }],
@@ -36,7 +35,6 @@
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
             "SubtypesData_TrainSteward",
-            "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [{
                 "status": "damage shield",

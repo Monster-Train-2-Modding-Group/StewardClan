@@ -1,56 +1,67 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "BackupGeneratorEffect",
-        "name": "RelicEffectEnergyOnCardPlay",
-        "param_int": 2,
-        "param_card_type": "room"
-    }],
-    "relics": [{
-        "id": "BackupGenerator",
-        "type": "collectable",
-        "names": {
-            "english": "Backup Generator",
-            "chinese": "备用发电机",
-            "german": "Notstromgenerator"
-        },
-        "descriptions": {
-            "english": "Whenever you play a room, gain [effect0.power] [ember].",
-            "chinese": "当你使用房间卡时，获得 [effect0.power][ember]。",
-            "german": "Wenn du einen Raum spielst, erhältst du [effect0.power] [Ember]."
-        },
-        "relic_activated": {
-            "english": "Backup Generator activated!",
-            "chinese": "备用发电机已激活！",
-            "german": "Notstromgenerator aktiviert!"
-        },
-        "lore_tooltips": [{
-            "english": "A secondary power source that activates whenever new systems come online.",
-            "chinese": "一个备用电源，当新系统上线时会被激活。",
-            "german": "Eine sekundäre Energiequelle, die aktiviert wird, wenn neue Systeme online gehen."
-        }],
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@BackupGeneratorEffect"
-        }],
-        "icon": "@BackupGeneratorIcon",
-        "icon_small": "@BackupGeneratorIconSmall",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSteward",
-                "pools": ["megapool"],
-                "rarity": "common",
-                "deprioritize_in_ftue_drafts": true
-            }
-        }]
-    }],
-    "sprites": [{
-            "id": "BackupGeneratorIcon",
-            "path": "textures/BackupGeneratorIcon.png"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "BackupGeneratorEffect",
+      "name": "RelicEffectEnergyOnCardPlay",
+      "param_int": 2,
+      "param_card_type": "room"
+    }
+  ],
+  "relics": [
+    {
+      "id": "BackupGenerator",
+      "type": "collectable",
+      "names": {
+        "english": "Backup Generator",
+        "chinese": "备用发电机",
+        "german": "Notstromgenerator"
+      },
+      "descriptions": {
+        "english": "Whenever you play a room, gain [effect0.power] [ember].",
+        "chinese": "当你使用房间卡时，获得 [effect0.power][ember]。",
+        "german": "Wenn du einen Raum spielst, erhältst du [effect0.power] [Ember]."
+      },
+      "relic_activated": {
+        "english": "Backup Generator activated!",
+        "chinese": "备用发电机已激活！",
+        "german": "Notstromgenerator aktiviert!"
+      },
+      "lore_tooltips": [
         {
-            "id": "BackupGeneratorIconSmall",
-            "path": "textures/BackupGeneratorIconSmall.png"
+          "english": "A secondary power source that activates whenever new systems come online.",
+          "chinese": "一个备用电源，当新系统上线时会被激活。",
+          "german": "Eine sekundäre Energiequelle, die aktiviert wird, wenn neue Systeme online gehen."
         }
-    ]
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@BackupGeneratorEffect"
+        }
+      ],
+      "icon": "@BackupGeneratorIcon",
+      "icon_small": "@BackupGeneratorIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSteward",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BackupGeneratorIcon",
+      "path": "textures/BackupGeneratorIcon.png"
+    },
+    {
+      "id": "BackupGeneratorIconSmall",
+      "path": "textures/BackupGeneratorIconSmall.png"
+    }
+  ]
 }

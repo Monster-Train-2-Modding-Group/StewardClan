@@ -18,6 +18,7 @@
       "card_art": "@MechanicalOutrageArt",
       "targets_room": true,
       "targetless": false,
+      "pools": ["StarterCardsOnly"],
       "traits": [
         {
           "id": "@MechanicalOutragePiercing"

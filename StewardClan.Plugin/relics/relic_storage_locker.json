@@ -1,63 +1,75 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "StorageLockerEffectOnCombatStart",
-        "name": "RelicEffectSpawnUnitStartOfCombat",
-        "param_int": 1,
-        "source_team": "monsters",
-        "param_characters": [{
-                "id": "@RustedSteward"
-            },
-            {
-                "id": "@RustedSteward"
-            },
-            {
-                "id": "@RustedSteward"
-            }
-        ]
-    }],
-    "relics": [{
-        "id": "StorageLocker",
-        "type": "collectable",
-        "names": {
-            "english": "Storage Locker",
-            "chinese": "储物柜"
-        },
-        "descriptions": {
-            "english": "On [deployphase], spawn three <b>Rusted Stewards</b> on the middle floor.",
-            "chinese": "在[deployphase]时，召唤三个<b>生锈的乘务员</b>到火车的中间层。"
-        },
-        "relic_activated": {
-            "english": "Storage Locker activated!",
-            "chinese": "储物柜已激活！"
-        },
-        "lore_tooltips": [{
-            "english": "A well-stocked storage locker containing spare Stewards ready for deployment.",
-            "chinese": "一个储备充足的储物柜，里面装着随时可以部署的备用乘务员。"
-        }],
-        "disallow_in_deployment": false,
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@StorageLockerEffectOnCombatStart"
-        }],
-        "icon": "@StorageLockerIcon",
-        "icon_small": "@StorageLockerIconSmall",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSteward",
-                "pools": ["megapool"],
-                "rarity": "common",
-                "deprioritize_in_ftue_drafts": true
-            }
-        }]
-    }],
-    "sprites": [{
-            "id": "StorageLockerIcon",
-            "path": "textures/StorageLockerIcon.png"
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "StorageLockerEffectOnCombatStart",
+      "name": "RelicEffectSpawnUnitStartOfCombat",
+      "param_int": 1,
+      "source_team": "monsters",
+      "param_characters": [
+        {
+          "id": "@RustedSteward"
         },
         {
-            "id": "StorageLockerIconSmall",
-            "path": "textures/StorageLockerIconSmall.png"
+          "id": "@RustedSteward"
+        },
+        {
+          "id": "@RustedSteward"
         }
-    ]
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "StorageLocker",
+      "type": "collectable",
+      "names": {
+        "english": "Storage Locker",
+        "chinese": "储物柜"
+      },
+      "descriptions": {
+        "english": "On [deployphase], spawn three <b>Rusted Stewards</b> on the middle floor.",
+        "chinese": "在[deployphase]时，召唤三个<b>生锈的乘务员</b>到火车的中间层。"
+      },
+      "relic_activated": {
+        "english": "Storage Locker activated!",
+        "chinese": "储物柜已激活！"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A well-stocked storage locker containing spare Stewards ready for deployment.",
+          "chinese": "一个储备充足的储物柜，里面装着随时可以部署的备用乘务员。"
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@StorageLockerEffectOnCombatStart"
+        }
+      ],
+      "icon": "@StorageLockerIcon",
+      "icon_small": "@StorageLockerIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSteward",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "StorageLockerIcon",
+      "path": "textures/StorageLockerIcon.png"
+    },
+    {
+      "id": "StorageLockerIconSmall",
+      "path": "textures/StorageLockerIconSmall.png"
+    }
+  ]
 }

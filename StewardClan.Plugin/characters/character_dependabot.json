@@ -20,7 +20,7 @@
                 "chinese": "总是在那里提供帮助，即使你不需要。"
             }],
             "pools": [
-                "UnitsAllBanner"
+                "MegaPool"
             ]
         },
         {
@@ -55,7 +55,6 @@
         },
         "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
         "subtypes": [
-            "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [{
             "status": "endless",

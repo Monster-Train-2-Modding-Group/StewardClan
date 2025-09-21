@@ -1,54 +1,65 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "ConstructCoreArmorEffect",
-        "name": "@RelicEffectArmorOnCore"
-    }],
-    "relics": [{
-        "id": "ConstructCore",
-        "type": "collectable",
-        "names": {
-            "english": "Construct Core",
-            "chinese": "构造核心",
-            "german": "Konstruktkern"
-        },
-        "descriptions": {
-            "english": "[StewardClan.Plugin_construct] gives [armor].",
-            "chinese": "每层[StewardClan.Plugin_construct]额外提供 +1 [armor]。",
-            "german": "Konstrukt gibt Rüstung."
-        },
-        "relic_activated": {
-            "english": "Construct Core activated!",
-            "chinese": "构造核心已激活！",
-            "german": "Konstruktkern aktiviert!"
-        },
-        "lore_tooltips": [{
-            "english": "A powerful core that enhances mechanical constructs and reinforces their structure.",
-            "chinese": "一个强大的核心，可以增强机械构造体并强化其结构。",
-            "german": "Ein mächtiger Kern, der mechanische Konstrukte verstärkt und ihre Struktur verstärkt."
-        }],
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@ConstructCoreArmorEffect"
-        }],
-        "icon": "@ConstructCoreIcon",
-        "icon_small": "@ConstructCoreIconSmall",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSteward",
-                "pools": ["megapool"],
-                "rarity": "rare",
-                "deprioritize_in_ftue_drafts": true
-            }
-        }]
-    }],
-    "sprites": [{
-            "id": "ConstructCoreIcon",
-            "path": "textures/ConstructCoreIcon.png"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "ConstructCoreArmorEffect",
+      "name": "@RelicEffectArmorOnCore"
+    }
+  ],
+  "relics": [
+    {
+      "id": "ConstructCore",
+      "type": "collectable",
+      "names": {
+        "english": "Construct Core",
+        "chinese": "构造核心",
+        "german": "Konstruktkern"
+      },
+      "descriptions": {
+        "english": "[StewardClan.Plugin_construct] gives [armor].",
+        "chinese": "每层[StewardClan.Plugin_construct]额外提供 +1 [armor]。",
+        "german": "Konstrukt gibt Rüstung."
+      },
+      "relic_activated": {
+        "english": "Construct Core activated!",
+        "chinese": "构造核心已激活！",
+        "german": "Konstruktkern aktiviert!"
+      },
+      "lore_tooltips": [
         {
-            "id": "ConstructCoreIconSmall",
-            "path": "textures/ConstructCoreIconSmall.png"
+          "english": "A powerful core that enhances mechanical constructs and reinforces their structure.",
+          "chinese": "一个强大的核心，可以增强机械构造体并强化其结构。",
+          "german": "Ein mächtiger Kern, der mechanische Konstrukte verstärkt und ihre Struktur verstärkt."
         }
-    ]
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@ConstructCoreArmorEffect"
+        }
+      ],
+      "icon": "@ConstructCoreIcon",
+      "icon_small": "@ConstructCoreIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSteward",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "rare",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ConstructCoreIcon",
+      "path": "textures/ConstructCoreIcon.png"
+    },
+    {
+      "id": "ConstructCoreIconSmall",
+      "path": "textures/ConstructCoreIconSmall.png"
+    }
+  ]
 }

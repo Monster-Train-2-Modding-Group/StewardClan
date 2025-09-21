@@ -1,62 +1,75 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "MaintenanceManualEffect",
-        "name": "RelicEffectAddStatusEffectOnSpawn",
-        "param_subtype": "SubtypesData_TrainSteward",
-        "source_team": "monsters",
-        "param_bool": false,
-        "param_status_effects": [{
-            "status": "@construct",
-            "count": 3
-        }]
-    }],
-    "relics": [{
-        "id": "MaintenanceManual",
-        "type": "collectable",
-        "names": {
-            "english": "Maintenance Manual",
-            "chinese": "维护手册",
-            "german": "Wartungshandbuch"
-        },
-        "descriptions": {
-            "english": "Train Stewards enter with [StewardClan.Plugin_construct] [effect0.status0.power].",
-            "chinese": "乘务员单位进入战斗时获得[StewardClan.Plugin_construct] [effect0.status0.power]。",
-            "german": "Zugstewards betreten mit [StewardClan.Plugin_construct] [effect0.status0.power]."
-        },
-        "relic_activated": {
-            "english": "Maintenance Manual activated!",
-            "chinese": "维护手册已激活！",
-            "german": "Wartungshandbuch aktiviert!"
-        },
-        "lore_tooltips": [{
-            "english": "A well-worn manual detailing the proper maintenance and enhancement of Train Stewards.",
-            "chinese": "一本破旧的关于火车乘务员维护和强化的手册。",
-            "german": "Ein abgenutztes Handbuch mit Details zur ordnungsgemäßen Wartung und Verbesserung von Zugstewards."
-        }],
-        "disallow_in_deployment": false,
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@MaintenanceManualEffect"
-        }],
-        "icon": "@MaintenanceManualIcon",
-        "icon_small": "@MaintenanceManualIconSmall",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSteward",
-                "pools": ["megapool"],
-                "rarity": "common",
-                "deprioritize_in_ftue_drafts": true
-            }
-        }]
-    }],
-    "sprites": [{
-            "id": "MaintenanceManualIcon",
-            "path": "textures/MaintenanceManualIcon.png"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "MaintenanceManualEffect",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_subtype": "SubtypesData_TrainSteward",
+      "source_team": "monsters",
+      "param_bool": false,
+      "param_status_effects": [
         {
-            "id": "MaintenanceManualIconSmall",
-            "path": "textures/MaintenanceManualIconSmall.png"
+          "status": "@construct",
+          "count": 3
         }
-    ]
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "MaintenanceManual",
+      "type": "collectable",
+      "names": {
+        "english": "Maintenance Manual",
+        "chinese": "维护手册",
+        "german": "Wartungshandbuch"
+      },
+      "descriptions": {
+        "english": "Train Stewards enter with [StewardClan.Plugin_construct] [effect0.status0.power].",
+        "chinese": "乘务员单位进入战斗时获得[StewardClan.Plugin_construct] [effect0.status0.power]。",
+        "german": "Zugstewards betreten mit [StewardClan.Plugin_construct] [effect0.status0.power]."
+      },
+      "relic_activated": {
+        "english": "Maintenance Manual activated!",
+        "chinese": "维护手册已激活！",
+        "german": "Wartungshandbuch aktiviert!"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A well-worn manual detailing the proper maintenance and enhancement of Train Stewards.",
+          "chinese": "一本破旧的关于火车乘务员维护和强化的手册。",
+          "german": "Ein abgenutztes Handbuch mit Details zur ordnungsgemäßen Wartung und Verbesserung von Zugstewards."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@MaintenanceManualEffect"
+        }
+      ],
+      "icon": "@MaintenanceManualIcon",
+      "icon_small": "@MaintenanceManualIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSteward",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MaintenanceManualIcon",
+      "path": "textures/MaintenanceManualIcon.png"
+    },
+    {
+      "id": "MaintenanceManualIconSmall",
+      "path": "textures/MaintenanceManualIconSmall.png"
+    }
+  ]
 }

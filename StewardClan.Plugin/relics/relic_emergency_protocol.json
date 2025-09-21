@@ -1,61 +1,74 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "EmergencyProtocolEffect",
-        "name": "@RelicEffectAddStatusEffectOnPyreDamage",
-        "target_mode": "tower",
-        "param_int": 0,
-        "param_int_2": 0,
-        "param_status_effects": [{
-            "status": "damage shield",
-            "count": 1
-        }]
-    }],
-    "relics": [{
-        "id": "EmergencyProtocol",
-        "type": "collectable",
-        "names": {
-            "english": "Emergency Protocol",
-            "chinese": "紧急协议",
-            "german": "Notfallprotokoll"
-        },
-        "descriptions": {
-            "english": "When your Pyre takes damage, apply [damageshield] [effect0.status0.power] to all friendly units.",
-            "chinese": "当你的薪火在战斗中受到伤害时，友方单位获得[damageshield] [effect0.status0.power]。",
-            "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [damageshield] [effect0.status0.power]."
-        },
-        "relic_activated": {
-            "english": "Emergency Protocol activated!",
-            "chinese": "紧急协议已激活！",
-            "german": "Notfallprotokoll aktiviert!"
-        },
-        "lore_tooltips": [{
-            "english": "A failsafe mechanism designed to protect the train's inhabitants when the Pyre is threatened.",
-            "chinese": "一个在薪火受到威胁时，用于保护火车乘客的安全装置。",
-            "german": "Ein Sicherheitsmechanismus, der die Bewohner des Zuges schützt, wenn der Pyre bedroht ist."
-        }],
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@EmergencyProtocolEffect"
-        }],
-        "icon": "@EmergencyProtocolIcon",
-        "icon_small": "@EmergencyProtocolIconSmall",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSteward",
-                "pools": ["megapool"],
-                "rarity": "common",
-                "deprioritize_in_ftue_drafts": true
-            }
-        }]
-    }],
-    "sprites": [{
-            "id": "EmergencyProtocolIcon",
-            "path": "textures/EmergencyProtocolIcon.png"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "EmergencyProtocolEffect",
+      "name": "@RelicEffectAddStatusEffectOnPyreDamage",
+      "target_mode": "tower",
+      "param_int": 0,
+      "param_int_2": 0,
+      "param_status_effects": [
         {
-            "id": "EmergencyProtocolIconSmall",
-            "path": "textures/EmergencyProtocolIconSmall.png"
+          "status": "damage shield",
+          "count": 1
         }
-    ]
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "EmergencyProtocol",
+      "type": "collectable",
+      "names": {
+        "english": "Emergency Protocol",
+        "chinese": "紧急协议",
+        "german": "Notfallprotokoll"
+      },
+      "descriptions": {
+        "english": "When your Pyre takes damage, apply [damageshield] [effect0.status0.power] to all friendly units.",
+        "chinese": "当你的薪火在战斗中受到伤害时，友方单位获得[damageshield] [effect0.status0.power]。",
+        "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [damageshield] [effect0.status0.power]."
+      },
+      "relic_activated": {
+        "english": "Emergency Protocol activated!",
+        "chinese": "紧急协议已激活！",
+        "german": "Notfallprotokoll aktiviert!"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A failsafe mechanism designed to protect the train's inhabitants when the Pyre is threatened.",
+          "chinese": "一个在薪火受到威胁时，用于保护火车乘客的安全装置。",
+          "german": "Ein Sicherheitsmechanismus, der die Bewohner des Zuges schützt, wenn der Pyre bedroht ist."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@EmergencyProtocolEffect"
+        }
+      ],
+      "icon": "@EmergencyProtocolIcon",
+      "icon_small": "@EmergencyProtocolIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSteward",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "EmergencyProtocolIcon",
+      "path": "textures/EmergencyProtocolIcon.png"
+    },
+    {
+      "id": "EmergencyProtocolIconSmall",
+      "path": "textures/EmergencyProtocolIconSmall.png"
+    }
+  ]
 }

@@ -1,65 +1,78 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "ConstructTreadsEffectOnAscend",
-        "name": "RelicEffectAddStatusEffectOnUnitMoved",
-        "target_mode": "front_in_room",
-        "param_card_type": "monster",
-        "source_team": "monsters",
-        "param_int": 0,
-        "param_int_2": 0,
-        "param_status_effects": [{
-            "status": "@construct",
-            "count": 1
-        }]
-    }],
-    "relics": [{
-        "id": "RageTreads",
-        "type": "collectable",
-        "names": {
-            "english": "Construct Treads (WIP)",
-            "chinese": "构造之靴 (WIP)",
-            "german": "Saugende Treppen (WIP)"
-        },
-        "descriptions": {
-            "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power] whenever one of your units moves.",
-            "chinese": "当友方单位移动时，获得[StewardClan.Plugin_construct] [effect0.status0.power]。",
-            "german": "Wenn du eine Zahl eingibst, wird dir die Zahl um 1 verringert und dir 1 Energie hinzugefügt."
-        },
-        "relic_activated": {
-            "english": "Construct Treads activated!",
-            "chinese": "构造之靴已激活！",
-            "german": "Saugende Treppen aktiviert!"
-        },
-        "lore_tooltips": [{
-            "english": "This relic was created as an example to demonstrate the capabilities of the modding system.",
-            "chinese": "该件神器被设计用来演示改造系统的功能。",
-            "german": "Diese Reliquie wurde als Beispiel erstellt, um die Möglichkeiten des Modding-Systems zu demonstrieren."
-        }],
-        "disallow_in_deployment": false,
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@ConstructTreadsEffectOnAscend"
-        }],
-        "icon": "@ConstructTreadsIcon",
-        "icon_small": "@ConstructTreadsIconSmall",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSteward",
-                "pools": ["megapool"],
-                "rarity": "common",
-                "deprioritize_in_ftue_drafts": true
-            }
-        }]
-    }],
-    "sprites": [{
-            "id": "ConstructTreadsIcon",
-            "path": "textures/ConstructTreadsIcon.png"
-        },
-
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "ConstructTreadsEffectOnAscend",
+      "name": "RelicEffectAddStatusEffectOnUnitMoved",
+      "target_mode": "front_in_room",
+      "param_card_type": "monster",
+      "source_team": "monsters",
+      "param_int": 0,
+      "param_int_2": 0,
+      "param_status_effects": [
         {
-            "id": "ConstructTreadsIconSmall",
-            "path": "textures/ConstructTreadsIconSmall.png"
+          "status": "@construct",
+          "count": 1
         }
-    ]
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "RageTreads",
+      "type": "collectable",
+      "names": {
+        "english": "Construct Treads (WIP)",
+        "chinese": "构造之靴 (WIP)",
+        "german": "Saugende Treppen (WIP)"
+      },
+      "descriptions": {
+        "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power] whenever one of your units moves.",
+        "chinese": "当友方单位移动时，获得[StewardClan.Plugin_construct] [effect0.status0.power]。",
+        "german": "Wenn du eine Zahl eingibst, wird dir die Zahl um 1 verringert und dir 1 Energie hinzugefügt."
+      },
+      "relic_activated": {
+        "english": "Construct Treads activated!",
+        "chinese": "构造之靴已激活！",
+        "german": "Saugende Treppen aktiviert!"
+      },
+      "lore_tooltips": [
+        {
+          "english": "This relic was created as an example to demonstrate the capabilities of the modding system.",
+          "chinese": "该件神器被设计用来演示改造系统的功能。",
+          "german": "Diese Reliquie wurde als Beispiel erstellt, um die Möglichkeiten des Modding-Systems zu demonstrieren."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@ConstructTreadsEffectOnAscend"
+        }
+      ],
+      "icon": "@ConstructTreadsIcon",
+      "icon_small": "@ConstructTreadsIconSmall",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSteward",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ConstructTreadsIcon",
+      "path": "textures/ConstructTreadsIcon.png"
+    },
+
+    {
+      "id": "ConstructTreadsIconSmall",
+      "path": "textures/ConstructTreadsIconSmall.png"
+    }
+  ]
 }
