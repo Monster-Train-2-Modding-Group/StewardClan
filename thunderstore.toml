@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "MT2"
 name = "Steward_Clan"
-versionNumber = "0.4.3"
+versionNumber = "0.4.4"
 description = "Monster Train 2 Clan"
 websiteUrl = "https://github.com/Monster-Train-2-Modding-Group/StewardClan"
 containsNsfwContent = false
