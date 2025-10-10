@@ -9,7 +9,10 @@
       "param_bool": false,
       "param_status_effects": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 3
         }
       ]

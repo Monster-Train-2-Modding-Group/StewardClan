@@ -1,56 +1,75 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Writeline",
-        "names": {
-            "english": "Console.Writeline",
-            "chinese": "打印机"
-        },
-        "descriptions": {
-            "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power]",
-            "chinese": "获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
-        },
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "card_art": "@WritelineArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": [
-            "MegaPool"
-        ],
-        "cost": 2,
-        "traits": [{
-            "id": "@WritelineConsume"
-        }],
-        "effects": [{
-            "id": "@WritelineStatusEffect"
-        }]
-    }],
-    "traits": [{
-        "id": "WritelineConsume",
-        "name": "CardTraitExhaustState"
-    }],
-    "effects": [{
-        "id": "WritelineStatusEffect",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "drop_target_character",
-        "target_team": "both",
-        "param_status_effects": [{
-            "status": "@construct",
-            "count": 3
-        }]
-    }],
-    "sprites": [{
-        "id": "WritelineArt",
-        "path": "textures/ConsoleWritelineArt.png"
-    }],
-    "game_objects": [{
-        "id": "WritelineArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@WritelineArt"
-            }
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Writeline",
+      "names": {
+        "english": "Console.Writeline",
+        "chinese": "打印机"
+      },
+      "descriptions": {
+        "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power]",
+        "chinese": "获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+      },
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art": "@WritelineArt",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 2,
+      "traits": [
+        {
+          "id": "@WritelineConsume"
         }
-    }]
+      ],
+      "effects": [
+        {
+          "id": "@WritelineStatusEffect"
+        }
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "WritelineConsume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "id": "WritelineStatusEffect",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "WritelineArt",
+      "path": "textures/ConsoleWritelineArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "WritelineArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@WritelineArt"
+        }
+      }
+    }
+  ]
 }

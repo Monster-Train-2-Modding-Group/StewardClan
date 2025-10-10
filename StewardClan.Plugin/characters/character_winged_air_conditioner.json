@@ -1,123 +1,142 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-            "id": "SpawnWingedAirConditioner",
-            "names": {
-                "english": "Winged Air Conditioner",
-                "chinese": "带翅膀的空调"
-            },
-            "card_art": "@WingedAirConditioner",
-            "cost": 1,
-            "card_type": "monster",
-            "rarity": "uncommon",
-            "class": "@ClassSteward",
-            "targets_room": true,
-            "effects": [{
-                "id": "@SpawnWingedAirConditioner"
-            }],
-            "lore_tooltips": [{
-                "english": "Originally designed to keep technics cool, it has been repurposed to blow enemies away.",
-                "chinese": "最初被设计为保持机械冷却，现在被改用作吹走敌人。"
-            }],
-            "pools": [
-                "UnitsAllBanner"
-            ]
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnWingedAirConditioner",
+      "names": {
+        "english": "Winged Air Conditioner",
+        "chinese": "带翅膀的空调"
+      },
+      "card_art": "@WingedAirConditioner",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [
         {
-            "id": "WingedAirConditionerAbility",
-            "names": {
-                "english": "Freshen Up",
-                "chinese": "清新空气"
-            },
-            "descriptions": {
-                "english": "Add [StewardClan.Plugin_construct][effect0.status0.power] to friendly units.",
-                "chinese": "友方单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
-            },
-            "card_art": "@WingedAirConditioner",
-            "is_an_ability": true,
-            "cooldown": 4,
-            "targetless": true,
-            "targets_room": false,
-            "card_type": "spell",
-            "effects": [{
-                "id": "@WingedAirConditionerCooldown"
-            }]
+          "id": "@SpawnWingedAirConditioner"
         }
-    ],
-    "characters": [{
-        "id": "WingedAirConditioner",
-        "size": 2,
-        "attack_damage": 18,
-        "health": 8,
-        "names": {
-            "english": "Winged Air Conditioner",
-            "chinese": "带翅膀的空调"
-        },
-        "character_art": "@WingedAirConditionerCharacterArt",
-        "subtypes": [
-            "SubtypesData_BannerUnit"
-        ],
-        "starting_status_effects": [{
-            "status": "ambush",
-            "count": 1
-        }],
-        "ability": "@WingedAirConditionerAbility"
-    }],
-    "effects": [{
-            "id": "SpawnWingedAirConditioner",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "param_character": "@WingedAirConditioner"
-        },
+      ],
+      "lore_tooltips": [
         {
-            "id": "WingedAirConditionerCooldown",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "monsters",
-            "param_status_effects": [{
-                "status": "@construct",
-                "count": 2
-            }]
+          "english": "Originally designed to keep technics cool, it has been repurposed to blow enemies away.",
+          "chinese": "最初被设计为保持机械冷却，现在被改用作吹走敌人。"
         }
-    ],
-    "sprites": [{
-            "id": "WingedAirConditioner",
-            "path": "textures/WingedAirConditionerCardArt.png"
-        },
+      ],
+      "pools": [
+        "UnitsAllBanner"
+      ]
+    },
+    {
+      "id": "WingedAirConditionerAbility",
+      "names": {
+        "english": "Freshen Up",
+        "chinese": "清新空气"
+      },
+      "descriptions": {
+        "english": "Add [StewardClan.Plugin_construct][effect0.status0.power] to friendly units.",
+        "chinese": "友方单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+      },
+      "card_art": "@WingedAirConditioner",
+      "is_an_ability": true,
+      "cooldown": 4,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [
         {
-            "id": "WingedAirConditionerCharacterArt",
-            "path": "textures/WingedAirConditionerCharacterArt.png"
+          "id": "@WingedAirConditionerCooldown"
         }
-    ],
-    "game_objects": [{
-            "id": "WingedAirConditioner",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@WingedAirConditioner"
-                }
-            }
-        },
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "WingedAirConditioner",
+      "size": 2,
+      "attack_damage": 18,
+      "health": 8,
+      "names": {
+        "english": "Winged Air Conditioner",
+        "chinese": "带翅膀的空调"
+      },
+      "character_art": "@WingedAirConditionerCharacterArt",
+      "subtypes": [
+        "SubtypesData_BannerUnit"
+      ],
+      "starting_status_effects": [
         {
-            "id": "WingedAirConditionerCharacterArt",
-            "type": "character_art",
-            "extensions": {
-                "character_art": {
-                    "sprite": "@WingedAirConditionerCharacterArt"
-                },
-                "transform": {
-                    "position": {
-                        "x": 0,
-                        "y": 3,
-                        "z": 0
-                    },
-                    "scale": {
-                        "x": 1.5,
-                        "y": 1.5,
-                        "z": 1.5
-                    }
-                }
-            }
+          "status": "ambush",
+          "count": 1
         }
-    ]
+      ],
+      "ability": "@WingedAirConditionerAbility"
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnWingedAirConditioner",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@WingedAirConditioner"
+    },
+    {
+      "id": "WingedAirConditionerCooldown",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "WingedAirConditioner",
+      "path": "textures/WingedAirConditionerCardArt.png"
+    },
+    {
+      "id": "WingedAirConditionerCharacterArt",
+      "path": "textures/WingedAirConditionerCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "WingedAirConditioner",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@WingedAirConditioner"
+        }
+      }
+    },
+    {
+      "id": "WingedAirConditionerCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@WingedAirConditionerCharacterArt"
+        },
+        "transform": {
+          "position": {
+            "x": 0,
+            "y": 3,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      }
+    }
+  ]
 }

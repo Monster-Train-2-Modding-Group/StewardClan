@@ -1,34 +1,27 @@
 using System;
 using System.Collections.Generic;
 using TrainworksReloaded.Core;
+using Conductor.StatusEffects;
 
 namespace StewardClan.Plugin
 {
-    public sealed class RelicEffectArmorOnCore : RelicEffectBase, IStatusEffectRelicEffect
+    public sealed class RelicEffectArmorOnCore : RelicEffectBase, IStatusEffectRelicEffect, IConstructStatusArmorModifier
     {
         public override bool CanApplyInPreviewMode => true;
 
+        RelicState IConstructStatusArmorModifier.SourceRelicState { get => SourceRelicState; set => throw new NotImplementedException(); }
+
         private StatusEffectStackData[] statusEffects = Array.Empty<StatusEffectStackData>();
-        private CharacterState.AddStatusEffectParams addStatusEffectParams = new CharacterState.AddStatusEffectParams();
 
         public override PropDescriptions CreateEditorInspectorDescriptions()
         {
-            PropDescriptions propDescriptions = new PropDescriptions();
-            return propDescriptions;
+            return [];
         }
 
         public override void Initialize(RelicState relicState, RelicData srcRelicData, RelicEffectData relicEffectData)
         {
             base.Initialize(relicState, srcRelicData, relicEffectData);
-            this.addStatusEffectParams.sourceRelicState = base.SourceRelicState;
-            this.statusEffects = new StatusEffectStackData[]
-            {
-                new StatusEffectStackData
-                {
-                    statusId = "armor",
-                    count = 1
-                }
-            };
+            this.statusEffects = relicEffectData.GetParamStatusEffects();
         }
 
         public StatusEffectStackData[]? GetStatusEffects()

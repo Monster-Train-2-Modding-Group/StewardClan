@@ -4,6 +4,7 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using Steward_Clan.Plugin;
 
+/*
 namespace Steward_Clan.Plugin.Patches
 {
     [HarmonyPatch(typeof(CharacterState), "ApplyDamage", MethodType.Enumerator)]
@@ -69,3 +70,4 @@ namespace Steward_Clan.Plugin.Patches
     }
 
 }
+*/

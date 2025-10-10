@@ -1,111 +1,133 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "SpawnLudoDeveloper",
-        "names": {
-            "english": "Ludo-Developer",
-            "chinese": "游戏开发者"
-        },
-        "card_art": "@LudoDeveloper",
-        "cost": 2,
-        "card_type": "monster",
-        "rarity": "rare",
-        "class": "@ClassSteward",
-        "targets_room": true,
-        "effects": [{
-            "id": "@SpawnLudoDeveloper"
-        }],
-        "lore_tooltips": [{
-            "english": "A developer who creates games within games.",
-            "chinese": "在游戏中创造游戏的开发者。"
-        }],
-        "pools": [
-            "UnitsAllBanner"
-        ]
-    }],
-    "characters": [{
-        "id": "LudoDeveloper",
-        "size": 2,
-        "attack_damage": 0,
-        "health": 30,
-        "names": {
-            "english": "Ludo-Developer",
-            "chinese": "游戏开发者"
-        },
-        "character_art": "@LudoDeveloperCharacterArt",
-        "subtypes": [
-            "SubtypesData_TrainSteward",
-            "SubtypesData_BannerUnit"
-        ],
-        "triggers": [{
-            "id": "@LudoDeveloperGainConstruct"
-        }]
-    }],
-    "character_triggers": [{
-        "id": "LudoDeveloperGainConstruct",
-        "descriptions": {
-            "english": "Gain [StewardClan.Plugin_construct] [effect0.status0.power].",
-            "chinese": "获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
-        },
-        "trigger": "post_combat",
-        "effects": [{
-            "id": "@LudoDeveloperGainConstructEffect"
-        }]
-    }],
-    "effects": [{
-            "id": "SpawnLudoDeveloper",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "param_character": "@LudoDeveloper"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnLudoDeveloper",
+      "names": {
+        "english": "Ludo-Developer",
+        "chinese": "游戏开发者"
+      },
+      "card_art": "@LudoDeveloper",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [
         {
-            "id": "LudoDeveloperGainConstructEffect",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "self",
-            "param_status_effects": [{
-                "status": "@construct",
-                "count": 2
-            }]
+          "id": "@SpawnLudoDeveloper"
         }
-    ],
-    "sprites": [{
-            "id": "LudoDeveloper",
-            "path": "textures/LudoDeveloperCardArt.png"
-        },
+      ],
+      "lore_tooltips": [
         {
-            "id": "LudoDeveloperCharacterArt",
-            "path": "textures/LudoDeveloperCharacterArt.png"
+          "english": "A developer who creates games within games.",
+          "chinese": "在游戏中创造游戏的开发者。"
         }
-    ],
-    "game_objects": [{
-            "id": "LudoDeveloper",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@LudoDeveloper"
-                }
+      ],
+      "pools": [
+        "UnitsAllBanner"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "LudoDeveloper",
+      "size": 2,
+      "attack_damage": 0,
+      "health": 30,
+      "names": {
+        "english": "Ludo-Developer",
+        "chinese": "游戏开发者"
+      },
+      "character_art": "@LudoDeveloperCharacterArt",
+      "subtypes": [
+        "SubtypesData_TrainSteward",
+        "SubtypesData_BannerUnit"
+      ],
+      "triggers": [
+        {
+          "id": "@LudoDeveloperGainConstruct"
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "LudoDeveloperGainConstruct",
+      "descriptions": {
+        "english": "Gain [StewardClan.Plugin_construct] [effect0.status0.power].",
+        "chinese": "获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "id": "@LudoDeveloperGainConstructEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnLudoDeveloper",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@LudoDeveloper"
+    },
+    {
+      "id": "LudoDeveloperGainConstructEffect",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "LudoDeveloper",
+      "path": "textures/LudoDeveloperCardArt.png"
+    },
+    {
+      "id": "LudoDeveloperCharacterArt",
+      "path": "textures/LudoDeveloperCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "LudoDeveloper",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@LudoDeveloper"
+        }
+      }
+    },
+    {
+      "id": "LudoDeveloperCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@LudoDeveloperCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
             }
-        },
-        {
-            "id": "LudoDeveloperCharacterArt",
-            "type": "character_art",
-            "extensions": {
-                "character_art": {
-                    "sprite": "@LudoDeveloperCharacterArt",
-                    "transform": {
-                        "position": {
-                            "x": 0,
-                            "y": 1.3,
-                            "z": 0
-                        },
-                        "scale": {
-                            "x": 1.5,
-                            "y": 1.5,
-                            "z": 1.5
-                        }
-                    }
-                }
-            }
+          }
         }
-    ]
+      }
+    }
+  ]
 }

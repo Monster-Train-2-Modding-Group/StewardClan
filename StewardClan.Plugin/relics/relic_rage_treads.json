@@ -11,7 +11,10 @@
       "param_int_2": 0,
       "param_status_effects": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 1
         }
       ]

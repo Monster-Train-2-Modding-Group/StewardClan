@@ -16,14 +16,12 @@
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="TrainworksReloaded.Base" Version="0.5.2" />
+    <PackageReference Include="TrainworksReloaded.Base" Version="0.5.4" />
+    <PackageReference Include="Conductor" Version="0.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="plugin.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="status.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="champions/*">

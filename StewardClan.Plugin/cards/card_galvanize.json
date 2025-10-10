@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
       "id": "Galvanize",
@@ -32,31 +32,44 @@
       ]
     }
   ],
-    "traits": [{
-        "id": "GalvanizeConsume",
-        "name": "CardTraitExhaustState"
-    }],
-    "effects": [{
-        "id": "GalvanizeApplyConstruct",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "room",
-        "param_status_effects": [{
-            "status": "@construct",
-            "count": 1
-        }],
-        "target_team": "monsters"
-    }],
-    "sprites": [{
-        "id": "GalvanizeArt",
-        "path": "textures/Galvanize.png"
-    }],
-    "game_objects": [{
-        "id": "GalvanizeArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@GalvanizeArt"
-            }
+  "traits": [
+    {
+      "id": "GalvanizeConsume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "id": "GalvanizeApplyConstruct",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "param_status_effects": [
+        {
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
+          "count": 1
         }
-    }]
+      ],
+      "target_team": "monsters"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "GalvanizeArt",
+      "path": "textures/Galvanize.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "GalvanizeArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@GalvanizeArt"
+        }
+      }
+    }
+  ]
 }

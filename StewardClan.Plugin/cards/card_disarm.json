@@ -1,61 +1,74 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Disarm",
-        "names": {
-            "english": "Disarm",
-            "chinese": "解除武装"
-        },
-        "descriptions": {
-            "english": "Remove equipment from a unit and Apply [StewardClan.Plugin_construct][effect1.status0.power].",
-            "chinese": "移除一个单位身上的装备，并使其获得[StewardClan.Plugin_construct] [effect1.status0.power]。"
-        },
-        "rarity": "uncommon",
-        "class": "@ClassSteward",
-        "card_art": "@DisarmArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": [
-            "MegaPool"
-        ],
-        "cost": 1,
-        "effects": [{
-                "id": "@DisarmRemoveEquipment"
-            },
-            {
-                "id": "@DisarmApplyConstruct"
-            }
-        ]
-    }],
-    "effects": [{
-            "id": "DisarmRemoveEquipment",
-            "name": "CardEffectRemoveEquipment",
-            "target_mode": "drop_target_character",
-            "target_team": "both",
-            "should_fail_to_cast_if_test_fails": true
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Disarm",
+      "names": {
+        "english": "Disarm",
+        "chinese": "解除武装"
+      },
+      "descriptions": {
+        "english": "Remove equipment from a unit and Apply [StewardClan.Plugin_construct][effect1.status0.power].",
+        "chinese": "移除一个单位身上的装备，并使其获得[StewardClan.Plugin_construct] [effect1.status0.power]。"
+      },
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "card_art": "@DisarmArt",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 1,
+      "effects": [
+        {
+          "id": "@DisarmRemoveEquipment"
         },
         {
-            "id": "DisarmApplyConstruct",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_targeted_characters",
-            "target_team": "both",
-            "param_status_effects": [{
-                "status": "@construct",
-                "count": 5
-            }]
+          "id": "@DisarmApplyConstruct"
         }
-    ],
-    "sprites": [{
-        "id": "DisarmArt",
-        "path": "textures/Disarm.png"
-    }],
-    "game_objects": [{
-        "id": "DisarmArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@DisarmArt"
-            }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "DisarmRemoveEquipment",
+      "name": "CardEffectRemoveEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "should_fail_to_cast_if_test_fails": true
+    },
+    {
+      "id": "DisarmApplyConstruct",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
+          "count": 5
         }
-    }]
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "DisarmArt",
+      "path": "textures/Disarm.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "DisarmArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@DisarmArt"
+        }
+      }
+    }
+  ]
 }

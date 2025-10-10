@@ -368,7 +368,10 @@
       "target_subtype": "SubtypesData_TrainSteward",
       "param_status_effects": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 1
         }
       ]
@@ -381,7 +384,10 @@
       "target_subtype": "SubtypesData_TrainSteward",
       "param_status_effects": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 2
         }
       ]
@@ -394,7 +400,10 @@
       "target_subtype": "SubtypesData_TrainSteward",
       "param_status_effects": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 3
         }
       ]

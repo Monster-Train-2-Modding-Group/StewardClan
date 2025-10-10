@@ -2,7 +2,7 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using Microsoft.Extensions.Configuration;
-using Steward_Clan.Plugin.Patches;
+//using Steward_Clan.Plugin.Patches;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 
@@ -25,7 +25,6 @@ namespace Steward_Clan.Plugin
                 {
                     c.AddMergedJsonFile(
                         "plugin.json",
-                        "status.json",
                         "champions/champion_albert.json",
                         "relics/relic_backup_generator.json",
                         "relics/relic_construct_core.json",
@@ -70,7 +69,7 @@ namespace Steward_Clan.Plugin
                 }
             );
 
-            Harmony.CreateAndPatchAll(typeof(CharacterStateApplyDamagePatch));
+            //Harmony.CreateAndPatchAll(typeof(CharacterStateApplyDamagePatch));
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }

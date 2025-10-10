@@ -51,7 +51,10 @@
       "icon": "@ConstructIcon",
       "status_effect_upgrades": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 5
         }
       ],

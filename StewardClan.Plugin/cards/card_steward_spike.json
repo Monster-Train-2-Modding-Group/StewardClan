@@ -54,7 +54,10 @@
       "param_int": 1,
       "param_status_effects": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 0
         }
       ]
@@ -74,7 +77,10 @@
       "target_team": "both",
       "param_status_effects": [
         {
-          "status": "@construct",
+          "status": {
+            "id": "@construct",
+            "mod_reference": "Conductor"
+          },
           "count": 0
         }
       ]

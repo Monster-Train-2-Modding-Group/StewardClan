@@ -3,7 +3,13 @@
   "relic_effects": [
     {
       "id": "ConstructCoreArmorEffect",
-      "name": "@RelicEffectArmorOnCore"
+      "name": "@RelicEffectArmorOnCore",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 1
+        }
+      ]
     }
   ],
   "relics": [
