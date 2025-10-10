@@ -22,8 +22,8 @@
         "german": "Konstruktkern"
       },
       "descriptions": {
-        "english": "[StewardClan.Plugin_construct] gives [armor].",
-        "chinese": "每层[StewardClan.Plugin_construct]额外提供 +1 [armor]。",
+        "english": "[Conductor_construct] gives [armor].",
+        "chinese": "每层[Conductor_construct]额外提供 +1 [armor]。",
         "german": "Konstrukt gibt Rüstung."
       },
       "relic_activated": {

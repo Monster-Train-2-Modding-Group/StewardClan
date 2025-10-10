@@ -35,8 +35,8 @@
         "chinese": "清新空气"
       },
       "descriptions": {
-        "english": "Add [StewardClan.Plugin_construct][effect0.status0.power] to friendly units.",
-        "chinese": "友方单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+        "english": "Add [Conductor_construct] [effect0.status0.power] to friendly units.",
+        "chinese": "友方单位获得[Conductor_construct] [effect0.status0.power]。"
       },
       "card_art": "@WingedAirConditioner",
       "is_an_ability": true,

@@ -30,8 +30,8 @@
         "german": "Saugende Treppen (WIP)"
       },
       "descriptions": {
-        "english": "Apply [StewardClan.Plugin_construct] [effect0.status0.power] whenever one of your units moves.",
-        "chinese": "当友方单位移动时，获得[StewardClan.Plugin_construct] [effect0.status0.power]。",
+        "english": "Apply [Conductor_construct] [effect0.status0.power] whenever one of your units moves.",
+        "chinese": "当友方单位移动时，获得[Conductor_construct] [effect0.status0.power]。",
         "german": "Wenn du eine Zahl eingibst, wird dir die Zahl um 1 verringert und dir 1 Energie hinzugefügt."
       },
       "relic_activated": {

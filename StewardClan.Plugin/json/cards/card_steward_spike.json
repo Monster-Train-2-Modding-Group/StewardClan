@@ -8,8 +8,8 @@
         "chinese": "乘务员之尖钉"
       },
       "descriptions": {
-        "english": "Apply [trait1.power][x] [StewardClan.Plugin_construct]. Pyre takes [trait2.power][x] damage",
-        "chinese": "获得 [trait1.power][x] [StewardClan.Plugin_construct]。薪火受到 [trait2.power][x] 点伤害。"
+        "english": "Apply [trait1.power][x] [Conductor_construct]. Pyre takes [trait2.power][x] damage",
+        "chinese": "获得 [trait1.power][x] [Conductor_construct]。薪火受到 [trait2.power][x] 点伤害。"
       },
       "rarity": "rare",
       "class": "@ClassSteward",

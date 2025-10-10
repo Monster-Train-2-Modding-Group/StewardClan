@@ -274,8 +274,8 @@
       "id": "AlbertBuffStewards1",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Give Train Stewards [StewardClan.Plugin_construct] [effect0.status0.power].",
-        "chinese": "乘务员单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+        "english": "Give Train Stewards [Conductor_construct] [effect0.status0.power].",
+        "chinese": "乘务员单位获得[Conductor_construct] [effect0.status0.power]。"
       },
       "effects": [
         {
@@ -287,8 +287,8 @@
       "id": "AlbertBuffStewards2",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Give Train Stewards [StewardClan.Plugin_construct] [effect0.status0.power].",
-        "chinese": "乘务员单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+        "english": "Give Train Stewards [Conductor_construct] [effect0.status0.power].",
+        "chinese": "乘务员单位获得[Conductor_construct] [effect0.status0.power]。"
       },
       "effects": [
         {
@@ -300,8 +300,8 @@
       "id": "AlbertBuffStewards3",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Give Train Stewards [StewardClan.Plugin_construct] [effect0.status0.power].",
-        "chinese": "乘务员单位获得[StewardClan.Plugin_construct] [effect0.status0.power]。"
+        "english": "Give Train Stewards [Conductor_construct] [effect0.status0.power].",
+        "chinese": "乘务员单位获得[Conductor_construct] [effect0.status0.power]。"
       },
       "effects": [
         {
