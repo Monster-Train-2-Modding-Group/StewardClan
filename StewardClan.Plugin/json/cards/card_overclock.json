@@ -19,12 +19,8 @@
       "pools": [ "MegaPool" ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@OverclockEmber"
-        },
-        {
-          "id": "@OverclockPyreDamage"
-        }
+        "@OverclockEmber",
+        "@OverclockPyreDamage"
       ]
     }
   ],

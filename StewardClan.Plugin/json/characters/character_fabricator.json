@@ -1,89 +1,91 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-            "id": "SpawnFabricator",
-            "names": {
-                "english": "Fabricator",
-                "chinese": "伪造者"
-            },
-            "card_art": "@Fabricator",
-            "cost": 1,
-            "card_type": "monster",
-            "rarity": "uncommon",
-            "class": "@ClassSteward",
-            "targets_room": true,
-            "effects": [{
-                "id": "@SpawnFabricator"
-            }],
-            "lore_tooltips": [{
-                "english": "Equipment so nice, I made it twice.",
-                "chinese": "装备如此美妙，我决定做两份。"
-            }],
-            "pools": [
-                "UnitsAllBanner"
-            ]
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnFabricator",
+      "names": {
+        "english": "Fabricator",
+        "chinese": "伪造者"
+      },
+      "card_art": "@Fabricator",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [ "@SpawnFabricator" ],
+      "lore_tooltips": [
         {
-            "id": "FabricatorAbility",
-            "names": {
-                "english": "Fabricate",
-                "chinese": "仿造"
-            },
-            "descriptions": {
-                "english": "Add a Copy of the Equipment attached to this unit to your Deck",
-                "chinese": "将一张此单位身上的装备的复制品加入你的抽牌堆。"
-            },
-            "card_art": "@Fabricator",
-            "is_an_ability": true,
-            "cooldown": 3,
-            "targetless": true,
-            "targets_room": false,
-            "card_type": "spell",
-            "effects": [{
-                "id": "@FabricatorCopyEquipment"
-            }]
+          "english": "Equipment so nice, I made it twice.",
+          "chinese": "装备如此美妙，我决定做两份。"
         }
-    ],
-    "characters": [{
-        "id": "Fabricator",
-        "size": 3,
-        "attack_damage": 10,
-        "health": 20,
-        "names": {
-            "english": "Fabricator",
-            "chinese": "伪造者"
-        },
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-        "subtypes": [
-            "SubtypesData_BannerUnit"
-        ],
-        "ability": "@FabricatorAbility"
-    }],
-    "effects": [{
-            "id": "SpawnFabricator",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "target_card_type": "spell",
-            "param_character": "@Fabricator"
-        },
-        {
-            "id": "FabricatorCopyEquipment",
-            "name": "@CardEffectCopyEquipment",
-            "target_mode": "self",
-            "target_team": "monsters"
+      ],
+      "pools": [ "UnitsAllBanner" ]
+    },
+    {
+      "id": "FabricatorAbility",
+      "names": {
+        "english": "Fabricate",
+        "chinese": "仿造"
+      },
+      "descriptions": {
+        "english": "Add a copy of the equipment attached to this unit to your Deck",
+        "chinese": "将一张此单位身上的装备的复制品加入你的抽牌堆。"
+      },
+      "card_art": "@Fabricator",
+      "is_an_ability": true,
+      "cooldown": 3,
+      "targetless": true,
+      "targets_room": false,
+      "card_type": "spell",
+      "effects": [ "@FabricatorCopyEquipment" ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "Fabricator",
+      "size": 3,
+      "attack_damage": 10,
+      "health": 20,
+      "names": {
+        "english": "Fabricator",
+        "chinese": "伪造者"
+      },
+      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+      "subtypes": [ "SubtypesData_BannerUnit" ],
+      "ability": "@FabricatorAbility"
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnFabricator",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character": "@Fabricator"
+    },
+    {
+      "id": "FabricatorCopyEquipment",
+      "name": "@CardEffectCopyEquipment",
+      "target_mode": "self",
+      "target_team": "monsters"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Fabricator",
+      "path": "textures/MechanicalOutrage.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "Fabricator",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@Fabricator"
         }
-    ],
-    "sprites": [{
-        "id": "Fabricator",
-        "path": "textures/MechanicalOutrage.png"
-    }],
-    "game_objects": [{
-        "id": "Fabricator",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@Fabricator"
-            }
-        }
-    }]
+      }
+    }
+  ]
 }

@@ -16,20 +16,10 @@
       "card_art": "@WritelineArt",
       "targets_room": true,
       "targetless": false,
-      "pools": [
-        "MegaPool"
-      ],
+      "pools": [ "MegaPool" ],
       "cost": 2,
-      "traits": [
-        {
-          "id": "@WritelineConsume"
-        }
-      ],
-      "effects": [
-        {
-          "id": "@WritelineStatusEffect"
-        }
-      ]
+      "traits": [ "@WritelineConsume" ],
+      "effects": [ "@WritelineStatusEffect" ]
     }
   ],
   "traits": [

@@ -1,71 +1,77 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Sythesize",
-        "names": {
-            "english": "Sythesize",
-            "chinese": "合成"
-        },
-        "descriptions": {
-            "english": "Apply [rage] [effect0.status0.power] and [regen] [effect1.status0.power]",
-            "chinese": "获得[rage] [effect0.status0.power] 和[regen] [effect1.status0.power]。"
-        },
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "card_art": "@SythesizeArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": [
-            "MegaPool"
-        ],
-        "cost": 1,
-        "traits": [{
-            "id": "@SythesizeConsume"
-        }],
-        "effects": [{
-                "id": "@SythesizeStatusEffectRage"
-            },
-            {
-                "id": "@SythesizeStatusEffectRegen"
-            }
-        ]
-    }],
-    "traits": [{
-        "id": "SythesizeConsume",
-        "name": "CardTraitExhaustState"
-    }],
-    "effects": [{
-            "id": "SythesizeStatusEffectRage",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "drop_target_character",
-            "target_team": "both",
-            "param_status_effects": [{
-                "status": "buff",
-                "count": 3
-            }]
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sythesize",
+      "names": {
+        "english": "Sythesize",
+        "chinese": "合成"
+      },
+      "descriptions": {
+        "english": "Apply [rage] [effect0.status0.power] and [regen] [effect1.status0.power]",
+        "chinese": "获得[rage] [effect0.status0.power] 和[regen] [effect1.status0.power]。"
+      },
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art": "@SythesizeArt",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [ "MegaPool" ],
+      "cost": 1,
+      "traits": [ "@SythesizeConsume" ],
+      "effects": [
+        "@SythesizeStatusEffectRage",
+        "@SythesizeStatusEffectRegen"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "SythesizeConsume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "id": "SythesizeStatusEffectRage",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_status_effects": [
         {
-            "id": "SythesizeStatusEffectRegen",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "last_targeted_characters",
-            "target_team": "both",
-            "param_status_effects": [{
-                "status": "regen",
-                "count": 3
-            }]
+          "status": "buff",
+          "count": 3
         }
-    ],
-    "sprites": [{
-        "id": "SythesizeArt",
-        "path": "textures/SynthesizeArt.png"
-    }],
-    "game_objects": [{
-        "id": "SythesizeArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@SythesizeArt"
-            }
+      ]
+    },
+    {
+      "id": "SythesizeStatusEffectRegen",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 3
         }
-    }]
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SythesizeArt",
+      "path": "textures/SynthesizeArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "SythesizeArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@SythesizeArt"
+        }
+      }
+    }
+  ]
 }

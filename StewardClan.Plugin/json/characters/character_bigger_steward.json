@@ -1,89 +1,99 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "SpawnBiggerSteward",
-        "names": {
-            "english": "Steward Amalgam",
-            "chinese": "乘务员造物"
-        },
-        "card_art": "@BiggerSteward",
-        "cost": 1,
-        "card_type": "monster",
-        "rarity": "uncommon",
-        "class": "@ClassSteward",
-        "targets_room": true,
-        "effects": [{
-            "id": "@SpawnBiggerSteward"
-        }],
-        "lore_tooltips": [{
-            "english": "Two together is better than Two apart.",
-            "chinese": "永远的在一起了。"
-        }],
-        "pools": [
-            "UnitsAllBanner"
-        ]
-    }],
-    "characters": [{
-        "id": "BiggerSteward",
-        "size": 3,
-        "attack_damage": 14,
-        "health": 25,
-        "names": {
-            "english": "Steward Amalgam",
-            "chinese": "乘务员造物"
-        },
-        "character_art": "@BiggerStewardCharacterArt",
-        "subtypes": [
-            "SubtypesData_TrainSteward",
-            "SubtypesData_BannerUnit"
-        ],
-        "starting_status_effects": [{
-            "status": "titanskin",
-            "count": 2
-        }]
-    }],
-    "effects": [{
-        "id": "SpawnBiggerSteward",
-        "name": "CardEffectSpawnMonster",
-        "target_mode": "room",
-        "param_character": "@BiggerSteward"
-    }],
-    "sprites": [{
-        "id": "BiggerSteward",
-        "path": "textures/StewardAmalgamCardArt.png"
-    }, {
-        "id": "BiggerStewardCharacterArt",
-        "path": "textures/StewardAmalgam.png"
-    }],
-    "game_objects": [{
-            "id": "BiggerSteward",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@BiggerSteward"
-                }
-            }
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnBiggerSteward",
+      "names": {
+        "english": "Steward Amalgam",
+        "chinese": "乘务员造物"
+      },
+      "card_art": "@BiggerSteward",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [ "@SpawnBiggerSteward" ],
+      "lore_tooltips": [
         {
-            "id": "BiggerStewardCharacterArt",
-            "type": "character_art",
-            "extensions": {
-                "character_art": {
-                    "sprite": "@BiggerStewardCharacterArt",
-                    "transform": {
-                        "position": {
-                            "x": 0,
-                            "y": 1.3,
-                            "z": 0
-                        },
-                        "scale": {
-                            "x": 1.5,
-                            "y": 1.5,
-                            "z": 1.5
-                        }
-                    }
-                }
-            }
+          "english": "Two together is better than Two apart.",
+          "chinese": "永远的在一起了。"
         }
-    ]
+      ],
+      "pools": [ "UnitsAllBanner" ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "BiggerSteward",
+      "size": 3,
+      "attack_damage": 14,
+      "health": 25,
+      "names": {
+        "english": "Steward Amalgam",
+        "chinese": "乘务员造物"
+      },
+      "character_art": "@BiggerStewardCharacterArt",
+      "subtypes": [
+        "SubtypesData_TrainSteward",
+        "SubtypesData_BannerUnit"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "titanskin",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnBiggerSteward",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@BiggerSteward"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BiggerSteward",
+      "path": "textures/StewardAmalgamCardArt.png"
+    },
+    {
+      "id": "BiggerStewardCharacterArt",
+      "path": "textures/StewardAmalgam.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "BiggerSteward",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@BiggerSteward"
+        }
+      }
+    },
+    {
+      "id": "BiggerStewardCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@BiggerStewardCharacterArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
+          }
+        }
+      }
+    }
+  ]
 }

@@ -16,9 +16,7 @@
       "card_art": "@ScrapArt",
       "targets_room": true,
       "targetless": false,
-      "pools": [
-        "MegaPool"
-      ],
+      "pools": [ "MegaPool" ],
       "cost": 1,
       "effects": [
         "@ScrapSacrifice",

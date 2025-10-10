@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
       "id": "SteamBurst",
@@ -19,40 +19,43 @@
       "pools": [ "MegaPool" ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@SteamBurstDamage"
-        },
-        {
-          "id": "@SteamBurstEmber"
-        }
+        "@SteamBurstDamage",
+
+        "@SteamBurstEmber"
+
       ]
     }
   ],
-    "effects": [{
-            "id": "SteamBurstDamage",
-            "name": "CardEffectDamage",
-            "target_mode": "room",
-            "target_team": "both",
-            "param_int": 2
-        },
-        {
-            "id": "SteamBurstEmber",
-            "name": "CardEffectGainEnergy",
-            "target_mode": "room",
-            "param_int": 1
+  "effects": [
+    {
+      "id": "SteamBurstDamage",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "both",
+      "param_int": 2
+    },
+    {
+      "id": "SteamBurstEmber",
+      "name": "CardEffectGainEnergy",
+      "target_mode": "room",
+      "param_int": 1
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SteamBurstArt",
+      "path": "textures/SteamburstArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "SteamBurstArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@SteamBurstArt"
         }
-    ],
-    "sprites": [{
-        "id": "SteamBurstArt",
-        "path": "textures/SteamburstArt.png"
-    }],
-    "game_objects": [{
-        "id": "SteamBurstArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@SteamBurstArt"
-            }
-        }
-    }]
+      }
+    }
+  ]
 }

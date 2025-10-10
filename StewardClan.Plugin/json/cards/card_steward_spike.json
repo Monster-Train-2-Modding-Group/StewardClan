@@ -16,29 +16,24 @@
       "card_art": "@StewardSpikeArt",
       "targets_room": true,
       "targetless": false,
-      "pools": [
-        "MegaPool"
-      ],
+      "pools": [ "MegaPool" ],
       "cost": 0,
       "cost_type": "x",
       "traits": [
-        {
-          "id": "@StewardSpikeConsume"
-        },
-        {
-          "id": "@StewardSpikeScaling"
-        },
-        {
-          "id": "@StewardSpikeScalingDamage"
-        }
+
+        "@StewardSpikeConsume",
+
+        "@StewardSpikeScaling",
+
+        "@StewardSpikeScalingDamage"
+
       ],
       "effects": [
-        {
-          "id": "@StewardSpikeStatusEffect"
-        },
-        {
-          "id": "@StewardSpikeDamage"
-        }
+
+        "@StewardSpikeStatusEffect",
+
+        "@StewardSpikeDamage"
+
       ]
     }
   ],

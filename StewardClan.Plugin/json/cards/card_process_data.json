@@ -1,58 +1,60 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "ProcessData",
-        "names": {
-            "english": "Process Data",
-            "chinese": "处理数据"
-        },
-        "descriptions": {
-            "english": "[advance]. Apply +[effect1.power][health]",
-            "chinese": "[advance]。获得 +[effect1.power][health]。"
-        },
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "card_art": "@ProcessDataArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": [
-            "MegaPool"
-        ],
-        "cost": 1,
-        "effects": [{
-                "id": "@ProcessDataAdvance"
-            },
-            {
-                "id": "@ProcessDataBuffMaxHealth"
-            }
-        ]
-    }],
-    "effects": [{
-            "id": "ProcessDataAdvance",
-            "name": "CardEffectFloorRearrange",
-            "param_int": 0,
-            "target_mode": "drop_target_character",
-            "target_team": "both"
-        },
-        {
-            "id": "ProcessDataBuffMaxHealth",
-            "name": "CardEffectBuffMaxHealth",
-            "param_int": 5,
-            "target_mode": "last_targeted_characters",
-            "target_team": "both"
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "ProcessData",
+      "names": {
+        "english": "Process Data",
+        "chinese": "处理数据"
+      },
+      "descriptions": {
+        "english": "[advance]. Apply +[effect1.power][health]",
+        "chinese": "[advance]。获得 +[effect1.power][health]。"
+      },
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art": "@ProcessDataArt",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [ "MegaPool" ],
+      "cost": 1,
+      "effects": [
+        "@ProcessDataAdvance",
+        "@ProcessDataBuffMaxHealth"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ProcessDataAdvance",
+      "name": "CardEffectFloorRearrange",
+      "param_int": 0,
+      "target_mode": "drop_target_character",
+      "target_team": "both"
+    },
+    {
+      "id": "ProcessDataBuffMaxHealth",
+      "name": "CardEffectBuffMaxHealth",
+      "param_int": 5,
+      "target_mode": "last_targeted_characters",
+      "target_team": "both"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ProcessDataArt",
+      "path": "textures/ProcessData.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "ProcessDataArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@ProcessDataArt"
         }
-    ],
-    "sprites": [{
-        "id": "ProcessDataArt",
-        "path": "textures/ProcessData.png"
-    }],
-    "game_objects": [{
-        "id": "ProcessDataArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@ProcessDataArt"
-            }
-        }
-    }]
+      }
+    }
+  ]
 }

@@ -1,111 +1,114 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "SpawnUnitTester",
-        "names": {
-            "english": "Unit Tester",
-            "chinese": "单位测试者"
-        },
-        "card_art": "@UnitTester",
-        "cost": 2,
-        "card_type": "monster",
-        "rarity": "rare",
-        "class": "@ClassSteward",
-        "targets_room": true,
-        "effects": [{
-            "id": "@SpawnUnitTester"
-        }],
-        "lore_tooltips": [{
-            "english": "Testing units to find their weaknesses.",
-            "chinese": "测试单位以找出他们的弱点。"
-        }],
-        "pools": [
-            "UnitsAllBanner"
-        ]
-    }],
-    "characters": [{
-        "id": "UnitTester",
-        "size": 2,
-        "attack_damage": 35,
-        "health": 20,
-        "names": {
-            "english": "Unit Tester",
-            "chinese": "单位测试者"
-        },
-        "character_art": "@UnitTesterCharacterArt",
-        "subtypes": [
-            "SubtypesData_BannerUnit"
-        ],
-        "triggers": [{
-            "id": "@UnitTesterTrigger"
-        }]
-    }],
-    "character_triggers": [{
-        "id": "UnitTesterTrigger",
-        "descriptions": {
-            "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units.",
-            "chinese": "对所有敌方单位施加[meleeweakness] [effect0.status0.power]。"
-        },
-        "trigger": "on_equipment_added_to_ally",
-        "effects": [{
-            "id": "@UnitTesterApplyWeakness"
-        }]
-    }],
-    "effects": [{
-            "id": "SpawnUnitTester",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "param_character": "@UnitTester"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnUnitTester",
+      "names": {
+        "english": "Unit Tester",
+        "chinese": "单位测试者"
+      },
+      "card_art": "@UnitTester",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [ "@SpawnUnitTester" ],
+      "lore_tooltips": [
         {
-            "id": "UnitTesterApplyWeakness",
-            "name": "CardEffectAddStatusEffect",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_status_effects": [{
-                "status": "melee weakness",
-                "count": 1
-            }]
+          "english": "Testing units to find their weaknesses.",
+          "chinese": "测试单位以找出他们的弱点。"
         }
-    ],
-    "sprites": [{
-            "id": "UnitTester",
-            "path": "textures/UnitTesterCardArt.png"
-        },
+      ],
+      "pools": [ "UnitsAllBanner" ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "UnitTester",
+      "size": 2,
+      "attack_damage": 35,
+      "health": 20,
+      "names": {
+        "english": "Unit Tester",
+        "chinese": "单位测试者"
+      },
+      "character_art": "@UnitTesterCharacterArt",
+      "subtypes": [ "SubtypesData_BannerUnit" ],
+      "triggers": [ "@UnitTesterTrigger" ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UnitTesterTrigger",
+      "descriptions": {
+        "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units.",
+        "chinese": "对所有敌方单位施加[meleeweakness] [effect0.status0.power]。"
+      },
+      "trigger": "on_equipment_added_to_ally",
+      "effects": [ "@UnitTesterApplyWeakness" ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnUnitTester",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@UnitTester"
+    },
+    {
+      "id": "UnitTesterApplyWeakness",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-            "id": "UnitTesterCharacterArt",
-            "path": "textures/UnitTesterCharacterArt.png"
+          "status": "melee weakness",
+          "count": 1
         }
-    ],
-    "game_objects": [{
-            "id": "UnitTester",
-            "type": "card_art",
-            "extensions": {
-                "card_art": {
-                    "sprite": "@UnitTester"
-                }
-            }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "UnitTester",
+      "path": "textures/UnitTesterCardArt.png"
+    },
+    {
+      "id": "UnitTesterCharacterArt",
+      "path": "textures/UnitTesterCharacterArt.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "UnitTester",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@UnitTester"
+        }
+      }
+    },
+    {
+      "id": "UnitTesterCharacterArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@UnitTesterCharacterArt"
         },
-        {
-            "id": "UnitTesterCharacterArt",
-            "type": "character_art",
-            "extensions": {
-                "character_art": {
-                    "sprite": "@UnitTesterCharacterArt"
-                },
-                "transform": {
-                    "position": {
-                        "x": 0,
-                        "y": 3,
-                        "z": 0
-                    },
-                    "scale": {
-                        "x": 1.5,
-                        "y": 1.5,
-                        "z": 1.5
-                    }
-                }
-            }
+        "transform": {
+          "position": {
+            "x": 0,
+            "y": 3,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
         }
-    ]
+      }
+    }
+  ]
 }

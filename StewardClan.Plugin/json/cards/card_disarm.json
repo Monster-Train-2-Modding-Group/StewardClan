@@ -8,7 +8,7 @@
         "chinese": "解除武装"
       },
       "descriptions": {
-        "english": "Remove equipment from a unit and Apply [Conductor_construct][effect1.status0.power].",
+        "english": "Remove equipment from a unit and Apply [Conductor_construct] [effect1.status0.power].",
         "chinese": "移除一个单位身上的装备，并使其获得[Conductor_construct] [effect1.status0.power]。"
       },
       "rarity": "uncommon",
@@ -16,17 +16,11 @@
       "card_art": "@DisarmArt",
       "targets_room": true,
       "targetless": false,
-      "pools": [
-        "MegaPool"
-      ],
+      "pools": [ "MegaPool" ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@DisarmRemoveEquipment"
-        },
-        {
-          "id": "@DisarmApplyConstruct"
-        }
+        "@DisarmRemoveEquipment",
+        "@DisarmApplyConstruct"
       ]
     }
   ],

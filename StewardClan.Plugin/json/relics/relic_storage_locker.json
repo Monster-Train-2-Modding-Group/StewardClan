@@ -7,15 +7,9 @@
       "param_int": 1,
       "source_team": "monsters",
       "param_characters": [
-        {
-          "id": "@RustedSteward"
-        },
-        {
-          "id": "@RustedSteward"
-        },
-        {
-          "id": "@RustedSteward"
-        }
+        "@RustedSteward",
+        "@RustedSteward",
+        "@RustedSteward"
       ]
     }
   ],
@@ -43,11 +37,7 @@
       ],
       "disallow_in_deployment": false,
       "lore_style": "herzal",
-      "relic_effects": [
-        {
-          "id": "@StorageLockerEffectOnCombatStart"
-        }
-      ],
+      "relic_effects": ["@StorageLockerEffectOnCombatStart"],
       "icon": "@StorageLockerIcon",
       "icon_small": "@StorageLockerIconSmall",
       "extensions": [

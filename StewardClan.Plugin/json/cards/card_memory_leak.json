@@ -1,61 +1,65 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "MemoryLeak",
-        "names": {
-            "english": "Memory Leak",
-            "chinese": "内存泄漏"
-        },
-        "descriptions": {
-            "english": "Discard your Hand then Draw 2 random spells from your consume pile that isn't <b>Memory Leak</b>.",
-            "chinese": "舍弃全部手牌，然后随机将 2 张被消耗的不是<b>内存泄漏</b>的法术返回到你的手牌。"
-        },
-        "rarity": "rare",
-        "class": "@ClassSteward",
-        "card_art": "@MemoryLeakArt",
-        "targets_room": false,
-        "targetless": true,
-        "pools": ["MegaPool"],
-        "cost": 1,
-        "traits": [{
-            "id": "@MemoryLeakConsume"
-        }],
-        "effects": [{
-                "id": "@MemoryLeakDiscard"
-            },
-            {
-                "id": "@MemoryLeakDraw"
-            }
-        ]
-    }],
-    "traits": [{
-        "id": "MemoryLeakConsume",
-        "name": "CardTraitExhaustState"
-    }],
-    "effects": [{
-            "id": "MemoryLeakDiscard",
-            "name": "CardEffectDiscardHand"
-        },
-        {
-            "id": "MemoryLeakDraw",
-            "name": "CardEffectRecursion",
-            "target_mode": "exhaust",
-            "target_selection_mode": "random_to_hand",
-            "target_card_type": "spell",
-            "param_int": 2
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "MemoryLeak",
+      "names": {
+        "english": "Memory Leak",
+        "chinese": "内存泄漏"
+      },
+      "descriptions": {
+        "english": "Discard your Hand then Draw 2 random spells from your consume pile that isn't <b>Memory Leak</b>.",
+        "chinese": "舍弃全部手牌，然后随机将 2 张被消耗的不是<b>内存泄漏</b>的法术返回到你的手牌。"
+      },
+      "rarity": "rare",
+      "class": "@ClassSteward",
+      "card_art": "@MemoryLeakArt",
+      "targets_room": false,
+      "targetless": true,
+      "pools": [ "MegaPool" ],
+      "cost": 1,
+      "traits": [ "@MemoryLeakConsume" ],
+      "effects": [
+        "@MemoryLeakDiscard",
+        "@MemoryLeakDraw"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "MemoryLeakConsume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "id": "MemoryLeakDiscard",
+      "name": "CardEffectDiscardHand"
+    },
+    {
+      "id": "MemoryLeakDraw",
+      "name": "CardEffectRecursion",
+      "target_mode": "exhaust",
+      "target_selection_mode": "random_to_hand",
+      "target_card_type": "spell",
+      "param_int": 2
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MemoryLeakArt",
+      "path": "textures/MemoryLeak.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "MemoryLeakArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@MemoryLeakArt"
         }
-    ],
-    "sprites": [{
-        "id": "MemoryLeakArt",
-        "path": "textures/MemoryLeak.png"
-    }],
-    "game_objects": [{
-        "id": "MemoryLeakArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@MemoryLeakArt"
-            }
-        }
-    }]
+      }
+    }
+  ]
 }

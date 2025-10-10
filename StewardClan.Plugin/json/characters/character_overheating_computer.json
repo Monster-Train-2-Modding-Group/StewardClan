@@ -1,83 +1,86 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "SpawnOverheatingComputer",
-        "names": {
-            "english": "Overheating Computer",
-            "chinese": "过热的电脑"
-        },
-        "card_art": "@OverheatingComputer",
-        "cost": 1,
-        "card_type": "monster",
-        "rarity": "uncommon",
-        "class": "@ClassSteward",
-        "targets_room": true,
-        "effects": [{
-            "id": "@SpawnOverheatingComputer"
-        }],
-        "lore_tooltips": [{
-            "english": "It crunched the numbers, now it immolates its foes.",
-            "chinese": "以前它计算数字，现在它烧毁敌人。"
-        }],
-        "pools": [
-            "UnitsAllBanner"
-        ]
-    }],
-    "characters": [{
-        "id": "OverheatingComputer",
-        "size": 2,
-        "attack_damage": 20,
-        "health": 3,
-        "names": {
-            "english": "Overheating Computer",
-            "chinese": "过热的电脑"
-        },
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-        "subtypes": [
-            "SubtypesData_BannerUnit"
-        ],
-        "triggers": [{
-            "id": "@OverheatingComputerExtinguish"
-        }]
-    }],
-    "character_triggers": [{
-        "id": "OverheatingComputerExtinguish",
-        "descriptions": {
-            "english": "Deal damage to each enemy unit equal to [effect0.power]x its [attack].",
-            "chinese": "对每个敌方单位造成等同于其[attack]x [effect0.power]的伤害。"
-        },
-        "trigger": "on_death",
-        "effects": [{
-            "id": "@OverheatingComputerDamage"
-        }]
-    }],
-    "effects": [{
-            "id": "SpawnOverheatingComputer",
-            "name": "CardEffectSpawnMonster",
-            "target_mode": "room",
-            "param_character": "@OverheatingComputer"
-        },
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnOverheatingComputer",
+      "names": {
+        "english": "Overheating Computer",
+        "chinese": "过热的电脑"
+      },
+      "card_art": "@OverheatingComputer",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [ "@SpawnOverheatingComputer" ],
+      "lore_tooltips": [
         {
-            "id": "OverheatingComputerDamage",
-            "name": "CardEffectDamagePerSourceAttack",
-            "target_mode": "room",
-            "target_team": "heroes",
-            "param_int": 2,
-            "use_magic_power_multipler": false,
-            "use_attack_damage": true
+          "english": "It crunched the numbers, now it immolates its foes.",
+          "chinese": "以前它计算数字，现在它烧毁敌人。"
         }
-    ],
-    "sprites": [{
-        "id": "OverheatingComputer",
-        "path": "textures/MechanicalOutrage.png"
-    }],
-    "game_objects": [{
-        "id": "OverheatingComputer",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@OverheatingComputer"
-            }
+      ],
+      "pools": [ "UnitsAllBanner" ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "OverheatingComputer",
+      "size": 2,
+      "attack_damage": 20,
+      "health": 3,
+      "names": {
+        "english": "Overheating Computer",
+        "chinese": "过热的电脑"
+      },
+      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+      "subtypes": [ "SubtypesData_BannerUnit" ],
+      "triggers": [ "@OverheatingComputerExtinguish" ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "OverheatingComputerExtinguish",
+      "descriptions": {
+        "english": "Deal damage to each enemy unit equal to [effect0.power]x its [attack].",
+        "chinese": "对每个敌方单位造成等同于其[attack]x [effect0.power]的伤害。"
+      },
+      "trigger": "on_death",
+      "effects": [ "@OverheatingComputerDamage" ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnOverheatingComputer",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@OverheatingComputer"
+    },
+    {
+      "id": "OverheatingComputerDamage",
+      "name": "CardEffectDamagePerSourceAttack",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 2,
+      "use_magic_power_multipler": false,
+      "use_attack_damage": true
+    }
+  ],
+  "sprites": [
+    {
+      "id": "OverheatingComputer",
+      "path": "textures/MechanicalOutrage.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "OverheatingComputer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@OverheatingComputer"
         }
-    }]
+      }
+    }
+  ]
 }

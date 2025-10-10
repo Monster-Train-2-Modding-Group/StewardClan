@@ -39,11 +39,7 @@
         }
       ],
       "lore_style": "herzal",
-      "relic_effects": [
-        {
-          "id": "@ConstructCoreArmorEffect"
-        }
-      ],
+      "relic_effects": [ "@ConstructCoreArmorEffect" ],
       "icon": "@ConstructCoreIcon",
       "icon_small": "@ConstructCoreIconSmall",
       "extensions": [

@@ -13,20 +13,14 @@
       "rarity": "uncommon",
       "class": "@ClassSteward",
       "targets_room": true,
-      "effects": [
-        {
-          "id": "@SpawnWrenchHead"
-        }
-      ],
+      "effects": [ "@SpawnWrenchHead" ],
       "lore_tooltips": [
         {
           "english": "heading into the wrench",
           "chinese": "头卡在扳手里了。"
         }
       ],
-      "pools": [
-        "UnitsAllBanner"
-      ]
+      "pools": [ "UnitsAllBanner" ]
     }
   ],
   "characters": [
@@ -40,14 +34,8 @@
       "attack_damage": 15,
       "health": 30,
       "character_art": "@WrenchHeadCharacterArt",
-      "subtypes": [
-        "SubtypesData_BannerUnit"
-      ],
-      "triggers": [
-        {
-          "id": "@WrenchHeadStrike"
-        }
-      ]
+      "subtypes": [ "SubtypesData_BannerUnit" ],
+      "triggers": [ "@WrenchHeadStrike" ]
     }
   ],
   "character_triggers": [
@@ -58,11 +46,7 @@
         "english": "Restore [effect0.power] Pyre health",
         "chinese": "恢复 [effect0.power] 点薪火生命值。"
       },
-      "effects": [
-        {
-          "id": "@WrenchHeadHeal"
-        }
-      ]
+      "effects": [ "@WrenchHeadHeal" ]
     }
   ],
   "effects": [

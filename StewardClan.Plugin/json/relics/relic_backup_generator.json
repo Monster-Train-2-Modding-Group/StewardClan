@@ -35,11 +35,7 @@
         }
       ],
       "lore_style": "herzal",
-      "relic_effects": [
-        {
-          "id": "@BackupGeneratorEffect"
-        }
-      ],
+      "relic_effects": [ "@BackupGeneratorEffect" ],
       "icon": "@BackupGeneratorIcon",
       "icon_small": "@BackupGeneratorIconSmall",
       "extensions": [

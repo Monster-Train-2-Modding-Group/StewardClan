@@ -13,20 +13,14 @@
       "rarity": "uncommon",
       "class": "@ClassSteward",
       "targets_room": true,
-      "effects": [
-        {
-          "id": "@SpawnWingedAirConditioner"
-        }
-      ],
+      "effects": [ "@SpawnWingedAirConditioner" ],
       "lore_tooltips": [
         {
           "english": "Originally designed to keep technics cool, it has been repurposed to blow enemies away.",
           "chinese": "最初被设计为保持机械冷却，现在被改用作吹走敌人。"
         }
       ],
-      "pools": [
-        "UnitsAllBanner"
-      ]
+      "pools": [ "UnitsAllBanner" ]
     },
     {
       "id": "WingedAirConditionerAbility",
@@ -44,11 +38,7 @@
       "targetless": true,
       "targets_room": false,
       "card_type": "spell",
-      "effects": [
-        {
-          "id": "@WingedAirConditionerCooldown"
-        }
-      ]
+      "effects": [ "@WingedAirConditionerCooldown" ]
     }
   ],
   "characters": [
@@ -62,9 +52,7 @@
         "chinese": "带翅膀的空调"
       },
       "character_art": "@WingedAirConditionerCharacterArt",
-      "subtypes": [
-        "SubtypesData_BannerUnit"
-      ],
+      "subtypes": [ "SubtypesData_BannerUnit" ],
       "starting_status_effects": [
         {
           "status": "ambush",

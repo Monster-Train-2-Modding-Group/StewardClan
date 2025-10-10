@@ -13,20 +13,14 @@
       "rarity": "rare",
       "class": "@ClassSteward",
       "targets_room": true,
-      "effects": [
-        {
-          "id": "@SpawnModForger"
-        }
-      ],
+      "effects": [ "@SpawnModForger" ],
       "lore_tooltips": [
         {
           "english": "Forging mods to heal the Pyre, one artifact at a time.",
           "chinese": "锻造模组来治愈薪火，一次一件神器。"
         }
       ],
-      "pools": [
-        "UnitsAllBanner"
-      ]
+      "pools": [ "UnitsAllBanner" ]
     }
   ],
   "characters": [
@@ -40,14 +34,8 @@
         "chinese": "模组锻造者"
       },
       "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-      "subtypes": [
-        "SubtypesData_BannerUnit"
-      ],
-      "triggers": [
-        {
-          "id": "@ModForgerTrigger"
-        }
-      ]
+      "subtypes": [ "SubtypesData_BannerUnit" ],
+      "triggers": [ "@ModForgerTrigger" ]
     }
   ],
   "character_triggers": [
@@ -58,11 +46,7 @@
         "chinese": "恢复 [effect0.power] 点薪火生命值。"
       },
       "trigger": "on_equipment_added_to_ally",
-      "effects": [
-        {
-          "id": "@ModForgerHealPyre"
-        }
-      ]
+      "effects": [ "@ModForgerHealPyre" ]
     }
   ],
   "effects": [

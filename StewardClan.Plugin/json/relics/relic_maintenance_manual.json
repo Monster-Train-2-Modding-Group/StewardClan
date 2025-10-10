@@ -46,11 +46,7 @@
       ],
       "disallow_in_deployment": false,
       "lore_style": "herzal",
-      "relic_effects": [
-        {
-          "id": "@MaintenanceManualEffect"
-        }
-      ],
+      "relic_effects": [ "@MaintenanceManualEffect" ],
       "icon": "@MaintenanceManualIcon",
       "icon_small": "@MaintenanceManualIconSmall",
       "extensions": [

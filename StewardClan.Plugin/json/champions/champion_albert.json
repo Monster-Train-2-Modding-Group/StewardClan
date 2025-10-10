@@ -16,14 +16,8 @@
       "class": "@ClassSteward",
       "targets_room": true,
       "targetless": false,
-      "initial_upgrades": [
-        "@InitialScalingTraitsAlbert"
-      ],
-      "effects": [
-        {
-          "id": "@SpawnAlbert"
-        }
-      ],
+      "initial_upgrades": [ "@InitialScalingTraitsAlbert" ],
+      "effects": [ "@SpawnAlbert" ],
       "lore_tooltips": [
         {
           "english": "A Train Steward gone mad, luckily he is on our side.",
@@ -58,7 +52,7 @@
       "id": "AlbertSummonEmpty"
     },
     {
-      "id": "InitialScalingTraitsAlbert", 
+      "id": "InitialScalingTraitsAlbert",
       "use_upgrade_highlight_tags": false,
       "trigger_upgrades": [
         "@AlbertStatsOnSummonI"
@@ -73,11 +67,7 @@
       "bonus_damage": 5,
       "bonus_hp": 5,
       "bonus_size": -1,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertBuffStewards1"
-        }
-      ]
+      "trigger_upgrades": [ "@AlbertBuffStewards1" ]
     },
     {
       "id": "AlbertStewardBuff2",
@@ -88,11 +78,7 @@
       "bonus_damage": 7,
       "bonus_hp": 7,
       "bonus_size": -1,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertBuffStewards2"
-        }
-      ]
+      "trigger_upgrades": [ "@AlbertBuffStewards2" ]
     },
     {
       "id": "AlbertStewardBuff3",
@@ -103,11 +89,7 @@
       "bonus_damage": 9,
       "bonus_hp": 9,
       "bonus_size": -1,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertBuffStewards3"
-        }
-      ]
+      "trigger_upgrades": [ "@AlbertBuffStewards3" ]
     },
     {
       "id": "AlbertEmberBuff1",
@@ -117,11 +99,7 @@
       },
       "bonus_damage": 10,
       "bonus_hp": 5,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertAddEmber1"
-        }
-      ]
+      "trigger_upgrades": [ "@AlbertAddEmber1" ]
     },
     {
       "id": "AlbertEmberBuff2",
@@ -131,11 +109,7 @@
       },
       "bonus_damage": 12,
       "bonus_hp": 5,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertAddEmber2"
-        }
-      ]
+      "trigger_upgrades": [ "@AlbertAddEmber2" ]
     },
     {
       "id": "AlbertEmberBuff3",
@@ -145,11 +119,7 @@
       },
       "bonus_damage": 15,
       "bonus_hp": 9,
-      "trigger_upgrades": [
-        {
-          "id": "@AlbertAddEmber3"
-        }
-      ]
+      "trigger_upgrades": [ "@AlbertAddEmber3" ]
     },
     {
       "id": "AlbertXReductionBuffer1",
@@ -168,12 +138,8 @@
       },
       "bonus_damage": 20,
       "bonus_hp": 30,
-      "remove_upgrades": [
-        "@InitialScalingTraitsAlbert"
-      ],
-      "trigger_upgrades": [
-        "@AlbertStatsOnSummonII"
-      ]
+      "remove_upgrades": [ "@InitialScalingTraitsAlbert" ],
+      "trigger_upgrades": [ "@AlbertStatsOnSummonII" ]
     },
     {
       "id": "AlbertXReductionBuffer3",
@@ -183,12 +149,8 @@
       },
       "bonus_damage": 36,
       "bonus_hp": 54,
-      "remove_upgrades": [
-        "@InitialScalingTraitsAlbert"
-      ],
-      "trigger_upgrades": [
-        "@AlbertStatsOnSummonIII"
-      ]
+      "remove_upgrades": [ "@InitialScalingTraitsAlbert" ],
+      "trigger_upgrades": [ "@AlbertStatsOnSummonIII" ]
     }
   ],
   "character_triggers": [
@@ -199,11 +161,7 @@
         "english": "Gain +[effect0.power][x][attack] and +[effect0.secondarypower][x][health]",
         "chinese": "获得 +[effect0.power][x][attack]，+[effect.secondarypower][x][health]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertAddTempCardUpgradeI"
-        }
-      ]
+      "effects": [ "@AlbertAddTempCardUpgradeI" ]
     },
     {
       "id": "AlbertStatsOnSummonII",
@@ -212,11 +170,7 @@
         "english": "Gain +[effect0.power][x][attack] and +[effect0.secondarypower][x][health]",
         "chinese": "获得 +[effect0.power][x][attack]，+[effect.secondarypower][x][health]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertAddTempCardUpgradeII"
-        }
-      ]
+      "effects": [ "@AlbertAddTempCardUpgradeII" ]
     },
     {
       "id": "AlbertStatsOnSummonIII",
@@ -225,11 +179,7 @@
         "english": "Gain +[effect0.power][x][attack] and +[effect0.secondarypower][x][health]",
         "chinese": "获得 +[effect0.power][x][attack]，+[effect.secondarypower][x][health]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertAddTempCardUpgradeIII"
-        }
-      ]
+      "effects": [ "@AlbertAddTempCardUpgradeIII" ]
     },
     {
       "id": "AlbertAddEmber1",
@@ -238,11 +188,7 @@
         "english": "Gain [effect0.power][ember]",
         "chinese": "获得 [effect0.power][ember]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertAddEmber1"
-        }
-      ]
+      "effects": [ "@AlbertAddEmber1" ]
     },
     {
       "id": "AlbertAddEmber2",
@@ -251,11 +197,7 @@
         "english": "Gain [effect0.power][ember]",
         "chinese": "获得 [effect0.power][ember]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertAddEmber2"
-        }
-      ]
+      "effects": [ "@AlbertAddEmber2" ]
     },
     {
       "id": "AlbertAddEmber3",
@@ -264,11 +206,7 @@
         "english": "Gain [effect0.power][ember]",
         "chinese": "获得 [effect0.power][ember]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertAddEmber3"
-        }
-      ]
+      "effects": [ "@AlbertAddEmber3" ]
     },
     {
       "id": "AlbertBuffStewards1",
@@ -277,11 +215,7 @@
         "english": "Give Train Stewards [Conductor_construct] [effect0.status0.power].",
         "chinese": "乘务员单位获得[Conductor_construct] [effect0.status0.power]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertGiveConstruct1"
-        }
-      ]
+      "effects": [ "@AlbertGiveConstruct1" ]
     },
     {
       "id": "AlbertBuffStewards2",
@@ -290,11 +224,7 @@
         "english": "Give Train Stewards [Conductor_construct] [effect0.status0.power].",
         "chinese": "乘务员单位获得[Conductor_construct] [effect0.status0.power]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertGiveConstruct2"
-        }
-      ]
+      "effects": [ "@AlbertGiveConstruct2" ]
     },
     {
       "id": "AlbertBuffStewards3",
@@ -303,11 +233,7 @@
         "english": "Give Train Stewards [Conductor_construct] [effect0.status0.power].",
         "chinese": "乘务员单位获得[Conductor_construct] [effect0.status0.power]。"
       },
-      "effects": [
-        {
-          "id": "@AlbertGiveConstruct3"
-        }
-      ]
+      "effects": [ "@AlbertGiveConstruct3" ]
     }
   ],
   "effects": [

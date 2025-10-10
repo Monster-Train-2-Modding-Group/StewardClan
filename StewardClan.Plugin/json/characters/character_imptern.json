@@ -13,20 +13,14 @@
       "rarity": "uncommon",
       "class": "@ClassSteward",
       "targets_room": true,
-      "effects": [
-        {
-          "id": "@SpawnImptern"
-        }
-      ],
+      "effects": [ "@SpawnImptern" ],
       "lore_tooltips": [
         {
           "english": "The Stewards were worried at first about this mischievous runt, but as time went on, they found him to be quite useful.",
           "chinese": "最初乘务员们很担忧这只顽皮的小家伙，但慢慢地，他们发现他是个得力的帮手。"
         }
       ],
-      "pools": [
-        "UnitsAllBanner"
-      ]
+      "pools": [ "UnitsAllBanner" ]
     },
     {
       "id": "ImpternAbility",
@@ -44,11 +38,7 @@
       "targetless": true,
       "targets_room": false,
       "card_type": "spell",
-      "effects": [
-        {
-          "id": "@ImpternRepeatTrigger"
-        }
-      ]
+      "effects": [ "@ImpternRepeatTrigger" ]
     }
   ],
   "characters": [
@@ -62,14 +52,8 @@
         "chinese": "小恶魔"
       },
       "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-      "subtypes": [
-        "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
-      ],
-      "triggers": [
-        {
-          "id": "@ImpternSummon"
-        }
-      ],
+      "subtypes": [ "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c" ],
+      "triggers": [ "@ImpternSummon" ],
       "ability": "@ImpternAbility"
     }
   ],
@@ -81,11 +65,7 @@
         "english": "Restore [effect0.power] Pyre health",
         "chinese": "恢复 [effect0.power] 点薪火生命值。"
       },
-      "effects": [
-        {
-          "id": "@ImpternHealPyre"
-        }
-      ]
+      "effects": [ "@ImpternHealPyre" ]
     }
   ],
   "effects": [

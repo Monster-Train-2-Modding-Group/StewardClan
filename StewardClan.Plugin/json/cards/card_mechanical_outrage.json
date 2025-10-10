@@ -18,19 +18,12 @@
       "card_art": "@MechanicalOutrageArt",
       "targets_room": true,
       "targetless": false,
-      "pools": ["StarterCardsOnly"],
-      "traits": [
-        {
-          "id": "@MechanicalOutragePiercing"
-        }
-      ],
+      "pools": [ "StarterCardsOnly" ],
+      "traits": [ "@MechanicalOutragePiercing" ],
       "effects": [
-        {
-          "id": "@MechanicalOutrageDealDamage"
-        },
-        {
-          "id": "@MechanicalOutrageDealDamageToPyre"
-        }
+        "@MechanicalOutrageDealDamage",
+        "@MechanicalOutrageDealDamageToPyre"
+
       ]
     }
   ],

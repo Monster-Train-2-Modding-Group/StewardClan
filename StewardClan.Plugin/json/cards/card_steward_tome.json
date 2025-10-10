@@ -1,54 +1,62 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "StewardTome",
-        "names": {
-            "english": "Steward Tome",
-            "chinese": "乘务员之书"
-        },
-        "descriptions": {
-            "english": "Apply [sweep] to a friendly unit.",
-            "chinese": "使一个友方单位获得[sweep]。"
-        },
-        "rarity": "rare",
-        "class": "@ClassSteward",
-        "card_art": "@StewardTomeArt",
-        "targets_room": true,
-        "targetless": false,
-        "pools": ["MegaPool"],
-        "cost": 3,
-        "traits": [{
-            "id": "@StewardTomeConsume"
-        }],
-        "effects": [{
-            "id": "@StewardTomeApplySweep"
-        }]
-    }],
-    "traits": [{
-        "id": "StewardTomeConsume",
-        "name": "CardTraitExhaustState"
-    }],
-    "effects": [{
-        "id": "StewardTomeApplySweep",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "param_status_effects": [{
-            "status": "sweep",
-            "count": 1
-        }]
-    }],
-    "sprites": [{
-        "id": "StewardTomeArt",
-        "path": "textures/StewardTome.png"
-    }],
-    "game_objects": [{
-        "id": "StewardTomeArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@StewardTomeArt"
-            }
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "StewardTome",
+      "names": {
+        "english": "Steward Tome",
+        "chinese": "乘务员之书"
+      },
+      "descriptions": {
+        "english": "Apply [sweep] to a friendly unit.",
+        "chinese": "使一个友方单位获得[sweep]。"
+      },
+      "rarity": "rare",
+      "class": "@ClassSteward",
+      "card_art": "@StewardTomeArt",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [ "MegaPool" ],
+      "cost": 3,
+      "traits": [ "@StewardTomeConsume" ],
+      "effects": [ "@StewardTomeApplySweep" ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "StewardTomeConsume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "id": "StewardTomeApplySweep",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "sweep",
+          "count": 1
         }
-    }]
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "StewardTomeArt",
+      "path": "textures/StewardTome.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "StewardTomeArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@StewardTomeArt"
+        }
+      }
+    }
+  ]
 }

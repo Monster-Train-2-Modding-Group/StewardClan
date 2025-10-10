@@ -42,11 +42,7 @@
         }
       ],
       "lore_style": "herzal",
-      "relic_effects": [
-        {
-          "id": "@EmergencyProtocolEffect"
-        }
-      ],
+      "relic_effects": [ "@EmergencyProtocolEffect" ],
       "icon": "@EmergencyProtocolIcon",
       "icon_small": "@EmergencyProtocolIconSmall",
       "extensions": [

@@ -1,53 +1,57 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Cache",
-        "names": {
-            "english": "Cache",
-            "chinese": "缓存"
-        },
-        "descriptions": {
-            "english": "Draw +[effect0.power] next turn.",
-            "chinese": "下个回合抽 +[effect0.power] 张牌。"
-        },
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "card_art": "@CacheArt",
-        "targets_room": true,
-        "targetless": true,
-        "pools": [
-            "MegaPool"
-        ],
-        "cost": 1,
-        "traits": [{
-            "id": "@CachePermafrost"
-        }],
-        "effects": [{
-            "id": "@CacheDrawNextTurn"
-        }]
-    }],
-    "traits": [{
-        "id": "CachePermafrost",
-        "name": "CardTraitPermafrost"
-    }],
-    "effects": [{
-        "id": "CacheDrawNextTurn",
-        "name": "CardEffectDrawAdditionalNextTurn",
-        "param_int": 2,
-        "target_mode": "room",
-        "target_team": "both"
-    }],
-    "sprites": [{
-        "id": "CacheArt",
-        "path": "textures/Cache.png"
-    }],
-    "game_objects": [{
-        "id": "CacheArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@CacheArt"
-            }
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Cache",
+      "names": {
+        "english": "Cache",
+        "chinese": "缓存"
+      },
+      "descriptions": {
+        "english": "Draw +[effect0.power] next turn.",
+        "chinese": "下个回合抽 +[effect0.power] 张牌。"
+      },
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "card_art": "@CacheArt",
+      "targets_room": true,
+      "targetless": true,
+      "pools": [ "MegaPool" ],
+      "cost": 1,
+      "traits": [ "@CachePermafrost" ],
+      "effects": [ "@CacheDrawNextTurn" ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "CachePermafrost",
+      "name": "CardTraitPermafrost"
+    }
+  ],
+  "effects": [
+    {
+      "id": "CacheDrawNextTurn",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "param_int": 2,
+      "target_mode": "room",
+      "target_team": "both"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CacheArt",
+      "path": "textures/Cache.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CacheArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CacheArt"
         }
-    }]
+      }
+    }
+  ]
 }

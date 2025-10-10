@@ -16,16 +16,10 @@
       "rarity": "rare",
       "class": "@ClassSteward",
       "card_art": "@BreakingPointArt",
-      "pools": [
-        "MegaPool"
-      ],
+      "pools": ["MegaPool"],
       "effects": [
-        {
-          "id": "@BreakingPointDealDamageToAll"
-        },
-        {
-          "id": "@BreakingPointDealDamageToPyre"
-        }
+        "@BreakingPointDealDamageToAll",
+        "@BreakingPointDealDamageToPyre"
       ]
     }
   ],

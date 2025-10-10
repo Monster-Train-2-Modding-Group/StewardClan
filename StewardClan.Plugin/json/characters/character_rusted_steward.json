@@ -1,68 +1,77 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "SpawnRustedSteward",
-        "names": {
-            "english": "Rusted Steward",
-            "chinese": "生锈的乘务员"
-        },
-        "card_art": "@RustedSteward",
-        "cost": 1,
-        "card_type": "monster",
-        "rarity": "common",
-        "class": "@ClassSteward",
-        "targets_room": true,
-        "effects": [{
-            "id": "@SpawnRustedSteward"
-        }],
-        "lore_tooltips": [{
-            "english": "Even a rusty steward is still a steward.",
-            "chinese": "即使是生锈的乘务员，依然是乘务员。"
-        }],
-        "pools": [
-            "MegaPool"
-        ]
-    }],
-    "characters": [{
-        "id": "RustedSteward",
-        "size": 1,
-        "attack_damage": 5,
-        "health": 8,
-        "names": {
-            "english": "Rusted Steward",
-            "chinese": "生锈的乘务员"
-        },
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
-        "subtypes": [
-            "SubtypesData_TrainSteward",
-        ],
-        "starting_status_effects": [{
-                "status": "damage shield",
-                "count": 1
-            },
-            {
-                "status": "multistrike",
-                "count": 1
-            }
-        ]
-    }],
-    "effects": [{
-        "id": "SpawnRustedSteward",
-        "name": "CardEffectSpawnMonster",
-        "target_mode": "room",
-        "param_character": "@RustedSteward"
-    }],
-    "sprites": [{
-        "id": "RustedSteward",
-        "path": "textures/MechanicalOutrage.png"
-    }],
-    "game_objects": [{
-        "id": "RustedSteward",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@RustedSteward"
-            }
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "SpawnRustedSteward",
+      "names": {
+        "english": "Rusted Steward",
+        "chinese": "生锈的乘务员"
+      },
+      "card_art": "@RustedSteward",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "@ClassSteward",
+      "targets_room": true,
+      "effects": [ "@SpawnRustedSteward" ],
+      "lore_tooltips": [
+        {
+          "english": "Even a rusty steward is still a steward.",
+          "chinese": "即使是生锈的乘务员，依然是乘务员。"
         }
-    }]
+      ],
+      "pools": [ "MegaPool" ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "RustedSteward",
+      "size": 1,
+      "attack_damage": 5,
+      "health": 8,
+      "names": {
+        "english": "Rusted Steward",
+        "chinese": "生锈的乘务员"
+      },
+      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+      "subtypes": [
+        "SubtypesData_TrainSteward"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "damage shield",
+          "count": 1
+        },
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnRustedSteward",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@RustedSteward"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "RustedSteward",
+      "path": "textures/MechanicalOutrage.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "RustedSteward",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@RustedSteward"
+        }
+      }
+    }
+  ]
 }

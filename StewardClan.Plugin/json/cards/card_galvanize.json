@@ -16,20 +16,10 @@
       "card_art": "@GalvanizeArt",
       "targets_room": true,
       "targetless": true,
-      "pools": [
-        "MegaPool"
-      ],
+      "pools": [ "MegaPool" ],
       "cost": 1,
-      "traits": [
-        {
-          "id": "@GalvanizeConsume"
-        }
-      ],
-      "effects": [
-        {
-          "id": "@GalvanizeApplyConstruct"
-        }
-      ]
+      "traits": [ "@GalvanizeConsume" ],
+      "effects": [ "@GalvanizeApplyConstruct" ]
     }
   ],
   "traits": [

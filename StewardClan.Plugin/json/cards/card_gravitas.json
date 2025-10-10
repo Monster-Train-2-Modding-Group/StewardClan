@@ -1,50 +1,56 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "Gravitas",
-        "names": {
-            "english": "Gravitas",
-            "chinese": "庄严"
-        },
-        "descriptions": {
-            "english": "Reduce [cooldown] to [effect0.power]",
-            "chinese": "[cooldown]降低至 [effect0.power]。"
-        },
-        "cost": 0,
-        "card_type": "spell",
-        "rarity": "uncommon",
-        "class": "@ClassSteward",
-        "card_art": "@GravitasArt",
-        "pools": [
-            "MegaPool"
-        ],
-        "targets_room": true,
-        "targetless": false,
-        "effects": [{
-            "id": "@GravitasResetCooldown"
-        }]
-    }],
-    "effects": [{
-        "id": "GravitasResetCooldown",
-        "name": "CardEffectRemoveStatusEffect",
-        "target_mode": "drop_target_character",
-        "param_status_effects": [{
-            "status": "cooldown",
-            "count": 10
-        }],
-        "target_team": "monsters"
-    }],
-    "sprites": [{
-        "id": "GravitasArt",
-        "path": "textures/Gravitas.png"
-    }],
-    "game_objects": [{
-        "id": "GravitasArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@GravitasArt"
-            }
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Gravitas",
+      "names": {
+        "english": "Gravitas",
+        "chinese": "庄严"
+      },
+      "descriptions": {
+        "english": "Reduce [cooldown] to [effect0.power]",
+        "chinese": "[cooldown]降低至 [effect0.power]。"
+      },
+      "cost": 0,
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "class": "@ClassSteward",
+      "card_art": "@GravitasArt",
+      "pools": [ "MegaPool" ],
+      "targets_room": true,
+      "targetless": false,
+      "effects": [ "@GravitasResetCooldown" ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GravitasResetCooldown",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "drop_target_character",
+      "param_status_effects": [
+        {
+          "status": "cooldown",
+          "count": 10
         }
-    }]
+      ],
+      "target_team": "monsters"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "GravitasArt",
+      "path": "textures/Gravitas.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "GravitasArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@GravitasArt"
+        }
+      }
+    }
+  ]
 }

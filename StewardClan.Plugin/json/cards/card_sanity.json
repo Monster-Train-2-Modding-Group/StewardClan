@@ -19,12 +19,8 @@
       "pools": [ "MegaPool" ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@SanityDiscard"
-        },
-        {
-          "id": "@SanityHealPyre"
-        }
+        "@SanityDiscard",
+        "@SanityHealPyre"
       ]
     }
   ],

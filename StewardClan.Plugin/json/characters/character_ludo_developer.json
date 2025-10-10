@@ -13,20 +13,14 @@
       "rarity": "rare",
       "class": "@ClassSteward",
       "targets_room": true,
-      "effects": [
-        {
-          "id": "@SpawnLudoDeveloper"
-        }
-      ],
+      "effects": [ "@SpawnLudoDeveloper" ],
       "lore_tooltips": [
         {
           "english": "A developer who creates games within games.",
           "chinese": "在游戏中创造游戏的开发者。"
         }
       ],
-      "pools": [
-        "UnitsAllBanner"
-      ]
+      "pools": [ "UnitsAllBanner" ]
     }
   ],
   "characters": [
@@ -44,11 +38,7 @@
         "SubtypesData_TrainSteward",
         "SubtypesData_BannerUnit"
       ],
-      "triggers": [
-        {
-          "id": "@LudoDeveloperGainConstruct"
-        }
-      ]
+      "triggers": [ "@LudoDeveloperGainConstruct" ]
     }
   ],
   "character_triggers": [
@@ -59,11 +49,7 @@
         "chinese": "获得[Conductor_construct] [effect0.status0.power]。"
       },
       "trigger": "post_combat",
-      "effects": [
-        {
-          "id": "@LudoDeveloperGainConstructEffect"
-        }
-      ]
+      "effects": [ "@LudoDeveloperGainConstructEffect" ]
     }
   ],
   "effects": [

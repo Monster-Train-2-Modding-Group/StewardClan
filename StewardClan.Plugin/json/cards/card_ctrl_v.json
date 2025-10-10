@@ -1,49 +1,55 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "cards": [{
-        "id": "CtrlV",
-        "names": {
-            "english": "Ctrl-V",
-            "chinese": "粘贴"
-        },
-        "descriptions": {
-            "english": "Add a copy of your Champion to your Hand.",
-            "chinese": "将一张你的勇者的复制品加入你的手牌。"
-        },
-        "rarity": "rare",
-        "class": "@ClassSteward",
-        "card_art": "@CtrlVArt",
-        "targets_room": false,
-        "targetless": true,
-        "pools": ["MegaPool"],
-        "cost": 3,
-        "traits": [{
-            "id": "@CtrlVConsume"
-        }],
-        "effects": [{
-            "id": "@CtrlVAddChampionCopy"
-        }]
-    }],
-    "traits": [{
-        "id": "CtrlVConsume",
-        "name": "CardTraitExhaustState"
-    }],
-    "effects": [{
-        "id": "CtrlVAddChampionCopy",
-        "name": "@CardEffectAddChampionCopy",
-        "target_mode": "hand"
-    }],
-    "sprites": [{
-        "id": "CtrlVArt",
-        "path": "textures/CtrlV.png"
-    }],
-    "game_objects": [{
-        "id": "CtrlVArt",
-        "type": "card_art",
-        "extensions": {
-            "card_art": {
-                "sprite": "@CtrlVArt"
-            }
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "CtrlV",
+      "names": {
+        "english": "Ctrl-V",
+        "chinese": "粘贴"
+      },
+      "descriptions": {
+        "english": "Add a copy of your Champion to your Hand.",
+        "chinese": "将一张你的勇者的复制品加入你的手牌。"
+      },
+      "rarity": "rare",
+      "class": "@ClassSteward",
+      "card_art": "@CtrlVArt",
+      "targets_room": false,
+      "targetless": true,
+      "pools": [ "MegaPool" ],
+      "cost": 3,
+      "traits": [ "@CtrlVConsume" ],
+      "effects": [ "@CtrlVAddChampionCopy" ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "CtrlVConsume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "id": "CtrlVAddChampionCopy",
+      "name": "@CardEffectAddChampionCopy",
+      "target_mode": "hand"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CtrlVArt",
+      "path": "textures/CtrlV.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CtrlVArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CtrlVArt"
         }
-    }]
+      }
+    }
+  ]
 }
