@@ -27,7 +27,8 @@ I appreciate screenshots!
 
 ## Dependencies
 
-- [Trainworks Reloads](https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded): [Deep Wiki](https://deepwiki.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded)
+- [Conductor](https://github.com/Monster-Train-2-Modding-Group/Conductor)
+- [Trainworks Reloaded](https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded): [Deep Wiki](https://deepwiki.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded)
 - [BepInEx](https://github.com/BepInEx/BepInEx): [Deep Wiki](https://deepwiki.com/BepInEx/BepInEx)
 
 ## Credits
