@@ -16,8 +16,8 @@
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="TrainworksReloaded.Base" Version="0.5.4" />
-    <PackageReference Include="Conductor" Version="0.2.0" />
+    <PackageReference Include="TrainworksReloaded.Base" Version="0.5.5" />
+    <PackageReference Include="Conductor" Version="0.2.1" />
   </ItemGroup>
 
   <ItemGroup>

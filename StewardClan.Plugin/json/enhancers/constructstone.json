@@ -12,7 +12,7 @@
         "english": "Upgrade a unit with [Conductor_construct] [effect0.upgrade.status0.power].",
         "chinese": "升级一个单位，使其获得[Conductor_construct] [effect0.upgrade.status0.power]。"
       },
-      "relic_effects": ["@ConstructEnhancer"],
+      "relic_effects": [ "@ConstructEnhancer" ],
       "icon": "@ConstructIcon",
       "extensions": [
         {
@@ -56,7 +56,13 @@
           "count": 5
         }
       ],
-      "filters": ["ExcludeEelGorgon"]
+      "filters": [ "ExcludeEelGorgon" ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ConstructIcon",
+      "path": "textures/ConstructIcon.png"
     }
   ]
 }
