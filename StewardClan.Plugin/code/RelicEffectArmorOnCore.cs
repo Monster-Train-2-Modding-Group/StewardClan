@@ -9,7 +9,7 @@ namespace StewardClan.Plugin
     {
         public override bool CanApplyInPreviewMode => true;
 
-        RelicState IConstructStatusArmorModifier.SourceRelicState { get => SourceRelicState; set => throw new NotImplementedException(); }
+        RelicState IConstructStatusArmorModifier.SourceRelicState { get => SourceRelicState; }
 
         private StatusEffectStackData[] statusEffects = Array.Empty<StatusEffectStackData>();
 

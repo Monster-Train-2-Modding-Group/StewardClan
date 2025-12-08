@@ -24,7 +24,7 @@
       "class_select_character_displays": [
         "@AlbertClassDisplayCharacterArt"
       ],
-      "card_style": "pyreborne",
+      "card_style": "@Steward",
       "ui_color": {
         "r": 0.5,
         "g": 0.5,
@@ -167,6 +167,15 @@
       }
     }
   ],
+  "class_card_styles": [
+    {
+      "id": "Steward",
+      "equipment_card_frame_sprite": "@StewardEquipmentRoomBorder",
+      "unit_card_frame_sprite": "@StewardUnitBorder",
+      "room_card_frame_sprite": "@StewardEquipmentRoomBorder",
+      "spell_card_frame_sprite": "@StewardSpellBorder"
+    }
+  ],
   "sprites": [
     {
       "id": "StewardBanner",
@@ -199,6 +208,18 @@
     {
       "id": "Portrait",
       "path": "textures/StewardPortrait.png"
+    },
+    {
+      "id": "StewardEquipmentRoomBorder",
+      "path": "textures/BorderEquipmentRoom.png"
+    },
+    {
+      "id": "StewardUnitBorder",
+      "path": "textures/BorderUnit.png"
+    },
+    {
+      "id": "StewardSpellBorder",
+      "path": "textures/BorderSpell.png"
     }
   ]
 }
