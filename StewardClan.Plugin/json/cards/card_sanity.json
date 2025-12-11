@@ -34,7 +34,7 @@
       "name": "CardEffectHealTrain",
       "target_mode": "pyre",
       "param_int": 10,
-      "supress_pyre_room_focus": true
+      "suppress_pyre_room_focus": true
     }
   ],
   "sprites": [

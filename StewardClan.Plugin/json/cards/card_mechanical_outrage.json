@@ -40,7 +40,7 @@
       "name": "@CardEffectDamagePyre",
       "target_mode": "pyre",
       "param_int": 1,
-      "supress_pyre_room_focus": true
+      "suppress_pyre_room_focus": true
     }
   ],
   "traits": [
