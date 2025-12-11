@@ -1,7 +1,9 @@
+using Conductor.TargetModes;
 using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 using TrainworksReloaded.Core;
+using static CombatManager;
 
 namespace Steward_Clan.Plugin
 {
@@ -39,13 +41,11 @@ namespace Steward_Clan.Plugin
                 yield return combatManager.ApplyEffects(
                     lastTrigger.cardEffects,
                     cardEffectParams.selectedRoom,
-                    cardEffectParams.playedCard,
-                    false, null,
-                    cardEffectParams.selfTarget,
-                    cardEffectParams.dropLocation,
-                    true, null, null, false, null, null, 1, null,
-                    false, CardTriggerType.OnDiscard, null, cardEffectParams.selfTarget, false);
-            }
+                    playedCard: cardEffectParams.playedCard,
+                    selfTarget: cardEffectParams.selfTarget,
+                    dropLocation: cardEffectParams.dropLocation,
+                    characterThatActivatedAbility: cardEffectParams.selfTarget);
+                }
             yield break;
         }
 

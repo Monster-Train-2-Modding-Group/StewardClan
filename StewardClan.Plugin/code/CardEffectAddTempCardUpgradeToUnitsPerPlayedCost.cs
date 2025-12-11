@@ -16,8 +16,7 @@ namespace Steward_Clan.Plugin
         {
             if (cardEffectParams.targets.Count > 0)
             {
-                var cardStatistics = coreGameManagers.GetCardStatistics();
-                return FetchPlayedCostStat(cardStatistics, GetAffectedCard(cardEffectParams), cardEffectState.GetParamSubtype()) > 0;
+                return FetchPlayedCostStat(GetAffectedCard(cardEffectParams), coreGameManagers.GetCardStatistics(), coreGameManagers.GetMonsterManager(), coreGameManagers.GetRelicManager()) > 0;
             }
             return false;
         }
@@ -27,26 +26,17 @@ namespace Steward_Clan.Plugin
             return cardEffectParams.playedCard ?? cardEffectParams.selfTarget?.GetSpawnerCard() ?? cardEffectParams.cardTriggeredCharacter?.GetSpawnerCard();
         }
 
-        private int FetchPlayedCostStat(CardStatistics cardStatistics, CardState? playedCard, SubtypeData subtype)
+        private int FetchPlayedCostStat(CardState? playedCard, CardStatistics cardStatistics, MonsterManager monsterManager, RelicManager relicManager)
         {
-            CardStatistics.StatValueData statValueData = new()
-            {
-                cardState = playedCard,
-                trackedValue = CardStatistics.TrackedValueType.PlayedCost,
-                entryDuration = CardStatistics.EntryDuration.ThisTurn,
-                cardTypeTarget = CardStatistics.CardTypeTarget.Any,
-                paramSubtype = subtype,
-                paramStatusEffects = [],
-                paramTeamType = Team.Type.None,
-            };
-            return cardStatistics.GetStatValue(statValueData);
+            if (playedCard == null) return 0;
+            return ((!playedCard.IsConsumeRemainingEnergyCostType()) ? playedCard.GetCost(cardStatistics, monsterManager, relicManager) : playedCard.GetLastPlayedCost());
         }
 
         public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
         {
             SaveManager saveManager = coreGameManagers.GetSaveManager();
             CardManager cardManager = coreGameManagers.GetCardManager();
-            int playedCost = FetchPlayedCostStat(coreGameManagers.GetCardStatistics(), GetAffectedCard(cardEffectParams), cardEffectState.GetParamSubtype());
+            int playedCost = FetchPlayedCostStat(GetAffectedCard(cardEffectParams), coreGameManagers.GetCardStatistics(), coreGameManagers.GetMonsterManager(), coreGameManagers.GetRelicManager());
             foreach (CharacterState target in cardEffectParams.targets)
             {
                 var upgrade = cardEffectState.GetParamCardUpgradeData();

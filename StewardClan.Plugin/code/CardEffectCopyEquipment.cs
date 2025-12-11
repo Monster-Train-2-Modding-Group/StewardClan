@@ -69,10 +69,9 @@ namespace Steward_Clan.Plugin
             // Add the copy to the player's hand
 			CardManager.AddCardUpgradingInfo addCardUpgradingInfo = new()
             {
-                upgradeDatas = [],
 				copyModifiersFromCard = equipmentState
 			};
-            var cardState = coreGameManagers.GetCardManager().AddCard(cardData, CardPile.DeckPile, 1, 1, false, false, addCardUpgradingInfo, true, 1f);
+            var cardState = coreGameManagers.GetCardManager().AddCard(cardData, CardPile.DeckPile, addCardUpgradingInfo: addCardUpgradingInfo);
             if (cardState != null)
             {
                 cardState.UpdateDamageText();
