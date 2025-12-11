@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Steward_Clan.Plugin</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>0.1.0</Version>
+    <Version>0.5.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,7 +17,7 @@
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="TrainworksReloaded.Base" Version="0.6.3" />
-    <PackageReference Include="Conductor" Version="0.3.0" />
+    <PackageReference Include="Conductor" Version="0.3.1" />
   </ItemGroup>
 
   <ItemGroup>
