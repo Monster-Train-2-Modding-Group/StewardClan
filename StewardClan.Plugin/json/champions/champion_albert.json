@@ -159,7 +159,7 @@
       "trigger": "on_spawn",
       "descriptions": {
         "english": "Gain +[effect0.power][x][attack] and +[effect0.secondarypower][x][health]",
-        "chinese": "获得 +[effect0.power][x][attack]，+[effect.secondarypower][x][health]。"
+        "chinese": "获得 +[effect0.power][x][attack]，+[effect0.secondarypower][x][health]。"
       },
       "effects": [ "@AlbertAddTempCardUpgradeI" ]
     },
@@ -168,7 +168,7 @@
       "trigger": "on_spawn",
       "descriptions": {
         "english": "Gain +[effect0.power][x][attack] and +[effect0.secondarypower][x][health]",
-        "chinese": "获得 +[effect0.power][x][attack]，+[effect.secondarypower][x][health]。"
+        "chinese": "获得 +[effect0.power][x][attack]，+[effect0.secondarypower][x][health]。"
       },
       "effects": [ "@AlbertAddTempCardUpgradeII" ]
     },
@@ -177,7 +177,7 @@
       "trigger": "on_spawn",
       "descriptions": {
         "english": "Gain +[effect0.power][x][attack] and +[effect0.secondarypower][x][health]",
-        "chinese": "获得 +[effect0.power][x][attack]，+[effect.secondarypower][x][health]。"
+        "chinese": "获得 +[effect0.power][x][attack]，+[effect0.secondarypower][x][health]。"
       },
       "effects": [ "@AlbertAddTempCardUpgradeIII" ]
     },
