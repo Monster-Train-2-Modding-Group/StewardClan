@@ -36,3 +36,5 @@ I appreciate screenshots!
 Thanks to:
 - brandonandzeus
 - lostone-zc
+
+Albert Sound effects from MT1's Train Steward.

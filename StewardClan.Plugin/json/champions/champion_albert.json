@@ -44,6 +44,13 @@
       "subtypes": [
         "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
         "SubtypesData_TrainSteward"
+      ],
+      "sound_effects": [
+        "@Steward_Spawn",
+        "@Steward_Attack",
+        "@Steward_OnHit",
+        "@Steward_Death",
+        "@Steward_AttackPrep"
       ]
     }
   ],
@@ -400,6 +407,92 @@
           }
         }
       }
+    }
+  ],
+  "sound_effects": [
+    {
+      "id": "AlbertSelectedCue",
+      "global": true,
+      "clips": [ "@Steward_Spawn" ],
+      "volume_min": 0.75297207,
+      "volume_max": 0.75297207
+    },
+    {
+      "id": "Steward_Spawn",
+      "name": "Combat_Spawn",
+      "clips": [ "@Steward_Spawn" ],
+      "volume_min": 0.75297207,
+      "volume_max": 0.75297207
+    },
+    {
+      "id": "Steward_Attack",
+      "name": "Combat_Attack",
+      "clips": [ "@Steward_Attack" ],
+      "volume_min": 0.75,
+      "volume_max": 0.75
+    },
+    {
+      "id": "Steward_OnHit",
+      "name": "Combat_OnHit",
+      "clips": [ "@Steward_OnHit1", "@Steward_OnHit2", "@Steward_OnHit3" ],
+      "volume_min": 0.75,
+      "volume_max": 0.75,
+      "pitch_min": 0.94623655,
+      "pitch_max": 1.0537634
+    },
+    {
+      "id": "Steward_Death",
+      "name": "Combat_Death",
+      "clips": [ "@Steward_Death" ],
+      "volume_min": 0.75,
+      "volume_max": 0.75
+    },
+    {
+      "id": "Steward_AttackPrep",
+      "clips": [ "@Steward_AttackPrep1", "@Steward_AttackPrep2", "@Steward_AttackPrep3" ],
+      "name": "Combat_AttackPrep",
+      "volume_min": 0.75,
+      "volume_max": 0.75,
+      "pitch_min": 0.9438128,
+      "pitch_max": 1.0370542
+    }
+  ],
+  "audio_clips": [
+    {
+      "id": "Steward_Spawn",
+      "path": "sounds/Spawn_Steward.wav"
+    },
+    {
+      "id": "Steward_OnHit1",
+      "path": "sounds/OnHit_Steward1.wav"
+    },
+    {
+      "id": "Steward_OnHit2",
+      "path": "sounds/OnHit_Steward2.wav"
+    },
+    {
+      "id": "Steward_OnHit3",
+      "path": "sounds/OnHit_Steward3.wav"
+    },
+    {
+      "id": "Steward_AttackPrep1",
+      "path": "sounds/Prep_Steward1.wav"
+    },
+    {
+      "id": "Steward_AttackPrep2",
+      "path": "sounds/Prep_Steward2.wav"
+    },
+    {
+      "id": "Steward_AttackPrep3",
+      "path": "sounds/Prep_Steward3.wav"
+    },
+    {
+      "id": "Steward_Attack",
+      "path": "sounds/Attack_StylishSlice.wav"
+    },
+    {
+      "id": "Steward_Death",
+      "path": "sounds/Death_Steward.wav"
     }
   ]
 }

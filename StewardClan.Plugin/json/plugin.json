@@ -75,7 +75,8 @@
           ],
           "icon": "@ClanIcon",
           "locked_icon": "@ClanLockedIcon",
-          "portrait": "@Portrait"
+          "portrait": "@Portrait",
+          "selected_sfx_cue": "@AlbertSelectedCue"
         }
       ]
     }
