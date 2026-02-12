@@ -45,7 +45,7 @@ namespace Steward_Clan.Plugin
                     {
                         copyModifiersFromCard = card
                     };
-                    var cardState = coreGameManagers.GetCardManager().AddCard(saveManager.GetMainChampionData().championCardData, CardPile.HandPile, addCardUpgradingInfo: addCardUpgradingInfo);
+                    var cardState = coreGameManagers.GetCardManager().AddNewCard(saveManager.GetMainChampionData().championCardData, CardPile.HandPile, false, false, addCardUpgradingInfo: addCardUpgradingInfo);
                     if (cardState != null)
                     {
                         cardState.UpdateDamageText();
