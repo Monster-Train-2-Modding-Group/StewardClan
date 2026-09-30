@@ -18,17 +18,11 @@
       "targetless": false,
       "pools": [ "MegaPool" ],
       "cost": 1,
-      "traits": [ "@SythesizeConsume" ],
+      "traits": [ "@Consume" ],
       "effects": [
         "@SythesizeStatusEffectRage",
         "@SythesizeStatusEffectRegen"
       ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "SythesizeConsume",
-      "name": "CardTraitExhaustState"
     }
   ],
   "effects": [

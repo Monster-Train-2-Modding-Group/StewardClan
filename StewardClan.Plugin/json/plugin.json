@@ -15,6 +15,18 @@
         "english": "Direct the faithful train stewards towards keeping the train together even against their growing madness.",
         "chinese": "指挥忠诚的乘务员保护火车，即使他们变得更加疯狂。"
       },
+      "event_titles": {
+        "english": "<wonderous>Steward</wonderous>",
+        "french": "<wonderous>Steward</wonderous>",
+        "german": "<wonderous>Zugbegleiter</wonderous>",
+        "russian": "<wonderous>стюардов</wonderous>",
+        "portuguese": "<wonderous>Guardas do Trem</wonderous>",
+        "chinese": "<wonderous>乘务员</wonderous>",
+        "spanish": "<wonderous>Auxiliares de tren</wonderous>",
+        "chinese_traditional": "<wonderous>列車服務員</wonderous>",
+        "korean": "<wonderous>열차 잡부</wonderous>",
+        "japanese": "<wonderous>トレイン・スチュワード</wonderous>"
+      },
       "icons": {
         "small": "@StewardIconSmall",
         "medium": "@StewardIconRegular",
@@ -130,6 +142,16 @@
         "@SpawnUnitTester",
         "@SpawnLudoDeveloper"
       ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "Consume",
+      "name": "CardTraitExhaustState"
+    },
+    {
+      "id": "Distinct",
+      "name": "CardTraitDistinct"
     }
   ],
   "rewards": [

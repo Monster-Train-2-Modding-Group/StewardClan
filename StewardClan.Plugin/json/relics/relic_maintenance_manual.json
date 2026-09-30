@@ -32,11 +32,6 @@
         "chinese": "乘务员单位进入战斗时获得[Conductor_construct] [effect0.status0.power]。",
         "german": "Zugstewards betreten mit [Conductor_construct] [effect0.status0.power]."
       },
-      "relic_activated": {
-        "english": "Maintenance Manual activated!",
-        "chinese": "维护手册已激活！",
-        "german": "Wartungshandbuch aktiviert!"
-      },
       "lore_tooltips": [
         {
           "english": "A well-worn manual detailing the proper maintenance and enhancement of Train Stewards.",
@@ -54,8 +49,7 @@
           "collectable": {
             "class": "@ClassSteward",
             "pools": [ "MegaRelicPool" ],
-            "rarity": "common",
-            "deprioritize_in_ftue_drafts": true
+            "rarity": "common"
           }
         }
       ]

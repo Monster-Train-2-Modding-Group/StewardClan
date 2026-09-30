@@ -17,17 +17,11 @@
       "class": "@ClassSteward",
       "card_art": "@PyreRefactorArt",
       "pools": [ "MegaPool" ],
-      "traits": [ "@PyreRefactorConsume" ],
+      "traits": [ "@Consume" ],
       "effects": [
         "@PyreRefactorBuffPyreAttack",
         "@PyreRefactorHealPyre"
       ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "PyreRefactorConsume",
-      "name": "CardTraitExhaustState"
     }
   ],
   "effects": [

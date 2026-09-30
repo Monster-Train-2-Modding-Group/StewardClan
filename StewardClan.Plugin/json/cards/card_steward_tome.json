@@ -18,14 +18,8 @@
       "targetless": false,
       "pools": [ "MegaPool" ],
       "cost": 3,
-      "traits": [ "@StewardTomeConsume" ],
+      "traits": [ "@Consume" ],
       "effects": [ "@StewardTomeApplySweep" ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "StewardTomeConsume",
-      "name": "CardTraitExhaustState"
     }
   ],
   "effects": [

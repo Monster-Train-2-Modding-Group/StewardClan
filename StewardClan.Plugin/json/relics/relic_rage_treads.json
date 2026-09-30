@@ -34,11 +34,6 @@
         "chinese": "当友方单位移动时，获得[Conductor_construct] [effect0.status0.power]。",
         "german": "Wenn du eine Zahl eingibst, wird dir die Zahl um 1 verringert und dir 1 Energie hinzugefügt."
       },
-      "relic_activated": {
-        "english": "Construct Treads activated!",
-        "chinese": "构造之靴已激活！",
-        "german": "Saugende Treppen aktiviert!"
-      },
       "lore_tooltips": [
         {
           "english": "This relic was created as an example to demonstrate the capabilities of the modding system.",
@@ -56,8 +51,7 @@
           "collectable": {
             "class": "@ClassSteward",
             "pools": [ "MegaRelicPool" ],
-            "rarity": "common",
-            "deprioritize_in_ftue_drafts": true
+            "rarity": "common"
           }
         }
       ]

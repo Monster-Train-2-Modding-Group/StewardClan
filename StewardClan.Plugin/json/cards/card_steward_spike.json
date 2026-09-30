@@ -20,28 +20,17 @@
       "cost": 0,
       "cost_type": "x",
       "traits": [
-
-        "@StewardSpikeConsume",
-
+        "@Consume",
         "@StewardSpikeScaling",
-
         "@StewardSpikeScalingDamage"
-
       ],
       "effects": [
-
         "@StewardSpikeStatusEffect",
-
         "@StewardSpikeDamage"
-
       ]
     }
   ],
   "traits": [
-    {
-      "id": "StewardSpikeConsume",
-      "name": "CardTraitExhaustState"
-    },
     {
       "id": "StewardSpikeScaling",
       "name": "CardTraitScalingAddStatusEffect",

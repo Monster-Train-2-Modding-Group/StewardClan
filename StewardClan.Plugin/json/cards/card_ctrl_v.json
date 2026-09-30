@@ -18,14 +18,8 @@
       "targetless": true,
       "pools": [ "MegaPool" ],
       "cost": 3,
-      "traits": [ "@CtrlVConsume" ],
+      "traits": [ "@Consume" ],
       "effects": [ "@CtrlVAddChampionCopy" ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "CtrlVConsume",
-      "name": "CardTraitExhaustState"
     }
   ],
   "effects": [

@@ -18,14 +18,8 @@
       "targetless": false,
       "pools": [ "MegaPool" ],
       "cost": 2,
-      "traits": [ "@WritelineConsume" ],
+      "traits": [ "@Consume" ],
       "effects": [ "@WritelineStatusEffect" ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "WritelineConsume",
-      "name": "CardTraitExhaustState"
     }
   ],
   "effects": [

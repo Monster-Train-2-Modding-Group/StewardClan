@@ -3,13 +3,12 @@
   "relic_effects": [
     {
       "id": "EmergencyProtocolEffect",
-      "name": "@RelicEffectAddStatusEffectOnPyreDamage",
-      "target_mode": "tower",
-      "param_int": 0,
-      "param_int_2": 0,
+      "name": "RelicEffectAddStatusEffectOnEnterRoomIndex",
+      "param_int": 3,
+      "source_team": "heroes",
       "param_status_effects": [
         {
-          "status": "damage shield",
+          "status": "melee weakness",
           "count": 1
         }
       ]
@@ -25,14 +24,7 @@
         "german": "Notfallprotokoll"
       },
       "descriptions": {
-        "english": "When your Pyre takes damage, apply [damageshield] [effect0.status0.power] to all friendly units.",
-        "chinese": "当你的薪火在战斗中受到伤害时，友方单位获得[damageshield] [effect0.status0.power]。",
-        "german": "Wenn dein Pyre Schaden erleidet, erhält jede freundliche Einheit [damageshield] [effect0.status0.power]."
-      },
-      "relic_activated": {
-        "english": "Emergency Protocol activated!",
-        "chinese": "紧急协议已激活！",
-        "german": "Notfallprotokoll aktiviert!"
+        "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units that enter the Pyre Room."
       },
       "lore_tooltips": [
         {
@@ -50,8 +42,7 @@
           "collectable": {
             "class": "@ClassSteward",
             "pools": [ "MegaRelicPool" ],
-            "rarity": "common",
-            "deprioritize_in_ftue_drafts": true
+            "rarity": "common"
           }
         }
       ]

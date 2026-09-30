@@ -18,14 +18,8 @@
       "targetless": true,
       "pools": [ "MegaPool" ],
       "cost": 1,
-      "traits": [ "@GalvanizeConsume" ],
+      "traits": [ "@Consume" ],
       "effects": [ "@GalvanizeApplyConstruct" ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "GalvanizeConsume",
-      "name": "CardTraitExhaustState"
     }
   ],
   "effects": [

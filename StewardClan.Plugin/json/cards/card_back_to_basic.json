@@ -18,17 +18,11 @@
       "targetless": false,
       "pools": [ "MegaPool" ],
       "cost": 2,
-      "traits": [ "@BackToBasicsConsume" ],
+      "traits": [ "@Consume" ],
       "effects": [
         "@BackToBasicsRemoveBuffs",
         "@BackToBasicsGainMultiStrike"
       ]
-    }
-  ],
-  "traits": [
-    {
-      "id": "BackToBasicsConsume",
-      "name": "CardTraitExhaustState"
     }
   ],
   "effects": [

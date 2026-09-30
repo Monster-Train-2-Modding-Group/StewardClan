@@ -26,11 +26,6 @@
         "chinese": "每层[Conductor_construct]额外提供 +1 [armor]。",
         "german": "Konstrukt gibt Rüstung."
       },
-      "relic_activated": {
-        "english": "Construct Core activated!",
-        "chinese": "构造核心已激活！",
-        "german": "Konstruktkern aktiviert!"
-      },
       "lore_tooltips": [
         {
           "english": "A powerful core that enhances mechanical constructs and reinforces their structure.",
@@ -47,8 +42,7 @@
           "collectable": {
             "class": "@ClassSteward",
             "pools": [ "MegaRelicPool" ],
-            "rarity": "rare",
-            "deprioritize_in_ftue_drafts": true
+            "rarity": "rare"
           }
         }
       ]
