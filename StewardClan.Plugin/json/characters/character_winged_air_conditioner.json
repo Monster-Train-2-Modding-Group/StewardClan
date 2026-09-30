@@ -110,18 +110,17 @@
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@WingedAirConditionerCharacterArt"
-        },
-        "transform": {
-          "position": {
-            "x": 0,
-            "y": 3,
-            "z": 0
-          },
-          "scale": {
-            "x": 1.5,
-            "y": 1.5,
-            "z": 1.5
+          "sprite": "@WingedAirConditionerCharacterArt",
+          "transform": {
+            "offset": {
+              "x": 0,
+              "y": 1.25,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5
+            }
           }
         }
       }

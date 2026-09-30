@@ -97,15 +97,9 @@
           "sprite": "@UnitTesterCharacterArt"
         },
         "transform": {
-          "position": {
-            "x": 0,
-            "y": 3,
-            "z": 0
-          },
           "scale": {
             "x": 1.5,
-            "y": 1.5,
-            "z": 1.5
+            "y": 1.5
           }
         }
       }
