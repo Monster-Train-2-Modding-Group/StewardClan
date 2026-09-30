@@ -160,7 +160,7 @@ Unit Tester: Artificer: Apply Melee Weakness 1 to enemy units. (2/2/35/20)
 ### Common Relics
 
 - **Maintenance Manual** - Train Stewards Enters with Construct 3.  
-- **Emergency Protocol** - When your Pyre takes damage, apply Damage Shield 1 to all friendly units.  
+- **Emergency Protocol** - Enemy units gain Melee Weakness 1 when entering the pyre room.
 - **Backup Generator** - Whenever you play a room, gain 2 energy.  
 - **Storage Locker** - At the beginning of Combat, spawn three rusted stewards on the middle floor.
 
